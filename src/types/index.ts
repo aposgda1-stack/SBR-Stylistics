@@ -24,12 +24,13 @@ export interface Lesson {
 }
 
 export interface LessonContent {
-  type: "definition" | "text" | "quote" | "analysis" | "image-text";
+  type: "definition" | "text" | "quote" | "analysis" | "image-text" | "theoretical";
   heading?: string;
   body?: string;
   quote?: string;
   attribution?: string;
-  steps?: { label: string; body: string }[];
+  arabicExplanation?: string;
+  steps?: { label: string; body: string; arabicExplanation?: string }[];
   imageAlt?: string;
 }
 

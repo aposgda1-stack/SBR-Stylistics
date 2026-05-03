@@ -9,10 +9,23 @@ interface Props {
   params: Promise<{ chapterId: string; lessonId: string }>;
 }
 
-function renderContent(block: LessonContent, idx: number) {
+function renderContent(block: LessonContent & { arabicExplanation?: string; type?: string }, idx: number) {
   const content = (() => {
-    const isTheory = block.heading?.toLowerCase().includes("theory");
+    const isTheory = block.heading?.toLowerCase().includes("theory") || block.type === "theoretical";
     const isApplied = block.heading?.toLowerCase().includes("applied");
+
+    const renderArabic = (arabicText?: string) => {
+      if (!arabicText) return null;
+      return (
+        <div className="mt-6 bg-slate-50 border-r-4 border-primary rounded-l-xl p-5 shadow-sm text-right font-arabic" dir="rtl">
+          <div className="flex items-center justify-end gap-2 mb-2 text-primary font-bold">
+            <span>شرح روبي بالمصري</span>
+            <span className="material-symbols-outlined text-sm">tips_and_updates</span>
+          </div>
+          <p className="text-slate-700 leading-relaxed text-lg">{arabicText}</p>
+        </div>
+      );
+    };
 
     switch (block.type) {
       case "definition":
@@ -28,26 +41,31 @@ function renderContent(block: LessonContent, idx: number) {
                     <span className="material-symbols-outlined text-xl">{isTheory ? 'school' : 'auto_stories'}</span>
                   </div>
                   <h3 className={`font-label-md text-label-sm uppercase tracking-[0.2em] ${isTheory ? 'text-primary' : 'text-secondary'}`}>
-                    {block.heading}
+                    {block.heading || "Definition"}
                   </h3>
                 </div>
-                <p className="font-headline-lg text-display-sm text-slate-900 leading-[1.3] font-serif">
+                <p className="font-headline-lg text-display-sm text-slate-900 leading-[1.3] font-serif whitespace-pre-line">
                   <span className="text-primary/40 mr-2">“</span>
-                  {block.body}
+                  {block.body || (block as any).content}
                   <span className="text-primary/40 ml-2">”</span>
                 </p>
+                {renderArabic(block.arabicExplanation)}
               </div>
             </div>
           </section>
         );
 
+      case "theoretical":
       case "text":
         return (
           <div key={idx} className="space-y-6 mb-12 px-2">
             {block.heading && (
               <h4 className="font-headline-md text-3xl text-primary font-bold border-b-2 border-primary/10 pb-4 inline-block">{block.heading}</h4>
             )}
-            <p className="font-body-lg text-xl text-slate-600 leading-relaxed font-serif first-letter:text-5xl first-letter:font-bold first-letter:text-primary first-letter:mr-3 first-letter:float-left">{block.body}</p>
+            <div className="font-body-lg text-xl text-slate-600 leading-relaxed font-serif whitespace-pre-line">
+              {block.body || (block as any).content}
+            </div>
+            {renderArabic(block.arabicExplanation)}
           </div>
         );
 
@@ -60,9 +78,11 @@ function renderContent(block: LessonContent, idx: number) {
               </div>
               <h4 className="font-headline-md text-2xl text-slate-900 font-bold">{block.heading}</h4>
             </div>
-            <p className="font-body-lg text-lg text-slate-500 mb-10 leading-relaxed font-serif italic">{block.body}</p>
+            {block.body && <p className="font-body-lg text-lg text-slate-500 mb-10 leading-relaxed font-serif italic">{block.body}</p>}
+            {renderArabic(block.arabicExplanation)}
+            
             {block.steps && (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                 {block.steps.map((step, si) => (
                   <div 
                     key={si} 
@@ -74,6 +94,7 @@ function renderContent(block: LessonContent, idx: number) {
                     <div>
                       <p className="font-headline-sm text-lg text-slate-900 mb-2 font-bold">{step.label}</p>
                       <p className="font-body-md text-slate-500 leading-relaxed">{step.body}</p>
+                      {renderArabic((step as any).arabicExplanation)}
                     </div>
                   </div>
                 ))}
@@ -83,7 +104,15 @@ function renderContent(block: LessonContent, idx: number) {
         );
 
       default:
-        return null;
+        // Render fallback for unknown types
+        return (
+          <div key={idx} className="space-y-6 mb-12 px-2">
+            <div className="font-body-lg text-xl text-slate-600 leading-relaxed font-serif whitespace-pre-line">
+              {(block as any).content || block.body}
+            </div>
+            {renderArabic(block.arabicExplanation)}
+          </div>
+        );
     }
   })();
 
