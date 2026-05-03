@@ -127,6 +127,8 @@ function renderContent(block: LessonContent & { arabicExplanation?: string; type
   );
 }
 
+import LessonTools from "@/components/LessonTools";
+
 export default async function LessonPage({ params }: Props) {
   const { chapterId, lessonId } = await params;
   const chapter = getChapterById(chapterId);
@@ -134,8 +136,13 @@ export default async function LessonPage({ params }: Props) {
 
   if (!chapter || !lesson) notFound();
 
+  const fullText = lesson.content.map(b => b.body || "").join(" ");
+  const wordCount = fullText.split(/\s+/).length;
+  const readingTime = Math.ceil(wordCount / 200); // 200 words per minute
+
   return (
     <>
+      <LessonTools title={lesson.title} content={fullText} />
       <main className="px-6 py-12 md:py-20 bg-surface">
         <ProgressSaver lessonId={lessonId} />
         <div className="max-w-[800px] mx-auto">
@@ -145,7 +152,7 @@ export default async function LessonPage({ params }: Props) {
           </div>
           
           {/* Breadcrumbs */}
-          <nav className="mb-8 flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant flex-wrap">
+          <nav className="breadcrumb-nav mb-8 flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant flex-wrap">
             <Link href="/lessons" className="hover:text-primary transition-colors">
               Curriculum
             </Link>
@@ -159,6 +166,12 @@ export default async function LessonPage({ params }: Props) {
 
           {/* Lesson Title */}
           <div className="mb-12">
+            <div className="flex items-center gap-4 mb-2">
+              <span className="bg-primary-container text-on-primary-fixed text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-widest">
+                {readingTime} min read
+              </span>
+              <span className="text-xs text-slate-400 font-bold uppercase tracking-widest">{wordCount} words</span>
+            </div>
             <h1 className="font-display-lg text-display-lg text-primary mb-4">{lesson.title}</h1>
             <div className="h-1 w-24 bg-primary-container rounded-full mb-6" />
             <p className="font-body-lg text-body-lg text-on-surface-variant italic">

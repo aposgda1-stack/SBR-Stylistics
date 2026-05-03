@@ -6,11 +6,14 @@ import { getAllChapters } from "@/lib/contentService";
 import Footer from "@/components/Footer";
 import { Chapter } from "@/types";
 
+import ActivityHeatmap from "@/components/ActivityHeatmap";
+
 export default function LessonsPage() {
   const [chapters, setChapters] = useState<Chapter[]>([]);
   const [loading, setLoading] = useState(true);
   const [completedLessons, setCompletedLessons] = useState<string[]>([]);
   const [nextLessonUrl, setNextLessonUrl] = useState<string | null>(null);
+  const [nextLessonTitle, setNextLessonTitle] = useState<string | null>(null);
 
   useEffect(() => {
     // 1. Fetch static curriculum
@@ -25,6 +28,7 @@ export default function LessonsPage() {
 
         let foundNext = false;
         let nextUrl = null;
+        let nextTitle = null;
 
         // 3. Merge progress and determine statuses
         const mergedChapters = staticChapters.map((ch, chIdx) => {
@@ -34,13 +38,12 @@ export default function LessonsPage() {
             const isCompleted = completed.includes(l.id);
             if (isCompleted) lessonCompletedCount++;
             else if (!foundNext && (chIdx === 0 || staticChapters[chIdx-1].lessons.every(prevL => completed.includes(prevL.id)))) {
-              // This is the first uncompleted lesson where the previous chapter is fully completed (or it's the first chapter)
               nextUrl = `/lessons/${ch.id}/${l.id}`;
+              nextTitle = l.title;
               foundNext = true;
             }
           });
 
-          // A chapter is locked if the PREVIOUS chapter has uncompleted lessons
           let isLocked = false;
           if (chIdx > 0) {
             const prevChapter = staticChapters[chIdx - 1];
@@ -63,6 +66,7 @@ export default function LessonsPage() {
 
         setChapters(mergedChapters);
         setNextLessonUrl(nextUrl || `/lessons/${staticChapters[0].id}/${staticChapters[0].lessons[0]?.id}`);
+        setNextLessonTitle(nextTitle || staticChapters[0].lessons[0]?.title);
         setLoading(false);
       })
       .catch((err) => {
@@ -77,31 +81,39 @@ export default function LessonsPage() {
     <>
       <main className="max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-16">
         {/* Header Section with Image */}
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-12 bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_10px_40px_rgba(0,0,0,0.04)] animate-fade-in-up">
-          <div className="flex-1 space-y-4">
-            <h1 className="font-display-lg text-4xl md:text-5xl lg:text-6xl text-primary font-bold tracking-tight">
-              Stylistics Curriculum
+        <div className="flex flex-col md:flex-row items-center gap-8 mb-12 bg-white dark:bg-slate-900 rounded-[2.5rem] p-8 md:p-12 border border-slate-100 dark:border-slate-800 shadow-[0_20px_60px_rgba(0,0,0,0.04)] animate-fade-in-up">
+          <div className="flex-1 space-y-6">
+            <div className="inline-flex items-center gap-2 bg-primary/5 dark:bg-teal-500/10 text-primary dark:text-teal-400 px-4 py-2 rounded-full font-bold uppercase tracking-widest text-[10px]">
+              <span className="material-symbols-outlined text-sm">stars</span>
+              Stylistics Learning Hub
+            </div>
+            <h1 className="font-display-lg text-4xl md:text-6xl text-slate-900 dark:text-white font-bold tracking-tight leading-[1.1]">
+              Master the Art of <span className="text-primary dark:text-teal-400">Stylistics</span>
             </h1>
-            <p className="font-body-lg text-lg text-slate-500 max-w-2xl leading-relaxed">
-              Explore the theoretical foundations and applied analytical methods of literary stylistics. 
-              Track your progress and test your knowledge through interactive chapters.
+            <p className="font-body-lg text-lg text-slate-500 dark:text-slate-400 max-w-2xl leading-relaxed">
+              Explore theoretical foundations and applied methods with Ruby's Egyptian touch. 
+              Track your progress and climb the leaderboard.
             </p>
             {nextLessonUrl && !loading && (
-              <div className="pt-4">
+              <div className="pt-4 flex flex-col sm:flex-row gap-4 items-center">
                 <Link 
                   href={nextLessonUrl}
-                  className="inline-flex items-center justify-center gap-3 bg-slate-900 text-white px-6 md:px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition-all shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] active:scale-95 group"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-slate-900 dark:bg-teal-500 text-white dark:text-slate-900 px-8 py-4 rounded-2xl font-bold hover:shadow-2xl transition-all active:scale-95 group"
                 >
-                  <span className="uppercase tracking-widest text-xs md:text-sm">Continue Learning</span>
+                  <span className="uppercase tracking-widest text-sm">Continue Learning</span>
                   <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
                     arrow_forward
                   </span>
                 </Link>
+                {nextLessonTitle && (
+                  <div className="text-sm text-slate-400 italic">
+                    Up next: <span className="font-bold text-slate-900 dark:text-slate-200">"{nextLessonTitle}"</span>
+                  </div>
+                )}
               </div>
             )}
           </div>
-          <div className="w-full md:w-[400px] flex-shrink-0 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-primary/10">
-            {/* The Image must be imported at the top. Wait, I didn't import next/image! */}
+          <div className="hidden lg:block w-[380px] flex-shrink-0 relative aspect-square rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800 rotate-2 hover:rotate-0 transition-transform duration-500">
             <img 
               src="/images/dashboard_hero.png" 
               alt="Stylistics Dashboard Banner"
@@ -109,6 +121,47 @@ export default function LessonsPage() {
             />
           </div>
         </div>
+
+        {/* Learning Stats / Heatmap Section */}
+        {!loading && (
+          <div className="mb-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-2">
+              <ActivityHeatmap />
+            </div>
+            <div className="flex flex-col gap-6">
+              <div className="bg-gradient-to-br from-primary to-primary-container p-8 rounded-3xl text-white shadow-xl relative overflow-hidden group">
+                <div className="absolute -right-10 -bottom-10 opacity-10 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-[120px]">emoji_events</span>
+                </div>
+                <h3 className="font-bold text-xl mb-2">Weekly Rank</h3>
+                <p className="text-primary-fixed-dim mb-6 text-sm">You are in the Top 5% of students this week!</p>
+                <Link href="/progress/leaderboard" className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 px-4 py-2 rounded-xl text-sm font-bold transition-colors">
+                  View Leaderboard <span className="material-symbols-outlined text-sm">trending_up</span>
+                </Link>
+              </div>
+              <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm flex-1">
+                <h3 className="font-bold text-slate-900 dark:text-white mb-4">Quick Links</h3>
+                <div className="space-y-3">
+                  <Link href="/definitions" className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors border border-transparent hover:border-slate-100 dark:hover:border-slate-700">
+                    <span className="flex items-center gap-3 text-sm font-bold text-slate-700 dark:text-slate-300">
+                      <span className="material-symbols-outlined text-primary dark:text-teal-400">dictionary</span>
+                      Glossary Game
+                    </span>
+                    <span className="material-symbols-outlined text-slate-300 text-sm">chevron_right</span>
+                  </Link>
+                  <Link href="/progress" className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors border border-transparent hover:border-slate-100 dark:hover:border-slate-700">
+                    <span className="flex items-center gap-3 text-sm font-bold text-slate-700 dark:text-slate-300">
+                      <span className="material-symbols-outlined text-primary dark:text-teal-400">monitoring</span>
+                      Detailed Analytics
+                    </span>
+                    <span className="material-symbols-outlined text-slate-300 text-sm">chevron_right</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
 
         {/* Loading State */}
         {loading && (
@@ -125,46 +178,41 @@ export default function LessonsPage() {
             {chapters.map((chapter) => (
               <section key={chapter.id} className="animate-fade-in-up">
                 {/* Chapter Header */}
-                <div className="flex items-center gap-4 mb-4 md:mb-6">
+                <div className="flex items-center gap-6 mb-8">
                   <div
-                    className={`w-12 h-12 md:w-16 md:h-16 rounded-2xl flex items-center justify-center flex-shrink-0 transition-colors ${
+                    className={`w-16 h-16 rounded-[1.5rem] flex items-center justify-center flex-shrink-0 transition-all duration-500 shadow-lg ${
                       chapter.status === "completed"
-                        ? "bg-teal-100 text-teal-600"
+                        ? "bg-teal-500 text-white shadow-teal-200 dark:shadow-teal-900/20"
                         : chapter.status === "in-progress"
-                        ? "bg-primary/10 text-primary"
-                        : "bg-slate-100 text-slate-400"
+                        ? "bg-primary text-white shadow-primary/20 dark:bg-teal-400 dark:text-slate-900 dark:shadow-teal-400/20"
+                        : "bg-surface-variant text-on-surface-variant"
                     }`}
                   >
-                    <span className="material-symbols-outlined text-2xl md:text-3xl">{chapter.icon}</span>
+                    <span className="material-symbols-outlined text-3xl">{chapter.icon}</span>
                   </div>
                   <div className="flex-1">
-                    <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-1">
-                      <span className="font-label-sm text-xs md:text-sm text-slate-500 uppercase tracking-widest font-bold">
+                    <div className="flex flex-wrap items-center gap-3 mb-1">
+                      <span className="font-label-sm text-xs text-slate-400 uppercase tracking-[0.2em] font-bold">
                         Chapter {chapter.number}
                       </span>
                       {chapter.status === "completed" && (
-                        <span className="text-[10px] md:text-xs bg-teal-50 text-teal-700 px-2 py-1 rounded-full font-bold uppercase tracking-wider">
-                          Completed
+                        <span className="text-[10px] bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-400 px-3 py-1 rounded-full font-bold uppercase tracking-wider border border-teal-100 dark:border-teal-900/50">
+                          Mastered
                         </span>
                       )}
                       {chapter.status === "in-progress" && (
-                        <span className="text-[10px] md:text-xs bg-primary/10 text-primary px-2 py-1 rounded-full font-bold uppercase tracking-wider">
-                          In Progress — {chapter.progress}%
-                        </span>
-                      )}
-                      {chapter.status === "locked" && (
-                        <span className="text-[10px] md:text-xs bg-slate-100 text-slate-500 px-2 py-1 rounded-full font-bold uppercase tracking-wider flex items-center gap-1">
-                          <span className="material-symbols-outlined text-[12px]">lock</span> Locked
+                        <span className="text-[10px] bg-primary/5 dark:bg-teal-400/10 text-primary dark:text-teal-400 px-3 py-1 rounded-full font-bold uppercase tracking-wider border border-primary/10 dark:border-teal-400/20">
+                          Active — {chapter.progress}%
                         </span>
                       )}
                     </div>
-                    <h2 className="font-headline-md text-xl md:text-2xl font-bold text-slate-900">{chapter.title}</h2>
+                    <h2 className="font-headline-md text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">{chapter.title}</h2>
                   </div>
                 </div>
 
                 {/* Lessons List */}
                 {chapter.lessons.length > 0 ? (
-                  <div className="ml-4 md:ml-[5.5rem] space-y-3 border-l-2 border-slate-100 pl-4 md:pl-6 py-2">
+                  <div className="ml-8 md:ml-12 space-y-4 border-l-2 border-slate-100 dark:border-slate-800 pl-8 md:pl-12 py-2">
                     {chapter.lessons.map((lesson, idx) => {
                       const isCompleted = completedLessons.includes(lesson.id);
                       const isLocked = chapter.status === "locked";
@@ -173,40 +221,40 @@ export default function LessonsPage() {
                         <Link
                           key={lesson.id}
                           href={!isLocked ? `/lessons/${chapter.id}/${lesson.id}` : "#"}
-                          className={`flex items-center gap-3 md:gap-4 p-4 md:p-5 rounded-2xl border transition-all group ${
+                          className={`flex items-center gap-4 md:gap-6 p-5 md:p-6 rounded-[1.5rem] border transition-all duration-300 group ${
                             isLocked
-                              ? "border-transparent bg-slate-50 opacity-60 cursor-not-allowed"
+                              ? "border-transparent bg-slate-50 dark:bg-slate-800/30 opacity-60 cursor-not-allowed"
                               : isCompleted 
-                              ? "border-teal-100 bg-teal-50/30 hover:border-teal-200 cursor-pointer"
-                              : "border-slate-200 bg-white hover:border-primary hover:shadow-lg hover:-translate-y-0.5 cursor-pointer"
+                              ? "border-teal-100 dark:border-teal-900/30 bg-teal-50/20 dark:bg-teal-900/10 hover:border-teal-300 cursor-pointer"
+                              : "border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-primary dark:hover:border-teal-400 hover:shadow-xl hover:-translate-y-1 cursor-pointer"
                           }`}
                         >
                           <div
-                            className={`w-8 h-8 md:w-10 md:h-10 rounded-xl flex items-center justify-center text-sm font-bold flex-shrink-0 transition-colors ${
+                            className={`w-10 h-10 md:w-12 md:h-12 rounded-2xl flex items-center justify-center text-sm font-bold flex-shrink-0 transition-all duration-300 ${
                               isCompleted
-                                ? "bg-teal-500 text-white shadow-sm"
+                                ? "bg-teal-500 text-white shadow-lg shadow-teal-200 dark:shadow-none"
                                 : isLocked
-                                ? "bg-slate-200 text-slate-400"
-                                : "bg-primary/10 text-primary"
+                                ? "bg-slate-200 dark:bg-slate-800 text-slate-400 dark:text-slate-600"
+                                : "bg-primary/5 dark:bg-slate-800 text-primary dark:text-teal-400 group-hover:bg-primary group-hover:text-white dark:group-hover:bg-teal-400 dark:group-hover:text-slate-900"
                             }`}
                           >
                             {isCompleted ? (
-                              <span className="material-symbols-outlined text-sm md:text-base font-bold">check</span>
+                              <span className="material-symbols-outlined text-base md:text-xl font-bold">check</span>
                             ) : (
-                              idx + 1
+                              <span className="font-serif italic text-lg">{idx + 1}</span>
                             )}
                           </div>
                           <div className="flex-1 min-w-0">
-                            <p className={`font-body-md font-bold truncate transition-colors ${
-                              isCompleted ? "text-teal-900" : isLocked ? "text-slate-500" : "text-slate-900 group-hover:text-primary"
+                            <p className={`font-body-md text-lg font-bold truncate transition-colors ${
+                              isCompleted ? "text-teal-900 dark:text-teal-100" : isLocked ? "text-slate-500" : "text-slate-900 dark:text-slate-200 group-hover:text-primary dark:group-hover:text-teal-400"
                             }`}>
                               {lesson.title}
                             </p>
-                            <p className="text-xs md:text-sm text-slate-500 mt-0.5 truncate">{lesson.subtitle}</p>
+                            <p className="text-sm text-slate-500 dark:text-slate-500 mt-1 truncate">{lesson.subtitle}</p>
                           </div>
                           {!isLocked && (
-                            <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${
-                              isCompleted ? "bg-teal-100 text-teal-600" : "bg-slate-100 text-slate-400 group-hover:bg-primary group-hover:text-white"
+                            <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
+                              isCompleted ? "bg-teal-100 dark:bg-teal-900/50 text-teal-600 dark:text-teal-400" : "bg-slate-100 dark:bg-slate-800 text-slate-400 group-hover:bg-primary group-hover:text-white dark:group-hover:bg-teal-400 dark:group-hover:text-slate-900"
                             }`}>
                               <span className="material-symbols-outlined text-sm md:text-base">
                                 {isCompleted ? "replay" : "arrow_forward"}
@@ -218,12 +266,12 @@ export default function LessonsPage() {
                     })}
                   </div>
                 ) : (
-                  <div className="ml-4 md:ml-[5.5rem] p-6 rounded-2xl border-2 border-dashed border-slate-200 text-center text-slate-400 bg-slate-50">
-                    <span className="material-symbols-outlined text-3xl mb-2 opacity-50">hourglass_empty</span>
-                    <p className="font-label-sm text-xs md:text-sm uppercase tracking-widest font-bold">
+                  <div className="ml-8 md:ml-12 p-10 rounded-[2rem] border-2 border-dashed border-slate-200 dark:border-slate-800 text-center text-slate-400 bg-slate-50 dark:bg-slate-900/50">
+                    <span className="material-symbols-outlined text-4xl mb-3 opacity-30">construction</span>
+                    <p className="font-label-sm text-xs md:text-sm uppercase tracking-[0.2em] font-bold">
                       {chapter.status === "locked"
-                        ? `Unlock by completing previous chapters`
-                        : "Content coming soon"}
+                        ? `Path blocked — Complete previous lessons`
+                        : "Curating expert content..."}
                     </p>
                   </div>
                 )}

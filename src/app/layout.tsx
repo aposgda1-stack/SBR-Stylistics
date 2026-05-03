@@ -12,6 +12,10 @@ export const metadata: Metadata = {
     "A comprehensive English Stylistics course platform. Covering poetry, novel, and drama analysis with quizzes and exams.",
 };
 
+import { ThemeProvider } from "@/components/ThemeProvider";
+
+import CommandPalette from "@/components/CommandPalette";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,15 +35,19 @@ export default function RootLayout({
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
             rel="stylesheet"
           />
+          <link rel="manifest" href="/manifest.json" />
         </head>
-        <body className="bg-background text-on-background font-sans antialiased">
-          <WelcomeModal />
-          <TopBar />
-          <div className="min-h-dvh">
-            <PageWrapper>{children}</PageWrapper>
-          </div>
-          <BottomNav />
-        </body>
+        <ThemeProvider>
+          <body className="bg-background text-on-background font-sans antialiased">
+            <CommandPalette />
+            <WelcomeModal />
+            <TopBar />
+            <div className="min-h-dvh">
+              <PageWrapper>{children}</PageWrapper>
+            </div>
+            <BottomNav />
+          </body>
+        </ThemeProvider>
       </html>
     </ClerkProvider>
   );
