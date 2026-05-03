@@ -148,9 +148,9 @@ export default function DefinitionsPage() {
                   </div>
 
                   {showResults && userAnswers[index] !== item.term && (
-                    <div className="flex items-center gap-2 text-sm font-bold text-teal-600 animate-fade-in">
-                      <span className="material-symbols-outlined text-sm">check_circle</span>
-                      Correct Answer: {item.term}
+                    <div className="flex items-center gap-2 text-sm font-bold text-error animate-fade-in mt-4">
+                      <span className="material-symbols-outlined text-sm">info</span>
+                      The Correct Answer is: <span className="text-slate-900 ml-1">{item.term}</span>
                     </div>
                   )}
                 </div>

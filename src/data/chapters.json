@@ -5,7 +5,7 @@
     "title": "Part 1: Poetry — Foregrounding & Deviation",
     "description": "Comprehensive study of Poetic Licence, Parallelism, and all levels of linguistic deviation.",
     "icon": "auto_stories",
-    "status": "completed",
+    "status": "not-started",
     "lessons": [
       {
         "id": "ch1-s1",
@@ -96,7 +96,7 @@
     "title": "Part 2: Novel — Cohesion",
     "description": "How sentences are woven together through Reference, Ellipsis, Conjunction, and Lexical ties.",
     "icon": "menu_book",
-    "status": "in-progress",
+    "status": "not-started",
     "lessons": [
       {
         "id": "ch2-s1",

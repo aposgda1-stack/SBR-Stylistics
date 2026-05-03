@@ -72,7 +72,6 @@ export default function TopBar() {
         </div>
 
         <div className="flex items-center gap-3">
-          <ThemeToggle />
           <SignedOut>
             <SignInButton mode="modal">
               <button className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors px-3 py-1.5 rounded-lg hover:bg-slate-100">
