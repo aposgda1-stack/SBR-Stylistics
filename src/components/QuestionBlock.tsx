@@ -120,26 +120,26 @@ export default function QuestionBlock({
 
       {/* Feedback */}
       {showFeedback && (
-        <div className="mt-10 animate-fade-in-up">
-          <div className="bg-slate-900 text-white rounded-[2rem] p-10 shadow-2xl relative overflow-hidden">
+        <div className="mt-8 animate-fade-in-up">
+          <div className="bg-slate-900 text-white rounded-[2rem] p-6 md:p-10 shadow-2xl relative overflow-hidden">
              <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary/20 rounded-full blur-2xl" />
-             <div className="flex items-start gap-8 relative z-10">
-              <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-inner">
-                <span className="material-symbols-outlined text-4xl text-primary">lightbulb</span>
+             <div className="flex flex-col md:flex-row items-start gap-4 md:gap-8 relative z-10">
+              <div className="w-12 h-12 md:w-16 md:h-16 bg-white/10 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-inner">
+                <span className="material-symbols-outlined text-2xl md:text-4xl text-primary">lightbulb</span>
               </div>
               <div>
-                <h3 className="font-headline-md text-3xl mb-4 text-white font-bold leading-tight">
+                <h3 className="font-headline-md text-xl md:text-3xl mb-3 text-white font-bold leading-tight">
                   {selectedIndex === question.correctIndex ? "Spot on Analysis! 🎯" : "Wait, let's analyze this... 🧐"}
                 </h3>
                 <div className="space-y-4">
-                  <p className="font-body-lg text-xl text-slate-300 leading-relaxed font-serif italic">
+                  <p className="font-body-md md:font-body-lg text-lg md:text-xl text-slate-300 leading-relaxed font-serif italic">
                     {question.explanation}
                   </p>
-                  <div className="pt-6 border-t border-white/10 flex items-center gap-4">
-                    <div className="px-4 py-2 rounded-full bg-primary/20 text-primary font-bold text-sm uppercase tracking-widest">
+                  <div className="pt-4 border-t border-white/10 flex items-center gap-3">
+                    <div className="px-3 py-1.5 rounded-full bg-primary/20 text-primary font-bold text-xs uppercase tracking-widest">
                       Tip
                     </div>
-                    <p className="text-sm text-slate-400 font-medium">Review this concept in the Word Box Library for more depth.</p>
+                    <p className="text-xs text-slate-400 font-medium">Review this concept in the Word Box Library for more depth.</p>
                   </div>
                 </div>
               </div>

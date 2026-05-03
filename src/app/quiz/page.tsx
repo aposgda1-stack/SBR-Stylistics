@@ -43,17 +43,22 @@ function QuizContent() {
 
   const handleFinish = useCallback(() => {
     setFinished(true);
+    // Calculate final score including bonus before saving
+    const correctAnswersCount = userResponses.filter(r => r.isCorrect).length;
+    const isPerfect = correctAnswersCount === questions.length && questions.length > 0;
+    const finalScore = score + (isPerfect ? 50 : 0);
+
     // Save score to database
     fetch("/api/save-score", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         quizId: quizId,
-        score: score,
+        score: finalScore,
         totalQuestions: questions.length
       }),
     }).catch(err => console.error("Failed to save score:", err));
-  }, [score, questions.length, quizId]);
+  }, [score, questions.length, quizId, userResponses]);
 
   useEffect(() => {
     if (loading || finished) return;
@@ -76,7 +81,7 @@ function QuizContent() {
     setShowFeedback(true);
     const isCorrect = index === questions[currentIdx].correctIndex;
     if (isCorrect) {
-      setScore((s) => s + 1);
+      setScore((s) => s + 10); // 10 points per correct answer
     }
     setUserResponses(prev => [...prev, { type: questions[currentIdx].type || "general", isCorrect }]);
   };
@@ -129,8 +134,15 @@ function QuizContent() {
   }
 
   if (finished) {
-    const pct = Math.round((score / questions.length) * 100);
+    const correctAnswersCount = userResponses.filter(r => r.isCorrect).length;
+    const isPerfect = correctAnswersCount === questions.length;
+    const finalScore = score + (isPerfect ? 50 : 0); // 50 points bonus for perfect score
+    const pct = Math.round((correctAnswersCount / questions.length) * 100);
     const isPassing = pct >= 70;
+
+    // Save final score correctly (handled in handleFinish, but we need to pass finalScore)
+    // Wait, handleFinish uses state `score`. We should update score state if perfect before handleFinish!
+    // Actually, it's better to calculate finalScore when finishing.
 
     // Performance Analysis
     const theoryQuestions = userResponses.filter(r => r.type === "theoretical");
@@ -164,10 +176,18 @@ function QuizContent() {
             <h2 className="font-display-lg text-display-lg mb-4">
               {isPassing ? "Well Done!" : "Keep Practicing"}
             </h2>
-            <p className="font-body-lg text-on-surface-variant mb-10">
-              You scored <span className="font-bold text-primary">{score}</span> out of{" "}
-              <span className="font-bold">{questions.length}</span> questions correctly.
+            <p className="font-body-lg text-on-surface-variant mb-4">
+              You scored <span className="font-bold text-primary">{finalScore} Points</span> 
+              <br />
+              <span className="text-sm">({correctAnswersCount} out of {questions.length} questions correctly)</span>
             </p>
+            {isPerfect && (
+              <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full font-bold text-sm mb-10 animate-bounce">
+                <span className="material-symbols-outlined">stars</span>
+                +50 Points Perfect Score Bonus!
+              </div>
+            )}
+            {!isPerfect && <div className="mb-10" />}
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               {/* Score ring */}
