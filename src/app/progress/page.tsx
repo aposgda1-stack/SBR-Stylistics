@@ -63,6 +63,9 @@ export default function ProgressPage() {
   return (
     <>
       <main className="max-w-7xl mx-auto px-6 py-12 md:py-20">
+        <div className="w-full aspect-[21/9] md:aspect-[21/6] rounded-3xl overflow-hidden shadow-sm mb-12 relative border border-slate-100 animate-fade-in-up">
+          <img src="/images/progress_hero.png" alt="Stylistics Progress" className="w-full h-full object-cover" />
+        </div>
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
           <div>

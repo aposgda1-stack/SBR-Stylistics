@@ -72,6 +72,10 @@ export default function DefinitionsPage() {
       </header>
 
       <main className="max-w-5xl mx-auto px-6 py-12">
+        {/* Banner */}
+        <div className="w-full aspect-[21/9] md:aspect-[21/6] rounded-3xl overflow-hidden shadow-sm mb-12 relative border border-slate-100 animate-fade-in-up">
+          <img src="/images/definitions_hero.png" alt="Stylistics Definitions" className="w-full h-full object-cover" />
+        </div>
         {/* Word Box */}
         <div className="sticky top-6 z-30 bg-white/80 backdrop-blur-xl border border-primary/20 rounded-3xl p-6 shadow-xl mb-12">
           <div className="flex items-center gap-2 mb-4">

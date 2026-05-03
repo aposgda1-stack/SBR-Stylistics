@@ -16,6 +16,9 @@ export default function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Hero Left */}
           <div className="lg:col-span-7 flex flex-col justify-center space-y-6">
+            <div className="w-full aspect-[21/9] rounded-3xl overflow-hidden shadow-2xl border border-slate-100 mb-4 relative">
+              <img src="/images/home_hero.png" alt="Stylistics Home" className="w-full h-full object-cover" />
+            </div>
             <span className="font-label-sm text-label-sm text-on-secondary-container bg-secondary-container px-3 py-1 rounded-full w-fit">
               CLASS OF 2026 🎓
             </span>

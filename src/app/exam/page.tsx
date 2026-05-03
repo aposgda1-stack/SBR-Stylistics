@@ -264,6 +264,9 @@ export default function ExamPage() {
   return (
     <>
       <main className="max-w-7xl mx-auto px-6 py-12 md:py-16">
+        <div className="w-full aspect-[21/9] md:aspect-[21/6] rounded-3xl overflow-hidden shadow-sm mb-12 relative border border-slate-100 animate-fade-in-up">
+          <img src="/images/exam_hero.png" alt="Stylistics Final Exam" className="w-full h-full object-cover" />
+        </div>
         {/* Exam Header */}
         <div className="mb-12 border-l-4 border-primary pl-6">
           <span className="font-label-sm text-label-sm text-on-surface-variant mb-2 block tracking-widest uppercase">

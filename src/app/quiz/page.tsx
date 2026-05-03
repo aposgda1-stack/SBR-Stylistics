@@ -371,6 +371,10 @@ function QuizContent() {
   return (
     <>
       <main className="max-w-4xl mx-auto px-4 md:px-margin-desktop py-12">
+        {/* Quiz Banner */}
+        <div className="w-full aspect-[21/9] md:aspect-[21/6] rounded-3xl overflow-hidden shadow-sm mb-10 relative border border-slate-100 animate-fade-in-up">
+          <img src="/images/quiz_hero.png" alt="Stylistics Quiz" className="w-full h-full object-cover" />
+        </div>
         {/* Timer & Progress */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-6">
           <div className="flex items-center gap-4">

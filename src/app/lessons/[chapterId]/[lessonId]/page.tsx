@@ -139,6 +139,11 @@ export default async function LessonPage({ params }: Props) {
       <main className="px-6 py-12 md:py-20 bg-surface">
         <ProgressSaver lessonId={lessonId} />
         <div className="max-w-[800px] mx-auto">
+          {/* Lesson Banner */}
+          <div className="w-full aspect-[21/9] md:aspect-[21/6] rounded-3xl overflow-hidden shadow-sm mb-10 relative border border-slate-100 animate-fade-in-up">
+            <img src="/images/lesson_hero.png" alt="Stylistics Lesson" className="w-full h-full object-cover" />
+          </div>
+          
           {/* Breadcrumbs */}
           <nav className="mb-8 flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant flex-wrap">
             <Link href="/lessons" className="hover:text-primary transition-colors">

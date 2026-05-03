@@ -28,7 +28,10 @@ export default function LeaderboardPage() {
 
   return (
     <>
-      <main className="max-w-4xl mx-auto px-6 py-20">
+      <main className="max-w-4xl mx-auto px-6 py-12 md:py-20">
+        <div className="w-full aspect-[21/9] md:aspect-[21/6] rounded-3xl overflow-hidden shadow-sm mb-12 relative border border-slate-100 animate-fade-in-up">
+          <img src="/images/leaderboard_hero.png" alt="Stylistics Leaderboard" className="w-full h-full object-cover" />
+        </div>
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-yellow-50 text-yellow-700 px-4 py-2 rounded-full font-label-sm uppercase mb-4 border border-yellow-100 shadow-sm">
             <span className="material-symbols-outlined text-sm filled">emoji_events</span>
