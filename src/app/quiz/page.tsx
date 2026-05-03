@@ -21,8 +21,10 @@ function QuizContent() {
   const [showFeedback, setShowFeedback] = useState(false);
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(12 * 60); // 12 minutes
+  const [timeLeft, setTimeLeft] = useState(5 * 60); // 5 minutes
+  const totalTime = 5 * 60;
   const [loading, setLoading] = useState(true);
+  const quizTopRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetch(`/api/quiz?quizId=${quizId}`)
@@ -43,10 +45,16 @@ function QuizContent() {
 
   const handleFinish = useCallback(() => {
     setFinished(true);
-    // Calculate final score including bonus before saving
+    
     const correctAnswersCount = userResponses.filter(r => r.isCorrect).length;
     const isPerfect = correctAnswersCount === questions.length && questions.length > 0;
-    const finalScore = score + (isPerfect ? 50 : 0);
+    
+    // Improved Points System
+    // Base points: 10 per correct answer
+    // Speed bonus: up to 50 points based on time left
+    // Perfect bonus: 50 points
+    const timeBonus = Math.round((timeLeft / totalTime) * 50);
+    const finalScore = score + (isPerfect ? 50 : 0) + (correctAnswersCount > 0 ? timeBonus : 0);
 
     // Save score to database
     fetch("/api/save-score", {
@@ -58,7 +66,7 @@ function QuizContent() {
         totalQuestions: questions.length
       }),
     }).catch(err => console.error("Failed to save score:", err));
-  }, [score, questions.length, quizId, userResponses]);
+  }, [score, questions.length, quizId, userResponses, timeLeft, totalTime]);
 
   useEffect(() => {
     if (loading || finished) return;
@@ -81,7 +89,7 @@ function QuizContent() {
     setShowFeedback(true);
     const isCorrect = index === questions[currentIdx].correctIndex;
     if (isCorrect) {
-      setScore((s) => s + 10); // 10 points per correct answer
+      setScore((s) => s + 10); 
     }
     setUserResponses(prev => [...prev, { type: questions[currentIdx].type || "general", isCorrect, chosenIndex: index }]);
   };
@@ -93,6 +101,8 @@ function QuizContent() {
       setCurrentIdx((i) => i + 1);
       setSelectedIndex(null);
       setShowFeedback(false);
+      // Smooth scroll to top of question on mobile
+      quizTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
@@ -136,13 +146,10 @@ function QuizContent() {
   if (finished) {
     const correctAnswersCount = userResponses.filter(r => r.isCorrect).length;
     const isPerfect = correctAnswersCount === questions.length;
-    const finalScore = score + (isPerfect ? 50 : 0); // 50 points bonus for perfect score
+    const timeBonus = Math.round((timeLeft / totalTime) * 50);
+    const finalScore = score + (isPerfect ? 50 : 0) + (correctAnswersCount > 0 ? timeBonus : 0);
     const pct = Math.round((correctAnswersCount / questions.length) * 100);
     const isPassing = pct >= 70;
-
-    // Save final score correctly (handled in handleFinish, but we need to pass finalScore)
-    // Wait, handleFinish uses state `score`. We should update score state if perfect before handleFinish!
-    // Actually, it's better to calculate finalScore when finishing.
 
     // Performance Analysis
     const theoryQuestions = userResponses.filter(r => r.type === "theoretical");
@@ -158,41 +165,44 @@ function QuizContent() {
     return (
       <>
         {pct === 100 && <Confetti />}
-        <main className="max-w-4xl mx-auto px-6 py-12 md:py-20">
-          <div className="bg-white border border-slate-100 rounded-3xl p-8 md:p-12 shadow-[0_20px_60px_rgba(0,0,0,0.06)] animate-fade-in-up">
+        <main className="max-w-4xl mx-auto px-4 md:px-6 py-12 md:py-20">
+          <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl p-6 md:p-12 shadow-[0_20px_60px_rgba(0,0,0,0.06)] animate-fade-in-up">
             <div className="text-center mb-10">
               <div
-                className={`w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-8 ${
-                  isPassing ? "bg-teal-50" : "bg-red-50"
+                className={`w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mx-auto mb-6 md:mb-8 ${
+                  isPassing ? "bg-teal-50 dark:bg-teal-900/20" : "bg-red-50 dark:bg-red-900/20"
                 }`}
               >
                 <span
-                  className={`material-symbols-outlined text-4xl filled ${
+                  className={`material-symbols-outlined text-3xl md:text-4xl filled ${
                     isPassing ? "text-teal-500" : "text-error"
                   }`}
                 >
                   {isPassing ? "emoji_events" : "sentiment_dissatisfied"}
                 </span>
               </div>
-              <h2 className="font-display-lg text-display-lg mb-4 text-slate-900">
+              <h2 className="font-display-md text-3xl md:text-5xl mb-4 text-slate-900 dark:text-white">
                 {isPassing ? "Well Done!" : "Keep Practicing"}
               </h2>
-              <p className="font-body-lg text-slate-600 mb-4">
-                You scored <span className="font-bold text-primary text-2xl">{finalScore} Points</span> 
-                <br />
-                <span className="text-sm">({correctAnswersCount} out of {questions.length} questions correctly)</span>
-              </p>
+              <div className="flex flex-col items-center gap-2 mb-4">
+                <p className="font-body-lg text-slate-600 dark:text-slate-400">
+                  Total Score: <span className="font-bold text-primary text-3xl">{finalScore}</span>
+                </p>
+                <div className="flex gap-4 text-xs font-bold uppercase tracking-widest text-slate-400">
+                  <span>Accuracy: {pct}%</span>
+                  <span>Time Bonus: +{timeBonus}</span>
+                </div>
+              </div>
               {isPerfect && (
-                <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full font-bold text-sm mb-4 animate-bounce">
-                  <span className="material-symbols-outlined">stars</span>
-                  +50 Points Perfect Score Bonus!
+                <div className="inline-flex items-center gap-2 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 px-4 py-2 rounded-full font-bold text-xs mb-4 animate-bounce">
+                  <span className="material-symbols-outlined text-sm">stars</span>
+                  Perfect Score Bonus +50!
                 </div>
               )}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              {/* Score ring */}
-              <div className="relative w-40 h-40 mx-auto">
+              <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto">
                 <svg className="w-full h-full -rotate-90" viewBox="0 0 36 36">
                   <circle cx="18" cy="18" r="15.9" fill="none" stroke="#e2e8f0" strokeWidth="2.5" />
                   <circle
@@ -207,119 +217,55 @@ function QuizContent() {
                   />
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <span className="font-display-lg text-4xl font-bold text-slate-800">{pct}%</span>
-                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Total Score</span>
+                  <span className="font-display-md text-3xl font-bold text-slate-800 dark:text-white">{pct}%</span>
+                  <span className="text-[8px] font-bold text-slate-400 uppercase tracking-widest">Accuracy</span>
                 </div>
               </div>
 
-              {/* Performance Analysis Cards */}
               <div className="flex flex-col gap-4 text-left">
-                <h3 className="font-headline-sm text-lg font-bold text-slate-800 mb-2 flex items-center gap-2">
+                <h3 className="font-headline-sm text-lg font-bold text-slate-800 dark:text-white mb-2 flex items-center gap-2">
                   <span className="material-symbols-outlined text-primary">analytics</span>
-                  Performance Analysis
+                  Performance
                 </h3>
                 
                 {theoryScore !== null && (
-                  <div className="p-4 bg-slate-50/50 border border-slate-100 rounded-2xl">
+                  <div className="p-3 bg-slate-50/50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800 rounded-2xl">
                     <div className="flex justify-between items-end mb-2">
-                      <span className="font-label-sm text-slate-500 uppercase tracking-wider">Theoretical Mastery</span>
-                      <span className={`font-bold ${theoryScore >= 70 ? 'text-teal-600' : 'text-orange-500'}`}>{theoryScore}%</span>
+                      <span className="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Theory</span>
+                      <span className={`text-xs font-bold ${theoryScore >= 70 ? 'text-teal-600' : 'text-orange-500'}`}>{theoryScore}%</span>
                     </div>
-                    <div className="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden">
-                      <div 
-                        className={`h-full transition-all duration-1000 ${theoryScore >= 70 ? 'bg-teal-500' : 'bg-orange-500'}`} 
-                        style={{ width: `${theoryScore}%` }}
-                      />
+                    <div className="w-full bg-slate-200 dark:bg-slate-700 h-1 rounded-full overflow-hidden">
+                      <div className={`h-full ${theoryScore >= 70 ? 'bg-teal-500' : 'bg-orange-500'}`} style={{ width: `${theoryScore}%` }} />
                     </div>
-                    <p className="text-xs text-slate-500 mt-2">
-                      {theoryScore >= 80 ? "Excellent understanding of core definitions." : "You should review the theoretical concepts."}
-                    </p>
                   </div>
                 )}
 
                 {appliedScore !== null && (
-                  <div className="p-4 bg-slate-50/50 border border-slate-100 rounded-2xl">
+                  <div className="p-3 bg-slate-50/50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-800 rounded-2xl">
                     <div className="flex justify-between items-end mb-2">
-                      <span className="font-label-sm text-slate-500 uppercase tracking-wider">Analytical Application</span>
-                      <span className={`font-bold ${appliedScore >= 70 ? 'text-teal-600' : 'text-orange-500'}`}>{appliedScore}%</span>
+                      <span className="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Applied</span>
+                      <span className={`text-xs font-bold ${appliedScore >= 70 ? 'text-teal-600' : 'text-orange-500'}`}>{appliedScore}%</span>
                     </div>
-                    <div className="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden">
-                      <div 
-                        className={`h-full transition-all duration-1000 ${appliedScore >= 70 ? 'bg-teal-500' : 'bg-orange-500'}`} 
-                        style={{ width: `${appliedScore}%` }}
-                      />
+                    <div className="w-full bg-slate-200 dark:bg-slate-700 h-1 rounded-full overflow-hidden">
+                      <div className={`h-full ${appliedScore >= 70 ? 'bg-teal-500' : 'bg-orange-500'}`} style={{ width: `${appliedScore}%` }} />
                     </div>
-                    <p className="text-xs text-slate-500 mt-2">
-                      {appliedScore >= 80 ? "Brilliant job applying concepts to literary passages!" : "Try to focus on the 'Applied' analysis steps."}
-                    </p>
                   </div>
                 )}
               </div>
             </div>
 
-            {/* Answer Review Report */}
-            <div className="mb-12 border-t border-slate-100 pt-10">
-              <div className="flex items-center gap-3 mb-6">
-                <span className="material-symbols-outlined text-3xl text-primary">fact_check</span>
-                <h3 className="font-headline-md text-2xl font-bold text-slate-900">Quiz Report</h3>
-              </div>
+            <div className="mb-12 border-t border-slate-100 dark:border-slate-800 pt-10">
+              <h3 className="font-headline-md text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+                <span className="material-symbols-outlined">fact_check</span> Report
+              </h3>
               <div className="space-y-4">
                 {questions.map((q, idx) => {
                   const response = userResponses[idx];
                   const isCorrect = response?.isCorrect;
-                  const chosenIndex = response?.chosenIndex;
-
                   return (
-                    <div
-                      key={q.id}
-                      className={`p-5 rounded-2xl border transition-all ${
-                        isCorrect
-                          ? "border-teal-100 bg-teal-50/30"
-                          : "border-red-100 bg-red-50/30"
-                      }`}
-                    >
-                      <div className="flex flex-col md:flex-row gap-4 items-start">
-                        <div
-                          className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shadow-sm ${
-                            isCorrect
-                              ? "bg-teal-500 text-white"
-                              : "bg-error text-white"
-                          }`}
-                        >
-                          {idx + 1}
-                        </div>
-                        <div className="flex-1">
-                          <p className="font-body-md font-bold text-slate-900 mb-3">
-                            {q.question}
-                          </p>
-                          
-                          <div className="space-y-2">
-                            {isCorrect ? (
-                              <div className="flex items-start gap-2 text-teal-700 bg-teal-50 p-3 rounded-xl border border-teal-100">
-                                <span className="material-symbols-outlined text-lg">check_circle</span>
-                                <span className="text-sm font-medium">{q.options[q.correctIndex]}</span>
-                              </div>
-                            ) : (
-                              <>
-                                {chosenIndex !== undefined && (
-                                  <div className="flex items-start gap-2 text-red-700 bg-red-50 p-3 rounded-xl border border-red-100 opacity-80">
-                                    <span className="material-symbols-outlined text-lg">cancel</span>
-                                    <span className="text-sm line-through decoration-red-300">{q.options[chosenIndex]}</span>
-                                  </div>
-                                )}
-                                <div className="flex items-start gap-2 text-teal-700 bg-teal-50 p-3 rounded-xl border border-teal-100 mt-2 shadow-sm">
-                                  <span className="material-symbols-outlined text-lg">check_circle</span>
-                                  <span className="text-sm font-bold">Correct: {q.options[q.correctIndex]}</span>
-                                </div>
-                              </>
-                            )}
-                          </div>
-                          
-                          <div className="mt-4 text-sm text-slate-500 italic border-l-2 border-slate-200 pl-3">
-                            {q.explanation}
-                          </div>
-                        </div>
-                      </div>
+                    <div key={q.id} className={`p-4 rounded-2xl border ${isCorrect ? "border-teal-100 bg-teal-50/20" : "border-red-100 bg-red-50/20"}`}>
+                      <p className="font-bold text-sm text-slate-900 dark:text-slate-200 mb-2">{idx + 1}. {q.question}</p>
+                      <p className="text-xs text-slate-500 italic">{q.explanation}</p>
                     </div>
                   );
                 })}
@@ -334,29 +280,20 @@ function QuizContent() {
                   setSelectedIndex(null);
                   setShowFeedback(false);
                   setFinished(false);
-                  setTimeLeft(12 * 60);
+                  setTimeLeft(5 * 60);
                   setUserResponses([]);
                 }}
-                className="flex-1 px-8 py-4 border border-slate-200 text-primary rounded-xl font-label-sm font-bold tracking-wider uppercase hover:bg-slate-50 transition-all text-center"
+                className="flex-1 px-8 py-4 border border-slate-200 dark:border-slate-700 text-primary dark:text-teal-400 rounded-xl font-bold uppercase tracking-widest text-xs"
               >
-                Retry Quiz
+                Retry
               </button>
-              {nextLesson && chapterId ? (
-                <Link
-                  href={`/lessons/${chapterId}/${nextLesson}`}
-                  className="flex-1 px-8 py-4 bg-primary text-white rounded-xl font-label-sm font-bold tracking-wider uppercase hover:opacity-90 transition-all text-center flex items-center justify-center gap-2"
-                >
-                  Proceed to Next
-                  <span className="material-symbols-outlined">arrow_forward</span>
-                </Link>
-              ) : (
-                <Link
-                  href="/lessons"
-                  className="flex-1 px-8 py-4 bg-primary text-white rounded-xl font-label-sm font-bold tracking-wider uppercase hover:opacity-90 transition-all text-center"
-                >
-                  Back to Curriculum
-                </Link>
-              )}
+              <Link
+                href={nextLesson && chapterId ? `/lessons/${chapterId}/${nextLesson}` : "/lessons"}
+                className="flex-1 px-8 py-4 bg-primary text-white rounded-xl font-bold uppercase tracking-widest text-xs text-center flex items-center justify-center gap-2"
+              >
+                Continue
+                <span className="material-symbols-outlined text-sm">arrow_forward</span>
+              </Link>
             </div>
           </div>
         </main>
@@ -370,57 +307,52 @@ function QuizContent() {
 
   return (
     <>
-      <main className="max-w-4xl mx-auto px-4 md:px-margin-desktop py-12">
-        {/* Quiz Banner */}
-        <div className="w-full aspect-[21/9] md:aspect-[21/6] rounded-3xl overflow-hidden shadow-sm mb-10 relative border border-slate-100 animate-fade-in-up">
-          <img src="/images/quiz_hero.png" alt="Stylistics Quiz" className="w-full h-full object-cover" />
-        </div>
-        {/* Timer & Progress */}
-        <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-6">
-          <div className="flex items-center gap-4">
-            <div className="relative w-16 h-16">
+      <main className="max-w-4xl mx-auto px-4 py-8 md:py-12">
+        <div ref={quizTopRef} className="absolute top-0 left-0" />
+        
+        <div className="sticky top-0 z-40 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md -mx-4 px-4 py-3 border-b border-slate-100 dark:border-slate-800 md:relative md:bg-transparent md:border-none md:p-0 md:mb-10 flex flex-row justify-between items-center gap-4">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 md:w-14 md:h-14 relative">
               <svg className="w-full h-full -rotate-90" viewBox="0 0 36 36">
-                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#e2e8f0" strokeWidth="3" />
+                <circle cx="18" cy="18" r="15.9" fill="none" stroke="#e2e8f0" strokeWidth="4" />
                 <circle
-                  cx="18"
-                  cy="18"
-                  r="15.9"
-                  fill="none"
+                  cx="18" cy="18" r="15.9" fill="none"
                   stroke={timeLeft < 60 ? "#ba1a1a" : "#14b8a6"}
-                  strokeWidth="3"
-                  strokeDasharray={`${(timeLeft / (12 * 60)) * 100} 100`}
+                  strokeWidth="4"
+                  strokeDasharray={`${(timeLeft / totalTime) * 100} 100`}
                   strokeLinecap="round"
                   className="transition-all duration-1000"
                 />
               </svg>
-              <div className="absolute inset-0 flex items-center justify-center font-bold text-[10px] text-slate-500">
+              <div className="absolute inset-0 flex items-center justify-center font-bold text-[8px] md:text-[10px] text-slate-500">
                 {formatTime(timeLeft)}
               </div>
             </div>
-            <div>
-              <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Time Remaining</p>
-              <p className={`text-xl font-display-md font-bold ${timeLeft < 60 ? "text-error" : "text-primary"}`}>
+            <div className="hidden sm:block">
+              <p className="text-[8px] font-bold text-slate-400 uppercase tracking-widest">Time</p>
+              <p className={`text-sm md:text-lg font-bold ${timeLeft < 60 ? "text-error" : "text-primary"}`}>
                 {formatTime(timeLeft)}
               </p>
             </div>
           </div>
 
-          <div className="flex-1 max-w-md w-full">
-            <div className="flex justify-between items-end mb-2">
-              <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Progress</span>
-              <span className="text-sm font-bold text-primary">{Math.round(progress)}%</span>
+          <div className="flex-1 max-w-[150px] md:max-w-md">
+            <div className="flex justify-between items-end mb-1">
+              <span className="text-[8px] md:text-xs font-bold text-slate-400 uppercase tracking-widest">Progress</span>
+              <span className="text-[10px] md:text-sm font-bold text-primary">{Math.round(progress)}%</span>
             </div>
-            <div className="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
-              <div
-                className="bg-primary h-full transition-all duration-500"
-                style={{ width: `${progress}%` }}
-              />
+            <div className="w-full bg-slate-100 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden">
+              <div className="bg-primary h-full transition-all duration-500" style={{ width: `${progress}%` }} />
             </div>
+          </div>
+          
+          <div className="text-right">
+             <span className="text-[8px] md:text-xs font-bold text-slate-400 uppercase tracking-widest block">Points</span>
+             <span className="text-sm md:text-lg font-bold text-primary">{score}</span>
           </div>
         </div>
 
-        {/* Question */}
-        <div key={currentIdx} className="animate-fade-in-up">
+        <div key={currentIdx} className="mt-6 md:mt-0 animate-fade-in-up">
           <QuestionBlock
             question={currentQuestion}
             selectedIndex={selectedIndex}
@@ -431,17 +363,16 @@ function QuizContent() {
           />
         </div>
 
-        {/* Proceed Button */}
         {showFeedback && (
-          <div className="mt-10 flex justify-end animate-fade-in-up">
+          <div className="mt-8 flex justify-center md:justify-end animate-fade-in-up">
             <button
               onClick={handleNext}
-              className="bg-primary hover:bg-slate-800 text-white px-10 py-4 rounded-xl font-bold flex items-center gap-3 transition-all shadow-lg active:scale-95"
+              className="w-full sm:w-auto bg-primary hover:bg-slate-800 text-white px-10 py-4 rounded-2xl font-bold flex items-center justify-center gap-3 transition-all shadow-xl active:scale-95"
             >
-              <span className="font-label-sm text-label-sm uppercase tracking-widest">
-                {currentIdx + 1 >= questions.length ? "See Results" : "Proceed to Next"}
+              <span className="font-label-sm text-xs md:text-sm uppercase tracking-widest">
+                {currentIdx + 1 >= questions.length ? "Finish Quiz" : "Next Question"}
               </span>
-              <span className="material-symbols-outlined">arrow_forward</span>
+              <span className="material-symbols-outlined text-sm">arrow_forward</span>
             </button>
           </div>
         )}

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ExamQuestion } from "@/types";
 import Footer from "@/components/Footer";
 
-const TOTAL_TIME = 60 * 60; // 60 minutes
+const TOTAL_TIME = 22 * 60; // 22 minutes
 const OPTION_LETTERS = ["A", "B", "C", "D"];
 
 export default function ExamPage() {
@@ -15,6 +15,7 @@ export default function ExamPage() {
   const [submitted, setSubmitted] = useState(false);
   const [timeLeft, setTimeLeft] = useState(TOTAL_TIME);
   const [loading, setLoading] = useState(true);
+  const examTopRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetch("/api/exam")
@@ -27,24 +28,21 @@ export default function ExamPage() {
 
   const handleSubmit = useCallback(() => {
     setSubmitted(true);
-    // Score calculation happens inside this function in the render logic below, 
-    // but we need the value here to save. 
-    // Since state hasn't updated yet, we calculate locally.
   }, []);
 
-  // Use an effect to save score once submitted is true
   useEffect(() => {
     if (submitted && questions.length > 0) {
       const correct = questions.filter(
         (q) => answers[q.id] === q.correctIndex
       ).length;
 
+      // Higher weight for exam points: 20 per correct answer
       fetch("/api/save-score", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           quizId: "final_exam",
-          score: correct,
+          score: correct * 20, 
           totalQuestions: questions.length
         }),
       }).catch(err => console.error("Failed to save exam score:", err));
@@ -67,14 +65,11 @@ export default function ExamPage() {
   }, [loading, submitted, handleSubmit]);
 
   const formatTime = (seconds: number) => {
-    const h = Math.floor(seconds / 3600)
-      .toString()
-      .padStart(2, "0");
-    const m = Math.floor((seconds % 3600) / 60)
+    const m = Math.floor(seconds / 60)
       .toString()
       .padStart(2, "0");
     const s = (seconds % 60).toString().padStart(2, "0");
-    return `${h}:${m}:${s}`;
+    return `${m}:${s}`;
   };
 
   const handleAnswer = (questionId: string, optionIndex: number) => {
@@ -103,12 +98,12 @@ export default function ExamPage() {
               sentiment_dissatisfied
             </span>
           </div>
-          <h2 className="font-display-md text-2xl font-bold text-slate-900">No Exam Questions Found</h2>
-          <p className="font-body-md text-slate-500">
+          <h2 className="font-display-md text-2xl font-bold text-slate-900 text-center">No Exam Questions Found</h2>
+          <p className="font-body-md text-slate-500 text-center">
             The exam content is currently unavailable. Please check back later.
           </p>
           <Link 
-            href="/progress" 
+            href="/lessons" 
             className="inline-flex px-8 py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition-all active:scale-95 mt-4"
           >
             Back to Dashboard
@@ -127,128 +122,73 @@ export default function ExamPage() {
 
     return (
       <>
-        <main className="max-w-3xl mx-auto px-6 py-20">
-          <div className="text-center mb-12 animate-fade-in-up">
+        <main className="max-w-3xl mx-auto px-4 md:px-6 py-12 md:py-20">
+          <div className="text-center mb-10 md:mb-12 animate-fade-in-up">
             <div
-              className={`w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 ${
-                isPassing ? "bg-teal-50" : "bg-red-50"
+              className={`w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center mx-auto mb-6 ${
+                isPassing ? "bg-teal-50 dark:bg-teal-900/20" : "bg-red-50 dark:bg-red-900/20"
               }`}
             >
               <span
-                className={`material-symbols-outlined text-5xl filled ${
+                className={`material-symbols-outlined text-4xl md:text-5xl filled ${
                   isPassing ? "text-teal-500" : "text-error"
                 }`}
               >
                 {isPassing ? "workspace_premium" : "sentiment_dissatisfied"}
               </span>
             </div>
-            <h1 className="font-display-lg text-display-lg mb-4">
+            <h1 className="font-display-md text-3xl md:text-5xl mb-4 text-slate-900 dark:text-white">
               {isPassing ? "Exam Passed!" : "Exam Complete"}
             </h1>
-            <p className="font-body-lg text-on-surface-variant">
-              You answered <span className="font-bold text-primary">{correct}</span> of{" "}
-              <span className="font-bold">{questions.length}</span> questions correctly.
+            <p className="font-body-lg text-slate-600 dark:text-slate-400">
+              Score: <span className="font-bold text-primary text-3xl">{pct}%</span>
             </p>
           </div>
 
-          {/* Score Display */}
-          <div className="grid grid-cols-4 gap-4 mb-12">
-            <div className="col-span-4 md:col-span-1 p-6 bg-white border border-slate-100 rounded-2xl text-center shadow-sm">
-              <span className="block font-label-sm text-slate-400 mb-2">Score</span>
-              <span className={`text-4xl font-serif font-bold ${isPassing ? "text-teal-600" : "text-error"}`}>
-                {pct}%
-              </span>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-10">
+            <div className="p-4 md:p-6 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl text-center shadow-sm">
+              <span className="block text-[8px] md:text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Correct</span>
+              <span className="text-2xl font-bold text-teal-600">{correct}</span>
             </div>
-            <div className="p-6 bg-white border border-slate-100 rounded-2xl text-center shadow-sm">
-              <span className="block font-label-sm text-slate-400 mb-2">Correct</span>
-              <span className="text-3xl font-serif font-bold text-teal-600">{correct}</span>
-            </div>
-            <div className="p-6 bg-white border border-slate-100 rounded-2xl text-center shadow-sm">
-              <span className="block font-label-sm text-slate-400 mb-2">Wrong</span>
-              <span className="text-3xl font-serif font-bold text-error">
+            <div className="p-4 md:p-6 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl text-center shadow-sm">
+              <span className="block text-[8px] md:text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Wrong</span>
+              <span className="text-2xl font-bold text-error">
                 {questions.length - correct - (questions.length - Object.keys(answers).length)}
               </span>
             </div>
-            <div className="p-6 bg-white border border-slate-100 rounded-2xl text-center shadow-sm">
-              <span className="block font-label-sm text-slate-400 mb-2">Skipped</span>
-              <span className="text-3xl font-serif font-bold text-slate-400">
+            <div className="p-4 md:p-6 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl text-center shadow-sm">
+              <span className="block text-[8px] md:text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Skipped</span>
+              <span className="text-2xl font-bold text-slate-400">
                 {questions.length - Object.keys(answers).length}
               </span>
             </div>
+            <div className="p-4 md:p-6 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl text-center shadow-sm">
+              <span className="block text-[8px] md:text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Total</span>
+              <span className="text-2xl font-bold text-primary">{questions.length}</span>
+            </div>
           </div>
 
-          {/* Review */}
           <div className="space-y-4 mb-12">
-            <h3 className="font-headline-md text-headline-md">Answer Review</h3>
+            <h3 className="font-bold text-lg text-slate-900 dark:text-white mb-4">Review</h3>
             {questions.map((q, idx) => {
               const chosen = answers[q.id];
               const isCorrect = chosen === q.correctIndex;
               const skipped = chosen === undefined;
               return (
-                <div
-                  key={q.id}
-                  className={`p-5 rounded-xl border ${
-                    skipped
-                      ? "border-slate-200 bg-white"
-                      : isCorrect
-                      ? "border-teal-200 bg-teal-50"
-                      : "border-red-200 bg-red-50"
-                  }`}
-                >
-                  <div className="flex items-start gap-3">
-                    <span
-                      className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold ${
-                        skipped
-                          ? "bg-slate-200 text-slate-500"
-                          : isCorrect
-                          ? "bg-teal-500 text-white"
-                          : "bg-error text-white"
-                      }`}
-                    >
-                      {idx + 1}
-                    </span>
-                    <div className="flex-1">
-                      <p className="font-body-md font-semibold text-on-surface mb-1 line-clamp-2">
-                        {q.question}
-                      </p>
-                      <p className="text-sm text-on-surface-variant">
-                        {skipped ? (
-                          "Skipped"
-                        ) : isCorrect ? (
-                          <span className="text-teal-700">
-                            ✓ {q.options[chosen]}
-                          </span>
-                        ) : (
-                          <>
-                            <span className="text-red-700 line-through mr-2">
-                              {q.options[chosen]}
-                            </span>
-                            <span className="text-teal-700">
-                              → {q.options[q.correctIndex]}
-                            </span>
-                          </>
-                        )}
-                      </p>
-                    </div>
-                  </div>
+                <div key={q.id} className={`p-4 rounded-xl border ${skipped ? "border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900/50" : isCorrect ? "border-teal-100 bg-teal-50/30" : "border-red-100 bg-red-50/30"}`}>
+                   <p className="text-xs font-bold text-slate-400 mb-2 uppercase tracking-widest">Question {idx + 1}</p>
+                   <p className="font-bold text-sm text-slate-800 dark:text-slate-200 mb-3">{q.question}</p>
+                   <div className="text-xs font-medium">
+                     {skipped ? <span className="text-slate-500">Not Answered</span> : isCorrect ? <span className="text-teal-600">✓ {q.options[chosen]}</span> : <span className="text-error">✗ {q.options[chosen]} (Correct: {q.options[q.correctIndex]})</span>}
+                   </div>
                 </div>
               );
             })}
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/"
-              className="flex-1 px-8 py-4 border border-slate-200 text-primary rounded-xl font-label-sm font-bold tracking-wider uppercase hover:bg-slate-50 transition-all text-center"
-            >
-              Back to Home
-            </Link>
-            <Link
-              href="/quiz"
-              className="flex-1 px-8 py-4 bg-primary text-on-primary rounded-xl font-label-sm font-bold tracking-wider uppercase hover:opacity-90 transition-all text-center"
-            >
-              Practice More
-            </Link>
+            <Link href="/" className="flex-1 px-8 py-4 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 rounded-xl font-bold text-xs uppercase tracking-widest text-center">Back Home</Link>
+            <Link href="/lessons" className="flex-1 px-8 py-4 bg-primary text-white rounded-xl font-bold text-xs uppercase tracking-widest text-center">Lessons</Link>
           </div>
         </main>
         <Footer />
@@ -263,83 +203,55 @@ export default function ExamPage() {
 
   return (
     <>
-      <main className="max-w-7xl mx-auto px-6 py-12 md:py-16">
-        <div className="w-full aspect-[21/9] md:aspect-[21/6] rounded-3xl overflow-hidden shadow-sm mb-12 relative border border-slate-100 animate-fade-in-up">
-          <img src="/images/exam_hero.png" alt="Stylistics Final Exam" className="w-full h-full object-cover" />
-        </div>
-        {/* Exam Header */}
-        <div className="mb-12 border-l-4 border-primary pl-6">
-          <span className="font-label-sm text-label-sm text-on-surface-variant mb-2 block tracking-widest uppercase">
-            Academic Assessment
-          </span>
-          <h1 className="font-display-lg text-display-lg text-on-surface">
-            Comprehensive Stylistics Exam
-          </h1>
+      <main className="max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-12">
+        <div ref={examTopRef} className="absolute top-0 left-0" />
+        
+        {/* Sticky Header */}
+        <div className="sticky top-0 z-40 bg-surface/90 backdrop-blur-md -mx-4 px-4 py-3 border-b border-slate-100 dark:border-slate-800 flex flex-row justify-between items-center gap-4 lg:hidden">
+            <div className={`flex items-center gap-2 font-bold ${timeLeft < 300 ? "text-error" : "text-primary"}`}>
+               <span className="material-symbols-outlined text-xl">timer</span>
+               <span className="text-lg">{formatTime(timeLeft)}</span>
+            </div>
+            <div className="flex-1 max-w-[120px] bg-slate-100 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden">
+               <div className="bg-[#2E7D32] h-full transition-all" style={{ width: `${completionPct}%` }} />
+            </div>
+            <button onClick={handleSubmit} className="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-3 py-2 rounded-lg">Submit</button>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Left Column: Question */}
-          <div className="lg:col-span-8 space-y-8">
-            {/* Question Card */}
-            <div className="bg-surface-container-lowest border border-outline-variant p-8 md:p-12 rounded-xl shadow-[0_4px_20px_-4px_rgba(15,23,42,0.08)]">
-              <div className="flex items-center justify-between mb-8">
-                <span className="font-label-sm text-label-sm text-on-secondary-container bg-secondary-container px-3 py-1 rounded-full">
+        <div className="hidden lg:block mb-10 border-l-4 border-primary pl-6">
+          <span className="text-xs text-slate-400 font-bold uppercase tracking-widest block mb-1">Assessment</span>
+          <h1 className="text-4xl font-bold text-slate-900 dark:text-white">Stylistics Final Exam</h1>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 mt-4 lg:mt-0">
+          {/* Question Column */}
+          <div className="lg:col-span-8">
+            <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-6 md:p-10 rounded-2xl shadow-sm">
+              <div className="flex items-center justify-between mb-6 md:mb-8">
+                <span className="text-[10px] md:text-xs font-bold text-primary uppercase tracking-widest bg-primary/10 px-3 py-1 rounded-full">
                   Question {currentIdx + 1} of {questions.length}
                 </span>
-                <div className="flex gap-2">
-                  <button
-                    className="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors"
-                    title="Flag question"
-                  >
-                    flag
-                  </button>
-                  <button
-                    className="material-symbols-outlined text-outline cursor-pointer hover:text-primary transition-colors"
-                    title="Bookmark"
-                  >
-                    bookmark
-                  </button>
-                </div>
+                <span className="material-symbols-outlined text-slate-300">bookmark</span>
               </div>
 
-              <h2 className="font-headline-lg text-headline-lg mb-10 text-on-surface leading-tight">
+              <h2 className="text-lg md:text-2xl font-bold text-slate-900 dark:text-white mb-8 leading-relaxed">
                 {currentQuestion.question}
               </h2>
 
               {currentQuestion.passage && (
-                <div className="p-6 bg-surface-container-low border-l-2 border-primary-container rounded-r-lg mb-10 italic text-body-lg font-body-lg text-on-primary-container">
-                  {currentQuestion.passage}
+                <div className="p-4 md:p-6 bg-slate-50 dark:bg-slate-800 border-l-4 border-primary rounded-r-xl mb-8 italic text-sm md:text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+                  "{currentQuestion.passage}"
                 </div>
               )}
 
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {currentQuestion.options.map((option, idx) => {
                   const isSelected = answers[currentQuestion.id] === idx;
                   return (
-                    <label
-                      key={idx}
-                      className={`flex items-center p-5 border rounded-lg cursor-pointer transition-all group ${
-                        isSelected
-                          ? "border-primary-container bg-primary-fixed/30"
-                          : "border-outline-variant bg-white hover:border-primary-container"
-                      }`}
-                    >
-                      <input
-                        type="radio"
-                        name="exam_option"
-                        className="w-5 h-5 text-primary-container focus:ring-primary-container border-outline-variant"
-                        checked={isSelected}
-                        onChange={() => handleAnswer(currentQuestion.id, idx)}
-                      />
-                      <span
-                        className={`ml-4 font-body-md text-body-md ${
-                          isSelected
-                            ? "text-on-primary-fixed font-semibold"
-                            : "text-on-surface group-hover:text-primary-container"
-                        }`}
-                      >
-                        <span className="font-bold mr-2">{OPTION_LETTERS[idx]}.</span>
-                        {option}
+                    <label key={idx} className={`flex items-center p-4 md:p-5 border-2 rounded-xl cursor-pointer transition-all ${isSelected ? "border-primary bg-primary/5" : "border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-primary/50"}`}>
+                      <input type="radio" name="exam_option" className="w-5 h-5 accent-primary" checked={isSelected} onChange={() => handleAnswer(currentQuestion.id, idx)} />
+                      <span className={`ml-4 text-sm md:text-base ${isSelected ? "font-bold text-primary" : "text-slate-600 dark:text-slate-400"}`}>
+                        <span className="font-bold mr-2 text-slate-400">{OPTION_LETTERS[idx]}.</span> {option}
                       </span>
                     </label>
                   );
@@ -347,127 +259,44 @@ export default function ExamPage() {
               </div>
             </div>
 
-            {/* Navigation Controls */}
-            <div className="flex justify-between items-center py-4">
-              <button
-                onClick={() => setCurrentIdx((i) => Math.max(0, i - 1))}
-                disabled={currentIdx === 0}
-                className="px-8 py-4 border border-outline-variant rounded-lg font-label-sm text-label-sm text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                <span className="material-symbols-outlined">chevron_left</span>
-                Previous Question
-              </button>
-              <button
-                onClick={() =>
-                  setCurrentIdx((i) => Math.min(questions.length - 1, i + 1))
-                }
-                disabled={currentIdx === questions.length - 1}
-                className="px-10 py-4 bg-primary text-on-primary rounded-lg font-label-sm text-label-sm tracking-widest uppercase hover:opacity-90 transition-opacity flex items-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                Next Question
-                <span className="material-symbols-outlined">chevron_right</span>
-              </button>
+            <div className="flex justify-between items-center py-6">
+              <button onClick={() => { setCurrentIdx((i) => Math.max(0, i - 1)); examTopRef.current?.scrollIntoView({ behavior: "smooth" }); }} disabled={currentIdx === 0} className="p-3 md:px-8 md:py-4 border border-slate-200 dark:border-slate-700 rounded-xl font-bold text-xs uppercase tracking-widest disabled:opacity-30">Prev</button>
+              <button onClick={() => { setCurrentIdx((i) => Math.min(questions.length - 1, i + 1)); examTopRef.current?.scrollIntoView({ behavior: "smooth" }); }} disabled={currentIdx === questions.length - 1} className="flex-1 ml-4 py-4 bg-primary text-white rounded-xl font-bold text-xs uppercase tracking-widest disabled:opacity-30">Next Question</button>
             </div>
           </div>
 
-          {/* Right Column: Status & Navigator */}
-          <aside className="lg:col-span-4 space-y-8">
-            {/* Status Panel */}
-            <div className="bg-surface-container-highest p-8 rounded-xl space-y-8">
+          {/* Status Column (Desktop Only) */}
+          <aside className="hidden lg:block lg:col-span-4 space-y-6 sticky top-24 h-fit">
+            <div className="bg-slate-900 text-white p-8 rounded-2xl space-y-8">
               <div>
-                <span className="font-label-sm text-label-sm text-on-surface-variant block mb-4 tracking-widest uppercase">
-                  Remaining Time
-                </span>
-                <div
-                  className={`flex items-center gap-4 ${
-                    timeLeft < 300 ? "text-error" : "text-primary"
-                  }`}
-                >
-                  <span className="material-symbols-outlined text-4xl">timer</span>
-                  <span className="text-4xl font-serif font-semibold tracking-tighter">
-                    {formatTime(timeLeft)}
-                  </span>
-                </div>
-                <div className="w-full bg-outline-variant h-1 rounded-full mt-6 overflow-hidden">
-                  <div
-                    className={`h-full transition-all ${timeLeft < 300 ? "bg-error" : "bg-primary"}`}
-                    style={{ width: `${timePct}%` }}
-                  />
+                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-2">Timer</span>
+                <div className={`flex items-center gap-3 ${timeLeft < 300 ? "text-error" : "text-white"}`}>
+                  <span className="material-symbols-outlined text-3xl">timer</span>
+                  <span className="text-4xl font-bold tabular-nums">{formatTime(timeLeft)}</span>
                 </div>
               </div>
-
-              <div className="pt-6 border-t border-outline-variant">
-                <span className="font-label-sm text-label-sm text-on-surface-variant block mb-4 tracking-widest uppercase">
-                  Completion Status
-                </span>
-                <div className="flex justify-between items-end mb-2">
-                  <span className="text-3xl font-serif font-semibold">
-                    {answeredCount}/{questions.length}
-                  </span>
-                  <span className="font-body-md text-on-surface-variant">
-                    {completionPct}% Complete
-                  </span>
-                </div>
-                <div className="w-full bg-outline-variant h-1 rounded-full overflow-hidden">
-                  <div
-                    className="bg-[#2E7D32] h-full transition-all"
-                    style={{ width: `${completionPct}%` }}
-                  />
-                </div>
+              <div>
+                 <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-2">Progress</span>
+                 <div className="flex justify-between items-end mb-2">
+                    <span className="text-3xl font-bold">{answeredCount}/{questions.length}</span>
+                    <span className="text-xs text-slate-400">{completionPct}%</span>
+                 </div>
+                 <div className="w-full bg-slate-800 h-1 rounded-full overflow-hidden">
+                    <div className="bg-teal-500 h-full transition-all" style={{ width: `${completionPct}%` }} />
+                 </div>
               </div>
             </div>
 
-            {/* Question Navigator */}
-            <div className="bg-white border border-outline-variant p-8 rounded-xl shadow-[0_4px_20px_-4px_rgba(15,23,42,0.08)]">
-              <span className="font-label-sm text-label-sm text-on-surface-variant block mb-6 tracking-widest uppercase">
-                Question Navigator
-              </span>
-              <div className="grid grid-cols-5 gap-3">
-                {questions.map((q, idx) => {
-                  const isAnswered = answers[q.id] !== undefined;
-                  const isCurrent = idx === currentIdx;
-                  return (
-                    <button
-                      key={q.id}
-                      onClick={() => setCurrentIdx(idx)}
-                      className={`aspect-square flex items-center justify-center rounded-lg text-sm font-bold cursor-pointer transition-all hover:scale-105 ${
-                        isCurrent
-                          ? "border-2 border-primary bg-primary-fixed/50 text-primary ring-2 ring-primary ring-offset-2"
-                          : isAnswered
-                          ? "border border-primary-container bg-primary-container text-on-primary"
-                          : "border border-outline-variant bg-surface text-on-surface-variant hover:border-primary"
-                      }`}
-                    >
-                      {idx + 1}
-                    </button>
-                  );
-                })}
-              </div>
-
-              <div className="mt-8 pt-6 border-t border-slate-100 flex flex-wrap gap-4">
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-sm bg-primary-container" />
-                  <span className="text-xs text-on-surface-variant font-label-sm uppercase">Answered</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-sm border border-outline-variant bg-surface" />
-                  <span className="text-xs text-on-surface-variant font-label-sm uppercase">Unanswered</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-sm border-2 border-primary bg-primary-fixed/50" />
-                  <span className="text-xs text-on-surface-variant font-label-sm uppercase">Current</span>
-                </div>
-              </div>
+            <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-6 rounded-2xl">
+               <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-4">Navigator</span>
+               <div className="grid grid-cols-5 gap-2">
+                  {questions.map((q, idx) => (
+                    <button key={q.id} onClick={() => setCurrentIdx(idx)} className={`w-full aspect-square rounded-lg text-xs font-bold transition-all ${idx === currentIdx ? "bg-primary text-white" : answers[q.id] !== undefined ? "bg-primary/10 text-primary" : "bg-slate-50 dark:bg-slate-800 text-slate-400"}`}>{idx + 1}</button>
+                  ))}
+               </div>
             </div>
 
-            {/* Submit */}
-            <button
-              onClick={handleSubmit}
-              className="w-full py-6 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm tracking-[0.2em] uppercase font-bold rounded-xl shadow-lg hover:brightness-95 active:scale-[0.98] transition-all flex items-center justify-center gap-3"
-            >
-              Submit Exam
-              <span className="material-symbols-outlined">send</span>
-            </button>
+            <button onClick={handleSubmit} className="w-full py-5 bg-teal-600 text-white font-bold rounded-2xl uppercase tracking-widest text-xs hover:bg-teal-700 transition-all">Submit Final Exam</button>
           </aside>
         </div>
       </main>
