@@ -14,7 +14,7 @@ function QuizContent() {
   const nextLesson = searchParams.get("nextLesson");
   const chapterId = searchParams.get("chapterId");
 
-  const [userResponses, setUserResponses] = useState<{ type: string; isCorrect: boolean }[]>([]);
+  const [userResponses, setUserResponses] = useState<{ type: string; isCorrect: boolean; chosenIndex?: number }[]>([]);
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
   const [currentIdx, setCurrentIdx] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
@@ -83,7 +83,7 @@ function QuizContent() {
     if (isCorrect) {
       setScore((s) => s + 10); // 10 points per correct answer
     }
-    setUserResponses(prev => [...prev, { type: questions[currentIdx].type || "general", isCorrect }]);
+    setUserResponses(prev => [...prev, { type: questions[currentIdx].type || "general", isCorrect, chosenIndex: index }]);
   };
 
   const handleNext = () => {
@@ -158,36 +158,37 @@ function QuizContent() {
     return (
       <>
         {pct === 100 && <Confetti />}
-        <main className="max-w-4xl mx-auto px-6 py-20">
-          <div className="bg-white border border-slate-100 rounded-3xl p-8 md:p-12 shadow-[0_20px_60px_rgba(0,0,0,0.06)] text-center animate-fade-in-up">
-            <div
-              className={`w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-8 ${
-                isPassing ? "bg-teal-50" : "bg-red-50"
-              }`}
-            >
-              <span
-                className={`material-symbols-outlined text-4xl filled ${
-                  isPassing ? "text-teal-500" : "text-error"
+        <main className="max-w-4xl mx-auto px-6 py-12 md:py-20">
+          <div className="bg-white border border-slate-100 rounded-3xl p-8 md:p-12 shadow-[0_20px_60px_rgba(0,0,0,0.06)] animate-fade-in-up">
+            <div className="text-center mb-10">
+              <div
+                className={`w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-8 ${
+                  isPassing ? "bg-teal-50" : "bg-red-50"
                 }`}
               >
-                {isPassing ? "emoji_events" : "sentiment_dissatisfied"}
-              </span>
-            </div>
-            <h2 className="font-display-lg text-display-lg mb-4">
-              {isPassing ? "Well Done!" : "Keep Practicing"}
-            </h2>
-            <p className="font-body-lg text-on-surface-variant mb-4">
-              You scored <span className="font-bold text-primary">{finalScore} Points</span> 
-              <br />
-              <span className="text-sm">({correctAnswersCount} out of {questions.length} questions correctly)</span>
-            </p>
-            {isPerfect && (
-              <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full font-bold text-sm mb-10 animate-bounce">
-                <span className="material-symbols-outlined">stars</span>
-                +50 Points Perfect Score Bonus!
+                <span
+                  className={`material-symbols-outlined text-4xl filled ${
+                    isPassing ? "text-teal-500" : "text-error"
+                  }`}
+                >
+                  {isPassing ? "emoji_events" : "sentiment_dissatisfied"}
+                </span>
               </div>
-            )}
-            {!isPerfect && <div className="mb-10" />}
+              <h2 className="font-display-lg text-display-lg mb-4 text-slate-900">
+                {isPassing ? "Well Done!" : "Keep Practicing"}
+              </h2>
+              <p className="font-body-lg text-slate-600 mb-4">
+                You scored <span className="font-bold text-primary text-2xl">{finalScore} Points</span> 
+                <br />
+                <span className="text-sm">({correctAnswersCount} out of {questions.length} questions correctly)</span>
+              </p>
+              {isPerfect && (
+                <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full font-bold text-sm mb-4 animate-bounce">
+                  <span className="material-symbols-outlined">stars</span>
+                  +50 Points Perfect Score Bonus!
+                </div>
+              )}
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               {/* Score ring */}
@@ -206,7 +207,7 @@ function QuizContent() {
                   />
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <span className="font-display-lg text-4xl font-bold">{pct}%</span>
+                  <span className="font-display-lg text-4xl font-bold text-slate-800">{pct}%</span>
                   <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Total Score</span>
                 </div>
               </div>
@@ -231,7 +232,7 @@ function QuizContent() {
                       />
                     </div>
                     <p className="text-xs text-slate-500 mt-2">
-                      {theoryScore >= 80 ? "Excellent understanding of core definitions." : "You should review the word boxes for theoretical concepts."}
+                      {theoryScore >= 80 ? "Excellent understanding of core definitions." : "You should review the theoretical concepts."}
                     </p>
                   </div>
                 )}
@@ -249,10 +250,79 @@ function QuizContent() {
                       />
                     </div>
                     <p className="text-xs text-slate-500 mt-2">
-                      {appliedScore >= 80 ? "Brilliant job applying concepts to literary passages!" : "Try to focus on the 'Applied' analysis steps in each lesson."}
+                      {appliedScore >= 80 ? "Brilliant job applying concepts to literary passages!" : "Try to focus on the 'Applied' analysis steps."}
                     </p>
                   </div>
                 )}
+              </div>
+            </div>
+
+            {/* Answer Review Report */}
+            <div className="mb-12 border-t border-slate-100 pt-10">
+              <div className="flex items-center gap-3 mb-6">
+                <span className="material-symbols-outlined text-3xl text-primary">fact_check</span>
+                <h3 className="font-headline-md text-2xl font-bold text-slate-900">Quiz Report</h3>
+              </div>
+              <div className="space-y-4">
+                {questions.map((q, idx) => {
+                  const response = userResponses[idx];
+                  const isCorrect = response?.isCorrect;
+                  const chosenIndex = response?.chosenIndex;
+
+                  return (
+                    <div
+                      key={q.id}
+                      className={`p-5 rounded-2xl border transition-all ${
+                        isCorrect
+                          ? "border-teal-100 bg-teal-50/30"
+                          : "border-red-100 bg-red-50/30"
+                      }`}
+                    >
+                      <div className="flex flex-col md:flex-row gap-4 items-start">
+                        <div
+                          className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold shadow-sm ${
+                            isCorrect
+                              ? "bg-teal-500 text-white"
+                              : "bg-error text-white"
+                          }`}
+                        >
+                          {idx + 1}
+                        </div>
+                        <div className="flex-1">
+                          <p className="font-body-md font-bold text-slate-900 mb-3">
+                            {q.question}
+                          </p>
+                          
+                          <div className="space-y-2">
+                            {isCorrect ? (
+                              <div className="flex items-start gap-2 text-teal-700 bg-teal-50 p-3 rounded-xl border border-teal-100">
+                                <span className="material-symbols-outlined text-lg">check_circle</span>
+                                <span className="text-sm font-medium">{q.options[q.correctIndex]}</span>
+                              </div>
+                            ) : (
+                              <>
+                                {chosenIndex !== undefined && (
+                                  <div className="flex items-start gap-2 text-red-700 bg-red-50 p-3 rounded-xl border border-red-100 opacity-80">
+                                    <span className="material-symbols-outlined text-lg">cancel</span>
+                                    <span className="text-sm line-through decoration-red-300">{q.options[chosenIndex]}</span>
+                                  </div>
+                                )}
+                                <div className="flex items-start gap-2 text-teal-700 bg-teal-50 p-3 rounded-xl border border-teal-100 mt-2 shadow-sm">
+                                  <span className="material-symbols-outlined text-lg">check_circle</span>
+                                  <span className="text-sm font-bold">Correct: {q.options[q.correctIndex]}</span>
+                                </div>
+                              </>
+                            )}
+                          </div>
+                          
+                          <div className="mt-4 text-sm text-slate-500 italic border-l-2 border-slate-200 pl-3">
+                            {q.explanation}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
 
@@ -267,9 +337,9 @@ function QuizContent() {
                   setTimeLeft(12 * 60);
                   setUserResponses([]);
                 }}
-                className="flex-1 px-8 py-4 border border-slate-200 text-primary rounded-xl font-label-sm font-bold tracking-wider uppercase hover:bg-slate-50 transition-all"
+                className="flex-1 px-8 py-4 border border-slate-200 text-primary rounded-xl font-label-sm font-bold tracking-wider uppercase hover:bg-slate-50 transition-all text-center"
               >
-                Retry Section
+                Retry Quiz
               </button>
               {nextLesson && chapterId ? (
                 <Link
