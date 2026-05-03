@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 import CommandPalette from "@/components/CommandPalette";
+import RubyChat from "@/components/RubyChat";
 
 export default function RootLayout({
   children,
@@ -40,6 +41,7 @@ export default function RootLayout({
         <ThemeProvider>
           <body className="bg-background text-on-background font-sans antialiased">
             <CommandPalette />
+            <RubyChat />
             <WelcomeModal />
             <TopBar />
             <div className="min-h-dvh">
