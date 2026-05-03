@@ -20,6 +20,7 @@ export interface Lesson {
   nextLesson?: string;
   prevLesson?: string;
   quizId?: string;
+  rubyTip?: string;
 }
 
 export interface LessonContent {
