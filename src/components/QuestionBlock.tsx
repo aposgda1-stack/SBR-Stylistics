@@ -1,6 +1,7 @@
 "use client";
 
 import { QuizQuestion } from "@/types";
+import { sounds } from "@/lib/sounds";
 
 interface QuestionBlockProps {
   question: QuizQuestion;
@@ -49,6 +50,17 @@ export default function QuestionBlock({
     if (selectedIndex === index && index !== question.correctIndex)
       return "bg-error text-white";
     return "bg-surface-container-low text-on-surface-variant";
+  };
+
+  const handleOptionClick = (index: number) => {
+    if (showFeedback) return;
+    sounds.playClick();
+    onSelect(index);
+    if (index === question.correctIndex) {
+      sounds.playSuccess();
+    } else {
+      sounds.playError();
+    }
   };
 
   return (

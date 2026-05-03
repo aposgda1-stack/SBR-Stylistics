@@ -76,32 +76,38 @@ export default function LessonsPage() {
   return (
     <>
       <main className="max-w-7xl mx-auto px-4 md:px-8 py-8 md:py-16">
-        {/* Header Section */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-          <div className="border-l-4 border-primary pl-4 md:pl-6">
-            <span className="font-label-sm text-xs md:text-sm text-primary mb-2 block tracking-widest uppercase font-bold">
-              Course Curriculum
-            </span>
-            <h1 className="font-display-md md:font-display-lg text-3xl md:text-5xl text-slate-900 font-extrabold leading-tight">
-              All Chapters & Lessons
+        {/* Header Section with Image */}
+        <div className="flex flex-col md:flex-row items-center gap-8 mb-12 bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_10px_40px_rgba(0,0,0,0.04)] animate-fade-in-up">
+          <div className="flex-1 space-y-4">
+            <h1 className="font-display-lg text-4xl md:text-5xl lg:text-6xl text-primary font-bold tracking-tight">
+              Stylistics Curriculum
             </h1>
-            <p className="text-slate-500 mt-4 max-w-xl text-sm md:text-base leading-relaxed">
-              Master the concepts of stylistics through interactive theoretical and applied lessons. 
-              Unlock new chapters as you progress.
+            <p className="font-body-lg text-lg text-slate-500 max-w-2xl leading-relaxed">
+              Explore the theoretical foundations and applied analytical methods of literary stylistics. 
+              Track your progress and test your knowledge through interactive chapters.
             </p>
+            {nextLessonUrl && !loading && (
+              <div className="pt-4">
+                <Link 
+                  href={nextLessonUrl}
+                  className="inline-flex items-center justify-center gap-3 bg-slate-900 text-white px-6 md:px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition-all shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] active:scale-95 group"
+                >
+                  <span className="uppercase tracking-widest text-xs md:text-sm">Continue Learning</span>
+                  <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
+                    arrow_forward
+                  </span>
+                </Link>
+              </div>
+            )}
           </div>
-
-          {nextLessonUrl && !loading && (
-            <Link 
-              href={nextLessonUrl}
-              className="inline-flex items-center justify-center gap-3 bg-slate-900 text-white px-6 md:px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition-all shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] active:scale-95 group"
-            >
-              <span className="uppercase tracking-widest text-xs md:text-sm">Continue Learning</span>
-              <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
-                arrow_forward
-              </span>
-            </Link>
-          )}
+          <div className="w-full md:w-[400px] flex-shrink-0 relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg border border-primary/10">
+            {/* The Image must be imported at the top. Wait, I didn't import next/image! */}
+            <img 
+              src="/images/dashboard_hero.png" 
+              alt="Stylistics Dashboard Banner"
+              className="object-cover w-full h-full"
+            />
+          </div>
         </div>
 
         {/* Loading State */}
