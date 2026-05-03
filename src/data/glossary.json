@@ -1,0 +1,212 @@
+[
+  {
+    "id": "poetic-licence",
+    "term": "Poetic Licence (الرخصة الشعرية)",
+    "definition": "It is the poet's right to ignore rules and conventions generally observed by users of the language.",
+    "arabic": "حق الشاعر في تجاهل القواعد والاصطلاحات اللغوية المتعارف عليها لتحقيق أغراض فنية."
+  },
+  {
+    "id": "foregrounding",
+    "term": "Foregrounding (البروز الأسلوبي)",
+    "definition": "Refers to the ways in which certain aspects of a text can be made to stand out or appear prominent through forms of textual patterning. It is the psychological effect of certain textual devices.",
+    "arabic": "جعل جوانب معينة من النص تبرز وتلفت الانتباه من خلال أنماط نصية، وهو أثر نفسي يوجه انتباه القارئ."
+  },
+  {
+    "id": "parallelism",
+    "term": "Parallelism (التوازي)",
+    "definition": "Extra regular use of a linguistic feature. In any parallelistic pattern, there must be an element of identity and an element of contrast.",
+    "arabic": "الاستخدام المنتظم والمكثف لميزة لغوية، ويشترط وجود عنصر تشابه وعنصر تضاد."
+  },
+  {
+    "id": "deviation",
+    "term": "Deviation (الانحراف الأسلوبي)",
+    "definition": "Extra irregularity. It works by disrupting or departing either from readers' expectations or from a pattern established by the text.",
+    "arabic": "الخروج الزائد عن القواعد، ويعمل عبر كسر توقعات القارئ أو الخروج عن النمط المعتاد للنص."
+  },
+  {
+    "id": "external-deviation",
+    "term": "External Deviation (انحراف خارجي)",
+    "definition": "Occurs where the deviation is to be explicated against some norm which lies outside the limits of the poem.",
+    "arabic": "يحدث عندما يتم قياس الانحراف بناءً على قواعد اللغة العامة خارج حدود القصيدة."
+  },
+  {
+    "id": "internal-deviation",
+    "term": "Internal Deviation (انحراف داخلي)",
+    "definition": "Takes place against the background of the poem, where the norm is the remainder of the poem itself.",
+    "arabic": "يحدث داخل سياق القصيدة، حيث يكون المعيار هو بقية أجزاء القصيدة نفسها."
+  },
+  {
+    "id": "lexical-deviation",
+    "term": "Lexical Deviation (انحراف معجمي)",
+    "definition": "Achieved through neologism (invention of new words) or nonce-formations.",
+    "arabic": "يتحقق عبر ابتكار كلمات جديدة أو تغيير وظيفة الكلمة النحوية."
+  },
+  {
+    "id": "neologism",
+    "term": "Neologism (الابتكار اللفظي)",
+    "definition": "The invention of new words in which a poet may exceed the normal resources of the language.",
+    "arabic": "اختراع كلمات جديدة تتجاوز المصادر الطبيعية للغة."
+  },
+  {
+    "id": "functional-conversion",
+    "term": "Functional Conversion (تغيير الوظيفة النحوية)",
+    "definition": "Adapting an item to a new grammatical function without changing its form (e.g., using a noun as a verb).",
+    "arabic": "تكييف الكلمة لوظيفة نحوية جديدة دون تغيير شكلها (مثل استخدام الاسم كفعل)."
+  },
+  {
+    "id": "phonological-deviation",
+    "term": "Phonological Deviation (انحراف صوتي)",
+    "definition": "When words are pronounced or stressed oddly to conform to rhyme or meter.",
+    "arabic": "نطق الكلمات أو التشديد عليها بشكل غير معتاد ليناسب القافية أو الوزن."
+  },
+  {
+    "id": "elision",
+    "term": "Elision (الإسقاط الصوتي)",
+    "definition": "The omission of a sound or syllable when speaking (e.g., 'o'er' for 'over').",
+    "arabic": "حذف صوت أو مقطع لغوي عند النطق."
+  },
+  {
+    "id": "aphesis",
+    "term": "Aphesis (سقوط الحرف الأول)",
+    "definition": "The gradual loss of a short unstressed vowel at the beginning of a word.",
+    "arabic": "الفقدان التدريجي لحرف علة قصير غير مشدد في بداية الكلمة."
+  },
+  {
+    "id": "syncope",
+    "term": "Syncope (سقوط حرف الوسط)",
+    "definition": "The omission of medial sounds within a word.",
+    "arabic": "حذف الأصوات المتوسطة داخل الكلمة."
+  },
+  {
+    "id": "apocope",
+    "term": "Apocope (سقوط الحرف الأخير)",
+    "definition": "Loss of sounds from the end of a word.",
+    "arabic": "سقوط الأصوات من نهاية الكلمة."
+  },
+  {
+    "id": "semantic-deviation",
+    "term": "Semantic Deviation (انحراف دلالي)",
+    "definition": "Emerges from meaning relations which are logically inconsistent or paradoxical (e.g., Metaphor, Paradox).",
+    "arabic": "ينتج عن علاقات معنى غير متسقة منطقياً أو متناقضة."
+  },
+  {
+    "id": "cohesion",
+    "term": "Cohesion (السبك / التماسك)",
+    "definition": "The linguistic means by which sentences are woven together to make texts.",
+    "arabic": "الوسائل اللغوية التي يتم من خلالها نسج الجمل معاً لتكوين النصوص."
+  },
+  {
+    "id": "reference-cohesion",
+    "term": "Reference Cohesion (إحالة السبك)",
+    "definition": "Covers cases where we use a grammatical word in one sentence in association with a word in a separate sentence.",
+    "arabic": "تغطية الحالات التي نستخدم فيها كلمة نحوية في جملة مرتبطة بكلمة في جملة أخرى."
+  },
+  {
+    "id": "ellipsis",
+    "term": "Ellipsis (الحذف)",
+    "definition": "Material is left out since its repetition or near-repetition is felt to be unnecessary.",
+    "arabic": "حذف أجزاء من الجملة لأن تكرارها غير ضروري ويُفهم من السياق."
+  },
+  {
+    "id": "conjunction-cohesion",
+    "term": "Conjunction Cohesion (الوصل)",
+    "definition": "The use of certain words (e.g., but, so) to clarify the semantic relationship between sentences.",
+    "arabic": "استخدام كلمات معينة لتوضيح العلاقة الدلالية بين الجمل."
+  },
+  {
+    "id": "lexical-cohesion",
+    "term": "Lexical Cohesion (السبك المعجمي)",
+    "definition": "The recurrent use of the same content word or related words (Repetition, Synonymy, Hyponymy, Collocation).",
+    "arabic": "الاستخدام المتكرر لنفس الكلمات أو كلمات ذات صلة (التكرار، الترادف، إلخ)."
+  },
+  {
+    "id": "narrative",
+    "term": "Narrative (السرد)",
+    "definition": "A text in which something humanly interesting has happened, or a significant change in the situation has occurred.",
+    "arabic": "نص يحدث فيه شيء مثير للاهتمام بشرياً، أو يحدث فيه تغيير جوهري في الموقف."
+  },
+  {
+    "id": "abstract",
+    "term": "Abstract (الملخص)",
+    "definition": "What, in a nutshell, happened? Often a one-sentence summary of what transpired.",
+    "arabic": "ملخص موجز جداً (في جملة واحدة غالباً) لما حدث في القصة."
+  },
+  {
+    "id": "orientation",
+    "term": "Orientation (التمهيد)",
+    "definition": "Sentences describing the participants, the time and place of events.",
+    "arabic": "جمل تصف المشاركين في القصة، الزمان والمكان."
+  },
+  {
+    "id": "complicating-action",
+    "term": "Complicating Action (الحبكة / الأحداث)",
+    "definition": "Sentences in which the all-important and ordered events of the narrative are reported.",
+    "arabic": "الجمل التي تروي الأحداث الهامة والمرتبة في السرد."
+  },
+  {
+    "id": "evaluation",
+    "term": "Evaluation (التقييم)",
+    "definition": "How the story is interesting or relevant; includes reactions or background textures.",
+    "arabic": "توضيح لماذا هذه القصة مثيرة للاهتمام أو ذات صلة."
+  },
+  {
+    "id": "resolution",
+    "term": "Resolution (الحل)",
+    "definition": "What finally happened? Provides closure to the narrative.",
+    "arabic": "ماذا حدث في النهاية؟ توفير خاتمة للسرد."
+  },
+  {
+    "id": "coda",
+    "term": "Coda (الخاتمة / الرابط)",
+    "definition": "Bridges the story back to the teller-addressee present; often a moral or lesson.",
+    "arabic": "ربط القصة بالوقت الحالي، وعادة ما تقدم درساً مستفاداً."
+  },
+  {
+    "id": "cooperative-principle",
+    "term": "Cooperative Principle (مبدأ التعاون)",
+    "definition": "The assumption that speakers intend to accomplish purposeful and effective communication.",
+    "arabic": "الافتراض بأن المتحدثين يهدفون إلى تحقيق تواصل هادف وفعال."
+  },
+  {
+    "id": "face",
+    "term": "Face (الوجه)",
+    "definition": "The public self-image of a person; divided into Positive and Negative face.",
+    "arabic": "الصورة الذاتية العامة للشخص، وتنقسم إلى وجه إيجابي وسلبي."
+  },
+  {
+    "id": "positive-face",
+    "term": "Positive Face (الوجه الإيجابي)",
+    "definition": "The desire to be appreciated and approved of by others.",
+    "arabic": "الرغبة في أن تكون محل تقدير وقبول من الآخرين."
+  },
+  {
+    "id": "negative-face",
+    "term": "Negative Face (الوجه السلبي)",
+    "definition": "The desire to be free from imposition and not to be coerced.",
+    "arabic": "الرغبة في الحرية وعدم الإجبار أو فرض القيود."
+  },
+  {
+    "id": "fta",
+    "term": "Face Threatening Act (FTA)",
+    "definition": "Any utterance which constitutes a threat to face in some way (e.g., orders, requests).",
+    "arabic": "أي قول يشكل تهديداً لوجه الشخص (مثل الأوامر أو الطلبات)."
+  },
+  {
+    "id": "off-record",
+    "term": "Off-record (خارج السجل)",
+    "definition": "Avoiding any explicit mention of the goods or services requested; dropping a hint.",
+    "arabic": "تجنب ذكر الطلب صراحة، والاعتماد على التلميح."
+  },
+  {
+    "id": "modality",
+    "term": "Modality (المنوالية)",
+    "definition": "The cover term for the ways available for expressing 'opinion or attitude'.",
+    "arabic": "المصطلح الشامل للطرق المتاحة للتعبير عن الرأي أو الموقف."
+  },
+  {
+    "id": "generic-sentence",
+    "term": "Generic Sentence (الجملة العامة)",
+    "definition": "A sentence which asserts something to be a general truth, typically timelessly true.",
+    "arabic": "جملة تؤكد حقيقة عامة، تكون صحيحة دائماً عبر الزمن."
+  }
+]

@@ -1,0 +1,237 @@
+﻿{
+    "value":  [
+                  {
+                      "id":  "ch1",
+                      "number":  1,
+                      "title":  "Introduction to Stylistics",
+                      "description":  "Foundational concepts of linguistic choices and their impact on audience perception.",
+                      "icon":  "history_edu",
+                      "status":  "completed",
+                      "completedAgo":  "2 days ago",
+                      "lessons":  [
+                                      {
+                                          "id":  "ch1-l1",
+                                          "title":  "What is Stylistics?",
+                                          "subtitle":  "The study of linguistic choices and their aesthetic effects.",
+                                          "content":  [
+                                                          {
+                                                              "type":  "definition",
+                                                              "heading":  "Core Definition",
+                                                              "body":  "Stylistics: The study of the distinctive linguistic features of a text, exploring how language choices shape meaning and effect."
+                                                          },
+                                                          {
+                                                              "type":  "text",
+                                                              "heading":  "Overview",
+                                                              "body":  "Stylistics sits at the intersection of linguistics and literary criticism. It provides tools to describe systematically how writers use language to create meaning and achieve effects."
+                                                          },
+                                                          {
+                                                              "type":  "quote",
+                                                              "quote":  "Style is the dress of thought.",
+                                                              "attribution":  "â€” Samuel Wesley"
+                                                          }
+                                                      ],
+                                          "nextLesson":  "ch1-l2"
+                                      },
+                                      {
+                                          "id":  "ch1-l2",
+                                          "title":  "Foregrounding \u0026 Deviation",
+                                          "subtitle":  "How language draws attention to itself.",
+                                          "content":  [
+                                                          {
+                                                              "type":  "definition",
+                                                              "heading":  "Core Definition",
+                                                              "body":  "Foregrounding: A linguistic technique that makes a text stand out by departing from ordinary expected language use."
+                                                          },
+                                                          {
+                                                              "type":  "text",
+                                                              "heading":  "Types of Foregrounding",
+                                                              "body":  "Foregrounding occurs through two main processes: deviation (breaking linguistic rules) and parallelism (creating structured repetition). Both draw the reader\u0027s attention to the form of the text itself."
+                                                          },
+                                                          {
+                                                              "type":  "analysis",
+                                                              "heading":  "Case Analysis: e.e. cummings",
+                                                              "body":  "The poet e.e. cummings systematically foregrounded his texts through graphic deviation â€” refusing to capitalize proper nouns, fragmenting syntax, and playing with spatial layout on the page.",
+                                                              "steps":  [
+                                                                            {
+                                                                                "label":  "Graphological Deviation",
+                                                                                "body":  "Non-standard capitalization and punctuation break reader expectations."
+                                                                            },
+                                                                            {
+                                                                                "label":  "Syntactic Deviation",
+                                                                                "body":  "Unusual word order forces slow, deliberate reading."
+                                                                            }
+                                                                        ]
+                                                          }
+                                                      ],
+                                          "prevLesson":  "ch1-l1"
+                                      }
+                                  ]
+                  },
+                  {
+                      "id":  "ch2",
+                      "number":  2,
+                      "title":  "Figurative Language",
+                      "description":  "Mastering metaphor, metonymy, and the cognitive structures of imagery.",
+                      "icon":  "psychology",
+                      "status":  "in-progress",
+                      "progress":  85,
+                      "lessons":  [
+                                      {
+                                          "id":  "ch2-l1",
+                                          "title":  "The Art of the Metaphor",
+                                          "subtitle":  "Transcending literal meaning to forge profound connections between disparate ideas.",
+                                          "content":  [
+                                                          {
+                                                              "type":  "definition",
+                                                              "heading":  "Core Definition",
+                                                              "body":  "Metaphor: A figure of speech in which a word or phrase is applied to an object or action to which it is not literally applicable."
+                                                          },
+                                                          {
+                                                              "type":  "text",
+                                                              "heading":  "Beyond the Comparison",
+                                                              "body":  "Unlike the simile, which acknowledges the comparison using \u0027like\u0027 or \u0027as\u0027, the metaphor asserts an identity between the subjects. It is an act of linguistic courage, claiming that one thing is another to illuminate a hidden quality or shared essence."
+                                                          },
+                                                          {
+                                                              "type":  "image-text",
+                                                              "imageAlt":  "A macro photograph of an antique clockwork mechanism inside a polished silver pocket watch, representing the metaphor \u0027time is a machine\u0027. Dramatic lighting highlights intricate brass gears.",
+                                                              "quote":  "\"The metaphor is perhaps one of man\u0027s most fruitful potentialities. Its efficacy verges on magic.\"",
+                                                              "attribution":  "â€” JosÃ© Ortega y Gasset"
+                                                          },
+                                                          {
+                                                              "type":  "analysis",
+                                                              "heading":  "Case Analysis: Shakespeare\u0027s Stage",
+                                                              "body":  "Consider the famous line from As You Like It: \"All the world\u0027s a stage.\"",
+                                                              "steps":  [
+                                                                            {
+                                                                                "label":  "The Vehicle",
+                                                                                "body":  "The \u0027Stage\u0027 represents the structure of human life, implying that our actions are performative and transitory."
+                                                                            },
+                                                                            {
+                                                                                "label":  "The Tenor",
+                                                                                "body":  "The \u0027World\u0027 is the actual subject being described, reimagined through the lens of theatrical artifice."
+                                                                            }
+                                                                        ]
+                                                          }
+                                                      ],
+                                          "nextLesson":  "ch2-l2",
+                                          "prevLesson":  "ch1-l2"
+                                      },
+                                      {
+                                          "id":  "ch2-l2",
+                                          "title":  "Simile \u0026 Analogy",
+                                          "subtitle":  "Drawing explicit comparisons to illuminate hidden truths.",
+                                          "content":  [
+                                                          {
+                                                              "type":  "definition",
+                                                              "heading":  "Core Definition",
+                                                              "body":  "Simile: A figure of speech that directly compares two things using the words \u0027like\u0027, \u0027as\u0027, \u0027than\u0027, or \u0027resembles\u0027."
+                                                          },
+                                                          {
+                                                              "type":  "text",
+                                                              "heading":  "Simile vs Metaphor",
+                                                              "body":  "While the metaphor boldly asserts identity (\u0027Life is a journey\u0027), the simile hedges with a marker of comparison (\u0027Life is like a journey\u0027). This subtle difference carries enormous rhetorical weight â€” the simile invites analysis, the metaphor demands acceptance."
+                                                          },
+                                                          {
+                                                              "type":  "quote",
+                                                              "quote":  "\"My love is like a red, red rose.\"",
+                                                              "attribution":  "â€” Robert Burns"
+                                                          }
+                                                      ],
+                                          "prevLesson":  "ch2-l1",
+                                          "nextLesson":  "ch2-l3"
+                                      },
+                                      {
+                                          "id":  "ch2-l3",
+                                          "title":  "Metonymy \u0026 Synecdoche",
+                                          "subtitle":  "The art of substitution in language.",
+                                          "content":  [
+                                                          {
+                                                              "type":  "definition",
+                                                              "heading":  "Core Definition",
+                                                              "body":  "Metonymy: A figure of speech in which a thing is referred to by the name of something closely associated with it (e.g., \u0027The Crown\u0027 for the monarchy)."
+                                                          },
+                                                          {
+                                                              "type":  "text",
+                                                              "heading":  "Metonymy in Daily Speech",
+                                                              "body":  "Metonymy is deeply embedded in everyday language. When we say \u0027Washington decided\u0027, we use \u0027Washington\u0027 (the city) to stand for the US government. This substitution compresses complex ideas into memorable, evocative shorthand."
+                                                          },
+                                                          {
+                                                              "type":  "analysis",
+                                                              "heading":  "Synecdoche: Part for Whole",
+                                                              "body":  "Synecdoche is a special type of metonymy where a part represents the whole, or vice versa.",
+                                                              "steps":  [
+                                                                            {
+                                                                                "label":  "Part for Whole",
+                                                                                "body":  "\u0027All hands on deck\u0027 â€” \u0027hands\u0027 stand for sailors."
+                                                                            },
+                                                                            {
+                                                                                "label":  "Whole for Part",
+                                                                                "body":  "\u0027England won the match\u0027 â€” \u0027England\u0027 stands for the English team."
+                                                                            }
+                                                                        ]
+                                                          }
+                                                      ],
+                                          "prevLesson":  "ch2-l2"
+                                      }
+                                  ]
+                  },
+                  {
+                      "id":  "ch3",
+                      "number":  3,
+                      "title":  "Rhetorical Devices",
+                      "description":  "Analyzing the classical canons of rhetoric and their modern application in persuasion.",
+                      "icon":  "architecture",
+                      "status":  "locked",
+                      "estimatedHours":  4,
+                      "lessons":  [
+
+                                  ]
+                  },
+                  {
+                      "id":  "ch4",
+                      "number":  4,
+                      "title":  "Syntax \u0026 Structure",
+                      "description":  "The architecture of the sentence: rhythm, emphasis, and structural variety.",
+                      "icon":  "rebase_edit",
+                      "status":  "locked",
+                      "estimatedHours":  6,
+                      "lessons":  [
+                                      {
+                                          "id":  "ch4-l1",
+                                          "title":  "Enallage",
+                                          "subtitle":  "The deliberate substitution of grammatical forms for rhetorical effect.",
+                                          "content":  [
+                                                          {
+                                                              "type":  "definition",
+                                                              "heading":  "Core Definition",
+                                                              "body":  "Enallage: The deliberate substitution of one grammatical form for another, often involving a shift in person, number, case, gender, or tense for rhetorical effect."
+                                                          },
+                                                          {
+                                                              "type":  "text",
+                                                              "heading":  "Linguistic Function",
+                                                              "body":  "In poetry, it disrupts the expected rhythm to force the reader\u0027s attention onto specific emotional shifts. In prose, it mimics natural speech patterns or characterizes a speaker\u0027s social standing or psychological state."
+                                                          },
+                                                          {
+                                                              "type":  "quote",
+                                                              "quote":  "\"I shall thee never, them always.\"",
+                                                              "attribution":  "â€” Traditional Stylistic Example"
+                                                          }
+                                                      ]
+                                      }
+                                  ]
+                  },
+                  {
+                      "id":  "ch5",
+                      "number":  5,
+                      "title":  "Voice \u0026 Persona",
+                      "description":  "Developing a unique authorial identity through tone and lexical choice.",
+                      "icon":  "voice_selection",
+                      "status":  "locked",
+                      "estimatedHours":  5,
+                      "lessons":  [
+
+                                  ]
+                  }
+              ],
+    "Count":  5
+}

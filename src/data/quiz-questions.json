@@ -1,0 +1,1371 @@
+[
+  {
+    "id": "q-ch1-s1-1",
+    "quizId": "quiz-ch1-s1",
+    "question": "Which of the following best defines 'Poetic Licence'?",
+    "options": [
+      "The poet's right to publish any content they wish",
+      "The poet's right to ignore rules and conventions generally observed by users of the language",
+      "A legal document required for professional poets",
+      "The use of metaphors in literary texts"
+    ],
+    "correctIndex": 1,
+    "explanation": "As stated in the curriculum, Poetic Licence is the poet's right to ignore linguistic rules and conventions for artistic purposes.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s1-2",
+    "quizId": "quiz-ch1-s1",
+    "question": "Which level of language includes 'Phonology' and 'Graphology'?",
+    "options": ["Meaning", "Form", "Realization", "Context"],
+    "correctIndex": 2,
+    "explanation": "Realization includes sounds (phonology) and marks on paper (graphology).",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s1-3",
+    "quizId": "quiz-ch1-s1",
+    "question": "The level of 'Form' in language is composed of:",
+    "options": [
+      "Sounds and Marks",
+      "Semantics and Pragmatics",
+      "Words (Lexicon) and Grammar",
+      "Social and Historical context"
+    ],
+    "correctIndex": 2,
+    "explanation": "Form is divided into Lexicon (words) and Grammar (words combined into sentences).",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s1-4",
+    "quizId": "quiz-ch1-s1",
+    "question": "What is the primary focus of Stylistics according to the provided material?",
+    "options": [
+      "Historical biography of authors",
+      "Exploring the rules of language and texts where these rules are bent",
+      "Legal aspects of publishing",
+      "Translating poetry into other languages"
+    ],
+    "correctIndex": 1,
+    "explanation": "Stylistics tells us about the rules and explores texts where those rules are bent (Deviation).",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s1-5",
+    "quizId": "quiz-ch1-s1",
+    "question": "Which of the following is NOT a level of language mentioned in the lecture?",
+    "options": ["Realization", "Form", "Imagination", "Meaning"],
+    "correctIndex": 2,
+    "explanation": "The three levels are Realization, Form, and Meaning.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s1-6",
+    "quizId": "quiz-ch1-s1",
+    "question": "If a poet uses a word in a way that violates standard grammar, they are exercising:",
+    "options": ["Poetic Licence", "Linguistic Correctness", "Semantic Stability", "Graphological Precision"],
+    "correctIndex": 0,
+    "explanation": "Ignoring standard rules is the definition of Poetic Licence.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch1-s1-7",
+    "quizId": "quiz-ch1-s1",
+    "question": "The study of 'Meaning' in language is known as:",
+    "options": ["Phonology", "Syntax", "Semantics", "Lexicon"],
+    "correctIndex": 2,
+    "explanation": "Semantics is the study of meaning.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s1-8",
+    "quizId": "quiz-ch1-s1",
+    "question": "Marks on paper (writing) are categorized under:",
+    "options": ["Phonology", "Graphology", "Morphology", "Syntax"],
+    "correctIndex": 1,
+    "explanation": "Graphology deals with the visual marks on paper.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s1-9",
+    "quizId": "quiz-ch1-s1",
+    "question": "When we combine words into sentences, we are working at the level of:",
+    "options": ["Lexicon", "Phonology", "Grammar", "Semantics"],
+    "correctIndex": 2,
+    "explanation": "Grammar (or Syntax) is the combination of words into larger units like sentences.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s1-10",
+    "quizId": "quiz-ch1-s1",
+    "question": "Why is Poetic Licence important in Stylistics?",
+    "options": [
+      "Because it explains why poets never make mistakes",
+      "Because it allows for the study of deviation from the norm",
+      "Because it makes poetry easier to translate",
+      "Because it prevents readers from misunderstanding the text"
+    ],
+    "correctIndex": 1,
+    "explanation": "Poetic Licence is the basis for Deviation, which is a core study area of Stylistics.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s2-1",
+    "quizId": "quiz-ch1-s2",
+    "question": "Foregrounding is described as the _______ effect of certain textual devices.",
+    "options": ["Physical", "Psychological", "Chemical", "Biological"],
+    "correctIndex": 1,
+    "explanation": "Foregrounding is defined as the psychological effect of textual patterning on the reader.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s2-2",
+    "quizId": "quiz-ch1-s2",
+    "question": "Which of the following is NOT one of the three main methods used to foreground a text?",
+    "options": ["Parallelism", "Deviation", "Repetition", "Explanation"],
+    "correctIndex": 3,
+    "explanation": "The three methods are Parallelism, Deviation, and Repetition.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s2-3",
+    "quizId": "quiz-ch1-s2",
+    "question": "What distinguishes Parallelism from mechanical repetition?",
+    "options": [
+      "Parallelism is shorter",
+      "Parallelism must have an element of identity AND an element of contrast",
+      "Parallelism only occurs in the Bible",
+      "Parallelism is always unintentional"
+    ],
+    "correctIndex": 1,
+    "explanation": "Parallelism requires both similarity (identity) and difference (contrast) in its pattern.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s2-4",
+    "quizId": "quiz-ch1-s2",
+    "question": "'Where wealth accumulates and men decay.' This line exhibits:",
+    "options": ["Deviation", "Parallelism", "Ellipsis", "Graphological shift"],
+    "correctIndex": 1,
+    "explanation": "This is a classic example of parallelism with a shared structure and contrasting lexical items.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch1-s2-5",
+    "quizId": "quiz-ch1-s2",
+    "question": "Deviation works by disrupting or departing from:",
+    "options": [
+      "The author's handwriting",
+      "Reader expectations or a pattern established by the text",
+      "The legal system of the country",
+      "The physical printing of the book"
+    ],
+    "correctIndex": 1,
+    "explanation": "Deviation is the breaking of expectations or internal patterns.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s2-6",
+    "quizId": "quiz-ch1-s2",
+    "question": "Parallelism pushes readers towards perceiving _______ relations between words.",
+    "options": ["Financial", "Phonetic", "Semantic", "Historical"],
+    "correctIndex": 2,
+    "explanation": "Parallelism encourages readers to find meaning (semantic) links between the parallel parts.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s2-7",
+    "quizId": "quiz-ch1-s2",
+    "question": "Which method of foregrounding is 'extra regularity'?",
+    "options": ["Deviation", "Parallelism", "Metaphor", "Syncope"],
+    "correctIndex": 1,
+    "explanation": "Parallelism is extra regularity; Deviation is extra irregularity.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s2-8",
+    "quizId": "quiz-ch1-s2",
+    "question": "The part of the text that the author signals as crucial to our understanding is called:",
+    "options": ["Background", "Foregrounded features", "Glossary", "Index"],
+    "correctIndex": 1,
+    "explanation": "Foregrounded features are signaled by the author as crucial.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s2-9",
+    "quizId": "quiz-ch1-s2",
+    "question": "External deviation is measured against:",
+    "options": [
+      "The rest of the poem",
+      "A norm lying outside the limits of the poem (e.g., standard language rules)",
+      "The author's previous works",
+      "The length of the poem"
+    ],
+    "correctIndex": 1,
+    "explanation": "External deviation is against a norm outside the text.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s2-10",
+    "quizId": "quiz-ch1-s2",
+    "question": "Internal deviation takes place against the background of:",
+    "options": [
+      "The English Dictionary",
+      "The poem itself (where the norm is the remainder of the poem)",
+      "Ancient Greek literature",
+      "The reader's personal life"
+    ],
+    "correctIndex": 1,
+    "explanation": "Internal deviation is relative to the pattern established within the specific text.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s3-1",
+    "quizId": "quiz-ch1-s3",
+    "question": "Lexical deviation is primarily achieved through:",
+    "options": ["Changing word order", "Neologism (invention of new words)", "Misspelling common words", "Using archaic pronunciation"],
+    "correctIndex": 1,
+    "explanation": "Lexical deviation involves new words (neologisms) or nonce-formations.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s3-2",
+    "quizId": "quiz-ch1-s3",
+    "question": "What are 'nonce-formations'?",
+    "options": [
+      "Words that rhyme with 'nonce'",
+      "New words made up for a single occasion",
+      "Ancient words that are no longer used",
+      "Words used in the Birmingham model"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nonce-formations are words invented for a specific, single use.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s3-3",
+    "quizId": "quiz-ch1-s3",
+    "question": "The use of 'manunkind' is an example of which word formation process?",
+    "options": ["Compounding", "Functional conversion", "Affixation", "Blending"],
+    "correctIndex": 2,
+    "explanation": "Using the prefix 'un-' with 'mankind' is affixation.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch1-s3-4",
+    "quizId": "quiz-ch1-s3",
+    "question": "What is 'Functional Conversion'?",
+    "options": [
+      "Converting a poem into a play",
+      "Adapting an item to a new grammatical function without changing its form",
+      "Changing the font of a word to bold",
+      "Translating a word into Arabic"
+    ],
+    "correctIndex": 1,
+    "explanation": "Functional conversion (e.g., 'The just man justices') changes a word's class without changing its spelling.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s3-5",
+    "quizId": "quiz-ch1-s3",
+    "question": "Syntactic deviation involves departing from:",
+    "options": ["Standard spelling", "Grammatical constraints/word order", "Standard pronunciation", "The theme of the poem"],
+    "correctIndex": 1,
+    "explanation": "Syntactic deviation is the re-ordering or re-sequencing of phrases (e.g., Inversion).",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s3-6",
+    "quizId": "quiz-ch1-s3",
+    "question": "The omission of medial sounds (e.g., 'o'er' for 'over') is called:",
+    "options": ["Elision", "Aphesis", "Syncope", "Apocope"],
+    "correctIndex": 2,
+    "explanation": "Syncope is the omission of sounds in the middle of a word.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s3-7",
+    "quizId": "quiz-ch1-s3",
+    "question": "'Aphesis' is the loss of a sound at the:",
+    "options": ["Beginning of a word", "Middle of a word", "End of a word", "Only in verbs"],
+    "correctIndex": 0,
+    "explanation": "Aphesis is the loss of an unstressed vowel at the start of a word.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s3-8",
+    "quizId": "quiz-ch1-s3",
+    "question": "Graphological deviation primarily concerns:",
+    "options": ["Grammar and Syntax", "Typography, layout, and punctuation", "Rhyme and Meter", "The plot of a story"],
+    "correctIndex": 1,
+    "explanation": "Graphological deviation deals with the visual presentation of text.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s3-9",
+    "quizId": "quiz-ch1-s3",
+    "question": "Semantic deviation results from meaning relations that are:",
+    "options": ["Too simple", "Logically inconsistent or paradoxical", "Translated from another language", "Identical to standard prose"],
+    "correctIndex": 1,
+    "explanation": "Semantic deviation creates mismatches in meaning, often via metaphor or paradox.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-s3-10",
+    "quizId": "quiz-ch1-s3",
+    "question": "'Her Kindling buds as if she Autumn were.' What type of deviation is 'she Autumn were'?",
+    "options": ["Lexical", "Phonological", "Syntactic (Inversion)", "Graphological"],
+    "correctIndex": 2,
+    "explanation": "The word order is inverted to put the verb at the end, which is syntactic deviation.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch2-s1-1",
+    "quizId": "quiz-ch2-s1",
+    "question": "Which term refers to the linguistic elements that tie a text together?",
+    "options": ["Foregrounding", "Cohesion", "Modality", "Deviation"],
+    "correctIndex": 1,
+    "explanation": "Cohesion is the linguistic means by which sentences are woven together.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s1-2",
+    "quizId": "quiz-ch2-s1",
+    "question": "In 'John bought a car. He likes it.', the word 'He' is an example of:",
+    "options": ["Lexical Cohesion", "Reference", "Ellipsis", "Conjunction"],
+    "correctIndex": 1,
+    "explanation": "Reference involves using pronouns or demonstratives to refer back to an entity.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch2-s1-3",
+    "quizId": "quiz-ch2-s1",
+    "question": "Anaphoric reference refers to something that _______ in the text.",
+    "options": ["Has already been mentioned", "Will be mentioned later", "Is outside the text", "Is unknown"],
+    "correctIndex": 0,
+    "explanation": "Anaphora refers backward to an earlier mention.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s1-4",
+    "quizId": "quiz-ch2-s1",
+    "question": "Cataphoric reference refers to something that _______ in the text.",
+    "options": ["Has already been mentioned", "Will be mentioned later", "Is outside the text", "Is a verb"],
+    "correctIndex": 1,
+    "explanation": "Cataphora refers forward to something coming later.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s1-5",
+    "quizId": "quiz-ch2-s1",
+    "question": "Which of these is a demonstrative reference?",
+    "options": ["He/She/It", "This/That/These/Those", "And/But/Or", "Said/Went/Ran"],
+    "correctIndex": 1,
+    "explanation": "Demonstratives like 'this' or 'that' are a type of reference.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s1-6",
+    "quizId": "quiz-ch2-s1",
+    "question": "Exophoric reference points to something:",
+    "options": ["Within the text", "Outside the text (situational)", "At the end of the text", "In the next chapter"],
+    "correctIndex": 1,
+    "explanation": "Exophora refers to the external context (e.g., pointing at a real object).",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s1-7",
+    "quizId": "quiz-ch2-s1",
+    "question": "The use of the definite article 'the' to refer to a previously mentioned 'a' item is:",
+    "options": ["Lexical Cohesion", "Reference Cohesion", "Substitution", "Ellipsis"],
+    "correctIndex": 1,
+    "explanation": "Definite articles function as referential links.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s1-8",
+    "quizId": "quiz-ch2-s1",
+    "question": "In 'This is the house that Jack built', 'that' functions as a:",
+    "options": ["Personal pronoun", "Relative pronoun reference", "Conjunction", "Verb"],
+    "correctIndex": 1,
+    "explanation": "Relative pronouns create referential cohesion between clauses.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch2-s1-9",
+    "quizId": "quiz-ch2-s1",
+    "question": "Cohesion differs from coherence because cohesion is:",
+    "options": ["Mental", "Formal/Linguistic", "Social", "Optional"],
+    "correctIndex": 1,
+    "explanation": "Cohesion is the formal surface link; coherence is the underlying meaning link.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s1-10",
+    "quizId": "quiz-ch2-s1",
+    "question": "Reference, Ellipsis, and Substitution are types of _______ cohesion.",
+    "options": ["Grammatical", "Lexical", "Phonological", "Graphological"],
+    "correctIndex": 0,
+    "explanation": "These are primarily grammatical links, as opposed to lexical links like synonymy.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s2-1",
+    "quizId": "quiz-ch2-s2",
+    "question": "Which term describes leaving out material that is understood from context?",
+    "options": ["Substitution", "Ellipsis", "Reference", "Conjunction"],
+    "correctIndex": 1,
+    "explanation": "Ellipsis is the omission of material that is unnecessary to repeat.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s2-2",
+    "quizId": "quiz-ch2-s2",
+    "question": "In 'I like tea, and she coffee', which word is ellipted?",
+    "options": ["tea", "and", "likes", "she"],
+    "correctIndex": 2,
+    "explanation": "The verb 'likes' is omitted in the second clause because it's understood.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch2-s2-3",
+    "quizId": "quiz-ch2-s2",
+    "question": "Substitution involves replacing a linguistic item with:",
+    "options": ["A pronoun", "A gap", "Another item (filler word like 'one' or 'do')", "A synonym"],
+    "correctIndex": 2,
+    "explanation": "Substitution uses placeholder words like 'one', 'do', or 'so' to replace longer phrases.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s2-4",
+    "quizId": "quiz-ch2-s2",
+    "question": "In 'I have a red pen. Do you have a blue one?', 'one' is a:",
+    "options": ["Noun", "Pronoun", "Substitute for 'pen'", "Adjective"],
+    "correctIndex": 2,
+    "explanation": "'one' replaces the noun 'pen' to avoid repetition.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch2-s2-5",
+    "quizId": "quiz-ch2-s2",
+    "question": "Which of these is a verbal substitute?",
+    "options": ["one", "so", "do", "it"],
+    "correctIndex": 2,
+    "explanation": "'do' is commonly used to substitute for a verb phrase (e.g., 'He ran, and I did too').",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s2-6",
+    "quizId": "quiz-ch2-s2",
+    "question": "Clausal substitution often uses the word:",
+    "options": ["one", "so", "it", "this"],
+    "correctIndex": 1,
+    "explanation": "'so' and 'not' are used for clausal substitution (e.g., 'I think so').",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s2-7",
+    "quizId": "quiz-ch2-s2",
+    "question": "Ellipsis is sometimes called 'substitution by _______'.",
+    "options": ["pronoun", "zero", "synonym", "context"],
+    "correctIndex": 1,
+    "explanation": "Ellipsis is like replacing an item with nothing (zero).",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s2-8",
+    "quizId": "quiz-ch2-s2",
+    "question": "In 'A: Did you see him? B: Yes, I did.', the word 'did' substitutes for:",
+    "options": ["see", "saw him", "him", "yes"],
+    "correctIndex": 1,
+    "explanation": "'did' replaces the entire verb phrase 'saw him'.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch2-s2-9",
+    "quizId": "quiz-ch2-s2",
+    "question": "Nominal ellipsis occurs when the _______ is omitted.",
+    "options": ["Verb", "Noun", "Adjective", "Preposition"],
+    "correctIndex": 1,
+    "explanation": "Nominal ellipsis is the omission of the head noun in a phrase.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s2-10",
+    "quizId": "quiz-ch2-s2",
+    "question": "'These shoes are old. I need new [shoes].' This is an example of:",
+    "options": ["Reference", "Nominal Ellipsis", "Verbal Substitution", "Conjunction"],
+    "correctIndex": 1,
+    "explanation": "The noun 'shoes' is omitted from the second sentence.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch2-s3-1",
+    "quizId": "quiz-ch2-s3",
+    "question": "Conjunction as a cohesive device clarifies the _______ relationship between sentences.",
+    "options": ["Physical", "Logical", "Phonetic", "Graphological"],
+    "correctIndex": 1,
+    "explanation": "Conjunctions (like 'however', 'therefore') show the logical link between parts of a text.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s3-2",
+    "quizId": "quiz-ch2-s3",
+    "question": "Which cluster of conjunctions includes 'and', 'also', and 'furthermore'?",
+    "options": ["Adversative", "Additive", "Causal", "Temporal"],
+    "correctIndex": 1,
+    "explanation": "Additive conjunctions add information to what has already been said.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s3-3",
+    "quizId": "quiz-ch2-s3",
+    "question": "The conjunction 'However' is categorized as:",
+    "options": ["Additive", "Adversative", "Causal", "Temporal"],
+    "correctIndex": 1,
+    "explanation": "Adversative conjunctions express contrast or counter-expectation.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s3-4",
+    "quizId": "quiz-ch2-s3",
+    "question": "Lexical cohesion through 'Synonymy' involves using:",
+    "options": ["The exact same word", "Words with similar meanings", "Words with opposite meanings", "Words that sound the same"],
+    "correctIndex": 1,
+    "explanation": "Synonymy uses related meanings to create a link (e.g., 'car' and 'vehicle').",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s3-5",
+    "quizId": "quiz-ch2-s3",
+    "question": "What is 'Collocation' in lexical cohesion?",
+    "options": ["Repetition of sounds", "Words that naturally go together (e.g. 'rain' and 'wet')", "The use of pronouns", "Changing the font size"],
+    "correctIndex": 1,
+    "explanation": "Collocation is the association between words that frequently co-occur.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s3-6",
+    "quizId": "quiz-ch2-s3",
+    "question": "In 'The flower is beautiful. The rose is red.', the link between 'flower' and 'rose' is:",
+    "options": ["Synonymy", "Hyponymy", "Antonymy", "Repetition"],
+    "correctIndex": 1,
+    "explanation": "Hyponymy is a relationship where one word is a specific type of another (Rose is a hyponym of Flower).",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch2-s3-7",
+    "quizId": "quiz-ch2-s3",
+    "question": "Which of these is a 'Causal' conjunction?",
+    "options": ["In addition", "Therefore", "Finally", "Yet"],
+    "correctIndex": 1,
+    "explanation": "Causal conjunctions (therefore, because, so) show cause-and-effect.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s3-8",
+    "quizId": "quiz-ch2-s3",
+    "question": "Temporal conjunctions relate events based on:",
+    "options": ["Logic", "Time", "Place", "Size"],
+    "correctIndex": 1,
+    "explanation": "Temporal links (then, after, finally) organize text chronologically.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s3-9",
+    "quizId": "quiz-ch2-s3",
+    "question": "Lexical cohesion is primarily achieved through:",
+    "options": ["Grammar rules", "Word choice", "Punctuation", "Sentence length"],
+    "correctIndex": 1,
+    "explanation": "Unlike reference or ellipsis, lexical cohesion depends on the vocabulary used.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch2-s3-10",
+    "quizId": "quiz-ch2-s3",
+    "question": "Repeatedly using the word 'Justice' in a speech is an example of:",
+    "options": ["Substitution", "Lexical Repetition", "Anaphora", "Ellipsis"],
+    "correctIndex": 1,
+    "explanation": "Repeating the same lexical item reinforces the theme and creates cohesion.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch3-s1-1",
+    "quizId": "quiz-ch3-s1",
+    "question": "Which Labovian element answers 'What was the story about?'",
+    "options": ["Abstract", "Orientation", "Evaluation", "Coda"],
+    "correctIndex": 0,
+    "explanation": "The Abstract summarizes the story's main point.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch3-s1-2",
+    "quizId": "quiz-ch3-s1",
+    "question": "The 'Orientation' element provides details about:",
+    "options": ["The moral of the story", "Who, when, and where", "The climax of events", "The final outcome"],
+    "correctIndex": 1,
+    "explanation": "Orientation sets the scene (participants, time, place).",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch3-s1-3",
+    "quizId": "quiz-ch3-s1",
+    "question": "Which element represents the core events ('Then what happened?')?",
+    "options": ["Evaluation", "Complicating Action", "Resolution", "Abstract"],
+    "correctIndex": 1,
+    "explanation": "Complicating Action is the series of events that form the plot.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch3-s1-4",
+    "quizId": "quiz-ch3-s1",
+    "question": "According to Labov, the 'Evaluation' answers which question?",
+    "options": ["What happened next?", "So what?", "Who was there?", "How did it end?"],
+    "correctIndex": 1,
+    "explanation": "Evaluation explains why the story is worth telling (its significance).",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch3-s1-5",
+    "quizId": "quiz-ch3-s1",
+    "question": "The 'Resolution' of a narrative is:",
+    "options": ["The beginning of the conflict", "The final outcome of the action", "The author's personal opinion", "A summary of characters"],
+    "correctIndex": 1,
+    "explanation": "Resolution answers 'What finally happened?'.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch3-s1-6",
+    "quizId": "quiz-ch3-s1",
+    "question": "The 'Coda' serves as a bridge between:",
+    "options": ["The past and the present", "The hero and the villain", "The abstract and orientation", "The story and the quiz"],
+    "correctIndex": 0,
+    "explanation": "The Coda returns the listener to the present moment.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch3-s1-7",
+    "quizId": "quiz-ch3-s1",
+    "question": "If a storyteller says 'I was walking down the street yesterday...', they are in the:",
+    "options": ["Abstract", "Orientation", "Resolution", "Coda"],
+    "correctIndex": 1,
+    "explanation": "Providing time and location is part of Orientation.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch3-s1-8",
+    "quizId": "quiz-ch3-s1",
+    "question": "Which element is often missing in simple or poorly told stories?",
+    "options": ["Complicating Action", "Evaluation", "Orientation", "Resolution"],
+    "correctIndex": 1,
+    "explanation": "Evaluation is crucial for 'well-formed' narratives; without it, the story feels pointless.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch3-s1-9",
+    "quizId": "quiz-ch3-s1",
+    "question": "The phrase 'And they lived happily ever after' is typical of a:",
+    "options": ["Orientation", "Resolution", "Coda", "Abstract"],
+    "correctIndex": 1,
+    "explanation": "This resolves the final state of the characters.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch3-s1-10",
+    "quizId": "quiz-ch3-s1",
+    "question": "'Let me tell you about the time I almost died.' This is a(n):",
+    "options": ["Abstract", "Orientation", "Evaluation", "Coda"],
+    "correctIndex": 0,
+    "explanation": "This summarizes the upcoming story's point to get attention.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch3-s2-1",
+    "quizId": "quiz-ch3-s2",
+    "question": "External evaluation occurs when:",
+    "options": ["The narrator steps out of the story to address the reader", "A character thinks to themselves", "The story ends abruptly", "A character dies"],
+    "correctIndex": 0,
+    "explanation": "External evaluation is a direct comment from the narrator to the audience.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch3-s2-2",
+    "quizId": "quiz-ch3-s2",
+    "question": "Internal evaluation is 'embedded' within:",
+    "options": ["The narrator's biography", "The narrative itself", "The dictionary", "The title"],
+    "correctIndex": 1,
+    "explanation": "Internal evaluation is woven into the fabric of the story's events.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch3-s2-3",
+    "quizId": "quiz-ch3-s2",
+    "question": "Which type of internal evaluation uses negatives or modals to show what *might* have happened?",
+    "options": ["Intensifying", "Comparator", "Correlative", "Explicative"],
+    "correctIndex": 1,
+    "explanation": "Comparators evaluate events by comparing them to unrealized possibilities.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch3-s2-4",
+    "quizId": "quiz-ch3-s2",
+    "question": "Correlative evaluation reports secondary activities that are:",
+    "options": ["Finished before the story", "Contemporaneous with main events", "Happening in the future", "Irrelevant"],
+    "correctIndex": 1,
+    "explanation": "Correlatives show what else was happening at the same time as the main action.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch3-s2-5",
+    "quizId": "quiz-ch3-s2",
+    "question": "Explicative evaluation provides _______ for actions.",
+    "options": ["Names", "Reasons or causes", "Synonyms", "Dates"],
+    "correctIndex": 1,
+    "explanation": "Explicatives explain 'why' something happened.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch3-s2-6",
+    "quizId": "quiz-ch3-s2",
+    "question": "Gestures, expressive sounds, and repetition are forms of _______ evaluation.",
+    "options": ["Intensifying", "Comparator", "Correlative", "Explicative"],
+    "correctIndex": 0,
+    "explanation": "Intensifying evaluation adds emphasis to specific moments.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch3-s2-7",
+    "quizId": "quiz-ch3-s2",
+    "question": "'He didn't hit me, but he could have.' The word 'could' makes this a:",
+    "options": ["Intensifying", "Comparator", "Correlative", "Explicative"],
+    "correctIndex": 1,
+    "explanation": "Modals like 'could' or 'might' create a comparison with a possible but non-actual event.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch3-s2-8",
+    "quizId": "quiz-ch3-s2",
+    "question": "'While I was running, I noticed a bird.' The phrase 'While I was running' is a:",
+    "options": ["Intensifying", "Comparator", "Correlative", "Explicative"],
+    "correctIndex": 2,
+    "explanation": "This shows a secondary activity (running) happening during the event (noticing bird).",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch3-s2-9",
+    "quizId": "quiz-ch3-s2",
+    "question": "'I was so, so, so scared.' The repetition of 'so' is a(n):",
+    "options": ["Intensifying evaluator", "Lexical deviation", "Cataphora", "Ellipsis"],
+    "correctIndex": 0,
+    "explanation": "Repetition is used here to intensify the emotion/state described.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch3-s2-10",
+    "quizId": "quiz-ch3-s2",
+    "question": "Evaluation is the _______ of the narrative.",
+    "options": ["Skeleton", "Skin", "Soul/Significance", "End"],
+    "correctIndex": 2,
+    "explanation": "Without evaluation, a story is just a list of events without meaning.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s1-1",
+    "quizId": "quiz-ch4-s1",
+    "question": "The Birmingham Model was developed to analyze which type of discourse?",
+    "options": ["Written poetry", "Classroom/Conversational interaction", "Newspaper headlines", "Legal documents"],
+    "correctIndex": 1,
+    "explanation": "Sinclair and Coulthard developed it based on classroom discourse analysis.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s1-2",
+    "quizId": "quiz-ch4-s1",
+    "question": "The highest unit in the Birmingham discourse hierarchy is:",
+    "options": ["Act", "Move", "Exchange", "Lesson"],
+    "correctIndex": 3,
+    "explanation": "The hierarchy goes Lesson > Transaction > Exchange > Move > Act.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s1-3",
+    "quizId": "quiz-ch4-s1",
+    "question": "Which unit is at the bottom-most level of the discourse scale?",
+    "options": ["Exchange", "Move", "Act", "Transaction"],
+    "correctIndex": 2,
+    "explanation": "The Act is the smallest functional unit (e.g. a greeting, an acknowledgment).",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s1-4",
+    "quizId": "quiz-ch4-s1",
+    "question": "A typical IRF exchange consists of:",
+    "options": ["Input, Radio, Feedback", "Initiation, Response, Follow-up", "Interaction, Reaction, Finality", "Introduction, Rhyme, Form"],
+    "correctIndex": 1,
+    "explanation": "IRF is the standard teacher-student exchange pattern.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s1-5",
+    "quizId": "quiz-ch4-s1",
+    "question": "A 'Move' in conversation is made up of one or more:",
+    "options": ["Exchanges", "Acts", "Lessons", "Turns"],
+    "correctIndex": 1,
+    "explanation": "Moves are composed of Acts.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s1-6",
+    "quizId": "quiz-ch4-s1",
+    "question": "The 'Follow-up' (F) in an IRF exchange usually serves to:",
+    "options": ["Start a new topic", "Evaluate the response", "Ask the first question", "Ignore the student"],
+    "correctIndex": 1,
+    "explanation": "The Follow-up move provides feedback or evaluation (e.g., 'Good job').",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s1-7",
+    "quizId": "quiz-ch4-s1",
+    "question": "A 'Turn' in conversation refers to:",
+    "options": ["The time one person spends speaking", "The physical rotation of speakers", "A specific grammatical rule", "The end of a chapter"],
+    "correctIndex": 0,
+    "explanation": "A turn is the period during which a speaker has the floor.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s1-8",
+    "quizId": "quiz-ch4-s1",
+    "question": "If a teacher says 'What is the capital of France?', this move is a(n):",
+    "options": ["Initiation", "Response", "Follow-up", "Closing"],
+    "correctIndex": 0,
+    "explanation": "Starting a sequence with a question is an Initiation move.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch4-s1-9",
+    "quizId": "quiz-ch4-s1",
+    "question": "If a student answers 'Paris', this move is a(n):",
+    "options": ["Initiation", "Response", "Follow-up", "Opening"],
+    "correctIndex": 1,
+    "explanation": "Answering the initiation is a Response move.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch4-s1-10",
+    "quizId": "quiz-ch4-s1",
+    "question": "The Birmingham model treats conversation as a _______ system.",
+    "options": ["Random", "Rule-governed/Hierarchical", "Chaotic", "Non-functional"],
+    "correctIndex": 1,
+    "explanation": "It views discourse as a structured hierarchy with clear rules of occurrence.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s2-1",
+    "quizId": "quiz-ch4-s2",
+    "question": "Grice's 'Cooperative Principle' suggests that participants usually:",
+    "options": ["Try to confuse each other", "Make helpful contributions to communication", "Argue about meanings", "Ignore the rules of grammar"],
+    "correctIndex": 1,
+    "explanation": "The principle assumes speakers cooperate to achieve mutual understanding.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s2-2",
+    "quizId": "quiz-ch4-s2",
+    "question": "Which maxim requires you to be as informative as necessary, but no more?",
+    "options": ["Quality", "Quantity", "Relation", "Manner"],
+    "correctIndex": 1,
+    "explanation": "Quantity deals with the amount of information provided.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s2-3",
+    "quizId": "quiz-ch4-s2",
+    "question": "Which maxim is violated if someone tells a blatant lie?",
+    "options": ["Quality", "Quantity", "Relation", "Manner"],
+    "correctIndex": 0,
+    "explanation": "The maxim of Quality requires being truthful.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s2-4",
+    "quizId": "quiz-ch4-s2",
+    "question": "The maxim of 'Relation' (or Relevance) requires being:",
+    "options": ["Polite", "Brief", "Relevant to the topic", "Truthful"],
+    "correctIndex": 2,
+    "explanation": "Relation simply means 'be relevant'.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s2-5",
+    "quizId": "quiz-ch4-s2",
+    "question": "Which maxim is flouted if someone is intentionally obscure or ambiguous?",
+    "options": ["Quality", "Quantity", "Relation", "Manner"],
+    "correctIndex": 3,
+    "explanation": "The maxim of Manner requires clarity and avoiding ambiguity.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s2-6",
+    "quizId": "quiz-ch4-s2",
+    "question": "What is a 'Conversational Implicature'?",
+    "options": ["A grammatical error", "An additional meaning inferred from flouting a maxim", "A type of rhyme", "A formal request"],
+    "correctIndex": 1,
+    "explanation": "An implicature is the 'hidden' meaning that arises from breaking maxims cooperatively.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s2-7",
+    "quizId": "quiz-ch4-s2",
+    "question": "If I ask 'Where is John?' and you say 'He's a nice guy', you are violating:",
+    "options": ["Quality", "Quantity", "Relation", "Manner"],
+    "correctIndex": 2,
+    "explanation": "The answer is not relevant to the question about his location.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch4-s2-8",
+    "quizId": "quiz-ch4-s2",
+    "question": "'Could you tell me the time?' 'Yes.' (and then walks away). This violates:",
+    "options": ["Quality", "Quantity", "Relation", "Manner"],
+    "correctIndex": 1,
+    "explanation": "The speaker did not provide the required amount of information.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch4-s2-9",
+    "quizId": "quiz-ch4-s2",
+    "question": "Using sarcasm (saying the opposite of what is true) flouts which maxim?",
+    "options": ["Quality", "Quantity", "Relation", "Manner"],
+    "correctIndex": 0,
+    "explanation": "Sarcasm involves saying something you know to be false, flouting Quality.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch4-s2-10",
+    "quizId": "quiz-ch4-s2",
+    "question": "Gricean maxims are best described as _______, not laws.",
+    "options": ["Expectations/Guidelines", "Strict punishments", "Physics formulas", "Useless theories"],
+    "correctIndex": 0,
+    "explanation": "They are norms that people generally follow to communicate effectively.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s3-1",
+    "quizId": "quiz-ch4-s3",
+    "question": "In Politeness Theory, 'Face' refers to:",
+    "options": ["The physical appearance of a person", "The public self-image every person wants to claim", "A type of mask used in drama", "The first page of a book"],
+    "correctIndex": 1,
+    "explanation": "Face is the emotional and social sense of self that everyone wants acknowledged.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s3-2",
+    "quizId": "quiz-ch4-s3",
+    "question": "Positive Face is the desire to be:",
+    "options": ["Left alone", "Liked and approved of", "Quiet", "Unseen"],
+    "correctIndex": 1,
+    "explanation": "Positive face is the need to be appreciated and connected to others.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s3-3",
+    "quizId": "quiz-ch4-s3",
+    "question": "Negative Face is the desire to be:",
+    "options": ["Disliked", "Free from imposition and independent", "Angry", "Popular"],
+    "correctIndex": 1,
+    "explanation": "Negative face is the need for freedom of action and freedom from being imposed upon.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s3-4",
+    "quizId": "quiz-ch4-s3",
+    "question": "What does FTA stand for?",
+    "options": ["Formal Text Analysis", "Face Threatening Act", "Functional Talk Agreement", "First Turn Attempt"],
+    "correctIndex": 1,
+    "explanation": "An FTA is an utterance that potentially damages someone's positive or negative face.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s3-5",
+    "quizId": "quiz-ch4-s3",
+    "question": "Which strategy is most direct and ignores face concerns?",
+    "options": ["Positive Politeness", "Negative Politeness", "Bald on-record", "Off-record"],
+    "correctIndex": 2,
+    "explanation": "Bald on-record (e.g. 'Give me that!') is direct and offers no face protection.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s3-6",
+    "quizId": "quiz-ch4-s3",
+    "question": "Which strategy involves indirect hints (e.g., 'It's cold in here')?",
+    "options": ["Positive Politeness", "Negative Politeness", "Off-record", "Bald on-record"],
+    "correctIndex": 2,
+    "explanation": "Off-record strategies allow the speaker to avoid the responsibility of a direct act.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s3-7",
+    "quizId": "quiz-ch4-s3",
+    "question": "Using honorifics (e.g., 'Sir', 'Professor') is a form of:",
+    "options": ["Positive Politeness", "Negative Politeness", "Bald on-record", "Rudeness"],
+    "correctIndex": 1,
+    "explanation": "Giving deference is a way to respect the hearer's negative face/status.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch4-s3-8",
+    "quizId": "quiz-ch4-s3",
+    "question": "A compliment ('Great job!') targets the hearer's:",
+    "options": ["Negative Face", "Positive Face", "Legs", "Voice"],
+    "correctIndex": 1,
+    "explanation": "Compliments satisfy the desire to be liked/approved of (Positive Face).",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch4-s3-9",
+    "quizId": "quiz-ch4-s3",
+    "question": "An apology ('I'm sorry to bother you, but...') is a strategy for:",
+    "options": ["Positive Politeness", "Negative Politeness", "Ignoring Face", "Threatening Face"],
+    "correctIndex": 1,
+    "explanation": "Apologizing for an imposition protects the hearer's Negative Face.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch4-s3-10",
+    "quizId": "quiz-ch4-s3",
+    "question": "Stylistics uses Politeness Theory to analyze _______ between characters.",
+    "options": ["Grammar", "Power and social distance", "Spelling errors", "Rhyme schemes"],
+    "correctIndex": 1,
+    "explanation": "How characters use politeness reveals their relationship and status.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s4-1",
+    "quizId": "quiz-ch4-s4",
+    "question": "The Speech Act theory was popularized by which philosopher?",
+    "options": ["Sinclair", "J.L. Austin", "Labov", "Grice"],
+    "correctIndex": 1,
+    "explanation": "Austin's book 'How to Do Things with Words' is the foundation.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s4-2",
+    "quizId": "quiz-ch4-s4",
+    "question": "The physical act of producing a meaningful utterance is the _______ act.",
+    "options": ["Locutionary", "Illocutionary", "Perlocutionary", "Dictionary"],
+    "correctIndex": 0,
+    "explanation": "Locution is the basic act of speaking.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s4-3",
+    "quizId": "quiz-ch4-s4",
+    "question": "The 'force' or intended function of an utterance (e.g. promising) is the _______ act.",
+    "options": ["Locutionary", "Illocutionary", "Perlocutionary", "Grammatical"],
+    "correctIndex": 1,
+    "explanation": "Illocution is the core focus: what the speaker *does* by speaking.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s4-4",
+    "quizId": "quiz-ch4-s4",
+    "question": "The actual effect on the hearer (e.g. making them scared) is the _______ act.",
+    "options": ["Locutionary", "Illocutionary", "Perlocutionary", "Social"],
+    "correctIndex": 2,
+    "explanation": "Perlocution is the consequence or effect of the speech act.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s4-5",
+    "quizId": "quiz-ch4-s4",
+    "question": "Which category of speech acts commits the speaker to a future action?",
+    "options": ["Directives", "Commissives", "Expressives", "Declarations"],
+    "correctIndex": 1,
+    "explanation": "Commissives (promises, vows, threats) commit the speaker.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s4-6",
+    "quizId": "quiz-ch4-s4",
+    "question": "A request or a command belongs to which category?",
+    "options": ["Directives", "Commissives", "Expressives", "Representatives"],
+    "correctIndex": 0,
+    "explanation": "Directives aim to make the hearer do something.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch4-s4-7",
+    "quizId": "quiz-ch4-s4",
+    "question": "'I hereby pronounce you man and wife' is a(n):",
+    "options": ["Expressive", "Declaration", "Representative", "Directive"],
+    "correctIndex": 1,
+    "explanation": "Declarations change reality via the act of speaking (if the speaker has authority).",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch4-s4-8",
+    "quizId": "quiz-ch4-s4",
+    "question": "'I am very sorry for the mess' is a(n):",
+    "options": ["Representative", "Expressive", "Directive", "Commissive"],
+    "correctIndex": 1,
+    "explanation": "Expressives share the speaker's psychological state/feelings.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch4-s4-9",
+    "quizId": "quiz-ch4-s4",
+    "question": "A statement like 'The earth is round' is a(n):",
+    "options": ["Representative", "Directive", "Declaration", "Expressive"],
+    "correctIndex": 0,
+    "explanation": "Representatives commit the speaker to the truth of a proposition.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch4-s4-10",
+    "quizId": "quiz-ch4-s4",
+    "question": "Felicity Conditions are the _______ for a speech act to be successful.",
+    "options": ["Spelling rules", "Necessary requirements/context", "Rhymes", "Number of words"],
+    "correctIndex": 1,
+    "explanation": "Speech acts only work if conditions (like authority or sincerity) are met.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch5-s1-1",
+    "quizId": "quiz-ch5-s1",
+    "question": "Modality is the linguistic cover term for expressing _______ or attitude.",
+    "options": ["Facts", "Opinion", "History", "Math"],
+    "correctIndex": 1,
+    "explanation": "Modality allows speakers to show their stance or evaluation of a message.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch5-s1-2",
+    "quizId": "quiz-ch5-s1",
+    "question": "Which modality parameter qualifies how likely a claim is to be true?",
+    "options": ["Probability", "Obligation", "Willingness", "Usuality"],
+    "correctIndex": 0,
+    "explanation": "Probability deals with likelihood (e.g. 'perhaps', 'might').",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch5-s1-3",
+    "quizId": "quiz-ch5-s1",
+    "question": "The parameter of 'Obligation' deals with:",
+    "options": ["Desire", "Necessity/Control (e.g. 'must', 'should')", "Frequency", "Guessing"],
+    "correctIndex": 1,
+    "explanation": "Obligation shows the degree of necessity or command.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch5-s1-4",
+    "quizId": "quiz-ch5-s1",
+    "question": "'Usuality' qualifies the _______ of an event.",
+    "options": ["Truth", "Frequency", "Importance", "Sound"],
+    "correctIndex": 1,
+    "explanation": "Usuality (e.g. 'often', 'rarely') shows how common an event is.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch5-s1-5",
+    "quizId": "quiz-ch5-s1",
+    "question": "Willingness expresses the _______ of the speaker.",
+    "options": ["Intelligence", "Desire/Intention", "Physical strength", "Memory"],
+    "correctIndex": 1,
+    "explanation": "Willingness shows if the speaker wants or intends to do something.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch5-s1-6",
+    "quizId": "quiz-ch5-s1",
+    "question": "Sentences with no modality markers are called _______ sentences.",
+    "options": ["Modalized", "Generic/Categorical", "Invisible", "Broken"],
+    "correctIndex": 1,
+    "explanation": "Categorical assertions (e.g. 'Water boils at 100°C') lack modal qualification.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch5-s1-7",
+    "quizId": "quiz-ch5-s1",
+    "question": "'You must finish your homework' expresses which parameter?",
+    "options": ["Probability", "Obligation", "Usuality", "Willingness"],
+    "correctIndex": 1,
+    "explanation": "'Must' is a strong indicator of obligation.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch5-s1-8",
+    "quizId": "quiz-ch5-s1",
+    "question": "'It might rain later' expresses which parameter?",
+    "options": ["Probability", "Obligation", "Usuality", "Willingness"],
+    "correctIndex": 0,
+    "explanation": "'Might' qualifies the likelihood (probability) of rain.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch5-s1-9",
+    "quizId": "quiz-ch5-s1",
+    "question": "'I usually drink coffee' expresses:",
+    "options": ["Probability", "Obligation", "Usuality", "Willingness"],
+    "correctIndex": 2,
+    "explanation": "'Usually' is a marker of frequency/usuality.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch5-s1-10",
+    "quizId": "quiz-ch5-s1",
+    "question": "Modality helps stylistics analyze the _______ of the narrator.",
+    "options": ["Spelling", "Point of view/Bias", "Gender", "Age"],
+    "correctIndex": 1,
+    "explanation": "How a narrator qualifies their statements reveals their attitude and reliability.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch5-s2-1",
+    "quizId": "quiz-ch5-s2",
+    "question": "Which linguistic category includes 'can', 'may', and 'should'?",
+    "options": ["Modal Auxiliaries", "Modal Adverbs", "Modal Adjectives", "Nouns"],
+    "correctIndex": 0,
+    "explanation": "These are the core modal verbs (auxiliaries).",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch5-s2-2",
+    "quizId": "quiz-ch5-s2",
+    "question": "'Certainly' and 'Perhaps' are examples of:",
+    "options": ["Modal Auxiliaries", "Modal Adverbs", "Evaluative Adjectives", "Verbs"],
+    "correctIndex": 1,
+    "explanation": "These adverbs qualify the entire clause's modality.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch5-s2-3",
+    "quizId": "quiz-ch5-s2",
+    "question": "What is 'Metaphorized Modality'?",
+    "options": ["Using a metaphor about a modal verb", "Using clauses like 'I think' or 'It is likely' to show attitude", "Changing the tense of a verb", "Using emojis"],
+    "correctIndex": 1,
+    "explanation": "It projects modality into a separate clause to make it more or less explicit.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch5-s2-4",
+    "quizId": "quiz-ch5-s2",
+    "question": "Modal lexical verbs include words like:",
+    "options": ["Walk, Run", "Think, Believe, Hope", "Is, Are", "Very, Fast"],
+    "correctIndex": 1,
+    "explanation": "These verbs inherently express a mental state or attitude.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch5-s2-5",
+    "quizId": "quiz-ch5-s2",
+    "question": "Which of these is an evaluative adjective showing attitude?",
+    "options": ["Blue", "Square", "Wonderful", "Big"],
+    "correctIndex": 2,
+    "explanation": "Evaluation adjectives (wonderful, awful, strange) show the speaker's stance.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch5-s2-6",
+    "quizId": "quiz-ch5-s2",
+    "question": "The use of 'luckily' or 'unfortunately' qualifies the _______ of the event.",
+    "options": ["Truth", "Evaluation/Stance", "Time", "Place"],
+    "correctIndex": 1,
+    "explanation": "These are 'attitudinal' adverbs.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch5-s2-7",
+    "quizId": "quiz-ch5-s2",
+    "question": "'I believe that he is coming.' This is an example of:",
+    "options": ["Simple Modal Auxiliary", "Metaphorized Modality", "Generic Statement", "No Modality"],
+    "correctIndex": 1,
+    "explanation": "The clause 'I believe' projects the modality of the following clause.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch5-s2-8",
+    "quizId": "quiz-ch5-s2",
+    "question": "Which of these expresses the strongest certainty?",
+    "options": ["Maybe", "Possibly", "Definitely", "Perhaps"],
+    "correctIndex": 2,
+    "explanation": "'Definitely' indicates high modal commitment.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch5-s2-9",
+    "quizId": "quiz-ch5-s2",
+    "question": "Which of these expresses the weakest obligation?",
+    "options": ["Must", "Should", "Need to", "Has to"],
+    "correctIndex": 1,
+    "explanation": "'Should' is a weaker recommendation compared to the necessity of 'Must'.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch5-s2-10",
+    "quizId": "quiz-ch5-s2",
+    "question": "Authors use modality to create a specific _______ in a text.",
+    "options": ["Font", "Mood or Persona", "Spelling", "Grammar book"],
+    "correctIndex": 1,
+    "explanation": "Modality is key to creating a narrative voice or character's personality.",
+    "type": "theoretical"
+  },
+  {
+    "id": "q-ch1-app-1",
+    "quizId": "quiz-ch1-s3",
+    "question": "In the passage from 'The Highwayman', the repetition of the structure [The X was a Y of Z] is an example of:",
+    "options": ["Lexical Deviation", "Syntactic Parallelism", "Phonological Deviation", "Ellipsis"],
+    "correctIndex": 1,
+    "explanation": "The repeated grammatical structure with different words is the definition of Parallelism.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch1-app-2",
+    "quizId": "quiz-ch1-s3",
+    "question": "Describing the moon as a 'ghostly galleon' in 'The Highwayman' analysis is a:",
+    "options": ["Syntactic Deviation", "Semantic Deviation (Metaphor)", "Graphological Deviation", "Realization"],
+    "correctIndex": 1,
+    "explanation": "Metaphor is a type of semantic deviation as it breaks literal meaning expectations.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch2-app-1",
+    "quizId": "quiz-ch2-s3",
+    "question": "In the Detective passage, the link between 'The detective' and 'He' is which type of cohesion?",
+    "options": ["Anaphoric Reference", "Cataphoric Reference", "Exophoric Reference", "Substitution"],
+    "correctIndex": 0,
+    "explanation": "'He' refers back to 'The detective', making it anaphoric.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch3-app-1",
+    "quizId": "quiz-ch3-s2",
+    "question": "In the 'Drowning' story, the sentence 'Since that day, I never swim without a life jacket' represents which Labovian element?",
+    "options": ["Orientation", "Evaluation", "Resolution", "Coda"],
+    "correctIndex": 3,
+    "explanation": "It's a Coda because it bridges the past event to the narrator's present habits.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch3-app-2",
+    "quizId": "quiz-ch3-s2",
+    "question": "In the 'Drowning' story analysis, 'I thought I would never see my family again' is identified as:",
+    "options": ["Abstract", "Orientation", "Evaluation", "Resolution"],
+    "correctIndex": 2,
+    "explanation": "This expresses the internal significance and feeling of the event, which is Evaluation.",
+    "type": "applied"
+  },
+  {
+    "id": "q-ch4-app-1",
+    "quizId": "quiz-ch4-s4",
+    "question": "In the window dialogue, why is 'would you mind terribly' considered Negative Politeness?",
+    "options": [
+      "Because it is rude to the listener",
+      "Because it mitigates the threat to the listener's freedom/Negative Face",
+      "Because it expresses positive emotion",
+      "Because it is a direct command"
+    ],
+    "correctIndex": 1,
+    "explanation": "Negative politeness strategies respect the listener's desire not to be imposed upon.",
+    "type": "applied"
+  }
+]

@@ -1,0 +1,288 @@
+[
+  {
+    "id": "ch1",
+    "number": 1,
+    "title": "Part 1: Poetry — Foregrounding & Deviation",
+    "description": "Comprehensive study of Poetic Licence, Parallelism, and all levels of linguistic deviation.",
+    "icon": "auto_stories",
+    "status": "completed",
+    "lessons": [
+      {
+        "id": "ch1-s1",
+        "title": "Basic Concepts & Poetic Licence",
+        "subtitle": "The rules of Stylistics and the freedom of the poet.",
+        "quizId": "quiz-ch1-s1",
+        "content": [
+          { "type": "definition", "heading": "Theory: Poetic Licence (الرخصة الشعرية)", "body": "Poetic Licence: It is the poet's right to ignore rules and conventions generally observed by users of the language to achieve artistic effects.\n\nالرخصة الشعرية: هي حق الشاعر في تجاهل القواعد اللغوية المتعارف عليها لتحقيق أغراض جمالية أو فنية." },
+          { 
+            "type": "analysis", 
+            "heading": "Applied: Breaking the Rules", 
+            "body": "Example from Gerard Manley Hopkins: 'The just man justices.'",
+            "steps": [
+              { "label": "Observation", "body": "Standard grammar uses 'justice' as a noun. Hopkins converts it into a verb ('justices')." },
+              { "label": "Analysis", "body": "This is Functional Conversion (Syntactic Deviation). It emphasizes the active, living nature of justice rather than it being a static concept." }
+            ]
+          },
+          { 
+            "type": "analysis", 
+            "heading": "Theory: Levels of Language", 
+            "body": "Stylistics analyzes language at three fundamental levels:",
+            "steps": [
+              { "label": "Realization", "body": "Sounds (Phonology) and Marks on paper (Graphology)." },
+              { "label": "Form", "body": "Words (Lexicon) and Grammar (Syntax)." },
+              { "label": "Meaning", "body": "The ultimate semantic interpretation." }
+            ]
+          }
+        ],
+        "nextLesson": "ch1-s2"
+      },
+      {
+        "id": "ch1-s2",
+        "title": "Foregrounding & Parallelism",
+        "subtitle": "Methods of making text stand out.",
+        "quizId": "quiz-ch1-s2",
+        "content": [
+          { "type": "definition", "heading": "Theory: Foregrounding (البروز الأسلوبي)", "body": "Refers to the ways in which certain aspects of a text can be made to stand out or appear prominent through forms of textual patterning." },
+          { 
+            "type": "analysis", 
+            "heading": "Theory: Parallelism (الموازنة)", 
+            "body": "Extra regular use of a linguistic feature. It pushes readers towards perceiving semantic relations between words which do not exist as such in the language system.",
+            "steps": [
+              { "label": "Identity", "body": "Part of the structure stays constant." },
+              { "label": "Contrast", "body": "Specific words are changed to create new associations." }
+            ]
+          },
+          { 
+            "type": "analysis", 
+            "heading": "Applied: Analyzing Parallelism", 
+            "body": "Passage: 'Where wealth accumulates and men decay.' (Oliver Goldsmith)",
+            "steps": [
+              { "label": "Structure", "body": "Noun + Verb vs Noun + Verb." },
+              { "label": "Contrast", "body": "Wealth (Material) vs Men (Humanity). Accumulates (Growth) vs Decay (Decline)." },
+              { "label": "Effect", "body": "The poet forces a link between the increase of wealth and the destruction of the human soul." }
+            ]
+          }
+        ],
+        "prevLesson": "ch1-s1",
+        "nextLesson": "ch1-s3"
+      },
+      {
+        "id": "ch1-s3",
+        "title": "All 5 Types of Deviation",
+        "subtitle": "Syntactic, Lexical, Phonological, Graphological, Semantic.",
+        "quizId": "quiz-ch1-s3",
+        "content": [
+          { 
+            "type": "analysis", 
+            "heading": "Applied: Identifying Deviation Types", 
+            "body": "Let's analyze specific exam examples:",
+            "steps": [
+              { "label": "Semantic (Metaphor)", "body": "'Death feeds on his mute voice...' (Personification of Death)." },
+              { "label": "Syntactic (Inversion)", "body": "'Her Kindling buds as if she Autumn were.' (Word order reversed)." },
+              { "label": "Lexical (Poetic Compound)", "body": "'The passion-winged ministers of thought.' (Newly created compound)." },
+              { "label": "Phonological (Syncope)", "body": "'o'er' instead of 'over' (Omission of medial sounds)." },
+              { "label": "Graphological", "body": "Splitting words like 'H-E-L-L' vertically to force separate pronunciation." }
+            ]
+          }
+        ],
+        "prevLesson": "ch1-s2"
+      }
+    ],
+    "examId": "exam-ch1"
+  },
+  {
+    "id": "ch2",
+    "number": 2,
+    "title": "Part 2: Novel — Cohesion",
+    "description": "How sentences are woven together through Reference, Ellipsis, Conjunction, and Lexical ties.",
+    "icon": "menu_book",
+    "status": "in-progress",
+    "lessons": [
+      {
+        "id": "ch2-s1",
+        "title": "Kinds of Cohesion",
+        "subtitle": "The linguistic means by which sentences are tied together.",
+        "quizId": "quiz-ch2-s1",
+        "content": [
+          { "type": "definition", "heading": "Theory: Cohesion (السبك)", "body": "The linguistic elements that tie a text together across sentence boundaries." },
+          { 
+            "type": "analysis", 
+            "heading": "Theory: 4 Types of Cohesion", 
+            "body": "Cohesion is achieved through four main grammatical and lexical methods:",
+            "steps": [
+              { "label": "Reference", "body": "Using pronouns or demonstratives (He, This, That)." },
+              { "label": "Ellipsis", "body": "Omitting repeated elements ('I like tea, and she [likes] coffee')." },
+              { "label": "Conjunctions", "body": "Logical connectors (And, But, Because, Then)." },
+              { "label": "Lexical Cohesion", "body": "Reiteration (Repetition, Synonymy, Hyponymy) and Collocation." }
+            ]
+          },
+          { 
+            "type": "analysis", 
+            "heading": "Applied: Lexical Cohesion Breakdown", 
+            "body": "Analyzing relationships between words:",
+            "steps": [
+              { "label": "Repetition", "body": "'Justice... Justice... Justice' used repeatedly." },
+              { "label": "Hyponymy", "body": "'Rose' is a hyponym of the category 'Flower'." },
+              { "label": "Collocation", "body": "'Strong tea' or 'Bread and butter' (words that naturally go together)." }
+            ]
+          }
+        ],
+        "nextLesson": "ch2-s2"
+      },
+      {
+        "id": "ch2-s2",
+        "title": "Reference Types",
+        "subtitle": "Anaphoric, Cataphoric, and Exophoric.",
+        "quizId": "quiz-ch2-s2",
+        "content": [
+          { 
+            "type": "analysis", 
+            "heading": "Applied: Identifying Reference", 
+            "body": "How do pronouns point to things?",
+            "steps": [
+              { "label": "Anaphoric", "body": "'John arrived. He was tired.' (He points back to John)." },
+              { "label": "Cataphoric", "body": "'When he arrived, John was tired.' (He points forward to John)." },
+              { "label": "Exophoric", "body": "'Look at that!' (That points to something in the physical world)." }
+            ]
+          }
+        ],
+        "prevLesson": "ch2-s1"
+      }
+    ],
+    "examId": "exam-ch2"
+  },
+  {
+    "id": "ch3",
+    "number": 3,
+    "title": "Part 3: Narrative Structure",
+    "description": "Labov's 6 elements and the art of internal evaluation.",
+    "icon": "account_tree",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch3-s1",
+        "title": "Labov's 6 Elements",
+        "subtitle": "The skeleton of any well-formed story.",
+        "quizId": "quiz-ch3-s1",
+        "content": [
+          { "type": "definition", "heading": "Theory: Narrative Structure", "body": "A narrative is a text in which something humanly interesting has happened, consisting of 6 specific parts." },
+          { 
+            "type": "analysis", 
+            "heading": "Theory & Applied: The 6 Parts", 
+            "body": "Let's apply the theory to a mini-story:",
+            "steps": [
+              { "label": "1. Abstract", "body": "Summary: 'Let me tell you about the time I almost died.'" },
+              { "label": "2. Orientation", "body": "Context: 'I was in Cairo last summer with my family.'" },
+              { "label": "3. Complicating Action", "body": "Events: 'A car swerved towards us and I jumped out of the way.'" },
+              { "label": "4. Evaluation", "body": "Significance: 'I was so terrified, I thought it was the end.'" },
+              { "label": "5. Resolution", "body": "Outcome: 'The car missed us and we were safe.'" },
+              { "label": "6. Coda", "body": "Bridge to present: 'And that is why I never cross that street anymore.'" }
+            ]
+          }
+        ],
+        "nextLesson": "ch3-s2"
+      }
+    ],
+    "examId": "exam-ch3"
+  },
+  {
+    "id": "ch4",
+    "number": 4,
+    "title": "Part 4: Dialogue and Drama",
+    "description": "Politeness Strategies, Grice's Maxims, and the Birmingham Model.",
+    "icon": "theater_comedy",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch4-s1",
+        "title": "Politeness Strategies",
+        "subtitle": "Brown and Levinson's framework.",
+        "quizId": "quiz-ch4-s1",
+        "content": [
+          { "type": "definition", "heading": "Theory: Positive & Negative Face", "body": "Positive Face: Your desire to be liked/approved. Negative Face: Your desire to be free from imposition." },
+          { 
+            "type": "analysis", 
+            "heading": "Applied: Identify Strategy", 
+            "body": "Exam Examples:",
+            "steps": [
+              { "label": "Positive Politeness", "body": "'What a fantastic garden you have.' (Compliment to build rapport)." },
+              { "label": "Negative Politeness", "body": "'Could you find me a computer?' (Hedged request to respect freedom)." },
+              { "label": "Negative Politeness", "body": "'Sorry to bother you. I couldn’t borrow $30, could I...?' (Apology + indirectness)." },
+              { "label": "Off-record", "body": "'Oh, I'm so stupid, I forgot my wallet.' (Hinting without a direct request)." }
+            ]
+          }
+        ],
+        "nextLesson": "ch4-s2"
+      },
+      {
+        "id": "ch4-s2",
+        "title": "Grice's Maxims (CP)",
+        "subtitle": "Flouting maxims and implicature.",
+        "quizId": "quiz-ch4-s2",
+        "content": [
+          { 
+            "type": "analysis", 
+            "heading": "Theory & Applied: Flouted Maxims", 
+            "body": "When we break rules to imply hidden meanings:",
+            "steps": [
+              { "label": "Maxim of Relevance", "body": "A: 'Weather prediction?' B: 'Bring your coat.' (Implication: It will rain/be cold)." },
+              { "label": "Maxim of Quantity", "body": "Hamlet: 'Words, words, words.' (Too vague/uninformative)." },
+              { "label": "Maxim of Manner", "body": "Using obscure language to avoid being direct." }
+            ]
+          }
+        ],
+        "prevLesson": "ch4-s1"
+      }
+    ],
+    "examId": "exam-ch4"
+  },
+  {
+    "id": "ch5",
+    "number": 5,
+    "title": "Part 5: Modality",
+    "description": "Expressing opinion and attitude through probability, obligation, willingness, and usuality.",
+    "icon": "psychology",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch5-s1",
+        "title": "The 4 Modality Parameters",
+        "subtitle": "Probability, Obligation, Willingness, Usuality.",
+        "quizId": "quiz-ch5-s1",
+        "content": [
+          { "type": "definition", "heading": "Theory: Modality", "body": "The linguistic means for qualifying any claim or commitment you make in language." },
+          { 
+            "type": "analysis", 
+            "heading": "Applied: Analyzing Modal Verbs", 
+            "body": "Different words change the attitude:",
+            "steps": [
+              { "label": "Probability", "body": "'He might fall.' vs 'He must fall.'" },
+              { "label": "Obligation", "body": "'You should see a doctor.' vs 'You must see a doctor.'" }
+            ]
+          }
+        ],
+        "nextLesson": "ch5-s2"
+      },
+      {
+        "id": "ch5-s2",
+        "title": "Applied: The Kite Runner",
+        "subtitle": "Analysis of Modality and Evaluative Devices.",
+        "quizId": "quiz-ch5-s2",
+        "content": [
+          { 
+            "type": "analysis", 
+            "heading": "Applied: Kite Runner Analysis", 
+            "body": "Passage: 'Afghanistan is the land of Pashtuns. It always has been, always will be, we are the true Afghans, the pure Afghans.'",
+            "steps": [
+              { "label": "Modality (Usuality)", "body": "The use of 'Always' ('always has been, always will be') expresses high certainty and inevitability. It presents the speaker's claim as an inescapable truth." },
+              { "label": "Categorical Assertion", "body": "The use of the present simple 'is/are' stresses that this is a fact in the speaker's view, allowing no room for doubt." },
+              { "label": "Evaluative Devices", "body": "Adjectives like 'true' and 'pure' show a highly positive evaluation of the speaker's own race (Pashtuns), revealing prejudice and self-conceit." }
+            ]
+          }
+        ],
+        "prevLesson": "ch5-s1"
+      }
+    ],
+    "examId": "exam-ch5"
+  }
+]
