@@ -7,8 +7,11 @@ export async function GET(request: Request) {
   
   let questions = getQuizQuestions();
   
-  if (quizId) {
+  if (quizId && quizId !== "general_quiz") {
     questions = questions.filter(q => q.quizId === quizId);
+  } else if (quizId === "general_quiz" || !quizId) {
+    // Shuffle and pick 10 questions for a general practice
+    questions = questions.sort(() => 0.5 - Math.random()).slice(0, 10);
   }
   
   return NextResponse.json(questions);
