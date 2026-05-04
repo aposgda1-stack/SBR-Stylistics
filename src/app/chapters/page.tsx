@@ -30,7 +30,10 @@ export default function LessonsPage() {
               isLocked = true;
             }
           }
-          let status = isLocked ? "locked" : (lessonCompletedCount === ch.lessons.length ? "completed" : (lessonCompletedCount > 0 ? "in-progress" : "not-started"));
+          let status: "completed" | "in-progress" | "locked" = isLocked 
+            ? "locked" 
+            : (lessonCompletedCount === ch.lessons.length ? "completed" : "in-progress");
+            
           return { ...ch, status, progress: Math.round((lessonCompletedCount / ch.lessons.length) * 100) };
         });
         setChapters(mergedChapters);
