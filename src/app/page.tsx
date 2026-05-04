@@ -1,12 +1,24 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useUser } from "@clerk/nextjs";
 import Footer from "@/components/Footer";
 
 export default function Dashboard() {
-  const { user } = useUser();
-  const firstName = user?.firstName || "Scholar";
+  const { user, isLoaded } = useUser();
+  const [displayName, setDisplayName] = useState("Scholar");
+
+  useEffect(() => {
+    if (isLoaded) {
+      if (user?.firstName) {
+        setDisplayName(user.firstName);
+      } else {
+        const guestName = localStorage.getItem("guest_name");
+        if (guestName) setDisplayName(guestName);
+      }
+    }
+  }, [user, isLoaded]);
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
@@ -29,7 +41,7 @@ export default function Dashboard() {
                 </div>
                 <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-[1.1] tracking-tighter">
                   Stay strong, <br />
-                  <span className="text-teal-500">{firstName}</span>.
+                  <span className="text-teal-500">{displayName}</span>.
                 </h1>
                 <p className="text-slate-400 text-lg md:text-xl max-w-xl leading-relaxed font-medium">
                   "Your brother Ruby is here to tell you that you've got this. We've mapped out every single definition and analysis you need to dominate the exam. Let's get to work."

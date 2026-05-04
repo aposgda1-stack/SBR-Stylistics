@@ -82,6 +82,7 @@ export default function TopBar() {
             <span className="material-symbols-outlined">{isMobileMenuOpen ? 'close' : 'menu'}</span>
           </button>
           <SignedOut>
+            <GuestGreeting />
             <SignInButton mode="modal">
               <button className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors px-3 py-1.5 rounded-lg hover:bg-slate-100">
                 Sign In
@@ -128,6 +129,21 @@ export default function TopBar() {
         </div>
       )}
     </header>
+  );
+}
+
+function GuestGreeting() {
+  const [name, setName] = useState("");
+  useEffect(() => {
+    const gn = localStorage.getItem("guest_name");
+    if (gn) setName(gn);
+  }, []);
+
+  if (!name) return null;
+  return (
+    <span className="hidden sm:block text-xs font-black text-slate-400 uppercase tracking-widest mr-2">
+      Hello, {name}
+    </span>
   );
 }
 

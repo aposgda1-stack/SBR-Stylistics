@@ -1,19 +1,26 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { SignedOut, SignInButton } from "@clerk/nextjs";
+import { SignedOut, SignInButton, useUser } from "@clerk/nextjs";
 
 export default function WelcomeModal() {
+  const { isSignedIn, user } = useUser();
   const [isOpen, setIsOpen] = useState(false);
+  const [guestName, setGuestName] = useState("");
 
   useEffect(() => {
     const hasSeenModal = localStorage.getItem("hasSeenWelcomeModal");
-    if (!hasSeenModal) {
+    const savedGuestName = localStorage.getItem("guest_name");
+    
+    if (!hasSeenModal && !isSignedIn && !savedGuestName) {
       setIsOpen(true);
     }
-  }, []);
+  }, [isSignedIn]);
 
-  const closeModal = () => {
+  const saveAndClose = () => {
+    if (guestName.trim()) {
+      localStorage.setItem("guest_name", guestName.trim());
+    }
     setIsOpen(false);
     localStorage.setItem("hasSeenWelcomeModal", "true");
   };
@@ -21,64 +28,54 @@ export default function WelcomeModal() {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-in fade-in duration-300">
-      <div className="bg-white rounded-3xl shadow-2xl max-w-lg w-full overflow-hidden transform animate-in zoom-in-95 duration-300 border border-slate-100">
-        <div className="relative h-40 bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center">
-          <div className="absolute top-4 right-4">
-            <button 
-              onClick={closeModal}
-              className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors"
-            >
-              <span className="material-symbols-outlined text-sm">close</span>
-            </button>
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md animate-in fade-in duration-500">
+      <div className="bg-white dark:bg-slate-900 rounded-[3rem] shadow-2xl max-w-lg w-full overflow-hidden transform animate-in zoom-in-95 duration-500 border border-slate-100 dark:border-slate-800">
+        <div className="relative h-48 bg-slate-900 flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0 opacity-20">
+             <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-teal-500 via-transparent to-transparent"></div>
           </div>
-          <div className="flex flex-col items-center text-white">
-            <span className="material-symbols-outlined text-5xl mb-2">school</span>
-            <h2 className="text-2xl font-serif font-bold tracking-tight text-center">Final Chapter</h2>
+          <div className="flex flex-col items-center text-white relative z-10">
+            <div className="w-20 h-20 rounded-3xl bg-teal-500 flex items-center justify-center shadow-2xl shadow-teal-500/20 mb-4 animate-bounce-subtle">
+               <span className="material-symbols-outlined text-4xl font-black">school</span>
+            </div>
+            <h2 className="text-3xl font-black tracking-tighter uppercase">Academic Odyssey</h2>
           </div>
         </div>
         
-        <div className="p-8 text-center">
-          <h3 className="text-2xl font-serif font-bold text-slate-900 mb-2">Welcome Seniors! 🎓</h3>
-          <h4 className="text-lg font-bold text-primary mb-4">Class of 2026 - The Final Chapter</h4>
-          
-          <p className="text-slate-600 leading-relaxed mb-6 font-serif">
-            This is it. The final semester of our journey. I am incredibly proud of how far we've come. Let's conquer this Stylistics course together and finish strong!
+        <div className="p-10 text-center">
+          <h3 className="text-3xl font-black text-slate-900 dark:text-white mb-2 tracking-tighter">Welcome, Scholar! 🎓</h3>
+          <p className="text-slate-500 dark:text-slate-400 font-bold mb-8">
+            Before we begin our final chapter together, how should I address you?
           </p>
           
-          <div className="bg-slate-50 rounded-2xl p-6 mb-8 border border-slate-100 relative">
-             <span className="material-symbols-outlined absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-primary rounded-full px-2 text-lg">favorite</span>
-            <p className="text-sm text-slate-700 italic font-medium leading-relaxed">
-              "Crafted with love by a fellow senior who wishes you nothing but the absolute best in these final steps." ❤️
-            </p>
-          </div>
+          <div className="space-y-6">
+            <div className="relative">
+              <input 
+                type="text" 
+                value={guestName}
+                onChange={(e) => setGuestName(e.target.value)}
+                placeholder="Enter your name..."
+                className="w-full px-8 py-5 bg-slate-50 dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-800 rounded-2xl focus:border-teal-500 outline-none transition-all font-black text-lg text-slate-900 dark:text-white text-center"
+              />
+              <span className="absolute left-6 top-1/2 -translate-y-1/2 material-symbols-outlined text-slate-300">person</span>
+            </div>
 
-          <SignedOut>
-            <div className="space-y-4">
-              <p className="text-sm font-semibold text-slate-900">
-                Sign in to save your progress, quiz scores, and stay on top of the leaderboard!
-              </p>
+            <button 
+              onClick={saveAndClose}
+              disabled={!guestName.trim()}
+              className="w-full bg-teal-500 text-slate-900 font-black py-5 rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-xl shadow-teal-500/20 disabled:opacity-30 disabled:hover:scale-100 uppercase tracking-widest text-sm"
+            >
+              Start My Journey
+            </button>
+
+            <div className="pt-6 border-t border-slate-100 dark:border-slate-800">
+              <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-4">Or sign in for permanent progress</p>
               <SignInButton mode="modal">
-                <button className="w-full bg-slate-900 text-white font-bold py-4 rounded-2xl hover:bg-slate-800 transition-all shadow-lg shadow-slate-900/10 active:scale-95">
-                  Sign In / Get Started
+                <button className="text-xs font-black text-primary dark:text-teal-500 uppercase tracking-[0.2em] hover:opacity-70 transition-opacity">
+                  Sign In / Create Account
                 </button>
               </SignInButton>
-              <button 
-                onClick={closeModal}
-                className="text-sm text-slate-400 hover:text-slate-600 transition-colors"
-              >
-                I'll explore as a guest first
-              </button>
             </div>
-          </SignedOut>
-
-          <div className="flex justify-center mt-6">
-            <button 
-              onClick={closeModal}
-              className="w-full sm:w-auto text-slate-900 font-bold px-12 py-4 rounded-2xl border-2 border-slate-900 hover:bg-slate-50 transition-all active:scale-95"
-            >
-              Enter Platform
-            </button>
           </div>
         </div>
       </div>

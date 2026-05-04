@@ -15,8 +15,9 @@ export default function LessonQuiz({ questions, chapterId, nextLesson }: LessonQ
   const [currentIdx, setCurrentIdx] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [showFeedback, setShowFeedback] = useState(false);
-  const [score, setScore] = useState(0);
+  const [correctCount, setCorrectCount] = useState(0);
   const [finished, setFinished] = useState(false);
+  const [savedTotalScore, setSavedTotalScore] = useState<number | null>(null);
 
   if (!questions || questions.length === 0) return null;
 
@@ -25,29 +26,35 @@ export default function LessonQuiz({ questions, chapterId, nextLesson }: LessonQ
     setSelectedIndex(index);
     setShowFeedback(true);
     if (index === questions[currentIdx].correctIndex) {
-      setScore((s) => s + 10);
+      setCorrectCount((c) => c + 1);
     }
   };
 
   const handleNext = async () => {
     if (currentIdx + 1 >= questions.length) {
       setFinished(true);
-      // Save score to database
+      // Calculate final score as a percentage
+      const finalScore = Math.round((correctCount / questions.length) * 100);
       try {
         const qId = questions[0]?.quizId;
         if (!qId) return;
 
-        await fetch("/api/save-score", {
+        const res = await fetch("/api/save-score", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             quizId: qId,
-            score,
+            score: finalScore,
             totalQuestions: questions.length
           }),
         });
-        
-        // Dispatch event for real-time UI updates
+
+        if (res.ok) {
+          const data = await res.json();
+          setSavedTotalScore(data.totalScore);
+        }
+
+        // Dispatch event for real-time UI updates (TopBar + Leaderboard)
         window.dispatchEvent(new Event("progressUpdated"));
       } catch (error) {
         console.error("Failed to save score:", error);
@@ -60,24 +67,32 @@ export default function LessonQuiz({ questions, chapterId, nextLesson }: LessonQ
   };
 
   if (finished) {
-    const pct = Math.round((score / (questions.length * 10)) * 100);
+    const pct = Math.round((correctCount / questions.length) * 100);
     return (
       <div className="mt-20 p-10 bg-slate-900 rounded-[3rem] text-center text-white shadow-2xl animate-fade-in-up">
         <div className="w-20 h-20 bg-teal-500 rounded-full flex items-center justify-center mx-auto mb-8">
           <span className="material-symbols-outlined text-4xl text-slate-900 font-bold">check</span>
         </div>
-        <h2 className="text-4xl font-black mb-4">Lesson Complete! 🏆</h2>
-        <p className="text-xl text-slate-400 mb-8 font-bold italic">
-          "You've mastered this section. Keep moving forward, scholar!"
+        <h2 className="text-4xl font-black mb-2">Section Complete! 🏆</h2>
+        <p className="text-7xl font-black text-teal-400 my-6">{pct}%</p>
+        <p className="text-slate-400 font-bold text-sm mb-2">
+          {correctCount} correct out of {questions.length} questions
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        {savedTotalScore !== null && (
+          <div className="inline-flex items-center gap-3 bg-yellow-500/20 border border-yellow-500/30 text-yellow-400 rounded-full px-6 py-3 mb-8 font-black text-sm">
+            <span className="material-symbols-outlined text-lg filled">emoji_events</span>
+            Total Points: {savedTotalScore}
+          </div>
+        )}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
           <button 
             onClick={() => {
               setCurrentIdx(0);
               setSelectedIndex(null);
               setShowFeedback(false);
-              setScore(0);
+              setCorrectCount(0);
               setFinished(false);
+              setSavedTotalScore(null);
             }}
             className="px-8 py-4 border border-white/20 rounded-2xl font-bold uppercase tracking-widest text-xs hover:bg-white/5 transition-all"
           >

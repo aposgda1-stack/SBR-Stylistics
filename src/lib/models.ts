@@ -1,20 +1,27 @@
 import mongoose, { Schema, model, models } from 'mongoose';
 
+const QuizScoreSchema = new Schema({
+  quizId:         { type: String, required: true },
+  score:          { type: Number, required: true },
+  totalQuestions: { type: Number, required: true },
+  timestamp:      { type: Date, default: Date.now },
+}, { _id: false });
+
 const UserProgressSchema = new Schema({
-  userId: { type: String, required: true, unique: true },
-  name: { type: String },
-  email: { type: String },
-  completedLessons: [{ type: String }], // Array of lesson IDs
-  quizScores: [
-    {
-      quizId: { type: String },
-      score: { type: Number },
-      totalQuestions: { type: Number },
-      timestamp: { type: Date, default: Date.now },
-    },
-  ],
-  totalScore: { type: Number, default: 0 },
-  updatedAt: { type: Date, default: Date.now },
+  userId:           { type: String, required: true, unique: true, index: true },
+  name:             { type: String, default: 'Student' },
+  email:            { type: String },
+  completedLessons: { type: [String], default: [] },
+  quizScores:       { type: [QuizScoreSchema], default: [] },
+  totalScore:       { type: Number, default: 0, index: true }, // indexed for fast leaderboard sort
+  updatedAt:        { type: Date, default: Date.now },
 });
 
-export const UserProgress = models.UserProgress || model('UserProgress', UserProgressSchema);
+// Ensure totalScore never goes negative
+UserProgressSchema.pre('save', function (next) {
+  if (this.totalScore < 0) this.totalScore = 0;
+  next();
+});
+
+export const UserProgress =
+  models.UserProgress || model('UserProgress', UserProgressSchema);
