@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 import CommandPalette from "@/components/CommandPalette";
-import AdelChat from "@/components/AdelChat";
+import MickChat from "@/components/MickChat";
 import SessionTracker from "@/components/SessionTracker";
 
 export default function RootLayout({
@@ -42,7 +42,7 @@ export default function RootLayout({
         <ThemeProvider>
           <body className="bg-background text-on-background font-sans antialiased">
             <CommandPalette />
-            <AdelChat />
+            <MickChat />
             <WelcomeModal />
             <SessionTracker />
             <TopBar />
