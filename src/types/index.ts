@@ -21,6 +21,7 @@ export interface Lesson {
   prevLesson?: string;
   quizId?: string;
   rubyTip?: string;
+  appliedSummary?: string;
 }
 
 export interface LessonContent {

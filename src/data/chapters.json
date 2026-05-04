@@ -2,89 +2,74 @@
   {
     "id": "ch1",
     "number": 1,
-    "title": "Part 1: Poetry — Foregrounding & Deviation",
-    "description": "Comprehensive study of Poetic Licence, Parallelism, and all levels of linguistic deviation.",
+    "title": "Poetry: The Art of Foregrounding",
+    "description": "Master the concepts of Poetic Licence, Parallelism, and linguistic Deviation in poetic texts.",
     "icon": "auto_stories",
     "status": "not-started",
     "lessons": [
       {
         "id": "ch1-s1",
-        "title": "Basic Concepts & Poetic Licence",
-        "subtitle": "The rules of Stylistics and the freedom of the poet.",
+        "title": "Poetic Licence & Basic Levels",
+        "subtitle": "Understanding why poets break the rules.",
         "quizId": "quiz-ch1-s1",
         "content": [
-          { "type": "definition", "heading": "Theory: Poetic Licence (الرخصة الشعرية)", "body": "Poetic Licence: It is the poet's right to ignore rules and conventions generally observed by users of the language to achieve artistic effects.\n\nالرخصة الشعرية: هي حق الشاعر في تجاهل القواعد اللغوية المتعارف عليها لتحقيق أغراض جمالية أو فنية." },
+          { "type": "definition", "heading": "Theory: Poetic Licence (الرخصة الشعرية)", "body": "Poetic Licence is the poet's right to ignore rules and conventions generally observed by users of the language to achieve artistic effects. It is a 'licence' because society accepts these breaks as part of literary creativity." },
           { 
             "type": "analysis", 
-            "heading": "Applied: Breaking the Rules", 
-            "body": "Example from Gerard Manley Hopkins: 'The just man justices.'",
+            "heading": "Applied: Functional Conversion", 
+            "body": "Analyzing Hopkins' line: 'The just man justices.'",
             "steps": [
-              { "label": "Observation", "body": "Standard grammar uses 'justice' as a noun. Hopkins converts it into a verb ('justices')." },
-              { "label": "Analysis", "body": "This is Functional Conversion (Syntactic Deviation). It emphasizes the active, living nature of justice rather than it being a static concept." }
-            ]
-          },
-          { 
-            "type": "analysis", 
-            "heading": "Theory: Levels of Language", 
-            "body": "Stylistics analyzes language at three fundamental levels:",
-            "steps": [
-              { "label": "Realization", "body": "Sounds (Phonology) and Marks on paper (Graphology)." },
-              { "label": "Form", "body": "Words (Lexicon) and Grammar (Syntax)." },
-              { "label": "Meaning", "body": "The ultimate semantic interpretation." }
+              { "label": "Observation", "body": "Standard English uses 'justice' as a noun. Here, Hopkins converts it into a verb ('justices')." },
+              { "label": "Analysis", "body": "This is a form of Syntactic Deviation. By making justice an action (a verb), the poet suggests that being 'just' is not a static quality but a continuous, living action." }
             ]
           }
         ],
+        "appliedSummary": "بص يا بطل، الدرس الأول ده بيفهمك إن الشاعر مش زينا.. هو معاه \"تصريح\" (Poetic Licence) يخليه يغير في اللغة براحته عشان يوصلك شعور معين. \n\nفي المثال بتاع 'The just man justices'، الشاعر خد كلمة 'justice' اللي هي أصلاً اسم (عدل) وحولها لفعل (يعدل).. الحركة دي اسمها Functional Conversion. \n\nالغرض منها إيه؟ إنه يوصلك إن العدل مش مجرد كلمة، ده \"فعل\" مستمر لازم الإنسان يعمله. ده أول درس في إزاي الشاعر بيلعب باللغة عشان يبهرنا.",
+        "rubyTip": "الرخصة الشعرية هي سر جمال القصائد.. لو الشاعر مشي على القواعد بالظبط، القصيدة هتكون زي الجرنال! ✨",
         "nextLesson": "ch1-s2"
       },
       {
         "id": "ch1-s2",
         "title": "Foregrounding & Parallelism",
-        "subtitle": "Methods of making text stand out.",
+        "subtitle": "How poets control your attention.",
         "quizId": "quiz-ch1-s2",
         "content": [
-          { "type": "definition", "heading": "Theory: Foregrounding (البروز الأسلوبي)", "body": "Refers to the ways in which certain aspects of a text can be made to stand out or appear prominent through forms of textual patterning." },
+          { "type": "definition", "heading": "Theory: Foregrounding (البروز الأسلوبي)", "body": "Foregrounding is a psychological effect where certain parts of a text are made prominent. Like a bright color on a dark background, these parts demand the reader's attention." },
           { 
             "type": "analysis", 
-            "heading": "Theory: Parallelism (الموازنة)", 
-            "body": "Extra regular use of a linguistic feature. It pushes readers towards perceiving semantic relations between words which do not exist as such in the language system.",
+            "heading": "Applied: Semantic Parallelism", 
+            "body": "Analyzing: 'Where wealth accumulates and men decay.' (Goldsmith)",
             "steps": [
-              { "label": "Identity", "body": "Part of the structure stays constant." },
-              { "label": "Contrast", "body": "Specific words are changed to create new associations." }
-            ]
-          },
-          { 
-            "type": "analysis", 
-            "heading": "Applied: Analyzing Parallelism", 
-            "body": "Passage: 'Where wealth accumulates and men decay.' (Oliver Goldsmith)",
-            "steps": [
-              { "label": "Structure", "body": "Noun + Verb vs Noun + Verb." },
-              { "label": "Contrast", "body": "Wealth (Material) vs Men (Humanity). Accumulates (Growth) vs Decay (Decline)." },
-              { "label": "Effect", "body": "The poet forces a link between the increase of wealth and the destruction of the human soul." }
+              { "label": "The Identity", "body": "Noun + Verb structure is repeated in both halves." },
+              { "label": "The Contrast", "body": "'Wealth' vs 'Men' and 'Accumulates' vs 'Decay'." },
+              { "label": "The Effect", "body": "The poet links the growth of money directly to the destruction of humans." }
             ]
           }
         ],
+        "appliedSummary": "الـ Foregrounding هو إنك تبرز حاجة في الكلام عشان اللي بيقرأ يركز فيها غصب عنه. \n\nأهم وسيلة لده هي الـ Parallelism (التوازي).. يعني أجيب جملتين ليهم نفس الوزن والتقسيمة بالظبط (Identity) بس بغير الكلمات (Contrast). \n\nزي في مثال 'Wealth accumulates and men decay'.. الشاعر هنا عمل توازي عشان يوصلك فكرة إن كل ما الفلوس بتكتر (Accumulates)، الإنسان نفسه بيدمر (Decay). هو ربط المعنيين دول ببعض من غير ما يقول 'عشان'.. مجرد التوازي خلى عقلك يربطهم فوراً.",
+        "rubyTip": "لما تلاقي جملتين ماشيين على نفس الوزن، أعرف إن الشاعر عايزك تعمل مقارنة في عقلك! 📚",
         "prevLesson": "ch1-s1",
         "nextLesson": "ch1-s3"
       },
       {
         "id": "ch1-s3",
-        "title": "All 5 Types of Deviation",
+        "title": "The 5 Levels of Deviation",
         "subtitle": "Syntactic, Lexical, Phonological, Graphological, Semantic.",
         "quizId": "quiz-ch1-s3",
         "content": [
           { 
             "type": "analysis", 
-            "heading": "Applied: Identifying Deviation Types", 
-            "body": "Let's analyze specific exam examples:",
+            "heading": "Applied: Deviation in Practice", 
+            "body": "Analyzing specific exam examples:",
             "steps": [
-              { "label": "Semantic (Metaphor)", "body": "'Death feeds on his mute voice...' (Personification of Death)." },
-              { "label": "Syntactic (Inversion)", "body": "'Her Kindling buds as if she Autumn were.' (Word order reversed)." },
-              { "label": "Lexical (Poetic Compound)", "body": "'The passion-winged ministers of thought.' (Newly created compound)." },
-              { "label": "Phonological (Syncope)", "body": "'o'er' instead of 'over' (Omission of medial sounds)." },
-              { "label": "Graphological", "body": "Splitting words like 'H-E-L-L' vertically to force separate pronunciation." }
+              { "label": "Syntactic (Inversion)", "body": "'Then spake King Arthur' (Instead of 'Then King Arthur spoke')." },
+              { "label": "Lexical (Neologism)", "body": "Creating words like 'foresuffer' or 'widow-making'." },
+              { "label": "Phonological (Omission)", "body": "Using 'o'er' for 'over' to keep the rhythm." }
             ]
           }
         ],
+        "appliedSummary": "الانحراف (Deviation) هو إنك تشذ عن القاعدة.. عندنا 5 أنواع أساسية:\n\n1. Syntactic: بيلعب في ترتيب الجملة (يغير مكان الفعل والفاعل).\n2. Lexical: يألف كلمات جديدة خالص (Neologism).\n3. Phonological: ياكل حرف من الكلمة عشان الموسيقى تظبط (زي o'er).\n4. Graphological: يغير في شكل الكتابة.\n5. Semantic: يستخدم تشبيهات واستعارات غير منطقية لغوياً بس جميلة فنياً.\n\nالهدف من كل ده؟ إنه يخليك تقف وتسأل 'ليه الكاتب عمل كدة؟' وده هو جوهر الأسلوبيات.",
+        "rubyTip": "كل نوع انحراف له وظيفة.. ركز هو كسر القاعدة فين بالظبط! ✨",
         "prevLesson": "ch1-s2"
       }
     ],
@@ -93,60 +78,31 @@
   {
     "id": "ch2",
     "number": 2,
-    "title": "Part 2: Novel — Cohesion",
-    "description": "How sentences are woven together through Reference, Ellipsis, Conjunction, and Lexical ties.",
+    "title": "The Novel: Building Cohesion",
+    "description": "How sentences are tied together to form a meaningful story through reference and ellipsis.",
     "icon": "menu_book",
     "status": "not-started",
     "lessons": [
       {
         "id": "ch2-s1",
-        "title": "Kinds of Cohesion",
-        "subtitle": "The linguistic means by which sentences are tied together.",
+        "title": "Reference & Ellipsis",
+        "subtitle": "The glue of the narrative.",
         "quizId": "quiz-ch2-s1",
         "content": [
-          { "type": "definition", "heading": "Theory: Cohesion (السبك)", "body": "The linguistic elements that tie a text together across sentence boundaries." },
+          { "type": "definition", "heading": "Theory: Cohesion (السبك)", "body": "Cohesion is the linguistic bridge between sentences. Without it, a text is just a collection of random lines." },
           { 
             "type": "analysis", 
-            "heading": "Theory: 4 Types of Cohesion", 
-            "body": "Cohesion is achieved through four main grammatical and lexical methods:",
+            "heading": "Applied: Reference Types", 
+            "body": "Analyzing how pronouns point:",
             "steps": [
-              { "label": "Reference", "body": "Using pronouns or demonstratives (He, This, That)." },
-              { "label": "Ellipsis", "body": "Omitting repeated elements ('I like tea, and she [likes] coffee')." },
-              { "label": "Conjunctions", "body": "Logical connectors (And, But, Because, Then)." },
-              { "label": "Lexical Cohesion", "body": "Reiteration (Repetition, Synonymy, Hyponymy) and Collocation." }
-            ]
-          },
-          { 
-            "type": "analysis", 
-            "heading": "Applied: Lexical Cohesion Breakdown", 
-            "body": "Analyzing relationships between words:",
-            "steps": [
-              { "label": "Repetition", "body": "'Justice... Justice... Justice' used repeatedly." },
-              { "label": "Hyponymy", "body": "'Rose' is a hyponym of the category 'Flower'." },
-              { "label": "Collocation", "body": "'Strong tea' or 'Bread and butter' (words that naturally go together)." }
+              { "label": "Anaphoric", "body": "'John left. He was tired.' (Pointing back to John)." },
+              { "label": "Cataphoric", "body": "'When he arrived, John slept.' (Pointing forward to John)." }
             ]
           }
         ],
+        "appliedSummary": "الـ Cohesion هو الصمغ اللي بيربط الجمل ببعض عشان نعرف نقرأها كقصة واحدة. \n\nأهم نوع هو الـ Reference (الإحالة).. \n- لو الضمير بيشاور على حد ذكرناه قبل كدة (زي He راجعة لـ John) يبقى اسمه Anaphoric.\n- لو الضمير جه الأول وبعدين الاسم (زي He وبعدين John) يبقى اسمه Cataphoric.\n\nمن غير الروابط دي، القارئ هيتوه ومش هيعرف مين بيعمل إيه.",
+        "rubyTip": "الـ Anaphoric هو الأشهر، بس الـ Cataphoric بيستخدم للتشويق في الروايات! 🔗",
         "nextLesson": "ch2-s2"
-      },
-      {
-        "id": "ch2-s2",
-        "title": "Reference Types",
-        "subtitle": "Anaphoric, Cataphoric, and Exophoric.",
-        "quizId": "quiz-ch2-s2",
-        "content": [
-          { 
-            "type": "analysis", 
-            "heading": "Applied: Identifying Reference", 
-            "body": "How do pronouns point to things?",
-            "steps": [
-              { "label": "Anaphoric", "body": "'John arrived. He was tired.' (He points back to John)." },
-              { "label": "Cataphoric", "body": "'When he arrived, John was tired.' (He points forward to John)." },
-              { "label": "Exophoric", "body": "'Look at that!' (That points to something in the physical world)." }
-            ]
-          }
-        ],
-        "prevLesson": "ch2-s1"
       }
     ],
     "examId": "exam-ch2"
@@ -154,135 +110,33 @@
   {
     "id": "ch3",
     "number": 3,
-    "title": "Part 3: Narrative Structure",
-    "description": "Labov's 6 elements and the art of internal evaluation.",
+    "title": "Narrative Structure: Labov's Model",
+    "description": "Analyzing the 6 essential parts of any well-formed story.",
     "icon": "account_tree",
     "status": "not-started",
     "lessons": [
       {
         "id": "ch3-s1",
         "title": "Labov's 6 Elements",
-        "subtitle": "The skeleton of any well-formed story.",
+        "subtitle": "Analyzing the skeleton of a story.",
         "quizId": "quiz-ch3-s1",
         "content": [
-          { "type": "definition", "heading": "Theory: Narrative Structure", "body": "A narrative is a text in which something humanly interesting has happened, consisting of 6 specific parts." },
           { 
             "type": "analysis", 
-            "heading": "Theory & Applied: The 6 Parts", 
-            "body": "Let's apply the theory to a mini-story:",
+            "heading": "Applied: Analyzing a Story", 
+            "body": "Applying Labov to a sample narrative:",
             "steps": [
-              { "label": "1. Abstract", "body": "Summary: 'Let me tell you about the time I almost died.'" },
-              { "label": "2. Orientation", "body": "Context: 'I was in Cairo last summer with my family.'" },
-              { "label": "3. Complicating Action", "body": "Events: 'A car swerved towards us and I jumped out of the way.'" },
-              { "label": "4. Evaluation", "body": "Significance: 'I was so terrified, I thought it was the end.'" },
-              { "label": "5. Resolution", "body": "Outcome: 'The car missed us and we were safe.'" },
-              { "label": "6. Coda", "body": "Bridge to present: 'And that is why I never cross that street anymore.'" }
+              { "label": "Orientation", "body": "Setting the scene: Who, Where, When." },
+              { "label": "Complicating Action", "body": "The events: What happened next?" },
+              { "label": "Evaluation", "body": "The significance: Why is this story being told?" }
             ]
           }
         ],
+        "appliedSummary": "لابوف قال إن أي حكاية في الدنيا بتمشي على 6 خطوات:\n\n1. Abstract (ملخص).\n2. Orientation (مين وفين وإمتى).\n3. Complicating Action (الأحداث اللي حصلت بجد).\n4. Evaluation (ليه الحكاية دي مهمة؟).\n5. Resolution (النهاية).\n6. Coda (الرجوع للواقع).\n\nأهم جزء هو الـ Complicating Action لأن ده هو لب القصة، والـ Evaluation هو اللي بيدي للقصة طعم وقيمة.",
+        "rubyTip": "أي قصة مفيهاش Evaluation بتبقى قصة مملة ومفيش منها فايدة! 🎭",
         "nextLesson": "ch3-s2"
       }
     ],
     "examId": "exam-ch3"
-  },
-  {
-    "id": "ch4",
-    "number": 4,
-    "title": "Part 4: Dialogue and Drama",
-    "description": "Politeness Strategies, Grice's Maxims, and the Birmingham Model.",
-    "icon": "theater_comedy",
-    "status": "not-started",
-    "lessons": [
-      {
-        "id": "ch4-s1",
-        "title": "Politeness Strategies",
-        "subtitle": "Brown and Levinson's framework.",
-        "quizId": "quiz-ch4-s1",
-        "content": [
-          { "type": "definition", "heading": "Theory: Positive & Negative Face", "body": "Positive Face: Your desire to be liked/approved. Negative Face: Your desire to be free from imposition." },
-          { 
-            "type": "analysis", 
-            "heading": "Applied: Identify Strategy", 
-            "body": "Exam Examples:",
-            "steps": [
-              { "label": "Positive Politeness", "body": "'What a fantastic garden you have.' (Compliment to build rapport)." },
-              { "label": "Negative Politeness", "body": "'Could you find me a computer?' (Hedged request to respect freedom)." },
-              { "label": "Negative Politeness", "body": "'Sorry to bother you. I couldn’t borrow $30, could I...?' (Apology + indirectness)." },
-              { "label": "Off-record", "body": "'Oh, I'm so stupid, I forgot my wallet.' (Hinting without a direct request)." }
-            ]
-          }
-        ],
-        "nextLesson": "ch4-s2"
-      },
-      {
-        "id": "ch4-s2",
-        "title": "Grice's Maxims (CP)",
-        "subtitle": "Flouting maxims and implicature.",
-        "quizId": "quiz-ch4-s2",
-        "content": [
-          { 
-            "type": "analysis", 
-            "heading": "Theory & Applied: Flouted Maxims", 
-            "body": "When we break rules to imply hidden meanings:",
-            "steps": [
-              { "label": "Maxim of Relevance", "body": "A: 'Weather prediction?' B: 'Bring your coat.' (Implication: It will rain/be cold)." },
-              { "label": "Maxim of Quantity", "body": "Hamlet: 'Words, words, words.' (Too vague/uninformative)." },
-              { "label": "Maxim of Manner", "body": "Using obscure language to avoid being direct." }
-            ]
-          }
-        ],
-        "prevLesson": "ch4-s1"
-      }
-    ],
-    "examId": "exam-ch4"
-  },
-  {
-    "id": "ch5",
-    "number": 5,
-    "title": "Part 5: Modality",
-    "description": "Expressing opinion and attitude through probability, obligation, willingness, and usuality.",
-    "icon": "psychology",
-    "status": "not-started",
-    "lessons": [
-      {
-        "id": "ch5-s1",
-        "title": "The 4 Modality Parameters",
-        "subtitle": "Probability, Obligation, Willingness, Usuality.",
-        "quizId": "quiz-ch5-s1",
-        "content": [
-          { "type": "definition", "heading": "Theory: Modality", "body": "The linguistic means for qualifying any claim or commitment you make in language." },
-          { 
-            "type": "analysis", 
-            "heading": "Applied: Analyzing Modal Verbs", 
-            "body": "Different words change the attitude:",
-            "steps": [
-              { "label": "Probability", "body": "'He might fall.' vs 'He must fall.'" },
-              { "label": "Obligation", "body": "'You should see a doctor.' vs 'You must see a doctor.'" }
-            ]
-          }
-        ],
-        "nextLesson": "ch5-s2"
-      },
-      {
-        "id": "ch5-s2",
-        "title": "Applied: The Kite Runner",
-        "subtitle": "Analysis of Modality and Evaluative Devices.",
-        "quizId": "quiz-ch5-s2",
-        "content": [
-          { 
-            "type": "analysis", 
-            "heading": "Applied: Kite Runner Analysis", 
-            "body": "Passage: 'Afghanistan is the land of Pashtuns. It always has been, always will be, we are the true Afghans, the pure Afghans.'",
-            "steps": [
-              { "label": "Modality (Usuality)", "body": "The use of 'Always' ('always has been, always will be') expresses high certainty and inevitability. It presents the speaker's claim as an inescapable truth." },
-              { "label": "Categorical Assertion", "body": "The use of the present simple 'is/are' stresses that this is a fact in the speaker's view, allowing no room for doubt." },
-              { "label": "Evaluative Devices", "body": "Adjectives like 'true' and 'pure' show a highly positive evaluation of the speaker's own race (Pashtuns), revealing prejudice and self-conceit." }
-            ]
-          }
-        ],
-        "prevLesson": "ch5-s1"
-      }
-    ],
-    "examId": "exam-ch5"
   }
 ]
