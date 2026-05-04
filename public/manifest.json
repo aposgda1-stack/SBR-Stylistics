@@ -1,21 +1,24 @@
 {
-  "name": "Stylistics Hub",
+  "name": "Stylistics Platform",
   "short_name": "Stylistics",
-  "description": "Premium English Stylistics Platform",
-  "start_url": "/",
+  "description": "Premium English Stylistics Platform by Ruby",
+  "start_url": "/progress",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "orientation": "portrait",
+  "background_color": "#0f172a",
+  "theme_color": "#14b8a6",
   "icons": [
     {
-      "src": "/images/dashboard_hero.png",
+      "src": "/images/chapters/ch9.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "src": "/images/dashboard_hero.png",
+      "src": "/images/chapters/ch9.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }

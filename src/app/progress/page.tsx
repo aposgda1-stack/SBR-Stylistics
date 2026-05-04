@@ -6,6 +6,7 @@ import { getAllChapters } from "@/lib/contentService";
 import Footer from "@/components/Footer";
 import { useAuth } from "@clerk/nextjs";
 import Leaderboard from "@/components/Leaderboard";
+import InstallPWA from "@/components/InstallPWA";
 
 export default function ProgressPage() {
   const { isSignedIn, isLoaded } = useAuth();
@@ -57,6 +58,9 @@ export default function ProgressPage() {
           <h1 className="text-2xl font-black text-[var(--on-background)] tracking-tight">My Dashboard</h1>
           <p className="text-xs font-bold text-[var(--on-surface-variant)] uppercase tracking-widest mt-0.5">Progress & Rankings</p>
         </div>
+
+        {/* PWA Install Button */}
+        <InstallPWA />
 
         {/* Sign-in nudge */}
         {!isSignedIn && (
