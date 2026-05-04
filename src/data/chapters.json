@@ -1,359 +1,565 @@
-[
-  {
-    "id": "ch1",
-    "number": 1,
-    "title": "Poetry: The Art of Foregrounding",
-    "description": "Master Poetic Licence, Parallelism, and the 5 levels of linguistic Deviation.",
-    "icon": "auto_stories",
-    "status": "not-started",
-    "lessons": [
-      {
-        "id": "ch1-s1",
-        "title": "Poetic Licence & Language Levels",
-        "subtitle": "How poets break the rules and the structure of language.",
-        "quizId": "quiz-ch1-s1",
-        "content": [
-          { "type": "definition", "heading": "Theoretical: Poetic Licence", "body": "Poetic Licence is the poet's right to ignore rules and conventions generally observed by users of the language. This allows for artistic creativity and the bending of grammatical, phonological, or lexical norms." },
-          { "type": "definition", "heading": "Theoretical: Levels of Language", "body": "Language is structured in 3 levels: \n1. Realization: Sounds (Phonology) and Marks (Graphology).\n2. Form: Words (Lexicon) and Grammar (Syntax).\n3. Meaning: Semantics (Literal) and Pragmatics (Contextual)." }
-        ],
-        "appliedSummary": "بص يا بطل، الدرس الأول ده بيفهمك إن الشاعر مش شخص عادي.. هو معاه \"رخصة\" (Poetic Licence) تخليه يكسر القواعد براحته عشان يظبط القافية أو يوصل معنى فني. ولازم تعرف إن اللغة متقسمة لـ 3 ليفلات: صوت وكتابة (Realization)، كلمة وقواعد (Form)، ومعنى وسياق (Meaning). لو حفظت التقسيمة دي، إنت كدة ضمنت أول جزء في الامتحان.",
-        "rubyTip": "الرخصة الشعرية هي السبب في إن القصائد مش زي لغة الجرايد.. هي اللي بتدي للقصيدة روح! ✨",
-        "nextLesson": "ch1-s2"
-      },
-      {
-        "id": "ch1-s2",
-        "title": "Parallelism, Repetition & Deviation",
-        "subtitle": "The three pillars of textual prominence.",
-        "quizId": "quiz-ch1-s2",
-        "content": [
-          {
-            "type": "definition",
-            "heading": "Theoretical: Foregrounding",
-            "body": "Refers to the ways in which certain aspects of a text are made to stand out or appear prominent (Prominence). The three main methods are Parallelism, Deviation, and Repetition.",
-            "arabicExplanation": "البروز (Foregrounding) هو إنك تخلي جزء من النص يشد العين.. وده بيحصل بـ 3 طرق: التوازي، الانحراف، والتكرار."
-          },
-          {
-            "type": "definition",
-            "heading": "Theoretical: Repetition",
-            "body": "Repetition is the **mechanical repetition** of a linguistic item (word, phrase, or sound) without any contrastive element. It is often used for emphasis.",
-            "arabicExplanation": "التكرار الميكانيكي هو إنك تعيد نفس الكلمة بالظبط عشان تأكد على معنى معين."
-          },
-          {
-            "type": "analysis",
-            "heading": "Applied: Parallelism (Identity + Contrast)",
-            "body": "Analyzing: 'Where wealth accumulates and men decay.'",
-            "steps": [
-              { "label": "Identity", "body": "Both clauses share the [Subject + Verb] structure." },
-              { "label": "Contrast", "body": "Wealth vs Men | Accumulates vs Decay." },
-              { "label": "Effect", "body": "The parallelism forces a semantic link between wealth/decay and men/accumulates." }
-            ],
-            "arabicExplanation": "التوازي (Parallelism) بيجمع بين حاجتين ثابتين (نفس الوزن) وحاجتين مختلفين (كلمات تانية)."
-          }
-        ],
-        "appliedSummary": "الـ Foregrounding هو إنك تعمل \"بروز\" في الكلام عشان تشد عين اللي بيقرأ.. وأهم طريقة لده هي الـ Parallelism (التوازي). يعني أجيب جملتين ليهم نفس الوزن والتقسيمة بالظبط (Identity) بس أغير الكلمات (Contrast).. ده بيخلي عقلك يربط بين المعنيين غصب عنك، زي ما شفنا في مثال الثروة ودمار الإنسان. وعندنا كمان الـ Repetition وهو تكرار الكلمة بالظبط.",
-        "rubyTip": "لما تلاقي تكرار في شكل الجملة، أعرف إن الكاتب عايزك تقارن بين المعاني اللي فيها! 📚",
-        "prevLesson": "ch1-s1",
-        "nextLesson": "ch1-s3"
-      },
-      {
-        "id": "ch1-s3",
-        "title": "The 5 Levels of Deviation",
-        "subtitle": "Diving deep into how language is bent.",
-        "quizId": "quiz-ch1-s3",
-        "content": [
-          { "type": "definition", "heading": "Theoretical: Deviation", "body": "Extra irregularity. Deviation works by disrupting or departing either from readers’ expectations or from a pattern established by the text. This is essentially a division between external deviation and internal deviation." },
-          { "type": "analysis", "heading": "Applied: Types of Deviation", "body": "Breaking language at every level:", "steps": [
-            { "label": "Lexical", "body": "Creating new words (Neologism) via Affixation (foresuffer), Compounding (widow-making), or Functional Conversion (using verb as noun)." },
-            { "label": "Syntactic", "body": "Breaking grammar rules like Inversion ('Then spake King Arthur')." },
-            { "label": "Phonological", "body": "Breaking sound rules like Elision ('t'assault') or Syncope ('o'er')." },
-            { "label": "Graphological", "body": "Visual deviation like splitting words vertically or using odd capitalization." },
-            { "label": "Semantic", "body": "Breaking logic via Metaphor or Paradox (e.g., 'Death feeds on his mute voice')." }
-          ]}
-        ],
-        "appliedSummary": "الانحراف (Deviation) هو إنك تشذ عن القاعدة.. عندنا 5 أنواع أساسية:\n1. Lexical: تألف كلمات جديدة (زي Neologism).\n2. Syntactic: تشقلب ترتيب الجملة (Inversion).\n3. Phonological: تاكل حروف من الكلمة (Elision).\n4. Graphological: تلعب في شكل الكتابة.\n5. Semantic: تستخدم استعارات غير منطقية لغوياً بس فنية (Metaphor).\nركز إن الانحراف الداللي دايماً بيحصل بسب الاستعارة (Metaphor) أو المفارقة (Paradox).",
-        "rubyTip": "كل نوع انحراف له وظيفة.. ركز هو كسر القاعدة فين بالظبط عشان تعرف تحلل صح! ✨",
-        "prevLesson": "ch1-s2"
-      }
-    ],
-    "examId": "exam-ch1"
-  },
-  {
-    "id": "ch2",
-    "number": 2,
-    "title": "Cohesion: The Glue of Texts",
-    "description": "Learn how reference, ellipsis, conjunctions, and lexical choices tie sentences together.",
-    "icon": "menu_book",
-    "status": "not-started",
-    "lessons": [
-      {
-        "id": "ch2-s1",
-        "title": "Reference Cohesion",
-        "subtitle": "Anaphoric and Cataphoric pointers.",
-        "quizId": "quiz-ch2-s1",
-        "content": [
-          { "type": "definition", "heading": "Theoretical: Cohesion", "body": "The linguistic means by which sentences are woven together to make texts. It refers to all the linguistic ways in which words across sentences link up." },
-          { "type": "definition", "heading": "Theoretical: Reference Types", "body": "1. Anaphoric: Referring BACK to something already mentioned (e.g., 'Mary arrived. **She** was tired').\n2. Cataphoric: Referring FORWARD to something yet to be mentioned (e.g., 'When **he** arrived, John slept')." }
-        ],
-        "appliedSummary": "الـ Cohesion هو \"الصمغ\" اللي بيربط الجمل ببعض.. وأهم نوع هو الـ Reference (الإحالة).. لو الضمير بيشاور على حد اتذكر قبل كدة يبقى Anaphoric، ولو بيشاور على حد لسه هيتذكر يبقى Cataphoric.. دي سهلة وبسيطة وموجودة في كل حتة.",
-        "rubyTip": "الـ Anaphoric هو الأشهر، بس الـ Cataphoric بيستخدم للتشويق في القصص! 🔗",
-        "nextLesson": "ch2-s2"
-      },
-      {
-        "id": "ch2-s2",
-        "title": "Ellipsis (Nominal, Verbal, Clausal)",
-        "subtitle": "The art of omitting unnecessary repetition.",
-        "quizId": "quiz-ch2-s2",
-        "content": [
-          { "type": "definition", "heading": "Theoretical: Ellipsis", "body": "Material is left out since its repetition or near-repetition is felt to be unnecessary." },
-          { "type": "analysis", "heading": "Applied: The 3 Types of Ellipsis", "body": "Identifying what was deleted:", "steps": [
-            { "label": "Nominal Ellipsis", "body": "The **Noun** is omitted. Example: 'I saw two pens. I bought **both** [pens].'" },
-            { "label": "Verbal Ellipsis", "body": "The **Verb** is omitted. Example: 'Have you been swimming?' 'Yes, I **have** [been swimming].'" },
-            { "label": "Clausal Ellipsis", "body": "An entire **Clause** is omitted. Example: 'Why didn't you go?' 'I don't **know** [why I didn't go].'" }
-          ]}
-        ],
-        "appliedSummary": "الـ Ellipsis هو الحذف.. ليه نكرر الكلام لو اللي قدامنا فاهمه؟ ركز بقى في الأنواع دي عشان بتيجي في الامتحان دايماً: لو حذفت الاسم وسبت الضمير مثلاً يبقى Nominal، لو حذفت الفعل وسبت الفعل المساعد يبقى Verbal، ولو حذفت جملة كاملة بعد أفعال زي know أو tell يبقى Clausal.",
-        "rubyTip": "سؤال الامتحان بيسألك: 'Nominal ellipsis occurs when the ____ is omitted'.. الإجابة دايماً Noun! ✍️",
-        "prevLesson": "ch2-s1",
-        "nextLesson": "ch2-s3"
-      },
-      {
-        "id": "ch2-s3",
-        "title": "Conjunctions & Lexical Cohesion",
-        "subtitle": "Signposting and word patterns.",
-        "quizId": "quiz-ch2-s3",
-        "content": [
-          { "type": "definition", "heading": "Theoretical: Conjunction Cohesion", "body": "Use of words/phrases to clarify the semantic or logical relationship. The 4 types are: Additive, Adversative, Causal, and Temporal." },
-          { "type": "definition", "heading": "Theoretical: Lexical Cohesion", "body": "Integratedness created via content words. Main types include:\n1. Repetition: Reusing the same word.\n2. Synonymy: Using similar words.\n3. Hyponymy: Using category relationships (e.g., rose is a hyponym of flower).\n4. Collocation: Words that commonly occur together (e.g., strong tea)." }
-        ],
-        "appliedSummary": "الجمل بتربط ببعض برضه بأدوات الوصل (Conjunctions).. ودول 4 أنواع: إضافة (and)، تعارض (but)، سبب (so)، أو زمن (then). وفيه تماسك بيحصل بسبب الكلمات نفسها (Lexical).. يا إما تكرر نفس الكلمة (Repetition) أو تستخدم كلمات بتمشي مع بعض دايماً زي الشاي والسكر (Collocation).",
-        "rubyTip": "الوصل المعجمي (Lexical) أهم نوعين فيه هما التكرار (Reiteration) والتلازم (Collocation)! 📝",
-        "prevLesson": "ch2-s2"
-      }
-    ],
-    "examId": "exam-ch2"
-  },
-  {
-    "id": "ch3",
-    "number": 3,
-    "title": "Modality: Opinion & Attitude",
-    "description": "Understanding how speakers qualify their claims and use evaluative devices.",
-    "icon": "psychology",
-    "status": "not-started",
-    "lessons": [
-      {
-        "id": "ch3-s1",
-        "title": "The 4 Modality Parameters",
-        "subtitle": "Probability, Obligation, Willingness, and Usuality.",
-        "quizId": "quiz-ch3-s1",
-        "content": [
-          { "type": "definition", "heading": "Theoretical: Modality", "body": "The cover term for the ways available to a speaker within a language for expressing 'opinion or attitude'. It denotes linguistic means for qualifying any claim." },
-          { "type": "analysis", "heading": "Applied: Modality Parameters", "body": "How we qualify language:", "steps": [
-            { "label": "Probability", "body": "Likelihood (might, may, must, certainly)." },
-            { "label": "Obligation", "body": "Necessity (should, ought to, must)." },
-            { "label": "Willingness", "body": "Readiness/Desire (will, would, willing)." },
-            { "label": "Usuality", "body": "Frequency (always, usually, rarely)." }
-          ]}
-        ],
-        "appliedSummary": "كلامك بيبين رأيك (Modality).. هل الحاجة دي أكيدة (Probability)؟ هل لازم تتعمل (Obligation)؟ هل إنت عايز تعملها (Willingness)؟ ولا هل دي عادتك (Usuality)؟ الأربعة دول هما \"أركان\" التلقائية في الكلام ولازم تحفظ أساميهم بالإنجليزي كويس جداً.",
-        "rubyTip": "في الامتحان، لما تشوف 'must' أو 'always'، فكر علطول في الـ Modality! 🧠",
-        "nextLesson": "ch3-s2"
-      },
-      {
-        "id": "ch3-s2",
-        "title": "Evaluative Devices & Generic Sentences",
-        "subtitle": "How stance is revealed through timeless truths.",
-        "quizId": "quiz-ch3-s2",
-        "content": [
-          { "type": "definition", "heading": "Theoretical: Evaluative Devices", "body": "Means by which a speaker's stance is revealed. Includes Evaluative Verbs (regret), Adjectives (admirable), and Generic Sentences." },
-          { "type": "definition", "heading": "Theoretical: Generic Sentences", "body": "Sentences which assert something to be a general truth, typically timelessly true. Usually in the simple present tense (e.g., 'Afghanistan is the land of Pashtuns')." }
-        ],
-        "appliedSummary": "إزاي بنقيم الكلام؟ يا إما بأفعال زي (أندم أو أرحب) أو بصفات زي (رائع أو سيئ). وفيه حاجة ذكية جداً اسمها \"الجمل العامة\" (Generic).. دي جمل بتقول حقيقة خالدة مفيهاش نقاش (زي: أفغانستان هي أرض البشتون).. الجمل دي بتبين انحياز الكاتب أو وجهة نظره القوية كإنها قانون كوني.",
-        "rubyTip": "الجملة العامة دايماً بتبدأ بـ Simple Present وبتتكلم عن حقيقة مطلقة! 🌍",
-        "prevLesson": "ch3-s1"
-      }
-    ],
-    "examId": "exam-ch3"
-  },
-  {
-    "id": "ch4",
-    "number": 4,
-    "title": "Narrative Structure (Labov)",
-    "description": "Analyzing the 6 essential parts of any well-formed story.",
-    "icon": "account_tree",
-    "status": "not-started",
-    "lessons": [
-      {
-        "id": "ch4-s1",
-        "title": "Labov's 6-Part Schema",
-        "subtitle": "The skeleton of every narrative.",
-        "quizId": "quiz-ch4-s1",
-        "content": [
-          {
-            "type": "definition",
-            "heading": "Theoretical: Labov's Model",
-            "body": "1. **Abstract**: Summary of the story.\n2. **Orientation**: Who, when, where.\n3. **Complicating Action**: Main events.\n4. **Evaluation**: Why the story is worth telling.\n5. **Resolution**: How it ends.\n6. **Coda**: Returns the listener to the present.",
-            "arabicExplanation": "ده الهيكل اللي بيمشي عليه أي نص قصصي حسب لابوف. لازم تحفظ الستة بالترتيب."
-          },
-          {
-            "type": "analysis",
-            "heading": "Applied: Evaluation Types",
-            "body": "Evaluation is the soul of the narrative. It includes:",
-            "steps": [
-              { "label": "Intensifying", "body": "Vividness via gestures, repetitions, or dramatic sounds." },
-              { "label": "Comparator", "body": "Alternative narrative developments (negative/modal sentences)." },
-              { "label": "Correlative", "body": "Secondary activities contemporaneous with events." },
-              { "label": "Explicative", "body": "Giving background reasons and causes." }
-            ],
-            "arabicExplanation": "الـ Evaluation هو اللي بيدي طعم للقصة. لابوف قسمه لـ 4 أنواع (مكثف، مقارن، مترابط، تفسيري)."
-          }
-        ],
-        "appliedSummary": "لابوف قال إن أي حكاية في الدنيا لازم تمر بـ 6 مراحل.. بتبدأ بملخص سريع (Abstract)، وتعرفنا بالناس والزمان (Orientation)، وبعدين أهم حتة وهي الأحداث اللي بجد (Complicating Action) - وفي الآخر بتقولنا إيه اللي حصل (Resolution) وإيه الحكمة اللي نطلع بيها (Coda).",
-        "rubyTip": "ركز: الـ Complicating Action هو العنصر الوحيد اللي لازم يكون موجود في أي قصة! 🎭",
-        "nextLesson": "ch4-s2"
-      }
-    ],
-    "examId": "exam-ch4"
-  },
-  {
-    "id": "ch5",
-    "number": 5,
-    "title": "Discourse Structure (Birmingham)",
-    "description": "Treating conversation as a rule-governed system.",
-    "icon": "forum",
-    "status": "not-started",
-    "lessons": [
-      {
-        "id": "ch5-s1",
-        "title": "Hierarchical System & Moves",
-        "subtitle": "Opening, Supporting, and Challenging moves.",
-        "quizId": "quiz-ch5-s1",
-        "content": [
-          { "type": "definition", "heading": "Theoretical: Birmingham Model", "body": "Treats conversation as a Rule-governed or Hierarchical system where moves are the key interactive units." },
-          { "type": "analysis", "heading": "Applied: Discourse Moves", "body": "How we interact:", "steps": [
-            { "label": "Opening Move", "body": "Essential topic-carrying items which are recognisably 'new'." },
-            { "label": "Supporting Move", "body": "Occurring after any other type of move and involving items that concur." },
-            { "label": "Challenging Move", "body": "Functioning to hold up the progress of a topic." }
-          ]}
-        ],
-        "appliedSummary": "الحوار مش عشوائي.. ده نظام محكم (Birmingham Model).. بيمشي بقواعد (Rule-governed). عندنا حركات بتفتح كلام جديد (Opening)، وحركات بتوافق وتدعم الكلام (Supporting)، وحركات تانية بتعارض أو توقف الكلام (Challenging).. ده هو جوهر التحليل الخطابي.",
-        "rubyTip": "الموديل ده بيشوف إن الـ Move هو أهم وحدة تفاعلية في الحوار! 🗣️",
-        "nextLesson": "ch6-s1"
-      }
-    ],
-    "examId": "exam-ch5"
-  },
-  {
-    "id": "ch6",
-    "number": 6,
-    "title": "Grice's Maxims & Implicature",
-    "description": "Conversational cooperation and the art of hidden meaning.",
-    "icon": "record_voice_over",
-    "status": "not-started",
-    "lessons": [
-      {
-        "id": "ch6-s1",
-        "title": "The 4 Conversational Maxims",
-        "subtitle": "Quality, Quantity, Relation, and Manner.",
-        "quizId": "quiz-ch6-s1",
-        "content": [
-          { "type": "definition", "heading": "Theoretical: The Cooperative Principle", "body": "The CP is a basic assumption that speakers normally intend to accomplish purposeful and effective communication." },
-          { "type": "analysis", "heading": "Applied: The 4 Maxims", "body": "The 4 rules of talk:", "steps": [
-            { "label": "Quality", "body": "Be truthful (Don't say things that are false)." },
-            { "label": "Quantity", "body": "Be as informative as required (Not too much or too little)." },
-            { "label": "Relation", "body": "Be relevant (Say things that are relevant in context)." },
-            { "label": "Manner", "body": "Be clear (Avoid obscurity and ambiguity)." }
-          ]}
-        ],
-        "appliedSummary": "جرايس قالنا إن الحوار الناجح بيمشي بـ 4 قواعد ذهبية: قول الحقيقة (Quality)، قول اللي مطلوب بس (Quantity)، خليك في الموضوع (Relation)، وخليك واضح (Manner).. أي خروج عن دول بيخلق معنى جديد.",
-        "rubyTip": "القواعد دي هي اللي بتخلينا نفهم بعض من غير ما نكون صريحين 100%! 🤐",
-        "nextLesson": "ch6-s2"
-      },
-      {
-        "id": "ch6-s2",
-        "title": "Flouting & Implicature",
-        "subtitle": "Analyzing hidden meanings in dialogue.",
-        "quizId": "quiz-ch6-s2",
-        "content": [
-          { "type": "definition", "heading": "Theoretical: Flouting", "body": "Deliberately and obviously violating a maxim to generate an Implicature (covert meaning)." },
-          { "type": "analysis", "heading": "Applied: Exam Examples", "body": "Analyze these cases:", "steps": [
-            { "label": "Relation", "body": "A: 'What’s the weather prediction?' B: 'Bring your coat.' (B implies it will rain/be cold)." },
-            { "label": "Quantity", "body": "Hamlet: 'Words, words, words.' (Too uninformative, avoids answering)." },
-            { "label": "Quality", "body": "A: 'Tehran’s in Turkey, isn’t it?' B: 'And London’s in Armenia, I suppose.' (Sarcastic untruth)." }
-          ]}
-        ],
-        "appliedSummary": "الـ Flouting هو إنك تكسر قاعدة من القواعد دي \"بمزاجك\" وعن عمد عشان توصل معنى خفي (Implicature).. زي لما حد يسألك عن الجو تقوله \"هات البالطو\"، إنت كدة كسرت قاعدة الـ Relation عشان تقصد إنه تلج من غير ما تقولها صراحة.",
-        "rubyTip": "الـ Implicature هو المعنى اللي بيفهمه السامع بين السطور! 🕵️‍♂️",
-        "prevLesson": "ch6-s1"
-      }
-    ],
-    "examId": "exam-ch6"
-  },
-  {
-    "id": "ch7",
-    "number": 7,
-    "title": "Politeness & Face",
-    "description": "Understanding social dynamics and face-threatening acts.",
-    "icon": "face",
-    "status": "not-started",
-    "lessons": [
-      {
-        "id": "ch7-s1",
-        "title": "Face & Politeness Strategies",
-        "subtitle": "Appreciation vs. Freedom.",
-        "quizId": "quiz-ch7-s1",
-        "content": [
-          {
-            "type": "definition",
-            "heading": "Theoretical: Positive & Negative Face",
-            "body": "1. **Positive Face**: Wish to be liked and approved of by others.\n2. **Negative Face**: Wish not to be coerced or forced; desire for freedom from imposition.",
-            "arabicExplanation": "الـ Positive إنك عايز الناس تحبك، والـ Negative إنك مش عايز حد يضغط عليك."
-          },
-          {
-            "type": "analysis",
-            "heading": "Applied: Politeness Strategies",
-            "body": "Identify the strategy:",
-            "steps": [
-              { "label": "Positive Politeness", "body": "'What a fantastic garden you have.' (Compliment/Solidarity)." },
-              { "label": "Negative Politeness", "body": "'Could you find me a computer so I can check my e-mail?' (Hedged request)." },
-              { "label": "Negative Politeness", "body": "'I don't suppose you could give us a lift.' (Being pessimistic)." },
-              { "label": "Off-record", "body": "Dropping a hint (e.g., 'Our vacuum cleaner just broke down')." },
-              { "label": "Bald on-record", "body": "Direct command without redress (e.g., 'Open the window')." }
-            ],
-            "arabicExplanation": "المجاملات دايماً Positive، والاعتذار أو تقليل الطلب دايماً Negative."
-          }
-        ],
-        "appliedSummary": "في الامتحان هيجيبلك جملة ويقولك دي انهي نوع.. لو مجاملة تبقى Positive، ولو بتبين إنك مش عايز تتعب اللي قدامك تبقى Negative، ولو تلميح تبقى Off-record.",
-        "rubyTip": "التشاؤم (Pessimism) والاعتذار (Apology) من أهم استراتيجيات المجاملة السلبية! 🤝",
-        "nextLesson": "ch9-s1"
-      }
-    ],
-    "examId": "exam-ch7"
-  },
-  {
-    "id": "ch9",
-    "number": 9,
-    "title": "Practical Exam Prep",
-    "description": "Model answers and cheat sheets for the final exam.",
-    "icon": "assignment_turned_in",
-    "status": "not-started",
-    "lessons": [
-      {
-        "id": "ch9-s1",
-        "title": "Final Review & Cheat Sheets",
-        "subtitle": "The essential list for exam night.",
-        "quizId": "quiz-ch9-s1",
-        "content": [
-          { "type": "definition", "heading": "Theoretical: Key Exam Triggers", "body": "1. Semantic deviation -> Metaphor or Paradox.\n2. Lexical Cohesion -> Reiteration, Synonymy, Hyponymy, Collocation.\n3. Conjunctions -> Additive, Adversative, Causal, Temporal." },
-          { "type": "analysis", "heading": "Applied: Exam Strategy", "body": "How to tackle the paper:", "steps": [
-            { "label": "Definitions", "body": "Memorize exact phrasing for 'Generic Sentence', 'Face', and 'Modality'." },
-            { "label": "Maxims", "body": "Always state both the Flouted Maxim and the Implicature." },
-            { "label": "True/False", "body": "Correct the false ones! (e.g., Pessimism is NOT Positive Politeness)." }
-          ]}
-        ],
-        "appliedSummary": "ده ليلة الامتحان يا بطل.. لازم تحفظ إن الانحراف الداللي بسببه الاستعارة والمفارقة. والوصل 4 أنواع. والمجاملات السلبية 9 أنواع. ركز في سؤال صح وغلط عشان لازم \"تصحح\" الغلط.. المنهج دلوقتى بين إيديك كامل ومفصل، ادخل الامتحان وأنت مطمن.",
-        "rubyTip": "راجع المذكرات السريعة في Section 9 من الـ Guide.. هي دي اللي هتلملك المنهج كله في 5 دقايق! 🚀"
-      }
-    ],
-    "examId": "exam-ch9"
-  }
+﻿[
+    {
+        "id":  "ch1",
+        "number":  1,
+        "title":  "Poetry: The Art of Foregrounding",
+        "description":  "Master Poetic Licence, Parallelism, and the 5 levels of linguistic Deviation.",
+        "icon":  "auto_stories",
+        "status":  "not-started",
+        "lessons":  [
+                        {
+                            "id":  "ch1-s1",
+                            "title":  "Poetic Licence \u0026 Language Levels",
+                            "subtitle":  "How poets break the rules and the structure of language.",
+                            "quizId":  "quiz-ch1-s1",
+                            "content":  [
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Poetic Licence",
+                                                "body":  "Poetic Licence is the poet\u0027s right to ignore rules and conventions generally observed by users of the language. This allows for artistic creativity and the bending of grammatical, phonological, or lexical norms."
+                                            },
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Levels of Language",
+                                                "body":  "Language is structured in 3 levels: \n1. Realization: Sounds (Phonology) and Marks (Graphology).\n2. Form: Words (Lexicon) and Grammar (Syntax).\n3. Meaning: Semantics (Literal) and Pragmatics (Contextual)."
+                                            }
+                                        ],
+                            "appliedSummary":  "Ø¨Øµ ÙŠØ§ Ø¨Ø·Ù„ØŒ Ø§Ù„Ø¯Ø±Ø³ Ø§Ù„Ø£ÙˆÙ„ Ø¯Ù‡ Ø¨ÙŠÙÙ‡Ù…Ùƒ Ø¥Ù† Ø§Ù„Ø´Ø§Ø¹Ø± Ù…Ø´ Ø´Ø®Øµ Ø¹Ø§Ø¯ÙŠ.. Ù‡Ùˆ Ù…Ø¹Ø§Ù‡ \"Ø±Ø®ØµØ©\" (Poetic Licence) ØªØ®Ù„ÙŠÙ‡ ÙŠÙƒØ³Ø± Ø§Ù„Ù‚ÙˆØ§Ø¹Ø¯ Ø¨Ø±Ø§Ø­ØªÙ‡ Ø¹Ø´Ø§Ù† ÙŠØ¸Ø¨Ø· Ø§Ù„Ù‚Ø§ÙÙŠØ© Ø£Ùˆ ÙŠÙˆØµÙ„ Ù…Ø¹Ù†Ù‰ ÙÙ†ÙŠ. ÙˆÙ„Ø§Ø²Ù… ØªØ¹Ø±Ù Ø¥Ù† Ø§Ù„Ù„ØºØ© Ù…ØªÙ‚Ø³Ù…Ø© Ù„Ù€ 3 Ù„ÙŠÙÙ„Ø§Øª: ØµÙˆØª ÙˆÙƒØªØ§Ø¨Ø© (Realization)ØŒ ÙƒÙ„Ù…Ø© ÙˆÙ‚ÙˆØ§Ø¹Ø¯ (Form)ØŒ ÙˆÙ…Ø¹Ù†Ù‰ ÙˆØ³ÙŠØ§Ù‚ (Meaning). Ù„Ùˆ Ø­ÙØ¸Øª Ø§Ù„ØªÙ‚Ø³ÙŠÙ…Ø© Ø¯ÙŠØŒ Ø¥Ù†Øª ÙƒØ¯Ø© Ø¶Ù…Ù†Øª Ø£ÙˆÙ„ Ø¬Ø²Ø¡ ÙÙŠ Ø§Ù„Ø§Ù…ØªØ­Ø§Ù†.",
+                            "rubyTip":  "Ø§Ù„Ø±Ø®ØµØ© Ø§Ù„Ø´Ø¹Ø±ÙŠØ© Ù‡ÙŠ Ø§Ù„Ø³Ø¨Ø¨ ÙÙŠ Ø¥Ù† Ø§Ù„Ù‚ØµØ§Ø¦Ø¯ Ù…Ø´ Ø²ÙŠ Ù„ØºØ© Ø§Ù„Ø¬Ø±Ø§ÙŠØ¯.. Ù‡ÙŠ Ø§Ù„Ù„ÙŠ Ø¨ØªØ¯ÙŠ Ù„Ù„Ù‚ØµÙŠØ¯Ø© Ø±ÙˆØ­! âœ¨",
+                            "nextLesson":  "ch1-s2"
+                        },
+                        {
+                            "id":  "ch1-s2",
+                            "title":  "Parallelism, Repetition \u0026 Deviation",
+                            "subtitle":  "The three pillars of textual prominence.",
+                            "quizId":  "quiz-ch1-s2",
+                            "content":  [
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Foregrounding",
+                                                "body":  "Refers to the ways in which certain aspects of a text are made to stand out or appear prominent (Prominence). The three main methods are Parallelism, Deviation, and Repetition.",
+                                                "arabicExplanation":  "Ø§Ù„Ø¨Ø±ÙˆØ² (Foregrounding) Ù‡Ùˆ Ø¥Ù†Ùƒ ØªØ®Ù„ÙŠ Ø¬Ø²Ø¡ Ù…Ù† Ø§Ù„Ù†Øµ ÙŠØ´Ø¯ Ø§Ù„Ø¹ÙŠÙ†.. ÙˆØ¯Ù‡ Ø¨ÙŠØ­ØµÙ„ Ø¨Ù€ 3 Ø·Ø±Ù‚: Ø§Ù„ØªÙˆØ§Ø²ÙŠØŒ Ø§Ù„Ø§Ù†Ø­Ø±Ø§ÙØŒ ÙˆØ§Ù„ØªÙƒØ±Ø§Ø±."
+                                            },
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Repetition",
+                                                "body":  "Repetition is the **mechanical repetition** of a linguistic item (word, phrase, or sound) without any contrastive element. It is often used for emphasis.",
+                                                "arabicExplanation":  "Ø§Ù„ØªÙƒØ±Ø§Ø± Ø§Ù„Ù…ÙŠÙƒØ§Ù†ÙŠÙƒÙŠ Ù‡Ùˆ Ø¥Ù†Ùƒ ØªØ¹ÙŠØ¯ Ù†ÙØ³ Ø§Ù„ÙƒÙ„Ù…Ø© Ø¨Ø§Ù„Ø¸Ø¨Ø· Ø¹Ø´Ø§Ù† ØªØ£ÙƒØ¯ Ø¹Ù„Ù‰ Ù…Ø¹Ù†Ù‰ Ù…Ø¹ÙŠÙ†."
+                                            },
+                                            {
+                                                "type":  "analysis",
+                                                "heading":  "Applied: Parallelism (Identity + Contrast)",
+                                                "body":  "Analyzing: \u0027Where wealth accumulates and men decay.\u0027",
+                                                "steps":  [
+                                                              {
+                                                                  "label":  "Identity",
+                                                                  "body":  "Both clauses share the [Subject + Verb] structure."
+                                                              },
+                                                              {
+                                                                  "label":  "Contrast",
+                                                                  "body":  "Wealth vs Men | Accumulates vs Decay."
+                                                              },
+                                                              {
+                                                                  "label":  "Effect",
+                                                                  "body":  "The parallelism forces a semantic link between wealth/decay and men/accumulates."
+                                                              }
+                                                          ],
+                                                "arabicExplanation":  "Ø§Ù„ØªÙˆØ§Ø²ÙŠ (Parallelism) Ø¨ÙŠØ¬Ù…Ø¹ Ø¨ÙŠÙ† Ø­Ø§Ø¬ØªÙŠÙ† Ø«Ø§Ø¨ØªÙŠÙ† (Ù†ÙØ³ Ø§Ù„ÙˆØ²Ù†) ÙˆØ­Ø§Ø¬ØªÙŠÙ† Ù…Ø®ØªÙ„ÙÙŠÙ† (ÙƒÙ„Ù…Ø§Øª ØªØ§Ù†ÙŠØ©)."
+                                            }
+                                        ],
+                            "appliedSummary":  "Ø§Ù„Ù€ Foregrounding Ù‡Ùˆ Ø¥Ù†Ùƒ ØªØ¹Ù…Ù„ \"Ø¨Ø±ÙˆØ²\" ÙÙŠ Ø§Ù„ÙƒÙ„Ø§Ù… Ø¹Ø´Ø§Ù† ØªØ´Ø¯ Ø¹ÙŠÙ† Ø§Ù„Ù„ÙŠ Ø¨ÙŠÙ‚Ø±Ø£.. ÙˆØ£Ù‡Ù… Ø·Ø±ÙŠÙ‚Ø© Ù„Ø¯Ù‡ Ù‡ÙŠ Ø§Ù„Ù€ Parallelism (Ø§Ù„ØªÙˆØ§Ø²ÙŠ). ÙŠØ¹Ù†ÙŠ Ø£Ø¬ÙŠØ¨ Ø¬Ù…Ù„ØªÙŠÙ† Ù„ÙŠÙ‡Ù… Ù†ÙØ³ Ø§Ù„ÙˆØ²Ù† ÙˆØ§Ù„ØªÙ‚Ø³ÙŠÙ…Ø© Ø¨Ø§Ù„Ø¸Ø¨Ø· (Identity) Ø¨Ø³ Ø£ØºÙŠØ± Ø§Ù„ÙƒÙ„Ù…Ø§Øª (Contrast).. Ø¯Ù‡ Ø¨ÙŠØ®Ù„ÙŠ Ø¹Ù‚Ù„Ùƒ ÙŠØ±Ø¨Ø· Ø¨ÙŠÙ† Ø§Ù„Ù…Ø¹Ù†ÙŠÙŠÙ† ØºØµØ¨ Ø¹Ù†ÙƒØŒ Ø²ÙŠ Ù…Ø§ Ø´ÙÙ†Ø§ ÙÙŠ Ù…Ø«Ø§Ù„ Ø§Ù„Ø«Ø±ÙˆØ© ÙˆØ¯Ù…Ø§Ø± Ø§Ù„Ø¥Ù†Ø³Ø§Ù†. ÙˆØ¹Ù†Ø¯Ù†Ø§ ÙƒÙ…Ø§Ù† Ø§Ù„Ù€ Repetition ÙˆÙ‡Ùˆ ØªÙƒØ±Ø§Ø± Ø§Ù„ÙƒÙ„Ù…Ø© Ø¨Ø§Ù„Ø¸Ø¨Ø·.",
+                            "rubyTip":  "Ù„Ù…Ø§ ØªÙ„Ø§Ù‚ÙŠ ØªÙƒØ±Ø§Ø± ÙÙŠ Ø´ÙƒÙ„ Ø§Ù„Ø¬Ù…Ù„Ø©ØŒ Ø£Ø¹Ø±Ù Ø¥Ù† Ø§Ù„ÙƒØ§ØªØ¨ Ø¹Ø§ÙŠØ²Ùƒ ØªÙ‚Ø§Ø±Ù† Ø¨ÙŠÙ† Ø§Ù„Ù…Ø¹Ø§Ù†ÙŠ Ø§Ù„Ù„ÙŠ ÙÙŠÙ‡Ø§! ðŸ“š",
+                            "prevLesson":  "ch1-s1",
+                            "nextLesson":  "ch1-s3"
+                        },
+                        {
+                            "id":  "ch1-s3",
+                            "title":  "The 5 Levels of Deviation",
+                            "subtitle":  "Diving deep into how language is bent.",
+                            "quizId":  "quiz-ch1-s3",
+                            "content":  [
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Deviation",
+                                                "body":  "Extra irregularity. Deviation works by disrupting or departing either from readersâ€™ expectations or from a pattern established by the text. This is essentially a division between external deviation and internal deviation."
+                                            },
+                                            {
+                                                "type":  "analysis",
+                                                "heading":  "Applied: Types of Deviation",
+                                                "body":  "Breaking language at every level:",
+                                                "steps":  [
+                                                              {
+                                                                  "label":  "Lexical",
+                                                                  "body":  "Creating new words (Neologism) via Affixation (foresuffer), Compounding (widow-making), or Functional Conversion (using verb as noun)."
+                                                              },
+                                                              {
+                                                                  "label":  "Syntactic",
+                                                                  "body":  "Breaking grammar rules like Inversion (\u0027Then spake King Arthur\u0027)."
+                                                              },
+                                                              {
+                                                                  "label":  "Phonological",
+                                                                  "body":  "Breaking sound rules like Elision (\u0027t\u0027assault\u0027) or Syncope (\u0027o\u0027er\u0027)."
+                                                              },
+                                                              {
+                                                                  "label":  "Graphological",
+                                                                  "body":  "Visual deviation like splitting words vertically or using odd capitalization."
+                                                              },
+                                                              {
+                                                                  "label":  "Semantic",
+                                                                  "body":  "Breaking logic via Metaphor or Paradox (e.g., \u0027Death feeds on his mute voice\u0027)."
+                                                              }
+                                                          ]
+                                            }
+                                        ],
+                            "appliedSummary":  "Ø§Ù„Ø§Ù†Ø­Ø±Ø§Ù (Deviation) Ù‡Ùˆ Ø¥Ù†Ùƒ ØªØ´Ø° Ø¹Ù† Ø§Ù„Ù‚Ø§Ø¹Ø¯Ø©.. Ø¹Ù†Ø¯Ù†Ø§ 5 Ø£Ù†ÙˆØ§Ø¹ Ø£Ø³Ø§Ø³ÙŠØ©:\n1. Lexical: ØªØ£Ù„Ù ÙƒÙ„Ù…Ø§Øª Ø¬Ø¯ÙŠØ¯Ø© (Ø²ÙŠ Neologism).\n2. Syntactic: ØªØ´Ù‚Ù„Ø¨ ØªØ±ØªÙŠØ¨ Ø§Ù„Ø¬Ù…Ù„Ø© (Inversion).\n3. Phonological: ØªØ§ÙƒÙ„ Ø­Ø±ÙˆÙ Ù…Ù† Ø§Ù„ÙƒÙ„Ù…Ø© (Elision).\n4. Graphological: ØªÙ„Ø¹Ø¨ ÙÙŠ Ø´ÙƒÙ„ Ø§Ù„ÙƒØªØ§Ø¨Ø©.\n5. Semantic: ØªØ³ØªØ®Ø¯Ù… Ø§Ø³ØªØ¹Ø§Ø±Ø§Øª ØºÙŠØ± Ù…Ù†Ø·Ù‚ÙŠØ© Ù„ØºÙˆÙŠØ§Ù‹ Ø¨Ø³ ÙÙ†ÙŠØ© (Metaphor).\nØ±ÙƒØ² Ø¥Ù† Ø§Ù„Ø§Ù†Ø­Ø±Ø§Ù Ø§Ù„Ø¯Ø§Ù„Ù„ÙŠ Ø¯Ø§ÙŠÙ…Ø§Ù‹ Ø¨ÙŠØ­ØµÙ„ Ø¨Ø³Ø¨ Ø§Ù„Ø§Ø³ØªØ¹Ø§Ø±Ø© (Metaphor) Ø£Ùˆ Ø§Ù„Ù…ÙØ§Ø±Ù‚Ø© (Paradox).",
+                            "rubyTip":  "ÙƒÙ„ Ù†ÙˆØ¹ Ø§Ù†Ø­Ø±Ø§Ù Ù„Ù‡ ÙˆØ¸ÙŠÙØ©.. Ø±ÙƒØ² Ù‡Ùˆ ÙƒØ³Ø± Ø§Ù„Ù‚Ø§Ø¹Ø¯Ø© ÙÙŠÙ† Ø¨Ø§Ù„Ø¸Ø¨Ø· Ø¹Ø´Ø§Ù† ØªØ¹Ø±Ù ØªØ­Ù„Ù„ ØµØ­! âœ¨",
+                            "prevLesson":  "ch1-s2"
+                        }
+                    ],
+        "examId":  "exam-ch1"
+    },
+    {
+        "id":  "ch2",
+        "number":  2,
+        "title":  "Cohesion: The Glue of Texts",
+        "description":  "Learn how reference, ellipsis, conjunctions, and lexical choices tie sentences together.",
+        "icon":  "menu_book",
+        "status":  "not-started",
+        "lessons":  [
+                        {
+                            "id":  "ch2-s1",
+                            "title":  "Reference Cohesion",
+                            "subtitle":  "Anaphoric and Cataphoric pointers.",
+                            "quizId":  "quiz-ch2-s1",
+                            "content":  [
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Cohesion",
+                                                "body":  "The linguistic means by which sentences are woven together to make texts. It refers to all the linguistic ways in which words across sentences link up."
+                                            },
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Reference Types",
+                                                "body":  "1. Anaphoric: Referring BACK to something already mentioned (e.g., \u0027Mary arrived. **She** was tired\u0027).\n2. Cataphoric: Referring FORWARD to something yet to be mentioned (e.g., \u0027When **he** arrived, John slept\u0027)."
+                                            }
+                                        ],
+                            "appliedSummary":  "Ø§Ù„Ù€ Cohesion Ù‡Ùˆ \"Ø§Ù„ØµÙ…Øº\" Ø§Ù„Ù„ÙŠ Ø¨ÙŠØ±Ø¨Ø· Ø§Ù„Ø¬Ù…Ù„ Ø¨Ø¨Ø¹Ø¶.. ÙˆØ£Ù‡Ù… Ù†ÙˆØ¹ Ù‡Ùˆ Ø§Ù„Ù€ Reference (Ø§Ù„Ø¥Ø­Ø§Ù„Ø©).. Ù„Ùˆ Ø§Ù„Ø¶Ù…ÙŠØ± Ø¨ÙŠØ´Ø§ÙˆØ± Ø¹Ù„Ù‰ Ø­Ø¯ Ø§ØªØ°ÙƒØ± Ù‚Ø¨Ù„ ÙƒØ¯Ø© ÙŠØ¨Ù‚Ù‰ AnaphoricØŒ ÙˆÙ„Ùˆ Ø¨ÙŠØ´Ø§ÙˆØ± Ø¹Ù„Ù‰ Ø­Ø¯ Ù„Ø³Ù‡ Ù‡ÙŠØªØ°ÙƒØ± ÙŠØ¨Ù‚Ù‰ Cataphoric.. Ø¯ÙŠ Ø³Ù‡Ù„Ø© ÙˆØ¨Ø³ÙŠØ·Ø© ÙˆÙ…ÙˆØ¬ÙˆØ¯Ø© ÙÙŠ ÙƒÙ„ Ø­ØªØ©.",
+                            "rubyTip":  "Ø§Ù„Ù€ Anaphoric Ù‡Ùˆ Ø§Ù„Ø£Ø´Ù‡Ø±ØŒ Ø¨Ø³ Ø§Ù„Ù€ Cataphoric Ø¨ÙŠØ³ØªØ®Ø¯Ù… Ù„Ù„ØªØ´ÙˆÙŠÙ‚ ÙÙŠ Ø§Ù„Ù‚ØµØµ! ðŸ”—",
+                            "nextLesson":  "ch2-s2"
+                        },
+                        {
+                            "id":  "ch2-s2",
+                            "title":  "Ellipsis (Nominal, Verbal, Clausal)",
+                            "subtitle":  "The art of omitting unnecessary repetition.",
+                            "quizId":  "quiz-ch2-s2",
+                            "content":  [
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Ellipsis",
+                                                "body":  "Material is left out since its repetition or near-repetition is felt to be unnecessary."
+                                            },
+                                            {
+                                                "type":  "analysis",
+                                                "heading":  "Applied: The 3 Types of Ellipsis",
+                                                "body":  "Identifying what was deleted:",
+                                                "steps":  [
+                                                              {
+                                                                  "label":  "Nominal Ellipsis",
+                                                                  "body":  "The **Noun** is omitted. Example: \u0027I saw two pens. I bought **both** [pens].\u0027"
+                                                              },
+                                                              {
+                                                                  "label":  "Verbal Ellipsis",
+                                                                  "body":  "The **Verb** is omitted. Example: \u0027Have you been swimming?\u0027 \u0027Yes, I **have** [been swimming].\u0027"
+                                                              },
+                                                              {
+                                                                  "label":  "Clausal Ellipsis",
+                                                                  "body":  "An entire **Clause** is omitted. Example: \u0027Why didn\u0027t you go?\u0027 \u0027I don\u0027t **know** [why I didn\u0027t go].\u0027"
+                                                              }
+                                                          ]
+                                            }
+                                        ],
+                            "appliedSummary":  "Ø§Ù„Ù€ Ellipsis Ù‡Ùˆ Ø§Ù„Ø­Ø°Ù.. Ù„ÙŠÙ‡ Ù†ÙƒØ±Ø± Ø§Ù„ÙƒÙ„Ø§Ù… Ù„Ùˆ Ø§Ù„Ù„ÙŠ Ù‚Ø¯Ø§Ù…Ù†Ø§ ÙØ§Ù‡Ù…Ù‡ØŸ Ø±ÙƒØ² Ø¨Ù‚Ù‰ ÙÙŠ Ø§Ù„Ø£Ù†ÙˆØ§Ø¹ Ø¯ÙŠ Ø¹Ø´Ø§Ù† Ø¨ØªÙŠØ¬ÙŠ ÙÙŠ Ø§Ù„Ø§Ù…ØªØ­Ø§Ù† Ø¯Ø§ÙŠÙ…Ø§Ù‹: Ù„Ùˆ Ø­Ø°ÙØª Ø§Ù„Ø§Ø³Ù… ÙˆØ³Ø¨Øª Ø§Ù„Ø¶Ù…ÙŠØ± Ù…Ø«Ù„Ø§Ù‹ ÙŠØ¨Ù‚Ù‰ NominalØŒ Ù„Ùˆ Ø­Ø°ÙØª Ø§Ù„ÙØ¹Ù„ ÙˆØ³Ø¨Øª Ø§Ù„ÙØ¹Ù„ Ø§Ù„Ù…Ø³Ø§Ø¹Ø¯ ÙŠØ¨Ù‚Ù‰ VerbalØŒ ÙˆÙ„Ùˆ Ø­Ø°ÙØª Ø¬Ù…Ù„Ø© ÙƒØ§Ù…Ù„Ø© Ø¨Ø¹Ø¯ Ø£ÙØ¹Ø§Ù„ Ø²ÙŠ know Ø£Ùˆ tell ÙŠØ¨Ù‚Ù‰ Clausal.",
+                            "rubyTip":  "Ø³Ø¤Ø§Ù„ Ø§Ù„Ø§Ù…ØªØ­Ø§Ù† Ø¨ÙŠØ³Ø£Ù„Ùƒ: \u0027Nominal ellipsis occurs when the ____ is omitted\u0027.. Ø§Ù„Ø¥Ø¬Ø§Ø¨Ø© Ø¯Ø§ÙŠÙ…Ø§Ù‹ Noun! âœï¸",
+                            "prevLesson":  "ch2-s1",
+                            "nextLesson":  "ch2-s3"
+                        },
+                        {
+                            "id":  "ch2-s3",
+                            "title":  "Conjunctions \u0026 Lexical Cohesion",
+                            "subtitle":  "Signposting and word patterns.",
+                            "quizId":  "quiz-ch2-s3",
+                            "content":  [
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Conjunction Cohesion",
+                                                "body":  "Use of words/phrases to clarify the semantic or logical relationship. The 4 types are: Additive, Adversative, Causal, and Temporal."
+                                            },
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Lexical Cohesion",
+                                                "body":  "Integratedness created via content words. Main types include:\n1. Repetition: Reusing the same word.\n2. Synonymy: Using similar words.\n3. Hyponymy: Using category relationships (e.g., rose is a hyponym of flower).\n4. Collocation: Words that commonly occur together (e.g., strong tea)."
+                                            }
+                                        ],
+                            "appliedSummary":  "Ø§Ù„Ø¬Ù…Ù„ Ø¨ØªØ±Ø¨Ø· Ø¨Ø¨Ø¹Ø¶ Ø¨Ø±Ø¶Ù‡ Ø¨Ø£Ø¯ÙˆØ§Øª Ø§Ù„ÙˆØµÙ„ (Conjunctions).. ÙˆØ¯ÙˆÙ„ 4 Ø£Ù†ÙˆØ§Ø¹: Ø¥Ø¶Ø§ÙØ© (and)ØŒ ØªØ¹Ø§Ø±Ø¶ (but)ØŒ Ø³Ø¨Ø¨ (so)ØŒ Ø£Ùˆ Ø²Ù…Ù† (then). ÙˆÙÙŠÙ‡ ØªÙ…Ø§Ø³Ùƒ Ø¨ÙŠØ­ØµÙ„ Ø¨Ø³Ø¨Ø¨ Ø§Ù„ÙƒÙ„Ù…Ø§Øª Ù†ÙØ³Ù‡Ø§ (Lexical).. ÙŠØ§ Ø¥Ù…Ø§ ØªÙƒØ±Ø± Ù†ÙØ³ Ø§Ù„ÙƒÙ„Ù…Ø© (Repetition) Ø£Ùˆ ØªØ³ØªØ®Ø¯Ù… ÙƒÙ„Ù…Ø§Øª Ø¨ØªÙ…Ø´ÙŠ Ù…Ø¹ Ø¨Ø¹Ø¶ Ø¯Ø§ÙŠÙ…Ø§Ù‹ Ø²ÙŠ Ø§Ù„Ø´Ø§ÙŠ ÙˆØ§Ù„Ø³ÙƒØ± (Collocation).",
+                            "rubyTip":  "Ø§Ù„ÙˆØµÙ„ Ø§Ù„Ù…Ø¹Ø¬Ù…ÙŠ (Lexical) Ø£Ù‡Ù… Ù†ÙˆØ¹ÙŠÙ† ÙÙŠÙ‡ Ù‡Ù…Ø§ Ø§Ù„ØªÙƒØ±Ø§Ø± (Reiteration) ÙˆØ§Ù„ØªÙ„Ø§Ø²Ù… (Collocation)! ðŸ“",
+                            "prevLesson":  "ch2-s2"
+                        }
+                    ],
+        "examId":  "exam-ch2"
+    },
+    {
+        "id":  "ch3",
+        "number":  3,
+        "title":  "Modality: Opinion \u0026 Attitude",
+        "description":  "Understanding how speakers qualify their claims and use evaluative devices.",
+        "icon":  "psychology",
+        "status":  "not-started",
+        "lessons":  [
+                        {
+                            "id":  "ch3-s1",
+                            "title":  "The 4 Modality Parameters",
+                            "subtitle":  "Probability, Obligation, Willingness, and Usuality.",
+                            "quizId":  "quiz-ch3-s1",
+                            "content":  [
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Modality",
+                                                "body":  "The cover term for the ways available to a speaker within a language for expressing \u0027opinion or attitude\u0027. It denotes linguistic means for qualifying any claim."
+                                            },
+                                            {
+                                                "type":  "analysis",
+                                                "heading":  "Applied: Modality Parameters",
+                                                "body":  "How we qualify language:",
+                                                "steps":  [
+                                                              {
+                                                                  "label":  "Probability",
+                                                                  "body":  "Likelihood (might, may, must, certainly)."
+                                                              },
+                                                              {
+                                                                  "label":  "Obligation",
+                                                                  "body":  "Necessity (should, ought to, must)."
+                                                              },
+                                                              {
+                                                                  "label":  "Willingness",
+                                                                  "body":  "Readiness/Desire (will, would, willing)."
+                                                              },
+                                                              {
+                                                                  "label":  "Usuality",
+                                                                  "body":  "Frequency (always, usually, rarely)."
+                                                              }
+                                                          ]
+                                            }
+                                        ],
+                            "appliedSummary":  "ÙƒÙ„Ø§Ù…Ùƒ Ø¨ÙŠØ¨ÙŠÙ† Ø±Ø£ÙŠÙƒ (Modality).. Ù‡Ù„ Ø§Ù„Ø­Ø§Ø¬Ø© Ø¯ÙŠ Ø£ÙƒÙŠØ¯Ø© (Probability)ØŸ Ù‡Ù„ Ù„Ø§Ø²Ù… ØªØªØ¹Ù…Ù„ (Obligation)ØŸ Ù‡Ù„ Ø¥Ù†Øª Ø¹Ø§ÙŠØ² ØªØ¹Ù…Ù„Ù‡Ø§ (Willingness)ØŸ ÙˆÙ„Ø§ Ù‡Ù„ Ø¯ÙŠ Ø¹Ø§Ø¯ØªÙƒ (Usuality)ØŸ Ø§Ù„Ø£Ø±Ø¨Ø¹Ø© Ø¯ÙˆÙ„ Ù‡Ù…Ø§ \"Ø£Ø±ÙƒØ§Ù†\" Ø§Ù„ØªÙ„Ù‚Ø§Ø¦ÙŠØ© ÙÙŠ Ø§Ù„ÙƒÙ„Ø§Ù… ÙˆÙ„Ø§Ø²Ù… ØªØ­ÙØ¸ Ø£Ø³Ø§Ù…ÙŠÙ‡Ù… Ø¨Ø§Ù„Ø¥Ù†Ø¬Ù„ÙŠØ²ÙŠ ÙƒÙˆÙŠØ³ Ø¬Ø¯Ø§Ù‹.",
+                            "rubyTip":  "ÙÙŠ Ø§Ù„Ø§Ù…ØªØ­Ø§Ù†ØŒ Ù„Ù…Ø§ ØªØ´ÙˆÙ \u0027must\u0027 Ø£Ùˆ \u0027always\u0027ØŒ ÙÙƒØ± Ø¹Ù„Ø·ÙˆÙ„ ÙÙŠ Ø§Ù„Ù€ Modality! ðŸ§ ",
+                            "nextLesson":  "ch3-s2"
+                        },
+                        {
+                            "id":  "ch3-s2",
+                            "title":  "Evaluative Devices \u0026 Generic Sentences",
+                            "subtitle":  "How stance is revealed through timeless truths.",
+                            "quizId":  "quiz-ch3-s2",
+                            "content":  [
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Evaluative Devices",
+                                                "body":  "Means by which a speaker\u0027s stance is revealed. Includes Evaluative Verbs (regret), Adjectives (admirable), and Generic Sentences."
+                                            },
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Generic Sentences",
+                                                "body":  "Sentences which assert something to be a general truth, typically timelessly true. Usually in the simple present tense (e.g., \u0027Afghanistan is the land of Pashtuns\u0027)."
+                                            }
+                                        ],
+                            "appliedSummary":  "Ø¥Ø²Ø§ÙŠ Ø¨Ù†Ù‚ÙŠÙ… Ø§Ù„ÙƒÙ„Ø§Ù…ØŸ ÙŠØ§ Ø¥Ù…Ø§ Ø¨Ø£ÙØ¹Ø§Ù„ Ø²ÙŠ (Ø£Ù†Ø¯Ù… Ø£Ùˆ Ø£Ø±Ø­Ø¨) Ø£Ùˆ Ø¨ØµÙØ§Øª Ø²ÙŠ (Ø±Ø§Ø¦Ø¹ Ø£Ùˆ Ø³ÙŠØ¦). ÙˆÙÙŠÙ‡ Ø­Ø§Ø¬Ø© Ø°ÙƒÙŠØ© Ø¬Ø¯Ø§Ù‹ Ø§Ø³Ù…Ù‡Ø§ \"Ø§Ù„Ø¬Ù…Ù„ Ø§Ù„Ø¹Ø§Ù…Ø©\" (Generic).. Ø¯ÙŠ Ø¬Ù…Ù„ Ø¨ØªÙ‚ÙˆÙ„ Ø­Ù‚ÙŠÙ‚Ø© Ø®Ø§Ù„Ø¯Ø© Ù…ÙÙŠÙ‡Ø§Ø´ Ù†Ù‚Ø§Ø´ (Ø²ÙŠ: Ø£ÙØºØ§Ù†Ø³ØªØ§Ù† Ù‡ÙŠ Ø£Ø±Ø¶ Ø§Ù„Ø¨Ø´ØªÙˆÙ†).. Ø§Ù„Ø¬Ù…Ù„ Ø¯ÙŠ Ø¨ØªØ¨ÙŠÙ† Ø§Ù†Ø­ÙŠØ§Ø² Ø§Ù„ÙƒØ§ØªØ¨ Ø£Ùˆ ÙˆØ¬Ù‡Ø© Ù†Ø¸Ø±Ù‡ Ø§Ù„Ù‚ÙˆÙŠØ© ÙƒØ¥Ù†Ù‡Ø§ Ù‚Ø§Ù†ÙˆÙ† ÙƒÙˆÙ†ÙŠ.",
+                            "rubyTip":  "Ø§Ù„Ø¬Ù…Ù„Ø© Ø§Ù„Ø¹Ø§Ù…Ø© Ø¯Ø§ÙŠÙ…Ø§Ù‹ Ø¨ØªØ¨Ø¯Ø£ Ø¨Ù€ Simple Present ÙˆØ¨ØªØªÙƒÙ„Ù… Ø¹Ù† Ø­Ù‚ÙŠÙ‚Ø© Ù…Ø·Ù„Ù‚Ø©! ðŸŒ",
+                            "prevLesson":  "ch3-s1"
+                        }
+                    ],
+        "examId":  "exam-ch3"
+    },
+    {
+        "id":  "ch4",
+        "number":  4,
+        "title":  "Narrative Structure (Labov)",
+        "description":  "Analyzing the 6 essential parts of any well-formed story.",
+        "icon":  "account_tree",
+        "status":  "not-started",
+        "lessons":  [
+                        {
+                            "id":  "ch4-s1",
+                            "title":  "Labov\u0027s 6-Part Schema",
+                            "subtitle":  "The skeleton of every narrative.",
+                            "quizId":  "quiz-ch4-s1",
+                            "content":  [
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Labov\u0027s Model",
+                                                "body":  "1. **Abstract**: Summary of the story.\n2. **Orientation**: Who, when, where.\n3. **Complicating Action**: Main events.\n4. **Evaluation**: Why the story is worth telling.\n5. **Resolution**: How it ends.\n6. **Coda**: Returns the listener to the present.",
+                                                "arabicExplanation":  "Ø¯Ù‡ Ø§Ù„Ù‡ÙŠÙƒÙ„ Ø§Ù„Ù„ÙŠ Ø¨ÙŠÙ…Ø´ÙŠ Ø¹Ù„ÙŠÙ‡ Ø£ÙŠ Ù†Øµ Ù‚ØµØµÙŠ Ø­Ø³Ø¨ Ù„Ø§Ø¨ÙˆÙ. Ù„Ø§Ø²Ù… ØªØ­ÙØ¸ Ø§Ù„Ø³ØªØ© Ø¨Ø§Ù„ØªØ±ØªÙŠØ¨."
+                                            },
+                                            {
+                                                "type":  "analysis",
+                                                "heading":  "Applied: Evaluation Types",
+                                                "body":  "Evaluation is the soul of the narrative. It includes:",
+                                                "steps":  [
+                                                              {
+                                                                  "label":  "Intensifying",
+                                                                  "body":  "Vividness via gestures, repetitions, or dramatic sounds."
+                                                              },
+                                                              {
+                                                                  "label":  "Comparator",
+                                                                  "body":  "Alternative narrative developments (negative/modal sentences)."
+                                                              },
+                                                              {
+                                                                  "label":  "Correlative",
+                                                                  "body":  "Secondary activities contemporaneous with events."
+                                                              },
+                                                              {
+                                                                  "label":  "Explicative",
+                                                                  "body":  "Giving background reasons and causes."
+                                                              }
+                                                          ],
+                                                "arabicExplanation":  "Ø§Ù„Ù€ Evaluation Ù‡Ùˆ Ø§Ù„Ù„ÙŠ Ø¨ÙŠØ¯ÙŠ Ø·Ø¹Ù… Ù„Ù„Ù‚ØµØ©. Ù„Ø§Ø¨ÙˆÙ Ù‚Ø³Ù…Ù‡ Ù„Ù€ 4 Ø£Ù†ÙˆØ§Ø¹ (Ù…ÙƒØ«ÙØŒ Ù…Ù‚Ø§Ø±Ù†ØŒ Ù…ØªØ±Ø§Ø¨Ø·ØŒ ØªÙØ³ÙŠØ±ÙŠ)."
+                                            }
+                                        ],
+                            "appliedSummary":  "Ù„Ø§Ø¨ÙˆÙ Ù‚Ø§Ù„ Ø¥Ù† Ø£ÙŠ Ø­ÙƒØ§ÙŠØ© ÙÙŠ Ø§Ù„Ø¯Ù†ÙŠØ§ Ù„Ø§Ø²Ù… ØªÙ…Ø± Ø¨Ù€ 6 Ù…Ø±Ø§Ø­Ù„.. Ø¨ØªØ¨Ø¯Ø£ Ø¨Ù…Ù„Ø®Øµ Ø³Ø±ÙŠØ¹ (Abstract)ØŒ ÙˆØªØ¹Ø±ÙÙ†Ø§ Ø¨Ø§Ù„Ù†Ø§Ø³ ÙˆØ§Ù„Ø²Ù…Ø§Ù† (Orientation)ØŒ ÙˆØ¨Ø¹Ø¯ÙŠÙ† Ø£Ù‡Ù… Ø­ØªØ© ÙˆÙ‡ÙŠ Ø§Ù„Ø£Ø­Ø¯Ø§Ø« Ø§Ù„Ù„ÙŠ Ø¨Ø¬Ø¯ (Complicating Action) - ÙˆÙÙŠ Ø§Ù„Ø¢Ø®Ø± Ø¨ØªÙ‚ÙˆÙ„Ù†Ø§ Ø¥ÙŠÙ‡ Ø§Ù„Ù„ÙŠ Ø­ØµÙ„ (Resolution) ÙˆØ¥ÙŠÙ‡ Ø§Ù„Ø­ÙƒÙ…Ø© Ø§Ù„Ù„ÙŠ Ù†Ø·Ù„Ø¹ Ø¨ÙŠÙ‡Ø§ (Coda).",
+                            "rubyTip":  "Ø±ÙƒØ²: Ø§Ù„Ù€ Complicating Action Ù‡Ùˆ Ø§Ù„Ø¹Ù†ØµØ± Ø§Ù„ÙˆØ­ÙŠØ¯ Ø§Ù„Ù„ÙŠ Ù„Ø§Ø²Ù… ÙŠÙƒÙˆÙ† Ù…ÙˆØ¬ÙˆØ¯ ÙÙŠ Ø£ÙŠ Ù‚ØµØ©! ðŸŽ­",
+                            "nextLesson":  ""
+                        }
+                    ],
+        "examId":  "exam-ch4"
+    },
+    {
+        "id":  "ch5",
+        "number":  5,
+        "title":  "Discourse Structure (Birmingham)",
+        "description":  "Treating conversation as a rule-governed system.",
+        "icon":  "forum",
+        "status":  "not-started",
+        "lessons":  [
+                        {
+                            "id":  "ch5-s1",
+                            "title":  "Hierarchical System \u0026 Moves",
+                            "subtitle":  "Opening, Supporting, and Challenging moves.",
+                            "quizId":  "quiz-ch5-s1",
+                            "content":  [
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Birmingham Model",
+                                                "body":  "Treats conversation as a Rule-governed or Hierarchical system where moves are the key interactive units."
+                                            },
+                                            {
+                                                "type":  "analysis",
+                                                "heading":  "Applied: Discourse Moves",
+                                                "body":  "How we interact:",
+                                                "steps":  [
+                                                              {
+                                                                  "label":  "Opening Move",
+                                                                  "body":  "Essential topic-carrying items which are recognisably \u0027new\u0027."
+                                                              },
+                                                              {
+                                                                  "label":  "Supporting Move",
+                                                                  "body":  "Occurring after any other type of move and involving items that concur."
+                                                              },
+                                                              {
+                                                                  "label":  "Challenging Move",
+                                                                  "body":  "Functioning to hold up the progress of a topic."
+                                                              }
+                                                          ]
+                                            }
+                                        ],
+                            "appliedSummary":  "Ø§Ù„Ø­ÙˆØ§Ø± Ù…Ø´ Ø¹Ø´ÙˆØ§Ø¦ÙŠ.. Ø¯Ù‡ Ù†Ø¸Ø§Ù… Ù…Ø­ÙƒÙ… (Birmingham Model).. Ø¨ÙŠÙ…Ø´ÙŠ Ø¨Ù‚ÙˆØ§Ø¹Ø¯ (Rule-governed). Ø¹Ù†Ø¯Ù†Ø§ Ø­Ø±ÙƒØ§Øª Ø¨ØªÙØªØ­ ÙƒÙ„Ø§Ù… Ø¬Ø¯ÙŠØ¯ (Opening)ØŒ ÙˆØ­Ø±ÙƒØ§Øª Ø¨ØªÙˆØ§ÙÙ‚ ÙˆØªØ¯Ø¹Ù… Ø§Ù„ÙƒÙ„Ø§Ù… (Supporting)ØŒ ÙˆØ­Ø±ÙƒØ§Øª ØªØ§Ù†ÙŠØ© Ø¨ØªØ¹Ø§Ø±Ø¶ Ø£Ùˆ ØªÙˆÙ‚Ù Ø§Ù„ÙƒÙ„Ø§Ù… (Challenging).. Ø¯Ù‡ Ù‡Ùˆ Ø¬ÙˆÙ‡Ø± Ø§Ù„ØªØ­Ù„ÙŠÙ„ Ø§Ù„Ø®Ø·Ø§Ø¨ÙŠ.",
+                            "rubyTip":  "Ø§Ù„Ù…ÙˆØ¯ÙŠÙ„ Ø¯Ù‡ Ø¨ÙŠØ´ÙˆÙ Ø¥Ù† Ø§Ù„Ù€ Move Ù‡Ùˆ Ø£Ù‡Ù… ÙˆØ­Ø¯Ø© ØªÙØ§Ø¹Ù„ÙŠØ© ÙÙŠ Ø§Ù„Ø­ÙˆØ§Ø±! ðŸ—£ï¸",
+                            "nextLesson":  ""
+                        }
+                    ],
+        "examId":  "exam-ch5"
+    },
+    {
+        "id":  "ch6",
+        "number":  6,
+        "title":  "Grice\u0027s Maxims \u0026 Implicature",
+        "description":  "Conversational cooperation and the art of hidden meaning.",
+        "icon":  "record_voice_over",
+        "status":  "not-started",
+        "lessons":  [
+                        {
+                            "id":  "ch6-s1",
+                            "title":  "The 4 Conversational Maxims",
+                            "subtitle":  "Quality, Quantity, Relation, and Manner.",
+                            "quizId":  "quiz-ch6-s1",
+                            "content":  [
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: The Cooperative Principle",
+                                                "body":  "The CP is a basic assumption that speakers normally intend to accomplish purposeful and effective communication."
+                                            },
+                                            {
+                                                "type":  "analysis",
+                                                "heading":  "Applied: The 4 Maxims",
+                                                "body":  "The 4 rules of talk:",
+                                                "steps":  [
+                                                              {
+                                                                  "label":  "Quality",
+                                                                  "body":  "Be truthful (Don\u0027t say things that are false)."
+                                                              },
+                                                              {
+                                                                  "label":  "Quantity",
+                                                                  "body":  "Be as informative as required (Not too much or too little)."
+                                                              },
+                                                              {
+                                                                  "label":  "Relation",
+                                                                  "body":  "Be relevant (Say things that are relevant in context)."
+                                                              },
+                                                              {
+                                                                  "label":  "Manner",
+                                                                  "body":  "Be clear (Avoid obscurity and ambiguity)."
+                                                              }
+                                                          ]
+                                            }
+                                        ],
+                            "appliedSummary":  "Ø¬Ø±Ø§ÙŠØ³ Ù‚Ø§Ù„Ù†Ø§ Ø¥Ù† Ø§Ù„Ø­ÙˆØ§Ø± Ø§Ù„Ù†Ø§Ø¬Ø­ Ø¨ÙŠÙ…Ø´ÙŠ Ø¨Ù€ 4 Ù‚ÙˆØ§Ø¹Ø¯ Ø°Ù‡Ø¨ÙŠØ©: Ù‚ÙˆÙ„ Ø§Ù„Ø­Ù‚ÙŠÙ‚Ø© (Quality)ØŒ Ù‚ÙˆÙ„ Ø§Ù„Ù„ÙŠ Ù…Ø·Ù„ÙˆØ¨ Ø¨Ø³ (Quantity)ØŒ Ø®Ù„ÙŠÙƒ ÙÙŠ Ø§Ù„Ù…ÙˆØ¶ÙˆØ¹ (Relation)ØŒ ÙˆØ®Ù„ÙŠÙƒ ÙˆØ§Ø¶Ø­ (Manner).. Ø£ÙŠ Ø®Ø±ÙˆØ¬ Ø¹Ù† Ø¯ÙˆÙ„ Ø¨ÙŠØ®Ù„Ù‚ Ù…Ø¹Ù†Ù‰ Ø¬Ø¯ÙŠØ¯.",
+                            "rubyTip":  "Ø§Ù„Ù‚ÙˆØ§Ø¹Ø¯ Ø¯ÙŠ Ù‡ÙŠ Ø§Ù„Ù„ÙŠ Ø¨ØªØ®Ù„ÙŠÙ†Ø§ Ù†ÙÙ‡Ù… Ø¨Ø¹Ø¶ Ù…Ù† ØºÙŠØ± Ù…Ø§ Ù†ÙƒÙˆÙ† ØµØ±ÙŠØ­ÙŠÙ† 100%! ðŸ¤",
+                            "nextLesson":  "ch6-s2"
+                        },
+                        {
+                            "id":  "ch6-s2",
+                            "title":  "Flouting \u0026 Implicature",
+                            "subtitle":  "Analyzing hidden meanings in dialogue.",
+                            "quizId":  "quiz-ch6-s2",
+                            "content":  [
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Flouting",
+                                                "body":  "Deliberately and obviously violating a maxim to generate an Implicature (covert meaning)."
+                                            },
+                                            {
+                                                "type":  "analysis",
+                                                "heading":  "Applied: Exam Examples",
+                                                "body":  "Analyze these cases:",
+                                                "steps":  [
+                                                              {
+                                                                  "label":  "Relation",
+                                                                  "body":  "A: \u0027Whatâ€™s the weather prediction?\u0027 B: \u0027Bring your coat.\u0027 (B implies it will rain/be cold)."
+                                                              },
+                                                              {
+                                                                  "label":  "Quantity",
+                                                                  "body":  "Hamlet: \u0027Words, words, words.\u0027 (Too uninformative, avoids answering)."
+                                                              },
+                                                              {
+                                                                  "label":  "Quality",
+                                                                  "body":  "A: \u0027Tehranâ€™s in Turkey, isnâ€™t it?\u0027 B: \u0027And Londonâ€™s in Armenia, I suppose.\u0027 (Sarcastic untruth)."
+                                                              }
+                                                          ]
+                                            }
+                                        ],
+                            "appliedSummary":  "Ø§Ù„Ù€ Flouting Ù‡Ùˆ Ø¥Ù†Ùƒ ØªÙƒØ³Ø± Ù‚Ø§Ø¹Ø¯Ø© Ù…Ù† Ø§Ù„Ù‚ÙˆØ§Ø¹Ø¯ Ø¯ÙŠ \"Ø¨Ù…Ø²Ø§Ø¬Ùƒ\" ÙˆØ¹Ù† Ø¹Ù…Ø¯ Ø¹Ø´Ø§Ù† ØªÙˆØµÙ„ Ù…Ø¹Ù†Ù‰ Ø®ÙÙŠ (Implicature).. Ø²ÙŠ Ù„Ù…Ø§ Ø­Ø¯ ÙŠØ³Ø£Ù„Ùƒ Ø¹Ù† Ø§Ù„Ø¬Ùˆ ØªÙ‚ÙˆÙ„Ù‡ \"Ù‡Ø§Øª Ø§Ù„Ø¨Ø§Ù„Ø·Ùˆ\"ØŒ Ø¥Ù†Øª ÙƒØ¯Ø© ÙƒØ³Ø±Øª Ù‚Ø§Ø¹Ø¯Ø© Ø§Ù„Ù€ Relation Ø¹Ø´Ø§Ù† ØªÙ‚ØµØ¯ Ø¥Ù†Ù‡ ØªÙ„Ø¬ Ù…Ù† ØºÙŠØ± Ù…Ø§ ØªÙ‚ÙˆÙ„Ù‡Ø§ ØµØ±Ø§Ø­Ø©.",
+                            "rubyTip":  "Ø§Ù„Ù€ Implicature Ù‡Ùˆ Ø§Ù„Ù…Ø¹Ù†Ù‰ Ø§Ù„Ù„ÙŠ Ø¨ÙŠÙÙ‡Ù…Ù‡ Ø§Ù„Ø³Ø§Ù…Ø¹ Ø¨ÙŠÙ† Ø§Ù„Ø³Ø·ÙˆØ±! ðŸ•µï¸â€â™‚ï¸",
+                            "prevLesson":  "ch6-s1"
+                        }
+                    ],
+        "examId":  "exam-ch6"
+    },
+    {
+        "id":  "ch7",
+        "number":  7,
+        "title":  "Politeness \u0026 Face",
+        "description":  "Understanding social dynamics and face-threatening acts.",
+        "icon":  "face",
+        "status":  "not-started",
+        "lessons":  [
+                        {
+                            "id":  "ch7-s1",
+                            "title":  "Face \u0026 Politeness Strategies",
+                            "subtitle":  "Appreciation vs. Freedom.",
+                            "quizId":  "quiz-ch7-s1",
+                            "content":  [
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Positive \u0026 Negative Face",
+                                                "body":  "1. **Positive Face**: Wish to be liked and approved of by others.\n2. **Negative Face**: Wish not to be coerced or forced; desire for freedom from imposition.",
+                                                "arabicExplanation":  "Ø§Ù„Ù€ Positive Ø¥Ù†Ùƒ Ø¹Ø§ÙŠØ² Ø§Ù„Ù†Ø§Ø³ ØªØ­Ø¨ÙƒØŒ ÙˆØ§Ù„Ù€ Negative Ø¥Ù†Ùƒ Ù…Ø´ Ø¹Ø§ÙŠØ² Ø­Ø¯ ÙŠØ¶ØºØ· Ø¹Ù„ÙŠÙƒ."
+                                            },
+                                            {
+                                                "type":  "analysis",
+                                                "heading":  "Applied: Politeness Strategies",
+                                                "body":  "Identify the strategy:",
+                                                "steps":  [
+                                                              {
+                                                                  "label":  "Positive Politeness",
+                                                                  "body":  "\u0027What a fantastic garden you have.\u0027 (Compliment/Solidarity)."
+                                                              },
+                                                              {
+                                                                  "label":  "Negative Politeness",
+                                                                  "body":  "\u0027Could you find me a computer so I can check my e-mail?\u0027 (Hedged request)."
+                                                              },
+                                                              {
+                                                                  "label":  "Negative Politeness",
+                                                                  "body":  "\u0027I don\u0027t suppose you could give us a lift.\u0027 (Being pessimistic)."
+                                                              },
+                                                              {
+                                                                  "label":  "Off-record",
+                                                                  "body":  "Dropping a hint (e.g., \u0027Our vacuum cleaner just broke down\u0027)."
+                                                              },
+                                                              {
+                                                                  "label":  "Bald on-record",
+                                                                  "body":  "Direct command without redress (e.g., \u0027Open the window\u0027)."
+                                                              }
+                                                          ],
+                                                "arabicExplanation":  "Ø§Ù„Ù…Ø¬Ø§Ù…Ù„Ø§Øª Ø¯Ø§ÙŠÙ…Ø§Ù‹ PositiveØŒ ÙˆØ§Ù„Ø§Ø¹ØªØ°Ø§Ø± Ø£Ùˆ ØªÙ‚Ù„ÙŠÙ„ Ø§Ù„Ø·Ù„Ø¨ Ø¯Ø§ÙŠÙ…Ø§Ù‹ Negative."
+                                            }
+                                        ],
+                            "appliedSummary":  "ÙÙŠ Ø§Ù„Ø§Ù…ØªØ­Ø§Ù† Ù‡ÙŠØ¬ÙŠØ¨Ù„Ùƒ Ø¬Ù…Ù„Ø© ÙˆÙŠÙ‚ÙˆÙ„Ùƒ Ø¯ÙŠ Ø§Ù†Ù‡ÙŠ Ù†ÙˆØ¹.. Ù„Ùˆ Ù…Ø¬Ø§Ù…Ù„Ø© ØªØ¨Ù‚Ù‰ PositiveØŒ ÙˆÙ„Ùˆ Ø¨ØªØ¨ÙŠÙ† Ø¥Ù†Ùƒ Ù…Ø´ Ø¹Ø§ÙŠØ² ØªØªØ¹Ø¨ Ø§Ù„Ù„ÙŠ Ù‚Ø¯Ø§Ù…Ùƒ ØªØ¨Ù‚Ù‰ NegativeØŒ ÙˆÙ„Ùˆ ØªÙ„Ù…ÙŠØ­ ØªØ¨Ù‚Ù‰ Off-record.",
+                            "rubyTip":  "Ø§Ù„ØªØ´Ø§Ø¤Ù… (Pessimism) ÙˆØ§Ù„Ø§Ø¹ØªØ°Ø§Ø± (Apology) Ù…Ù† Ø£Ù‡Ù… Ø§Ø³ØªØ±Ø§ØªÙŠØ¬ÙŠØ§Øª Ø§Ù„Ù…Ø¬Ø§Ù…Ù„Ø© Ø§Ù„Ø³Ù„Ø¨ÙŠØ©! ðŸ¤",
+                            "nextLesson":  ""
+                        }
+                    ],
+        "examId":  "exam-ch7"
+    },
+    {
+        "id":  "ch9",
+        "number":  9,
+        "title":  "Practical Exam Prep",
+        "description":  "Model answers and cheat sheets for the final exam.",
+        "icon":  "assignment_turned_in",
+        "status":  "not-started",
+        "lessons":  [
+                        {
+                            "id":  "ch9-s1",
+                            "title":  "Final Review \u0026 Cheat Sheets",
+                            "subtitle":  "The essential list for exam night.",
+                            "quizId":  "",
+                            "content":  [
+                                            {
+                                                "type":  "definition",
+                                                "heading":  "Theoretical: Key Exam Triggers",
+                                                "body":  "1. Semantic deviation -\u003e Metaphor or Paradox.\n2. Lexical Cohesion -\u003e Reiteration, Synonymy, Hyponymy, Collocation.\n3. Conjunctions -\u003e Additive, Adversative, Causal, Temporal."
+                                            },
+                                            {
+                                                "type":  "analysis",
+                                                "heading":  "Applied: Exam Strategy",
+                                                "body":  "How to tackle the paper:",
+                                                "steps":  [
+                                                              {
+                                                                  "label":  "Definitions",
+                                                                  "body":  "Memorize exact phrasing for \u0027Generic Sentence\u0027, \u0027Face\u0027, and \u0027Modality\u0027."
+                                                              },
+                                                              {
+                                                                  "label":  "Maxims",
+                                                                  "body":  "Always state both the Flouted Maxim and the Implicature."
+                                                              },
+                                                              {
+                                                                  "label":  "True/False",
+                                                                  "body":  "Correct the false ones! (e.g., Pessimism is NOT Positive Politeness)."
+                                                              }
+                                                          ]
+                                            }
+                                        ],
+                            "appliedSummary":  "Ø¯Ù‡ Ù„ÙŠÙ„Ø© Ø§Ù„Ø§Ù…ØªØ­Ø§Ù† ÙŠØ§ Ø¨Ø·Ù„.. Ù„Ø§Ø²Ù… ØªØ­ÙØ¸ Ø¥Ù† Ø§Ù„Ø§Ù†Ø­Ø±Ø§Ù Ø§Ù„Ø¯Ø§Ù„Ù„ÙŠ Ø¨Ø³Ø¨Ø¨Ù‡ Ø§Ù„Ø§Ø³ØªØ¹Ø§Ø±Ø© ÙˆØ§Ù„Ù…ÙØ§Ø±Ù‚Ø©. ÙˆØ§Ù„ÙˆØµÙ„ 4 Ø£Ù†ÙˆØ§Ø¹. ÙˆØ§Ù„Ù…Ø¬Ø§Ù…Ù„Ø§Øª Ø§Ù„Ø³Ù„Ø¨ÙŠØ© 9 Ø£Ù†ÙˆØ§Ø¹. Ø±ÙƒØ² ÙÙŠ Ø³Ø¤Ø§Ù„ ØµØ­ ÙˆØºÙ„Ø· Ø¹Ø´Ø§Ù† Ù„Ø§Ø²Ù… \"ØªØµØ­Ø­\" Ø§Ù„ØºÙ„Ø·.. Ø§Ù„Ù…Ù†Ù‡Ø¬ Ø¯Ù„ÙˆÙ‚ØªÙ‰ Ø¨ÙŠÙ† Ø¥ÙŠØ¯ÙŠÙƒ ÙƒØ§Ù…Ù„ ÙˆÙ…ÙØµÙ„ØŒ Ø§Ø¯Ø®Ù„ Ø§Ù„Ø§Ù…ØªØ­Ø§Ù† ÙˆØ£Ù†Øª Ù…Ø·Ù…Ù†.",
+                            "rubyTip":  "Ø±Ø§Ø¬Ø¹ Ø§Ù„Ù…Ø°ÙƒØ±Ø§Øª Ø§Ù„Ø³Ø±ÙŠØ¹Ø© ÙÙŠ Section 9 Ù…Ù† Ø§Ù„Ù€ Guide.. Ù‡ÙŠ Ø¯ÙŠ Ø§Ù„Ù„ÙŠ Ù‡ØªÙ„Ù…Ù„Ùƒ Ø§Ù„Ù…Ù†Ù‡Ø¬ ÙƒÙ„Ù‡ ÙÙŠ 5 Ø¯Ù‚Ø§ÙŠÙ‚! ðŸš€"
+                        }
+                    ],
+        "examId":  "exam-ch9"
+    }
 ]
