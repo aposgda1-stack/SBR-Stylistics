@@ -9,13 +9,14 @@ interface Props {
   params: Promise<{ chapterId: string; lessonId: string }>;
 }
 
+const formatContent = (text: string) => {
+  if (!text) return "";
+  return text.split("**").map((part, i) => 
+    i % 2 === 1 ? <strong key={i} className="text-primary font-black">{part}</strong> : part
+  );
+};
+
 function renderContent(block: LessonContent & { arabicExplanation?: string; type?: string }, idx: number) {
-  const formatContent = (text: string) => {
-    if (!text) return "";
-    return text.split("**").map((part, i) => 
-      i % 2 === 1 ? <strong key={i} className="text-primary font-black">{part}</strong> : part
-    );
-  };
 
   const content = (() => {
     const isTheory = block.heading?.toLowerCase().includes("theory") || block.type === "theoretical";
