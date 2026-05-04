@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import ProgressSaver from "@/components/ProgressSaver";
 import LessonQuiz from "@/components/LessonQuiz";
 import LessonTools from "@/components/LessonTools";
+import PrintButton from "@/components/PrintButton";
 
 interface Props {
   params: Promise<{ chapterId: string; lessonId: string }>;
@@ -202,13 +203,7 @@ export default async function LessonPage({ params }: Props) {
               <p className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 font-bold italic leading-relaxed max-w-2xl">
                 {lesson.subtitle}
               </p>
-              <button 
-                onClick={() => window.print()}
-                className="print:hidden flex items-center gap-3 px-6 py-3 bg-white dark:bg-slate-900 border-2 border-slate-900 dark:border-teal-500 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] shadow-lg hover:-translate-y-1 transition-all"
-              >
-                <span className="material-symbols-outlined text-sm">picture_as_pdf</span>
-                Save as Study Guide
-              </button>
+              <PrintButton />
             </div>
           </div>
 
