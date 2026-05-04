@@ -5,11 +5,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItems = [
-  { href: "/", label: "Home", icon: "home" },
-  { href: "/material", label: "Material", icon: "menu_book" },
-  { href: "/word-box", label: "Word Box", icon: "dictionary" },
-  { href: "/chapters", label: "Chapters", icon: "school" },
-  { href: "/exam", label: "Exam", icon: "workspace_premium" },
+  { href: "/",         label: "Home",      icon: "home" },
+  { href: "/chapters", label: "Journey",   icon: "map" },
+  { href: "/material", label: "Guide",     icon: "auto_stories" },
+  { href: "/progress", label: "Stats",     icon: "analytics" },
+  { href: "/exam",     label: "Exam",      icon: "quiz" },
+  { href: "/word-box", label: "Words",     icon: "style" },
 ];
 
 export default function BottomNav() {
@@ -27,25 +28,33 @@ export default function BottomNav() {
   };
 
   return (
-    <nav className="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-2 pb-4 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800 shadow-[0_-4px_20px_-4px_rgba(15,23,42,0.06)] z-50">
-      {navItems.map((item) => (
-        <Link
-          key={item.href}
-          href={item.href}
-          className={`flex flex-col items-center justify-center px-3 py-1.5 rounded-xl transition-all duration-150 active:scale-90 ${
-            isActive(item.href)
-              ? "text-slate-900 dark:text-white bg-slate-50 dark:bg-slate-800"
-              : "text-slate-400 dark:text-slate-500"
-          }`}
-        >
-          <span className={`material-symbols-outlined ${isActive(item.href) ? "filled" : ""}`}>
-            {item.icon}
-          </span>
-          <span className="font-serif text-[11px] uppercase tracking-widest mt-1">
-            {item.label}
-          </span>
-        </Link>
-      ))}
+    <nav className="fixed bottom-0 left-0 w-full bg-[var(--surface)]/95 backdrop-blur-xl border-t border-[var(--outline-variant)] z-50 safe-area-pb">
+      <div className="flex overflow-x-auto no-scrollbar px-2 py-1.5 scroll-smooth">
+        {navItems.map((item) => {
+          const active = isActive(item.href);
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`flex-shrink-0 flex flex-col items-center justify-center min-w-[72px] px-2 py-1 rounded-xl transition-all duration-200 active:scale-90 ${
+                active
+                  ? "text-teal-500"
+                  : "text-[var(--on-surface-variant)]"
+              }`}
+            >
+              <span className={`material-symbols-outlined text-[24px] ${active ? "filled scale-110" : "opacity-70"}`}>
+                {item.icon}
+              </span>
+              <span className={`text-[10px] font-black uppercase tracking-widest mt-0.5 ${active ? "opacity-100" : "opacity-60"}`}>
+                {item.label}
+              </span>
+              {active && (
+                <div className="w-1 h-1 rounded-full bg-teal-500 mt-1" />
+              )}
+            </Link>
+          );
+        })}
+      </div>
     </nav>
   );
 }

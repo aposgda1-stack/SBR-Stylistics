@@ -1,75 +1,106 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { SignInButton, useUser } from "@clerk/nextjs";
+import Link from "next/link";
+import { useUser } from "@clerk/nextjs";
 
 export default function WelcomeModal() {
   const { isSignedIn, isLoaded } = useUser();
   const [isOpen, setIsOpen] = useState(false);
+  const [closing, setClosing] = useState(false);
 
   useEffect(() => {
     if (!isLoaded) return;
-    // Only show modal to guests who haven't seen it
-    const hasSeenModal = localStorage.getItem("hasSeenWelcomeModal");
-    if (!hasSeenModal && !isSignedIn) {
-      // Small delay so the page renders first
-      const t = setTimeout(() => setIsOpen(true), 600);
+    const hasSeen = localStorage.getItem("hasSeenWelcomeModal");
+    if (!hasSeen && !isSignedIn) {
+      const t = setTimeout(() => setIsOpen(true), 700);
       return () => clearTimeout(t);
     }
   }, [isLoaded, isSignedIn]);
 
-  const closeAsGuest = () => {
-    setIsOpen(false);
-    localStorage.setItem("hasSeenWelcomeModal", "true");
+  const handleClose = () => {
+    setClosing(true);
+    setTimeout(() => {
+      setIsOpen(false);
+      setClosing(false);
+      localStorage.setItem("hasSeenWelcomeModal", "true");
+    }, 300);
   };
 
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center p-4 bg-slate-900/80 backdrop-blur-md animate-in fade-in duration-500">
-      <div className="bg-white dark:bg-slate-900 rounded-[2.5rem] shadow-2xl w-full max-w-lg overflow-hidden border border-slate-100 dark:border-slate-800 animate-in slide-in-from-bottom-8 duration-500">
-        
-        {/* Header */}
-        <div className="relative bg-slate-900 p-10 overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(20,184,166,0.15),transparent_70%)]" />
-          <div className="relative z-10">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-[10px] font-black uppercase tracking-widest mb-4">
-              <span className="relative flex h-1.5 w-1.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-teal-500"></span>
-              </span>
-              Final Semester 2026
+    <div
+      className={`fixed inset-0 z-[200] flex items-end justify-center bg-slate-950/90 backdrop-blur-lg transition-opacity duration-300 ${closing ? "opacity-0" : "opacity-100"}`}
+      onClick={handleClose}
+    >
+      <div
+        className={`w-full max-w-lg bg-slate-900 rounded-t-[2.5rem] overflow-hidden shadow-2xl transition-transform duration-300 ${closing ? "translate-y-full" : "translate-y-0"}`}
+        onClick={e => e.stopPropagation()}
+        style={{ animation: closing ? undefined : "slideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards" }}
+      >
+        {/* Pull handle */}
+        <div className="flex justify-center pt-4 pb-2">
+          <div className="w-10 h-1 bg-white/20 rounded-full" />
+        </div>
+
+        {/* Glow background */}
+        <div className="relative px-7 pb-2 pt-2">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
+
+          {/* Badge */}
+          <div className="relative z-10 flex items-center gap-2 mb-5">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-[10px] font-black uppercase tracking-widest">
+              <span className="w-1.5 h-1.5 bg-teal-400 rounded-full animate-pulse inline-block" />
+              Final Semester · 2026
             </div>
-            <h2 className="text-3xl font-black text-white tracking-tighter leading-tight">
-              Hey my friend,<br/>
-              <span className="text-teal-400">welcome to your platform.</span>
+          </div>
+
+          {/* Heading */}
+          <div className="relative z-10 mb-5">
+            <h2 className="text-[1.75rem] font-black text-white tracking-tight leading-tight mb-3">
+              يا صديقي.. 👋<br />
+              <span className="text-teal-400">نورت المنصة الخاصة بنا.</span>
             </h2>
+            <p className="text-slate-300 text-sm leading-relaxed font-medium">
+              This is our <strong className="text-white">final semester</strong> together. I'm genuinely proud of the journey we've shared. 
+              Sign in to keep your progress safe, earn your place on the leaderboard, and let's finish this journey{" "}
+              <strong className="text-teal-400">stronger than ever.</strong>
+            </p>
+          </div>
+
+          {/* Divider */}
+          <div className="relative z-10 border-t border-white/5 mb-5" />
+
+          {/* Actions */}
+          <div className="relative z-10 space-y-3 pb-8">
+            {/* Primary: Sign In */}
+            <Link
+              href="/sign-in"
+              onClick={handleClose}
+              className="flex items-center justify-center gap-3 w-full py-4 bg-teal-500 text-slate-900 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-teal-400 active:scale-95 transition-all shadow-xl shadow-teal-500/20"
+            >
+              <span className="material-symbols-outlined text-xl">login</span>
+              Sign In / Create Account
+            </Link>
+
+            {/* Secondary: Guest */}
+            <button
+              onClick={handleClose}
+              className="w-full py-3.5 rounded-2xl border border-white/10 text-slate-400 font-bold text-xs uppercase tracking-widest hover:border-white/20 hover:text-slate-300 active:scale-95 transition-all"
+            >
+              Continue as guest — progress won't be saved
+            </button>
           </div>
         </div>
-
-        {/* Body */}
-        <div className="p-8">
-          <p className="text-slate-600 dark:text-slate-400 font-bold leading-relaxed mb-8">
-            Sign in to save your progress, earn points, and appear on the leaderboard. 
-            Your journey deserves to be remembered.
-          </p>
-
-          {/* Primary: Sign In */}
-          <SignInButton mode="modal">
-            <button className="w-full py-5 bg-slate-900 dark:bg-teal-500 text-white dark:text-slate-900 rounded-2xl font-black uppercase tracking-[0.2em] text-sm hover:scale-[1.02] active:scale-95 transition-all shadow-xl mb-4">
-              Sign In / Create Account
-            </button>
-          </SignInButton>
-
-          {/* Secondary: Guest */}
-          <button
-            onClick={closeAsGuest}
-            className="w-full py-4 text-slate-400 font-bold text-sm hover:text-slate-600 dark:hover:text-slate-300 transition-colors"
-          >
-            Continue as guest (progress won't be saved)
-          </button>
-        </div>
       </div>
+
+      <style jsx>{`
+        @keyframes slideUp {
+          from { transform: translateY(100%); }
+          to { transform: translateY(0); }
+        }
+      `}</style>
     </div>
   );
 }
