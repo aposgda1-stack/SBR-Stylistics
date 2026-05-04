@@ -68,7 +68,7 @@ export default function WordBoxPage() {
         <div className="absolute top-0 right-0 p-8 opacity-5">
            <span className="material-symbols-outlined text-[120px]">school</span>
         </div>
-        <div className="max-w-5xl mx-auto text-center relative z-10">
+        <div className="max-w-lg mx-auto text-center relative z-10">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-[1.5rem] bg-teal-500/10 text-teal-600 mb-6">
             <span className="material-symbols-outlined text-3xl font-bold">dictionary</span>
           </div>
@@ -100,7 +100,7 @@ export default function WordBoxPage() {
         </div>
       </header>
 
-      <main className="max-w-5xl mx-auto px-6 py-12 pb-24">
+      <main className="max-w-lg mx-auto px-6 py-12 pb-24">
         {isQuizMode ? (
           <div className="max-w-2xl mx-auto animate-fade-in-up">
              {currentQuestion && (

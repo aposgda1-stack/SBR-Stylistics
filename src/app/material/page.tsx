@@ -32,7 +32,7 @@ export default function MaterialPage() {
     <div className="min-h-screen bg-white dark:bg-slate-950 font-sans pb-20">
       {/* Mobile-Friendly Header */}
       <header className="bg-slate-900 pt-16 pb-12 px-6 relative overflow-hidden text-center md:text-left">
-         <div className="max-w-5xl mx-auto relative z-10">
+         <div className="max-w-lg mx-auto relative z-10">
             <h1 className="text-4xl md:text-6xl font-black text-white mb-4 tracking-tighter">
               Study Hub
             </h1>
@@ -48,7 +48,7 @@ export default function MaterialPage() {
       <div className="sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl border-b border-slate-100 dark:border-slate-800">
         <div 
           ref={scrollRef}
-          className="max-w-7xl mx-auto flex overflow-x-auto no-scrollbar gap-3 px-6 py-4"
+          className="max-w-lg mx-auto flex overflow-x-auto no-scrollbar gap-3 px-6 py-4"
         >
           {materialData.map((item) => (
             <button

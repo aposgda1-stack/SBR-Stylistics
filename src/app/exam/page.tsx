@@ -203,7 +203,7 @@ export default function ExamPage() {
 
   return (
     <>
-      <main className="max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-12">
+      <main className="max-w-lg mx-auto px-4 md:px-6 py-6 md:py-12">
         <div ref={examTopRef} className="absolute top-0 left-0" />
         
         {/* Sticky Header */}

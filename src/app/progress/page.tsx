@@ -100,7 +100,7 @@ export default function ProgressPage() {
           </div>
         </div>
 
-        {/* Chapter Breakdown — compact list */}
+        {/* Chapter Breakdown — compact list with images */}
         <section className="mb-4">
           <p className="text-[10px] font-black text-[var(--on-surface-variant)] uppercase tracking-widest mb-3">Chapter Breakdown</p>
           <div className="space-y-2">
@@ -111,13 +111,24 @@ export default function ProgressPage() {
                 <Link
                   key={chapter.id}
                   href={`/chapters/${chapter.id}/${chapter.lessons[0]?.id || ""}`}
-                  className="flex items-center gap-3 p-3 rounded-xl bg-[var(--surface)] border border-[var(--outline-variant)] active:scale-[0.98] transition-transform"
+                  className="flex items-center gap-3 p-3 rounded-xl bg-[var(--surface)] border border-[var(--outline-variant)] active:scale-[0.98] transition-transform overflow-hidden"
                 >
-                  <div className={`w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 ${isComplete ? "bg-teal-500 text-white" : "bg-[var(--surface-variant)] text-[var(--on-surface-variant)]"}`}>
-                    <span className="material-symbols-outlined text-lg">{chapter.icon}</span>
+                  {/* Chapter image thumbnail */}
+                  <div className="w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 relative">
+                    <img
+                      src={`/images/chapters/${chapter.id}.png`}
+                      alt={chapter.title}
+                      className="w-full h-full object-cover"
+                      onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                    />
+                    {isComplete && (
+                      <div className="absolute inset-0 bg-teal-500/80 flex items-center justify-center">
+                        <span className="material-symbols-outlined text-white text-xl filled">check_circle</span>
+                      </div>
+                    )}
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-black text-[var(--on-surface)] truncate leading-none mb-1">{chapter.title}</p>
+                    <p className="text-xs font-black text-[var(--on-surface)] truncate leading-none mb-1.5">{chapter.title}</p>
                     <div className="w-full h-1.5 bg-[var(--surface-variant)] rounded-full overflow-hidden">
                       <div className="h-full bg-teal-500 rounded-full transition-all duration-700" style={{ width: `${pct}%` }} />
                     </div>

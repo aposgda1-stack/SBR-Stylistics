@@ -1,0 +1,359 @@
+﻿[
+  {
+    "id": "ch1",
+    "number": 1,
+    "title": "Poetry: The Art of Foregrounding",
+    "description": "Master Poetic Licence, Parallelism, and the 5 levels of linguistic Deviation.",
+    "icon": "auto_stories",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch1-s1",
+        "title": "Poetic Licence & Language Levels",
+        "subtitle": "How poets break the rules and the structure of language.",
+        "quizId": "quiz-ch1-s1",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Poetic Licence", "body": "Poetic Licence is the poet's right to ignore rules and conventions generally observed by users of the language. This allows for artistic creativity and the bending of grammatical, phonological, or lexical norms." },
+          { "type": "definition", "heading": "Theoretical: Levels of Language", "body": "Language is structured in 3 levels: \n1. Realization: Sounds (Phonology) and Marks (Graphology).\n2. Form: Words (Lexicon) and Grammar (Syntax).\n3. Meaning: Semantics (Literal) and Pragmatics (Contextual)." }
+        ],
+        "appliedSummary": "Ï¿ÏÁ ┘èÏº Ï¿ÏÀ┘äÏî Ïº┘äÏ»Ï▒Ï│ Ïº┘äÏú┘ê┘ä Ï»┘ç Ï¿┘è┘ü┘ç┘à┘â ÏÑ┘å Ïº┘äÏ┤ÏºÏ╣Ï▒ ┘àÏ┤ Ï┤Ï«ÏÁ Ï╣ÏºÏ»┘è.. ┘ç┘ê ┘àÏ╣Ïº┘ç \"Ï▒Ï«ÏÁÏ®\" (Poetic Licence) Ï¬Ï«┘ä┘è┘ç ┘è┘âÏ│Ï▒ Ïº┘ä┘é┘êÏºÏ╣Ï» Ï¿Ï▒ÏºÏ¡Ï¬┘ç Ï╣Ï┤Ïº┘å ┘èÏ©Ï¿ÏÀ Ïº┘ä┘éÏº┘ü┘èÏ® Ïú┘ê ┘è┘êÏÁ┘ä ┘àÏ╣┘å┘ë ┘ü┘å┘è. ┘ê┘äÏºÏ▓┘à Ï¬Ï╣Ï▒┘ü ÏÑ┘å Ïº┘ä┘äÏ║Ï® ┘àÏ¬┘éÏ│┘àÏ® ┘ä┘Ç 3 ┘ä┘è┘ü┘äÏºÏ¬: ÏÁ┘êÏ¬ ┘ê┘âÏ¬ÏºÏ¿Ï® (Realization)Ïî ┘â┘ä┘àÏ® ┘ê┘é┘êÏºÏ╣Ï» (Form)Ïî ┘ê┘àÏ╣┘å┘ë ┘êÏ│┘èÏº┘é (Meaning). ┘ä┘ê Ï¡┘üÏ©Ï¬ Ïº┘äÏ¬┘éÏ│┘è┘àÏ® Ï»┘èÏî ÏÑ┘åÏ¬ ┘âÏ»Ï® ÏÂ┘à┘åÏ¬ Ïú┘ê┘ä Ï¼Ï▓Ïí ┘ü┘è Ïº┘äÏº┘àÏ¬Ï¡Ïº┘å.",
+        "rubyTip": "Ïº┘äÏ▒Ï«ÏÁÏ® Ïº┘äÏ┤Ï╣Ï▒┘èÏ® ┘ç┘è Ïº┘äÏ│Ï¿Ï¿ ┘ü┘è ÏÑ┘å Ïº┘ä┘éÏÁÏºÏªÏ» ┘àÏ┤ Ï▓┘è ┘äÏ║Ï® Ïº┘äÏ¼Ï▒Ïº┘èÏ».. ┘ç┘è Ïº┘ä┘ä┘è Ï¿Ï¬Ï»┘è ┘ä┘ä┘éÏÁ┘èÏ»Ï® Ï▒┘êÏ¡! Ô£¿",
+        "nextLesson": "ch1-s2"
+      },
+      {
+        "id": "ch1-s2",
+        "title": "Parallelism, Repetition & Deviation",
+        "subtitle": "The three pillars of textual prominence.",
+        "quizId": "quiz-ch1-s2",
+        "content": [
+          {
+            "type": "definition",
+            "heading": "Theoretical: Foregrounding",
+            "body": "Refers to the ways in which certain aspects of a text are made to stand out or appear prominent (Prominence). The three main methods are Parallelism, Deviation, and Repetition.",
+            "arabicExplanation": "Ïº┘äÏ¿Ï▒┘êÏ▓ (Foregrounding) ┘ç┘ê ÏÑ┘å┘â Ï¬Ï«┘ä┘è Ï¼Ï▓Ïí ┘à┘å Ïº┘ä┘åÏÁ ┘èÏ┤Ï» Ïº┘äÏ╣┘è┘å.. ┘êÏ»┘ç Ï¿┘èÏ¡ÏÁ┘ä Ï¿┘Ç 3 ÏÀÏ▒┘é: Ïº┘äÏ¬┘êÏºÏ▓┘èÏî Ïº┘äÏº┘åÏ¡Ï▒Ïº┘üÏî ┘êÏº┘äÏ¬┘âÏ▒ÏºÏ▒."
+          },
+          {
+            "type": "definition",
+            "heading": "Theoretical: Repetition",
+            "body": "Repetition is the **mechanical repetition** of a linguistic item (word, phrase, or sound) without any contrastive element. It is often used for emphasis.",
+            "arabicExplanation": "Ïº┘äÏ¬┘âÏ▒ÏºÏ▒ Ïº┘ä┘à┘è┘âÏº┘å┘è┘â┘è ┘ç┘ê ÏÑ┘å┘â Ï¬Ï╣┘èÏ» ┘å┘üÏ│ Ïº┘ä┘â┘ä┘àÏ® Ï¿Ïº┘äÏ©Ï¿ÏÀ Ï╣Ï┤Ïº┘å Ï¬Ïú┘âÏ» Ï╣┘ä┘ë ┘àÏ╣┘å┘ë ┘àÏ╣┘è┘å."
+          },
+          {
+            "type": "analysis",
+            "heading": "Applied: Parallelism (Identity + Contrast)",
+            "body": "Analyzing: 'Where wealth accumulates and men decay.'",
+            "steps": [
+              { "label": "Identity", "body": "Both clauses share the [Subject + Verb] structure." },
+              { "label": "Contrast", "body": "Wealth vs Men | Accumulates vs Decay." },
+              { "label": "Effect", "body": "The parallelism forces a semantic link between wealth/decay and men/accumulates." }
+            ],
+            "arabicExplanation": "Ïº┘äÏ¬┘êÏºÏ▓┘è (Parallelism) Ï¿┘èÏ¼┘àÏ╣ Ï¿┘è┘å Ï¡ÏºÏ¼Ï¬┘è┘å Ï½ÏºÏ¿Ï¬┘è┘å (┘å┘üÏ│ Ïº┘ä┘êÏ▓┘å) ┘êÏ¡ÏºÏ¼Ï¬┘è┘å ┘àÏ«Ï¬┘ä┘ü┘è┘å (┘â┘ä┘àÏºÏ¬ Ï¬Ïº┘å┘èÏ®)."
+          }
+        ],
+        "appliedSummary": "Ïº┘ä┘Ç Foregrounding ┘ç┘ê ÏÑ┘å┘â Ï¬Ï╣┘à┘ä \"Ï¿Ï▒┘êÏ▓\" ┘ü┘è Ïº┘ä┘â┘äÏº┘à Ï╣Ï┤Ïº┘å Ï¬Ï┤Ï» Ï╣┘è┘å Ïº┘ä┘ä┘è Ï¿┘è┘éÏ▒Ïú.. ┘êÏú┘ç┘à ÏÀÏ▒┘è┘éÏ® ┘äÏ»┘ç ┘ç┘è Ïº┘ä┘Ç Parallelism (Ïº┘äÏ¬┘êÏºÏ▓┘è). ┘èÏ╣┘å┘è ÏúÏ¼┘èÏ¿ Ï¼┘à┘äÏ¬┘è┘å ┘ä┘è┘ç┘à ┘å┘üÏ│ Ïº┘ä┘êÏ▓┘å ┘êÏº┘äÏ¬┘éÏ│┘è┘àÏ® Ï¿Ïº┘äÏ©Ï¿ÏÀ (Identity) Ï¿Ï│ ÏúÏ║┘èÏ▒ Ïº┘ä┘â┘ä┘àÏºÏ¬ (Contrast).. Ï»┘ç Ï¿┘èÏ«┘ä┘è Ï╣┘é┘ä┘â ┘èÏ▒Ï¿ÏÀ Ï¿┘è┘å Ïº┘ä┘àÏ╣┘å┘è┘è┘å Ï║ÏÁÏ¿ Ï╣┘å┘âÏî Ï▓┘è ┘àÏº Ï┤┘ü┘åÏº ┘ü┘è ┘àÏ½Ïº┘ä Ïº┘äÏ½Ï▒┘êÏ® ┘êÏ»┘àÏºÏ▒ Ïº┘äÏÑ┘åÏ│Ïº┘å. ┘êÏ╣┘åÏ»┘åÏº ┘â┘àÏº┘å Ïº┘ä┘Ç Repetition ┘ê┘ç┘ê Ï¬┘âÏ▒ÏºÏ▒ Ïº┘ä┘â┘ä┘àÏ® Ï¿Ïº┘äÏ©Ï¿ÏÀ.",
+        "rubyTip": "┘ä┘àÏº Ï¬┘äÏº┘é┘è Ï¬┘âÏ▒ÏºÏ▒ ┘ü┘è Ï┤┘â┘ä Ïº┘äÏ¼┘à┘äÏ®Ïî ÏúÏ╣Ï▒┘ü ÏÑ┘å Ïº┘ä┘âÏºÏ¬Ï¿ Ï╣Ïº┘èÏ▓┘â Ï¬┘éÏºÏ▒┘å Ï¿┘è┘å Ïº┘ä┘àÏ╣Ïº┘å┘è Ïº┘ä┘ä┘è ┘ü┘è┘çÏº! ­ƒôÜ",
+        "prevLesson": "ch1-s1",
+        "nextLesson": "ch1-s3"
+      },
+      {
+        "id": "ch1-s3",
+        "title": "The 5 Levels of Deviation",
+        "subtitle": "Diving deep into how language is bent.",
+        "quizId": "quiz-ch1-s3",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Deviation", "body": "Extra irregularity. Deviation works by disrupting or departing either from readersÔÇÖ expectations or from a pattern established by the text. This is essentially a division between external deviation and internal deviation." },
+          { "type": "analysis", "heading": "Applied: Types of Deviation", "body": "Breaking language at every level:", "steps": [
+            { "label": "Lexical", "body": "Creating new words (Neologism) via Affixation (foresuffer), Compounding (widow-making), or Functional Conversion (using verb as noun)." },
+            { "label": "Syntactic", "body": "Breaking grammar rules like Inversion ('Then spake King Arthur')." },
+            { "label": "Phonological", "body": "Breaking sound rules like Elision ('t'assault') or Syncope ('o'er')." },
+            { "label": "Graphological", "body": "Visual deviation like splitting words vertically or using odd capitalization." },
+            { "label": "Semantic", "body": "Breaking logic via Metaphor or Paradox (e.g., 'Death feeds on his mute voice')." }
+          ]}
+        ],
+        "appliedSummary": "Ïº┘äÏº┘åÏ¡Ï▒Ïº┘ü (Deviation) ┘ç┘ê ÏÑ┘å┘â Ï¬Ï┤Ï░ Ï╣┘å Ïº┘ä┘éÏºÏ╣Ï»Ï®.. Ï╣┘åÏ»┘åÏº 5 Ïú┘å┘êÏºÏ╣ ÏúÏ│ÏºÏ│┘èÏ®:\n1. Lexical: Ï¬Ïú┘ä┘ü ┘â┘ä┘àÏºÏ¬ Ï¼Ï»┘èÏ»Ï® (Ï▓┘è Neologism).\n2. Syntactic: Ï¬Ï┤┘é┘äÏ¿ Ï¬Ï▒Ï¬┘èÏ¿ Ïº┘äÏ¼┘à┘äÏ® (Inversion).\n3. Phonological: Ï¬Ïº┘â┘ä Ï¡Ï▒┘ê┘ü ┘à┘å Ïº┘ä┘â┘ä┘àÏ® (Elision).\n4. Graphological: Ï¬┘äÏ╣Ï¿ ┘ü┘è Ï┤┘â┘ä Ïº┘ä┘âÏ¬ÏºÏ¿Ï®.\n5. Semantic: Ï¬Ï│Ï¬Ï«Ï»┘à ÏºÏ│Ï¬Ï╣ÏºÏ▒ÏºÏ¬ Ï║┘èÏ▒ ┘à┘åÏÀ┘é┘èÏ® ┘äÏ║┘ê┘èÏº┘ï Ï¿Ï│ ┘ü┘å┘èÏ® (Metaphor).\nÏ▒┘âÏ▓ ÏÑ┘å Ïº┘äÏº┘åÏ¡Ï▒Ïº┘ü Ïº┘äÏ»Ïº┘ä┘ä┘è Ï»Ïº┘è┘àÏº┘ï Ï¿┘èÏ¡ÏÁ┘ä Ï¿Ï│Ï¿ Ïº┘äÏºÏ│Ï¬Ï╣ÏºÏ▒Ï® (Metaphor) Ïú┘ê Ïº┘ä┘à┘üÏºÏ▒┘éÏ® (Paradox).",
+        "rubyTip": "┘â┘ä ┘å┘êÏ╣ Ïº┘åÏ¡Ï▒Ïº┘ü ┘ä┘ç ┘êÏ©┘è┘üÏ®.. Ï▒┘âÏ▓ ┘ç┘ê ┘âÏ│Ï▒ Ïº┘ä┘éÏºÏ╣Ï»Ï® ┘ü┘è┘å Ï¿Ïº┘äÏ©Ï¿ÏÀ Ï╣Ï┤Ïº┘å Ï¬Ï╣Ï▒┘ü Ï¬Ï¡┘ä┘ä ÏÁÏ¡! Ô£¿",
+        "prevLesson": "ch1-s2"
+      }
+    ],
+    "examId": "exam-ch1"
+  },
+  {
+    "id": "ch2",
+    "number": 2,
+    "title": "Cohesion: The Glue of Texts",
+    "description": "Learn how reference, ellipsis, conjunctions, and lexical choices tie sentences together.",
+    "icon": "menu_book",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch2-s1",
+        "title": "Reference Cohesion",
+        "subtitle": "Anaphoric and Cataphoric pointers.",
+        "quizId": "quiz-ch2-s1",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Cohesion", "body": "The linguistic means by which sentences are woven together to make texts. It refers to all the linguistic ways in which words across sentences link up." },
+          { "type": "definition", "heading": "Theoretical: Reference Types", "body": "1. Anaphoric: Referring BACK to something already mentioned (e.g., 'Mary arrived. **She** was tired').\n2. Cataphoric: Referring FORWARD to something yet to be mentioned (e.g., 'When **he** arrived, John slept')." }
+        ],
+        "appliedSummary": "Ïº┘ä┘Ç Cohesion ┘ç┘ê \"Ïº┘äÏÁ┘àÏ║\" Ïº┘ä┘ä┘è Ï¿┘èÏ▒Ï¿ÏÀ Ïº┘äÏ¼┘à┘ä Ï¿Ï¿Ï╣ÏÂ.. ┘êÏú┘ç┘à ┘å┘êÏ╣ ┘ç┘ê Ïº┘ä┘Ç Reference (Ïº┘äÏÑÏ¡Ïº┘äÏ®).. ┘ä┘ê Ïº┘äÏÂ┘à┘èÏ▒ Ï¿┘èÏ┤Ïº┘êÏ▒ Ï╣┘ä┘ë Ï¡Ï» ÏºÏ¬Ï░┘âÏ▒ ┘éÏ¿┘ä ┘âÏ»Ï® ┘èÏ¿┘é┘ë AnaphoricÏî ┘ê┘ä┘ê Ï¿┘èÏ┤Ïº┘êÏ▒ Ï╣┘ä┘ë Ï¡Ï» ┘äÏ│┘ç ┘ç┘èÏ¬Ï░┘âÏ▒ ┘èÏ¿┘é┘ë Cataphoric.. Ï»┘è Ï│┘ç┘äÏ® ┘êÏ¿Ï│┘èÏÀÏ® ┘ê┘à┘êÏ¼┘êÏ»Ï® ┘ü┘è ┘â┘ä Ï¡Ï¬Ï®.",
+        "rubyTip": "Ïº┘ä┘Ç Anaphoric ┘ç┘ê Ïº┘äÏúÏ┤┘çÏ▒Ïî Ï¿Ï│ Ïº┘ä┘Ç Cataphoric Ï¿┘èÏ│Ï¬Ï«Ï»┘à ┘ä┘äÏ¬Ï┤┘ê┘è┘é ┘ü┘è Ïº┘ä┘éÏÁÏÁ! ­ƒöù",
+        "nextLesson": "ch2-s2"
+      },
+      {
+        "id": "ch2-s2",
+        "title": "Ellipsis (Nominal, Verbal, Clausal)",
+        "subtitle": "The art of omitting unnecessary repetition.",
+        "quizId": "quiz-ch2-s2",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Ellipsis", "body": "Material is left out since its repetition or near-repetition is felt to be unnecessary." },
+          { "type": "analysis", "heading": "Applied: The 3 Types of Ellipsis", "body": "Identifying what was deleted:", "steps": [
+            { "label": "Nominal Ellipsis", "body": "The **Noun** is omitted. Example: 'I saw two pens. I bought **both** [pens].'" },
+            { "label": "Verbal Ellipsis", "body": "The **Verb** is omitted. Example: 'Have you been swimming?' 'Yes, I **have** [been swimming].'" },
+            { "label": "Clausal Ellipsis", "body": "An entire **Clause** is omitted. Example: 'Why didn't you go?' 'I don't **know** [why I didn't go].'" }
+          ]}
+        ],
+        "appliedSummary": "Ïº┘ä┘Ç Ellipsis ┘ç┘ê Ïº┘äÏ¡Ï░┘ü.. ┘ä┘è┘ç ┘å┘âÏ▒Ï▒ Ïº┘ä┘â┘äÏº┘à ┘ä┘ê Ïº┘ä┘ä┘è ┘éÏ»Ïº┘à┘åÏº ┘üÏº┘ç┘à┘çÏƒ Ï▒┘âÏ▓ Ï¿┘é┘ë ┘ü┘è Ïº┘äÏú┘å┘êÏºÏ╣ Ï»┘è Ï╣Ï┤Ïº┘å Ï¿Ï¬┘èÏ¼┘è ┘ü┘è Ïº┘äÏº┘àÏ¬Ï¡Ïº┘å Ï»Ïº┘è┘àÏº┘ï: ┘ä┘ê Ï¡Ï░┘üÏ¬ Ïº┘äÏºÏ│┘à ┘êÏ│Ï¿Ï¬ Ïº┘äÏÂ┘à┘èÏ▒ ┘àÏ½┘äÏº┘ï ┘èÏ¿┘é┘ë NominalÏî ┘ä┘ê Ï¡Ï░┘üÏ¬ Ïº┘ä┘üÏ╣┘ä ┘êÏ│Ï¿Ï¬ Ïº┘ä┘üÏ╣┘ä Ïº┘ä┘àÏ│ÏºÏ╣Ï» ┘èÏ¿┘é┘ë VerbalÏî ┘ê┘ä┘ê Ï¡Ï░┘üÏ¬ Ï¼┘à┘äÏ® ┘âÏº┘à┘äÏ® Ï¿Ï╣Ï» Ïú┘üÏ╣Ïº┘ä Ï▓┘è know Ïú┘ê tell ┘èÏ¿┘é┘ë Clausal.",
+        "rubyTip": "Ï│ÏñÏº┘ä Ïº┘äÏº┘àÏ¬Ï¡Ïº┘å Ï¿┘èÏ│Ïú┘ä┘â: 'Nominal ellipsis occurs when the ____ is omitted'.. Ïº┘äÏÑÏ¼ÏºÏ¿Ï® Ï»Ïº┘è┘àÏº┘ï Noun! Ô£ì´©Å",
+        "prevLesson": "ch2-s1",
+        "nextLesson": "ch2-s3"
+      },
+      {
+        "id": "ch2-s3",
+        "title": "Conjunctions & Lexical Cohesion",
+        "subtitle": "Signposting and word patterns.",
+        "quizId": "quiz-ch2-s3",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Conjunction Cohesion", "body": "Use of words/phrases to clarify the semantic or logical relationship. The 4 types are: Additive, Adversative, Causal, and Temporal." },
+          { "type": "definition", "heading": "Theoretical: Lexical Cohesion", "body": "Integratedness created via content words. Main types include:\n1. Repetition: Reusing the same word.\n2. Synonymy: Using similar words.\n3. Hyponymy: Using category relationships (e.g., rose is a hyponym of flower).\n4. Collocation: Words that commonly occur together (e.g., strong tea)." }
+        ],
+        "appliedSummary": "Ïº┘äÏ¼┘à┘ä Ï¿Ï¬Ï▒Ï¿ÏÀ Ï¿Ï¿Ï╣ÏÂ Ï¿Ï▒ÏÂ┘ç Ï¿ÏúÏ»┘êÏºÏ¬ Ïº┘ä┘êÏÁ┘ä (Conjunctions).. ┘êÏ»┘ê┘ä 4 Ïú┘å┘êÏºÏ╣: ÏÑÏÂÏº┘üÏ® (and)Ïî Ï¬Ï╣ÏºÏ▒ÏÂ (but)Ïî Ï│Ï¿Ï¿ (so)Ïî Ïú┘ê Ï▓┘à┘å (then). ┘ê┘ü┘è┘ç Ï¬┘àÏºÏ│┘â Ï¿┘èÏ¡ÏÁ┘ä Ï¿Ï│Ï¿Ï¿ Ïº┘ä┘â┘ä┘àÏºÏ¬ ┘å┘üÏ│┘çÏº (Lexical).. ┘èÏº ÏÑ┘àÏº Ï¬┘âÏ▒Ï▒ ┘å┘üÏ│ Ïº┘ä┘â┘ä┘àÏ® (Repetition) Ïú┘ê Ï¬Ï│Ï¬Ï«Ï»┘à ┘â┘ä┘àÏºÏ¬ Ï¿Ï¬┘àÏ┤┘è ┘àÏ╣ Ï¿Ï╣ÏÂ Ï»Ïº┘è┘àÏº┘ï Ï▓┘è Ïº┘äÏ┤Ïº┘è ┘êÏº┘äÏ│┘âÏ▒ (Collocation).",
+        "rubyTip": "Ïº┘ä┘êÏÁ┘ä Ïº┘ä┘àÏ╣Ï¼┘à┘è (Lexical) Ïú┘ç┘à ┘å┘êÏ╣┘è┘å ┘ü┘è┘ç ┘ç┘àÏº Ïº┘äÏ¬┘âÏ▒ÏºÏ▒ (Reiteration) ┘êÏº┘äÏ¬┘äÏºÏ▓┘à (Collocation)! ­ƒôØ",
+        "prevLesson": "ch2-s2"
+      }
+    ],
+    "examId": "exam-ch2"
+  },
+  {
+    "id": "ch3",
+    "number": 3,
+    "title": "Modality: Opinion & Attitude",
+    "description": "Understanding how speakers qualify their claims and use evaluative devices.",
+    "icon": "psychology",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch3-s1",
+        "title": "The 4 Modality Parameters",
+        "subtitle": "Probability, Obligation, Willingness, and Usuality.",
+        "quizId": "quiz-ch3-s1",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Modality", "body": "The cover term for the ways available to a speaker within a language for expressing 'opinion or attitude'. It denotes linguistic means for qualifying any claim." },
+          { "type": "analysis", "heading": "Applied: Modality Parameters", "body": "How we qualify language:", "steps": [
+            { "label": "Probability", "body": "Likelihood (might, may, must, certainly)." },
+            { "label": "Obligation", "body": "Necessity (should, ought to, must)." },
+            { "label": "Willingness", "body": "Readiness/Desire (will, would, willing)." },
+            { "label": "Usuality", "body": "Frequency (always, usually, rarely)." }
+          ]}
+        ],
+        "appliedSummary": "┘â┘äÏº┘à┘â Ï¿┘èÏ¿┘è┘å Ï▒Ïú┘è┘â (Modality).. ┘ç┘ä Ïº┘äÏ¡ÏºÏ¼Ï® Ï»┘è Ïú┘â┘èÏ»Ï® (Probability)Ïƒ ┘ç┘ä ┘äÏºÏ▓┘à Ï¬Ï¬Ï╣┘à┘ä (Obligation)Ïƒ ┘ç┘ä ÏÑ┘åÏ¬ Ï╣Ïº┘èÏ▓ Ï¬Ï╣┘à┘ä┘çÏº (Willingness)Ïƒ ┘ê┘äÏº ┘ç┘ä Ï»┘è Ï╣ÏºÏ»Ï¬┘â (Usuality)Ïƒ Ïº┘äÏúÏ▒Ï¿Ï╣Ï® Ï»┘ê┘ä ┘ç┘àÏº \"ÏúÏ▒┘âÏº┘å\" Ïº┘äÏ¬┘ä┘éÏºÏª┘èÏ® ┘ü┘è Ïº┘ä┘â┘äÏº┘à ┘ê┘äÏºÏ▓┘à Ï¬Ï¡┘üÏ© ÏúÏ│Ïº┘à┘è┘ç┘à Ï¿Ïº┘äÏÑ┘åÏ¼┘ä┘èÏ▓┘è ┘â┘ê┘èÏ│ Ï¼Ï»Ïº┘ï.",
+        "rubyTip": "┘ü┘è Ïº┘äÏº┘àÏ¬Ï¡Ïº┘åÏî ┘ä┘àÏº Ï¬Ï┤┘ê┘ü 'must' Ïú┘ê 'always'Ïî ┘ü┘âÏ▒ Ï╣┘äÏÀ┘ê┘ä ┘ü┘è Ïº┘ä┘Ç Modality! ­ƒºá",
+        "nextLesson": "ch3-s2"
+      },
+      {
+        "id": "ch3-s2",
+        "title": "Evaluative Devices & Generic Sentences",
+        "subtitle": "How stance is revealed through timeless truths.",
+        "quizId": "quiz-ch3-s2",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Evaluative Devices", "body": "Means by which a speaker's stance is revealed. Includes Evaluative Verbs (regret), Adjectives (admirable), and Generic Sentences." },
+          { "type": "definition", "heading": "Theoretical: Generic Sentences", "body": "Sentences which assert something to be a general truth, typically timelessly true. Usually in the simple present tense (e.g., 'Afghanistan is the land of Pashtuns')." }
+        ],
+        "appliedSummary": "ÏÑÏ▓Ïº┘è Ï¿┘å┘é┘è┘à Ïº┘ä┘â┘äÏº┘àÏƒ ┘èÏº ÏÑ┘àÏº Ï¿Ïú┘üÏ╣Ïº┘ä Ï▓┘è (Ïú┘åÏ»┘à Ïú┘ê ÏúÏ▒Ï¡Ï¿) Ïú┘ê Ï¿ÏÁ┘üÏºÏ¬ Ï▓┘è (Ï▒ÏºÏªÏ╣ Ïú┘ê Ï│┘èÏª). ┘ê┘ü┘è┘ç Ï¡ÏºÏ¼Ï® Ï░┘â┘èÏ® Ï¼Ï»Ïº┘ï ÏºÏ│┘à┘çÏº \"Ïº┘äÏ¼┘à┘ä Ïº┘äÏ╣Ïº┘àÏ®\" (Generic).. Ï»┘è Ï¼┘à┘ä Ï¿Ï¬┘é┘ê┘ä Ï¡┘é┘è┘éÏ® Ï«Ïº┘äÏ»Ï® ┘à┘ü┘è┘çÏºÏ┤ ┘å┘éÏºÏ┤ (Ï▓┘è: Ïú┘üÏ║Ïº┘åÏ│Ï¬Ïº┘å ┘ç┘è ÏúÏ▒ÏÂ Ïº┘äÏ¿Ï┤Ï¬┘ê┘å).. Ïº┘äÏ¼┘à┘ä Ï»┘è Ï¿Ï¬Ï¿┘è┘å Ïº┘åÏ¡┘èÏºÏ▓ Ïº┘ä┘âÏºÏ¬Ï¿ Ïú┘ê ┘êÏ¼┘çÏ® ┘åÏ©Ï▒┘ç Ïº┘ä┘é┘ê┘èÏ® ┘âÏÑ┘å┘çÏº ┘éÏº┘å┘ê┘å ┘â┘ê┘å┘è.",
+        "rubyTip": "Ïº┘äÏ¼┘à┘äÏ® Ïº┘äÏ╣Ïº┘àÏ® Ï»Ïº┘è┘àÏº┘ï Ï¿Ï¬Ï¿Ï»Ïú Ï¿┘Ç Simple Present ┘êÏ¿Ï¬Ï¬┘â┘ä┘à Ï╣┘å Ï¡┘é┘è┘éÏ® ┘àÏÀ┘ä┘éÏ®! ­ƒîì",
+        "prevLesson": "ch3-s1"
+      }
+    ],
+    "examId": "exam-ch3"
+  },
+  {
+    "id": "ch4",
+    "number": 4,
+    "title": "Narrative Structure (Labov)",
+    "description": "Analyzing the 6 essential parts of any well-formed story.",
+    "icon": "account_tree",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch4-s1",
+        "title": "Labov's 6-Part Schema",
+        "subtitle": "The skeleton of every narrative.",
+        "quizId": "quiz-ch4-s1",
+        "content": [
+          {
+            "type": "definition",
+            "heading": "Theoretical: Labov's Model",
+            "body": "1. **Abstract**: Summary of the story.\n2. **Orientation**: Who, when, where.\n3. **Complicating Action**: Main events.\n4. **Evaluation**: Why the story is worth telling.\n5. **Resolution**: How it ends.\n6. **Coda**: Returns the listener to the present.",
+            "arabicExplanation": "Ï»┘ç Ïº┘ä┘ç┘è┘â┘ä Ïº┘ä┘ä┘è Ï¿┘è┘àÏ┤┘è Ï╣┘ä┘è┘ç Ïú┘è ┘åÏÁ ┘éÏÁÏÁ┘è Ï¡Ï│Ï¿ ┘äÏºÏ¿┘ê┘ü. ┘äÏºÏ▓┘à Ï¬Ï¡┘üÏ© Ïº┘äÏ│Ï¬Ï® Ï¿Ïº┘äÏ¬Ï▒Ï¬┘èÏ¿."
+          },
+          {
+            "type": "analysis",
+            "heading": "Applied: Evaluation Types",
+            "body": "Evaluation is the soul of the narrative. It includes:",
+            "steps": [
+              { "label": "Intensifying", "body": "Vividness via gestures, repetitions, or dramatic sounds." },
+              { "label": "Comparator", "body": "Alternative narrative developments (negative/modal sentences)." },
+              { "label": "Correlative", "body": "Secondary activities contemporaneous with events." },
+              { "label": "Explicative", "body": "Giving background reasons and causes." }
+            ],
+            "arabicExplanation": "Ïº┘ä┘Ç Evaluation ┘ç┘ê Ïº┘ä┘ä┘è Ï¿┘èÏ»┘è ÏÀÏ╣┘à ┘ä┘ä┘éÏÁÏ®. ┘äÏºÏ¿┘ê┘ü ┘éÏ│┘à┘ç ┘ä┘Ç 4 Ïú┘å┘êÏºÏ╣ (┘à┘âÏ½┘üÏî ┘à┘éÏºÏ▒┘åÏî ┘àÏ¬Ï▒ÏºÏ¿ÏÀÏî Ï¬┘üÏ│┘èÏ▒┘è)."
+          }
+        ],
+        "appliedSummary": "┘äÏºÏ¿┘ê┘ü ┘éÏº┘ä ÏÑ┘å Ïú┘è Ï¡┘âÏº┘èÏ® ┘ü┘è Ïº┘äÏ»┘å┘èÏº ┘äÏºÏ▓┘à Ï¬┘àÏ▒ Ï¿┘Ç 6 ┘àÏ▒ÏºÏ¡┘ä.. Ï¿Ï¬Ï¿Ï»Ïú Ï¿┘à┘äÏ«ÏÁ Ï│Ï▒┘èÏ╣ (Abstract)Ïî ┘êÏ¬Ï╣Ï▒┘ü┘åÏº Ï¿Ïº┘ä┘åÏºÏ│ ┘êÏº┘äÏ▓┘àÏº┘å (Orientation)Ïî ┘êÏ¿Ï╣Ï»┘è┘å Ïú┘ç┘à Ï¡Ï¬Ï® ┘ê┘ç┘è Ïº┘äÏúÏ¡Ï»ÏºÏ½ Ïº┘ä┘ä┘è Ï¿Ï¼Ï» (Complicating Action) - ┘ê┘ü┘è Ïº┘äÏóÏ«Ï▒ Ï¿Ï¬┘é┘ê┘ä┘åÏº ÏÑ┘è┘ç Ïº┘ä┘ä┘è Ï¡ÏÁ┘ä (Resolution) ┘êÏÑ┘è┘ç Ïº┘äÏ¡┘â┘àÏ® Ïº┘ä┘ä┘è ┘åÏÀ┘äÏ╣ Ï¿┘è┘çÏº (Coda).",
+        "rubyTip": "Ï▒┘âÏ▓: Ïº┘ä┘Ç Complicating Action ┘ç┘ê Ïº┘äÏ╣┘åÏÁÏ▒ Ïº┘ä┘êÏ¡┘èÏ» Ïº┘ä┘ä┘è ┘äÏºÏ▓┘à ┘è┘â┘ê┘å ┘à┘êÏ¼┘êÏ» ┘ü┘è Ïú┘è ┘éÏÁÏ®! ­ƒÄ¡",
+        "nextLesson": "ch4-s2"
+      }
+    ],
+    "examId": "exam-ch4"
+  },
+  {
+    "id": "ch5",
+    "number": 5,
+    "title": "Discourse Structure (Birmingham)",
+    "description": "Treating conversation as a rule-governed system.",
+    "icon": "forum",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch5-s1",
+        "title": "Hierarchical System & Moves",
+        "subtitle": "Opening, Supporting, and Challenging moves.",
+        "quizId": "quiz-ch5-s1",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Birmingham Model", "body": "Treats conversation as a Rule-governed or Hierarchical system where moves are the key interactive units." },
+          { "type": "analysis", "heading": "Applied: Discourse Moves", "body": "How we interact:", "steps": [
+            { "label": "Opening Move", "body": "Essential topic-carrying items which are recognisably 'new'." },
+            { "label": "Supporting Move", "body": "Occurring after any other type of move and involving items that concur." },
+            { "label": "Challenging Move", "body": "Functioning to hold up the progress of a topic." }
+          ]}
+        ],
+        "appliedSummary": "Ïº┘äÏ¡┘êÏºÏ▒ ┘àÏ┤ Ï╣Ï┤┘êÏºÏª┘è.. Ï»┘ç ┘åÏ©Ïº┘à ┘àÏ¡┘â┘à (Birmingham Model).. Ï¿┘è┘àÏ┤┘è Ï¿┘é┘êÏºÏ╣Ï» (Rule-governed). Ï╣┘åÏ»┘åÏº Ï¡Ï▒┘âÏºÏ¬ Ï¿Ï¬┘üÏ¬Ï¡ ┘â┘äÏº┘à Ï¼Ï»┘èÏ» (Opening)Ïî ┘êÏ¡Ï▒┘âÏºÏ¬ Ï¿Ï¬┘êÏº┘ü┘é ┘êÏ¬Ï»Ï╣┘à Ïº┘ä┘â┘äÏº┘à (Supporting)Ïî ┘êÏ¡Ï▒┘âÏºÏ¬ Ï¬Ïº┘å┘èÏ® Ï¿Ï¬Ï╣ÏºÏ▒ÏÂ Ïú┘ê Ï¬┘ê┘é┘ü Ïº┘ä┘â┘äÏº┘à (Challenging).. Ï»┘ç ┘ç┘ê Ï¼┘ê┘çÏ▒ Ïº┘äÏ¬Ï¡┘ä┘è┘ä Ïº┘äÏ«ÏÀÏºÏ¿┘è.",
+        "rubyTip": "Ïº┘ä┘à┘êÏ»┘è┘ä Ï»┘ç Ï¿┘èÏ┤┘ê┘ü ÏÑ┘å Ïº┘ä┘Ç Move ┘ç┘ê Ïú┘ç┘à ┘êÏ¡Ï»Ï® Ï¬┘üÏºÏ╣┘ä┘èÏ® ┘ü┘è Ïº┘äÏ¡┘êÏºÏ▒! ­ƒùú´©Å",
+        "nextLesson": "ch6-s1"
+      }
+    ],
+    "examId": "exam-ch5"
+  },
+  {
+    "id": "ch6",
+    "number": 6,
+    "title": "Grice's Maxims & Implicature",
+    "description": "Conversational cooperation and the art of hidden meaning.",
+    "icon": "record_voice_over",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch6-s1",
+        "title": "The 4 Conversational Maxims",
+        "subtitle": "Quality, Quantity, Relation, and Manner.",
+        "quizId": "quiz-ch6-s1",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: The Cooperative Principle", "body": "The CP is a basic assumption that speakers normally intend to accomplish purposeful and effective communication." },
+          { "type": "analysis", "heading": "Applied: The 4 Maxims", "body": "The 4 rules of talk:", "steps": [
+            { "label": "Quality", "body": "Be truthful (Don't say things that are false)." },
+            { "label": "Quantity", "body": "Be as informative as required (Not too much or too little)." },
+            { "label": "Relation", "body": "Be relevant (Say things that are relevant in context)." },
+            { "label": "Manner", "body": "Be clear (Avoid obscurity and ambiguity)." }
+          ]}
+        ],
+        "appliedSummary": "Ï¼Ï▒Ïº┘èÏ│ ┘éÏº┘ä┘åÏº ÏÑ┘å Ïº┘äÏ¡┘êÏºÏ▒ Ïº┘ä┘åÏºÏ¼Ï¡ Ï¿┘è┘àÏ┤┘è Ï¿┘Ç 4 ┘é┘êÏºÏ╣Ï» Ï░┘çÏ¿┘èÏ®: ┘é┘ê┘ä Ïº┘äÏ¡┘é┘è┘éÏ® (Quality)Ïî ┘é┘ê┘ä Ïº┘ä┘ä┘è ┘àÏÀ┘ä┘êÏ¿ Ï¿Ï│ (Quantity)Ïî Ï«┘ä┘è┘â ┘ü┘è Ïº┘ä┘à┘êÏÂ┘êÏ╣ (Relation)Ïî ┘êÏ«┘ä┘è┘â ┘êÏºÏÂÏ¡ (Manner).. Ïú┘è Ï«Ï▒┘êÏ¼ Ï╣┘å Ï»┘ê┘ä Ï¿┘èÏ«┘ä┘é ┘àÏ╣┘å┘ë Ï¼Ï»┘èÏ».",
+        "rubyTip": "Ïº┘ä┘é┘êÏºÏ╣Ï» Ï»┘è ┘ç┘è Ïº┘ä┘ä┘è Ï¿Ï¬Ï«┘ä┘è┘åÏº ┘å┘ü┘ç┘à Ï¿Ï╣ÏÂ ┘à┘å Ï║┘èÏ▒ ┘àÏº ┘å┘â┘ê┘å ÏÁÏ▒┘èÏ¡┘è┘å 100%! ­ƒñÉ",
+        "nextLesson": "ch6-s2"
+      },
+      {
+        "id": "ch6-s2",
+        "title": "Flouting & Implicature",
+        "subtitle": "Analyzing hidden meanings in dialogue.",
+        "quizId": "quiz-ch6-s2",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Flouting", "body": "Deliberately and obviously violating a maxim to generate an Implicature (covert meaning)." },
+          { "type": "analysis", "heading": "Applied: Exam Examples", "body": "Analyze these cases:", "steps": [
+            { "label": "Relation", "body": "A: 'WhatÔÇÖs the weather prediction?' B: 'Bring your coat.' (B implies it will rain/be cold)." },
+            { "label": "Quantity", "body": "Hamlet: 'Words, words, words.' (Too uninformative, avoids answering)." },
+            { "label": "Quality", "body": "A: 'TehranÔÇÖs in Turkey, isnÔÇÖt it?' B: 'And LondonÔÇÖs in Armenia, I suppose.' (Sarcastic untruth)." }
+          ]}
+        ],
+        "appliedSummary": "Ïº┘ä┘Ç Flouting ┘ç┘ê ÏÑ┘å┘â Ï¬┘âÏ│Ï▒ ┘éÏºÏ╣Ï»Ï® ┘à┘å Ïº┘ä┘é┘êÏºÏ╣Ï» Ï»┘è \"Ï¿┘àÏ▓ÏºÏ¼┘â\" ┘êÏ╣┘å Ï╣┘àÏ» Ï╣Ï┤Ïº┘å Ï¬┘êÏÁ┘ä ┘àÏ╣┘å┘ë Ï«┘ü┘è (Implicature).. Ï▓┘è ┘ä┘àÏº Ï¡Ï» ┘èÏ│Ïú┘ä┘â Ï╣┘å Ïº┘äÏ¼┘ê Ï¬┘é┘ê┘ä┘ç \"┘çÏºÏ¬ Ïº┘äÏ¿Ïº┘äÏÀ┘ê\"Ïî ÏÑ┘åÏ¬ ┘âÏ»Ï® ┘âÏ│Ï▒Ï¬ ┘éÏºÏ╣Ï»Ï® Ïº┘ä┘Ç Relation Ï╣Ï┤Ïº┘å Ï¬┘éÏÁÏ» ÏÑ┘å┘ç Ï¬┘äÏ¼ ┘à┘å Ï║┘èÏ▒ ┘àÏº Ï¬┘é┘ê┘ä┘çÏº ÏÁÏ▒ÏºÏ¡Ï®.",
+        "rubyTip": "Ïº┘ä┘Ç Implicature ┘ç┘ê Ïº┘ä┘àÏ╣┘å┘ë Ïº┘ä┘ä┘è Ï¿┘è┘ü┘ç┘à┘ç Ïº┘äÏ│Ïº┘àÏ╣ Ï¿┘è┘å Ïº┘äÏ│ÏÀ┘êÏ▒! ­ƒòÁ´©ÅÔÇìÔÖé´©Å",
+        "prevLesson": "ch6-s1"
+      }
+    ],
+    "examId": "exam-ch6"
+  },
+  {
+    "id": "ch7",
+    "number": 7,
+    "title": "Politeness & Face",
+    "description": "Understanding social dynamics and face-threatening acts.",
+    "icon": "face",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch7-s1",
+        "title": "Face & Politeness Strategies",
+        "subtitle": "Appreciation vs. Freedom.",
+        "quizId": "quiz-ch7-s1",
+        "content": [
+          {
+            "type": "definition",
+            "heading": "Theoretical: Positive & Negative Face",
+            "body": "1. **Positive Face**: Wish to be liked and approved of by others.\n2. **Negative Face**: Wish not to be coerced or forced; desire for freedom from imposition.",
+            "arabicExplanation": "Ïº┘ä┘Ç Positive ÏÑ┘å┘â Ï╣Ïº┘èÏ▓ Ïº┘ä┘åÏºÏ│ Ï¬Ï¡Ï¿┘âÏî ┘êÏº┘ä┘Ç Negative ÏÑ┘å┘â ┘àÏ┤ Ï╣Ïº┘èÏ▓ Ï¡Ï» ┘èÏÂÏ║ÏÀ Ï╣┘ä┘è┘â."
+          },
+          {
+            "type": "analysis",
+            "heading": "Applied: Politeness Strategies",
+            "body": "Identify the strategy:",
+            "steps": [
+              { "label": "Positive Politeness", "body": "'What a fantastic garden you have.' (Compliment/Solidarity)." },
+              { "label": "Negative Politeness", "body": "'Could you find me a computer so I can check my e-mail?' (Hedged request)." },
+              { "label": "Negative Politeness", "body": "'I don't suppose you could give us a lift.' (Being pessimistic)." },
+              { "label": "Off-record", "body": "Dropping a hint (e.g., 'Our vacuum cleaner just broke down')." },
+              { "label": "Bald on-record", "body": "Direct command without redress (e.g., 'Open the window')." }
+            ],
+            "arabicExplanation": "Ïº┘ä┘àÏ¼Ïº┘à┘äÏºÏ¬ Ï»Ïº┘è┘àÏº┘ï PositiveÏî ┘êÏº┘äÏºÏ╣Ï¬Ï░ÏºÏ▒ Ïú┘ê Ï¬┘é┘ä┘è┘ä Ïº┘äÏÀ┘äÏ¿ Ï»Ïº┘è┘àÏº┘ï Negative."
+          }
+        ],
+        "appliedSummary": "┘ü┘è Ïº┘äÏº┘àÏ¬Ï¡Ïº┘å ┘ç┘èÏ¼┘èÏ¿┘ä┘â Ï¼┘à┘äÏ® ┘ê┘è┘é┘ê┘ä┘â Ï»┘è Ïº┘å┘ç┘è ┘å┘êÏ╣.. ┘ä┘ê ┘àÏ¼Ïº┘à┘äÏ® Ï¬Ï¿┘é┘ë PositiveÏî ┘ê┘ä┘ê Ï¿Ï¬Ï¿┘è┘å ÏÑ┘å┘â ┘àÏ┤ Ï╣Ïº┘èÏ▓ Ï¬Ï¬Ï╣Ï¿ Ïº┘ä┘ä┘è ┘éÏ»Ïº┘à┘â Ï¬Ï¿┘é┘ë NegativeÏî ┘ê┘ä┘ê Ï¬┘ä┘à┘èÏ¡ Ï¬Ï¿┘é┘ë Off-record.",
+        "rubyTip": "Ïº┘äÏ¬Ï┤ÏºÏñ┘à (Pessimism) ┘êÏº┘äÏºÏ╣Ï¬Ï░ÏºÏ▒ (Apology) ┘à┘å Ïú┘ç┘à ÏºÏ│Ï¬Ï▒ÏºÏ¬┘èÏ¼┘èÏºÏ¬ Ïº┘ä┘àÏ¼Ïº┘à┘äÏ® Ïº┘äÏ│┘äÏ¿┘èÏ®! ­ƒñØ",
+        "nextLesson": "ch9-s1"
+      }
+    ],
+    "examId": "exam-ch7"
+  },
+  {
+    "id": "ch9",
+    "number": 9,
+    "title": "Practical Exam Prep",
+    "description": "Model answers and cheat sheets for the final exam.",
+    "icon": "assignment_turned_in",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch9-s1",
+        "title": "Final Review & Cheat Sheets",
+        "subtitle": "The essential list for exam night.",
+        "quizId": "quiz-ch9-s1",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Key Exam Triggers", "body": "1. Semantic deviation -> Metaphor or Paradox.\n2. Lexical Cohesion -> Reiteration, Synonymy, Hyponymy, Collocation.\n3. Conjunctions -> Additive, Adversative, Causal, Temporal." },
+          { "type": "analysis", "heading": "Applied: Exam Strategy", "body": "How to tackle the paper:", "steps": [
+            { "label": "Definitions", "body": "Memorize exact phrasing for 'Generic Sentence', 'Face', and 'Modality'." },
+            { "label": "Maxims", "body": "Always state both the Flouted Maxim and the Implicature." },
+            { "label": "True/False", "body": "Correct the false ones! (e.g., Pessimism is NOT Positive Politeness)." }
+          ]}
+        ],
+        "appliedSummary": "Ï»┘ç ┘ä┘è┘äÏ® Ïº┘äÏº┘àÏ¬Ï¡Ïº┘å ┘èÏº Ï¿ÏÀ┘ä.. ┘äÏºÏ▓┘à Ï¬Ï¡┘üÏ© ÏÑ┘å Ïº┘äÏº┘åÏ¡Ï▒Ïº┘ü Ïº┘äÏ»Ïº┘ä┘ä┘è Ï¿Ï│Ï¿Ï¿┘ç Ïº┘äÏºÏ│Ï¬Ï╣ÏºÏ▒Ï® ┘êÏº┘ä┘à┘üÏºÏ▒┘éÏ®. ┘êÏº┘ä┘êÏÁ┘ä 4 Ïú┘å┘êÏºÏ╣. ┘êÏº┘ä┘àÏ¼Ïº┘à┘äÏºÏ¬ Ïº┘äÏ│┘äÏ¿┘èÏ® 9 Ïú┘å┘êÏºÏ╣. Ï▒┘âÏ▓ ┘ü┘è Ï│ÏñÏº┘ä ÏÁÏ¡ ┘êÏ║┘äÏÀ Ï╣Ï┤Ïº┘å ┘äÏºÏ▓┘à \"Ï¬ÏÁÏ¡Ï¡\" Ïº┘äÏ║┘äÏÀ.. Ïº┘ä┘à┘å┘çÏ¼ Ï»┘ä┘ê┘éÏ¬┘ë Ï¿┘è┘å ÏÑ┘èÏ»┘è┘â ┘âÏº┘à┘ä ┘ê┘à┘üÏÁ┘äÏî ÏºÏ»Ï«┘ä Ïº┘äÏº┘àÏ¬Ï¡Ïº┘å ┘êÏú┘åÏ¬ ┘àÏÀ┘à┘å.",
+        "rubyTip": "Ï▒ÏºÏ¼Ï╣ Ïº┘ä┘àÏ░┘âÏ▒ÏºÏ¬ Ïº┘äÏ│Ï▒┘èÏ╣Ï® ┘ü┘è Section 9 ┘à┘å Ïº┘ä┘Ç Guide.. ┘ç┘è Ï»┘è Ïº┘ä┘ä┘è ┘çÏ¬┘ä┘à┘ä┘â Ïº┘ä┘à┘å┘çÏ¼ ┘â┘ä┘ç ┘ü┘è 5 Ï»┘éÏº┘è┘é! ­ƒÜÇ"
+      }
+    ],
+    "examId": "exam-ch9"
+  }
+]

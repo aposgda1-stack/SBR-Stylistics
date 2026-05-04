@@ -158,7 +158,7 @@ export default function MockExamPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-slate-950 flex flex-col">
       {/* Exam Header */}
-      <div className="sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl border-b border-slate-100 dark:border-slate-800 px-6 py-4 flex justify-between items-center max-w-7xl mx-auto w-full">
+      <div className="sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl border-b border-slate-100 dark:border-slate-800 px-6 py-4 flex justify-between items-center max-w-lg mx-auto w-full">
         <div>
           <h1 className="text-xl font-black text-slate-900 dark:text-white tracking-tighter">Mock Final Exam</h1>
           <p className="text-[10px] font-black uppercase tracking-widest text-slate-400">Question {currentIdx + 1} of {questions.length}</p>
