@@ -5,7 +5,7 @@ import { useState, useRef, useEffect } from "react";
 export default function MickChat() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { role: "assistant", content: "Welcome, Scholar. I am Professor Mick Short. I am here to provide academic guidance and deep linguistic analysis to support your studies in Stylistics. How can I assist your academic journey today?" },
+    { role: "assistant", content: "Welcome, my friend. I am Professor Mick Short. I am here to help you understand Stylistics deeply. What would you like to explore today?" },
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -47,7 +47,7 @@ export default function MickChat() {
       console.error("Chat error:", error);
       setMessages((prev) => [
         ...prev, 
-        { role: "assistant", content: "Professor Mick is currently busy with an academic conference. Your brother Ruby is here: I can help you with the summaries, but for deep analysis, make sure your NEXT_PUBLIC_GEMINI_API_KEY is set correctly! (Technical Error 500)" }
+        { role: "assistant", content: "Professor Mick is currently being updated 🔄 Please try again in a moment. In the meantime, check the Study Hub for all the key definitions and summaries." }
       ]);
     } finally {
       setIsLoading(false);

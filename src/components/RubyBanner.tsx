@@ -41,9 +41,6 @@ export default function RubyBanner() {
         </div>
 
         <div className="flex-1">
-          <p className="text-[10px] font-black uppercase tracking-[0.3em] text-teal-500 mb-3">
-            روبي بيقول{displayName ? ` لـ ${displayName}` : ""} 💙
-          </p>
           <p className="text-xl md:text-2xl text-slate-200 font-bold leading-relaxed text-right" dir="rtl">
             &ldquo;{message}&rdquo;
           </p>

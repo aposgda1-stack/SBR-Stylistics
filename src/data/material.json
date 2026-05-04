@@ -1,12 +1,5 @@
 [
   {
-    "id": "sec1",
-    "section": "SECTION 1",
-    "title": "How to Use This Guide & Exam Overview",
-    "arabicTitle": "كيفية استخدام الدليل ونظرة عامة على الامتحان",
-    "content": "### 1.1 The Roadmap to Success\nThis platform is your ultimate companion for the 4th Year Stylistics course. We have structured every concept, definition, and practical exercise based on the official curriculum and past exams from 2020 to 2024.\n\n### 📝 Exam Format Breakdown:\n1.  **Section A: Completion (50 Marks)**: You are given a word bank and statements. You must match the term (e.g., Anaphoric reference) to its definition. Accuracy is key.\n2.  **Section B: Flouted Maxims (18 Marks)**: You analyze dialogues to identify which of Grice's maxims (Quality, Quantity, Relation, Manner) is being 'flouted' and explain the 'implicature' (hidden meaning).\n3.  **Section C: Foregrounding (15 Marks)**: Practical analysis of poetry. You identify 'Parallelism' or 'Deviation' and specify the exact level (e.g., Syntactic Deviation: Inversion).\n4.  **Section D: True/False with Correction (27 Marks)**: This tests your deep understanding. You don't just say True/False; you must correct the false ones. Examples: 'Pessimism is a positive politeness strategy' (False -> It is Negative).\n5.  **Section E: Modality & Evaluative Devices**: Analyzing prose (like The Kite Runner) for probability, obligation, and generic sentences.\n6.  **Section F: Definitions**: Writing clear, boxed definitions in your own words.\n\n### ⭐ Academic Tip:\nDefinitions MUST be written in a **word-box format**. While you can use your own words, they must be grammatically correct and theoretically accurate.\n\n### شعبولي الموضوع كدا\nبص يا بطل، إحنا هنا مش بنهزر.. المادة دي مادة \"تقفيل\". الامتحان متقسم لأجزاء واضحة: جزء توصيل (حفظ مصطلحات)، جزء فزورة (أنا قصدي إيه بكلامي؟)، جزء تحليل شعر (إيه الغريب في البيت ده؟)، وصح وغلط مع التصحيح (ركز في كلمة Correction دي عشان هي اللي بتجيب الدرجات). المنهج ده متلخص عشان تدخل الامتحان تكتسحه، وروبي معاك خطوة بخطوة."
-  },
-  {
     "id": "sec2",
     "section": "SECTION 2",
     "title": "Complete Definitions Reference",
