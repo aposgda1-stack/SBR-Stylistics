@@ -9,6 +9,7 @@ interface Props {
   params: Promise<{ chapterId: string; lessonId: string }>;
 }
 
+function renderContent(block: LessonContent & { arabicExplanation?: string; type?: string }, idx: number) {
   const formatContent = (text: string) => {
     if (!text) return "";
     return text.split("**").map((part, i) => 
