@@ -29,6 +29,10 @@ export function getQuizQuestions(): QuizQuestion[] {
   return quizQuestions;
 }
 
+export function getQuizQuestionsById(quizId: string): QuizQuestion[] {
+  return quizQuestions.filter((q) => q.quizId === quizId);
+}
+
 export function getQuizQuestion(id: string): QuizQuestion | undefined {
   return quizQuestions.find((q) => q.id === id);
 }

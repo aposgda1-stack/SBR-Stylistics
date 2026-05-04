@@ -22,18 +22,35 @@
       },
       {
         "id": "ch1-s2",
-        "title": "Foregrounding & Parallelism",
-        "subtitle": "Controlling the reader's attention through patterns.",
+        "title": "Parallelism, Repetition & Deviation",
+        "subtitle": "The three pillars of textual prominence.",
         "quizId": "quiz-ch1-s2",
         "content": [
-          { "type": "definition", "heading": "Theoretical: Foregrounding", "body": "Refers to the ways in which certain aspects of a text are made to stand out or appear prominent (Prominence). It is a psychological effect that controls readers' attention and generates literary interpretations." },
-          { "type": "analysis", "heading": "Applied: Parallelism (Identity + Contrast)", "body": "Analyzing: 'Where wealth accumulates and men decay.' (Goldsmith).", "steps": [
-            { "label": "Structure", "body": "Both halves have the same [Subject + Verb] identity." },
-            { "label": "Contrast", "body": "Wealth/Men and Accumulates/Decay are contrasted." },
-            { "label": "Effect", "body": "This forces the reader to link the growth of money to the destruction of humans." }
-          ]}
+          {
+            "type": "definition",
+            "heading": "Theoretical: Foregrounding",
+            "body": "Refers to the ways in which certain aspects of a text are made to stand out or appear prominent (Prominence). The three main methods are Parallelism, Deviation, and Repetition.",
+            "arabicExplanation": "البروز (Foregrounding) هو إنك تخلي جزء من النص يشد العين.. وده بيحصل بـ 3 طرق: التوازي، الانحراف، والتكرار."
+          },
+          {
+            "type": "definition",
+            "heading": "Theoretical: Repetition",
+            "body": "Repetition is the **mechanical repetition** of a linguistic item (word, phrase, or sound) without any contrastive element. It is often used for emphasis.",
+            "arabicExplanation": "التكرار الميكانيكي هو إنك تعيد نفس الكلمة بالظبط عشان تأكد على معنى معين."
+          },
+          {
+            "type": "analysis",
+            "heading": "Applied: Parallelism (Identity + Contrast)",
+            "body": "Analyzing: 'Where wealth accumulates and men decay.'",
+            "steps": [
+              { "label": "Identity", "body": "Both clauses share the [Subject + Verb] structure." },
+              { "label": "Contrast", "body": "Wealth vs Men | Accumulates vs Decay." },
+              { "label": "Effect", "body": "The parallelism forces a semantic link between wealth/decay and men/accumulates." }
+            ],
+            "arabicExplanation": "التوازي (Parallelism) بيجمع بين حاجتين ثابتين (نفس الوزن) وحاجتين مختلفين (كلمات تانية)."
+          }
         ],
-        "appliedSummary": "الـ Foregrounding هو إنك تعمل \"بروز\" في الكلام عشان تشد عين اللي بيقرأ.. وأهم طريقة لده هي الـ Parallelism (التوازي). يعني أجيب جملتين ليهم نفس الوزن والتقسيمة بالظبط (Identity) بس أغير الكلمات (Contrast).. ده بيخلي عقلك يربط بين المعنيين غصب عنك، زي ما شفنا في مثال الثروة ودمار الإنسان.",
+        "appliedSummary": "الـ Foregrounding هو إنك تعمل \"بروز\" في الكلام عشان تشد عين اللي بيقرأ.. وأهم طريقة لده هي الـ Parallelism (التوازي). يعني أجيب جملتين ليهم نفس الوزن والتقسيمة بالظبط (Identity) بس أغير الكلمات (Contrast).. ده بيخلي عقلك يربط بين المعنيين غصب عنك، زي ما شفنا في مثال الثروة ودمار الإنسان. وعندنا كمان الـ Repetition وهو تكرار الكلمة بالظبط.",
         "rubyTip": "لما تلاقي تكرار في شكل الجملة، أعرف إن الكاتب عايزك تقارن بين المعاني اللي فيها! 📚",
         "prevLesson": "ch1-s1",
         "nextLesson": "ch1-s3"

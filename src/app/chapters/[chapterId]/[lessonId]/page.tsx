@@ -1,9 +1,11 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getLessonById, getChapterById } from "@/lib/contentService";
+import { getLessonById, getChapterById, getQuizQuestionsById } from "@/lib/contentService";
 import { LessonContent } from "@/types";
 import Footer from "@/components/Footer";
 import ProgressSaver from "@/components/ProgressSaver";
+import LessonQuiz from "@/components/LessonQuiz";
+import LessonTools from "@/components/LessonTools";
 
 interface Props {
   params: Promise<{ chapterId: string; lessonId: string }>;
@@ -17,10 +19,9 @@ const formatContent = (text: string) => {
 };
 
 function renderContent(block: LessonContent & { arabicExplanation?: string; type?: string }, idx: number) {
-
   const content = (() => {
-    const isTheory = block.heading?.toLowerCase().includes("theory") || block.type === "theoretical";
-    const isApplied = block.heading?.toLowerCase().includes("applied");
+    const isTheory = block.heading?.toLowerCase().includes("theory") || block.type === "theoretical" || block.type === "definition";
+    const isApplied = block.heading?.toLowerCase().includes("applied") || block.type === "analysis";
 
     const renderArabic = (arabicText?: string) => {
       if (!arabicText) return null;
@@ -52,7 +53,7 @@ function renderContent(block: LessonContent & { arabicExplanation?: string; type
                     {block.heading || "Definition"}
                   </h3>
                 </div>
-                <p className="text-4xl md:text-5xl text-slate-900 dark:text-white leading-[1.3] font-black tracking-tighter">
+                <p className="text-3xl md:text-5xl text-slate-900 dark:text-white leading-[1.3] font-black tracking-tighter">
                   {formatContent(block.body || (block as any).content)}
                 </p>
                 {renderArabic(block.arabicExplanation)}
@@ -120,8 +121,6 @@ function renderContent(block: LessonContent & { arabicExplanation?: string; type
   );
 }
 
-import LessonTools from "@/components/LessonTools";
-
 export default async function LessonPage({ params }: Props) {
   const { chapterId, lessonId } = await params;
   const chapter = getChapterById(chapterId);
@@ -129,9 +128,10 @@ export default async function LessonPage({ params }: Props) {
 
   if (!chapter || !lesson) notFound();
 
+  const quizQuestions = lesson.quizId ? getQuizQuestionsById(lesson.quizId) : [];
   const fullText = lesson.content.map(b => b.body || "").join(" ");
   const wordCount = fullText.split(/\s+/).length;
-  const readingTime = Math.ceil(wordCount / 200); // 200 words per minute
+  const readingTime = Math.ceil(wordCount / 200);
 
   return (
     <>
@@ -139,35 +139,47 @@ export default async function LessonPage({ params }: Props) {
       <main className="px-6 py-12 md:py-20 bg-surface">
         <ProgressSaver lessonId={lessonId} />
         <div className="max-w-[800px] mx-auto">
+          {/* Top Quick Link */}
+          {lesson.quizId && (
+            <div className="mb-10 flex justify-end">
+              <a 
+                href="#lesson-quiz" 
+                className="flex items-center gap-2 px-6 py-2 bg-slate-900 dark:bg-teal-500 text-white dark:text-slate-900 rounded-full text-[10px] font-black uppercase tracking-[0.2em] shadow-xl hover:scale-105 transition-all"
+              >
+                <span className="material-symbols-outlined text-sm">quiz</span>
+                Jump to Test
+              </a>
+            </div>
+          )}
+
           {/* Lesson Banner */}
-          <div className="w-full aspect-[21/9] md:aspect-[21/6] rounded-3xl overflow-hidden shadow-sm mb-10 relative border border-slate-100 animate-fade-in-up">
+          <div className="w-full aspect-[21/9] md:aspect-[21/6] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-sm mb-10 relative border border-slate-100 dark:border-slate-800 animate-fade-in-up">
             <img src="/images/lesson_hero.png" alt="Stylistics Lesson" className="w-full h-full object-cover" />
           </div>
           
           {/* Breadcrumbs */}
-          <nav className="breadcrumb-nav mb-8 flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant flex-wrap">
+          <nav className="breadcrumb-nav mb-8 flex items-center gap-2 text-[10px] font-black text-slate-400 uppercase tracking-widest flex-wrap">
             <Link href="/chapters" className="hover:text-primary transition-colors">
               Curriculum
             </Link>
             <span className="material-symbols-outlined text-[14px]">chevron_right</span>
             <span>Chapter {chapter.number}</span>
             <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-            <span>{chapter.title}</span>
-            <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-            <span className="text-primary font-semibold">{lesson.title}</span>
+            <span className="text-primary dark:text-teal-500">{lesson.title}</span>
           </nav>
 
           {/* Lesson Title */}
           <div className="mb-12">
-            <div className="flex items-center gap-4 mb-2">
-              <span className="bg-primary-container text-on-primary-fixed text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-widest">
+            <div className="flex items-center gap-4 mb-4">
+              <span className="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-[10px] px-3 py-1 rounded-full font-black uppercase tracking-widest">
                 {readingTime} min read
               </span>
-              <span className="text-xs text-slate-400 font-bold uppercase tracking-widest">{wordCount} words</span>
+              <span className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">{wordCount} words</span>
             </div>
-            <h1 className="font-display-lg text-display-lg text-primary mb-4">{lesson.title}</h1>
-            <div className="h-1 w-24 bg-primary-container rounded-full mb-6" />
-            <p className="font-body-lg text-body-lg text-on-surface-variant italic">
+            <h1 className="text-4xl md:text-7xl font-black text-slate-900 dark:text-white tracking-tighter leading-[0.9] mb-8">
+              {lesson.title}
+            </h1>
+            <p className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 font-bold italic leading-relaxed">
               {lesson.subtitle}
             </p>
           </div>
@@ -179,36 +191,32 @@ export default async function LessonPage({ params }: Props) {
 
           {/* Ruby's Tip */}
           {lesson.rubyTip && (
-            <div className="mb-12 bg-slate-900 text-white rounded-3xl p-8 shadow-xl relative overflow-hidden group animate-fade-in-up">
+            <div className="mb-12 bg-slate-900 text-white rounded-[3rem] p-10 shadow-2xl relative overflow-hidden group animate-fade-in-up">
               <div className="absolute -right-4 -bottom-4 opacity-10 group-hover:scale-110 transition-transform duration-500">
-                <span className="material-symbols-outlined text-9xl">lightbulb</span>
+                <span className="material-symbols-outlined text-[150px]">lightbulb</span>
               </div>
               <div className="relative z-10">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                    <span className="material-symbols-outlined text-white text-xl">tips_and_updates</span>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-2xl bg-teal-500 flex items-center justify-center text-slate-900 shadow-xl">
+                    <span className="material-symbols-outlined text-2xl font-bold">tips_and_updates</span>
                   </div>
-                  <h3 className="font-headline-sm text-xl font-bold tracking-tight">Ruby's Personal Tip ✨</h3>
+                  <h3 className="text-xl font-black uppercase tracking-widest text-teal-400">Ruby's Personal Tip ✨</h3>
                 </div>
-                <p className="font-body-lg text-lg leading-relaxed text-slate-200 italic">
+                <p className="text-2xl md:text-3xl leading-relaxed text-slate-200 italic font-medium">
                   "{lesson.rubyTip}"
                 </p>
               </div>
             </div>
           )}
 
-          {/* Applied Summary Section - The Grand Finale */}
+          {/* Applied Summary Section */}
           {lesson.appliedSummary && (
-            <div className="mb-16 relative group">
-               {/* Decorative Background Elements */}
+            <div className="mb-20 relative group">
                <div className="absolute inset-0 bg-gradient-to-br from-teal-500 to-teal-600 rounded-[3rem] blur-2xl opacity-10 group-hover:opacity-20 transition-opacity" />
-               
-               <div className="relative bg-white dark:bg-slate-900 border-2 border-teal-500/20 rounded-[3rem] p-10 md:p-16 shadow-[0_40px_100px_rgba(0,0,0,0.06)] overflow-hidden">
-                  {/* Watermark Icon */}
+               <div className="relative bg-white dark:bg-slate-900 border-2 border-teal-500/20 rounded-[3rem] p-10 md:p-16 shadow-2xl overflow-hidden">
                   <div className="absolute top-0 left-0 p-10 opacity-5 pointer-events-none">
                      <span className="material-symbols-outlined text-[150px]">auto_awesome</span>
                   </div>
-
                   <div className="relative z-10">
                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12 border-b border-slate-100 dark:border-slate-800 pb-8">
                         <div className="flex items-center gap-5">
@@ -224,76 +232,49 @@ export default async function LessonPage({ params }: Props) {
                            شعبولي الموضوع كدا
                         </div>
                      </div>
-
-                     <div className="text-slate-700 dark:text-slate-300 text-2xl md:text-3xl leading-[2.4] font-bold text-right dir-rtl whitespace-pre-line" dir="rtl">
+                     <div className="text-slate-700 dark:text-slate-300 text-2xl md:text-4xl leading-[2.4] font-bold text-right dir-rtl whitespace-pre-line" dir="rtl">
                         {formatContent(lesson.appliedSummary)}
-                     </div>
-                     
-                     <div className="mt-12 pt-8 border-t border-slate-100 dark:border-slate-800 flex items-center gap-4 text-slate-400 font-bold italic text-sm">
-                        <span className="material-symbols-outlined text-teal-500">verified</span>
-                        "Studied, Analyzed, and Simplified for the Class of 2026."
                      </div>
                   </div>
                </div>
             </div>
           )}
 
-          {/* Navigation Buttons */}
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-6 pt-12 border-t border-slate-100">
-            {lesson.prevLesson ? (
-              <Link
-                href={`/chapters/${chapterId}/${lesson.prevLesson}`}
-                className="w-full sm:w-auto px-8 py-3 rounded-lg border border-slate-200 text-on-secondary-fixed-variant font-label-sm hover:bg-slate-50 transition-all flex items-center justify-center gap-2 group active:scale-95"
-              >
-                <span className="material-symbols-outlined text-sm group-hover:-translate-x-1 transition-transform">
-                  arrow_back
-                </span>
-                Previous
-              </Link>
-            ) : (
-              <Link
-                href="/chapters"
-                className="w-full sm:w-auto px-8 py-3 rounded-lg border border-slate-200 text-on-secondary-fixed-variant font-label-sm hover:bg-slate-50 transition-all flex items-center justify-center gap-2 group active:scale-95"
-              >
-                <span className="material-symbols-outlined text-sm group-hover:-translate-x-1 transition-transform">
-                  arrow_back
-                </span>
-                Back to Curriculum
-              </Link>
-            )}
+          {/* Embedded Quiz Section */}
+          {lesson.quizId && (
+            <LessonQuiz 
+              questions={quizQuestions} 
+              chapterId={chapterId} 
+              nextLesson={lesson.nextLesson} 
+            />
+          )}
 
-            {lesson.quizId ? (
-              <Link
-                href={`/quiz?quizId=${lesson.quizId}&nextLesson=${lesson.nextLesson || ""}&chapterId=${chapterId}`}
-                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-primary text-white font-bold hover:shadow-xl transition-all flex items-center justify-center gap-3 active:scale-95 animate-pulse"
-              >
-                Take Section Quiz
-                <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">
-                  quiz
-                </span>
-              </Link>
-            ) : lesson.nextLesson ? (
-              <Link
-                href={`/chapters/${chapterId}/${lesson.nextLesson}`}
-                className="w-full sm:w-auto px-8 py-3 rounded-lg bg-primary-container text-on-primary-fixed font-label-sm hover:opacity-90 transition-all flex items-center justify-center gap-2 group active:scale-95"
-              >
-                Next Lesson
-                <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">
-                  arrow_forward
-                </span>
-              </Link>
-            ) : (
-              <Link
-                href={`/exam?examId=${chapter.examId}`}
-                className="w-full sm:w-auto px-8 py-3 rounded-lg bg-tertiary text-white font-bold hover:shadow-xl transition-all flex items-center justify-center gap-2 group active:scale-95"
-              >
-                Begin Chapter Exam
-                <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">
-                  assignment
-                </span>
-              </Link>
-            )}
-          </div>
+          {/* Bottom Navigation */}
+          {!lesson.quizId && (
+            <div className="flex justify-between items-center pt-12 border-t border-slate-100 dark:border-slate-800 mt-20">
+              {lesson.prevLesson ? (
+                <Link href={`/chapters/${chapterId}/${lesson.prevLesson}`} className="text-sm font-black uppercase tracking-widest text-slate-400 hover:text-primary transition-colors flex items-center gap-2">
+                  <span className="material-symbols-outlined text-sm">arrow_back</span>
+                  Previous
+                </Link>
+              ) : (
+                <Link href="/chapters" className="text-sm font-black uppercase tracking-widest text-slate-400 hover:text-primary transition-colors flex items-center gap-2">
+                  <span className="material-symbols-outlined text-sm">arrow_back</span>
+                  Curriculum
+                </Link>
+              )}
+
+              {lesson.nextLesson ? (
+                <Link href={`/chapters/${chapterId}/${lesson.nextLesson}`} className="px-10 py-4 bg-slate-900 dark:bg-teal-500 text-white dark:text-slate-900 rounded-2xl font-black uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-xl">
+                  Next Lesson
+                </Link>
+              ) : (
+                <Link href={`/exam?examId=${chapter.examId}`} className="px-10 py-4 bg-primary text-white rounded-2xl font-black uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-xl">
+                  Take Chapter Exam
+                </Link>
+              )}
+            </div>
+          )}
         </div>
       </main>
       <Footer />

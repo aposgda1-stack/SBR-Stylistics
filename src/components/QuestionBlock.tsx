@@ -25,31 +25,31 @@ export default function QuestionBlock({
   const getOptionStyle = (index: number) => {
     if (!showFeedback) {
       if (selectedIndex === index) {
-        return "border-2 border-primary bg-white shadow-[0_4px_20px_-4px_rgba(15,23,42,0.1)]";
+        return "border-2 border-primary dark:border-teal-500 bg-primary/5 dark:bg-teal-500/10 shadow-lg";
       }
-      return "border border-slate-100 bg-white hover:border-primary hover:shadow-md";
+      return "border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-primary dark:hover:border-teal-500 hover:shadow-md";
     }
     // After answering
     if (index === question.correctIndex) {
-      return "border-2 border-teal-500 bg-teal-50";
+      return "border-2 border-teal-500 bg-teal-50 dark:bg-teal-900/30";
     }
     if (selectedIndex === index && index !== question.correctIndex) {
-      return "border-2 border-error bg-red-50";
+      return "border-2 border-red-500 bg-red-50 dark:bg-red-900/30";
     }
-    return "border border-slate-100 bg-white opacity-60";
+    return "border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 opacity-40";
   };
 
   const getLetterStyle = (index: number) => {
     if (!showFeedback) {
       if (selectedIndex === index) {
-        return "bg-primary text-white";
+        return "bg-slate-900 dark:bg-teal-500 text-white dark:text-slate-900";
       }
-      return "bg-surface-container-low text-on-surface-variant group-hover:bg-primary-container group-hover:text-on-primary";
+      return "bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 group-hover:bg-slate-200 dark:group-hover:bg-slate-700";
     }
     if (index === question.correctIndex) return "bg-teal-500 text-white";
     if (selectedIndex === index && index !== question.correctIndex)
-      return "bg-error text-white";
-    return "bg-surface-container-low text-on-surface-variant";
+      return "bg-red-500 text-white";
+    return "bg-slate-100 dark:bg-slate-800 text-slate-400 opacity-50";
   };
 
   const handleOptionClick = (index: number) => {
