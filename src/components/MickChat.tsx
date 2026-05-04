@@ -5,7 +5,7 @@ import { useState, useRef, useEffect } from "react";
 export default function MickChat() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { role: "assistant", content: "أهلاً بك يا بطل! أنا بروفيسور ميك شورت (Prof. Mick). جاهز أساعدك تفهم أدق تفاصيل الـ Stylistics عشان تقفل الامتحان. تحب نبدأ بإيه؟" },
+    { role: "assistant", content: "Welcome, Scholar. I am Professor Mick Short. I am here to provide academic guidance and deep linguistic analysis to support your studies in Stylistics. How can I assist your academic journey today?" },
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);

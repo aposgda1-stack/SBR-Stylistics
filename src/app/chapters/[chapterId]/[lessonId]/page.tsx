@@ -188,7 +188,7 @@ export default async function LessonPage({ params }: Props) {
                   <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
                     <span className="material-symbols-outlined text-white text-xl">tips_and_updates</span>
                   </div>
-                  <h3 className="font-headline-sm text-xl font-bold tracking-tight">نصيحة من روبي ✨</h3>
+                  <h3 className="font-headline-sm text-xl font-bold tracking-tight">Ruby's Personal Tip ✨</h3>
                 </div>
                 <p className="font-body-lg text-lg leading-relaxed text-slate-200 italic">
                   "{lesson.rubyTip}"
@@ -213,11 +213,11 @@ export default async function LessonPage({ params }: Props) {
                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12 border-b border-slate-100 dark:border-slate-800 pb-8">
                         <div className="flex items-center gap-5">
                            <div className="w-16 h-16 rounded-3xl bg-teal-500 text-white flex items-center justify-center shadow-2xl shadow-teal-500/20">
-                              <span className="material-symbols-outlined text-4xl">psychology_alt</span>
+                              <span className="material-symbols-outlined text-4xl">favorite</span>
                            </div>
                            <div>
-                              <h2 className="text-3xl font-black text-slate-900 dark:text-white tracking-tighter uppercase">Applied Breakdown</h2>
-                              <p className="text-teal-600 font-bold text-sm tracking-widest uppercase mt-1">Final Summary</p>
+                              <h2 className="text-3xl font-black text-slate-900 dark:text-white tracking-tighter uppercase">Ruby's Breakdown</h2>
+                              <p className="text-teal-600 font-bold text-sm tracking-widest uppercase mt-1">Simple & Practical</p>
                            </div>
                         </div>
                         <div className="px-6 py-2 rounded-full bg-slate-900 text-white text-[10px] font-black uppercase tracking-[0.3em] self-start md:self-center">
