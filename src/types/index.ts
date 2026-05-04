@@ -42,6 +42,7 @@ export interface QuizQuestion {
   explanation: string;
   type?: "theoretical" | "applied";
   quizId?: string;
+  chapterId?: string;
 }
 
 export interface ExamQuestion {
@@ -50,6 +51,7 @@ export interface ExamQuestion {
   passage?: string;
   options: string[];
   correctIndex: number;
+  chapterId?: string;
 }
 
 export interface GlossaryTerm {
