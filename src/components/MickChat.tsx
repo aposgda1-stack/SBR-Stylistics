@@ -41,17 +41,18 @@ export default function MickChat() {
       }
     } catch (error) {
       console.error("Chat error:", error);
+      setMessages((prev) => [...prev, { role: "assistant", content: "عذراً يا بطل، يبدو أن هناك مشكلة تقنية بسيطة في الاتصال بالبروفيسور. تأكد من إعداد مفتاح الـ API بشكل صحيح في بيئة التشغيل. (Technical Error: Connection Failed)" }]);
     } finally {
       setIsLoading(false);
     }
   };
 
   return (
-    <div className="fixed bottom-8 right-8 z-[100]">
+    <div className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[100]">
       {/* Trigger Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-16 h-16 rounded-full bg-slate-900 dark:bg-teal-500 text-white dark:text-slate-900 shadow-2xl flex items-center justify-center hover:scale-110 transition-all group relative border-4 border-white dark:border-slate-800"
+        className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-slate-900 dark:bg-teal-500 text-white dark:text-slate-900 shadow-2xl flex items-center justify-center hover:scale-110 transition-all group relative border-4 border-white dark:border-slate-800"
       >
         {isOpen ? (
           <span className="material-symbols-outlined text-3xl">close</span>
@@ -67,7 +68,7 @@ export default function MickChat() {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="absolute bottom-24 right-0 w-[90vw] md:w-[400px] bg-white dark:bg-slate-950 rounded-[2.5rem] shadow-[0_20px_60px_rgba(0,0,0,0.2)] border border-slate-100 dark:border-slate-800 overflow-hidden animate-in slide-in-from-bottom-8 duration-300">
+        <div className="absolute bottom-20 right-0 w-[85vw] md:w-[400px] bg-white dark:bg-slate-950 rounded-[2.5rem] shadow-[0_20px_60px_rgba(0,0,0,0.2)] border border-slate-100 dark:border-slate-800 overflow-hidden animate-in slide-in-from-bottom-8 duration-300">
           {/* Header */}
           <div className="bg-slate-900 p-6 flex items-center gap-4">
              <div className="w-12 h-12 rounded-2xl bg-teal-500 flex items-center justify-center text-slate-900">
