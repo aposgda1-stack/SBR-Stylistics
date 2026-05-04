@@ -7,6 +7,7 @@ import ProgressSaver from "@/components/ProgressSaver";
 import LessonQuiz from "@/components/LessonQuiz";
 import LessonTools from "@/components/LessonTools";
 import PrintButton from "@/components/PrintButton";
+import MickChat from "@/components/MickChat";
 
 interface Props {
   params: Promise<{ chapterId: string; lessonId: string }>;
@@ -171,6 +172,7 @@ export default async function LessonPage({ params }: Props) {
 
   return (
     <>
+      <MickChat />
       <LessonTools title={lesson.title} content={fullText} />
       <main className="px-4 md:px-12 py-10 md:py-24 bg-surface">
         <ProgressSaver lessonId={lessonId} />

@@ -18,7 +18,6 @@ import CommandPalette from "@/components/CommandPalette";
 import MickChat from "@/components/MickChat";
 import SessionTracker from "@/components/SessionTracker";
 
-import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function RootLayout({
   children,
@@ -44,7 +43,6 @@ export default function RootLayout({
         <ThemeProvider>
           <body className="bg-background text-on-background font-sans antialiased">
             <CommandPalette />
-            <MickChat />
             <WelcomeModal />
             <SessionTracker />
             <TopBar />
@@ -52,7 +50,6 @@ export default function RootLayout({
               <PageWrapper>{children}</PageWrapper>
             </div>
             <BottomNav />
-            <WhatsAppButton />
           </body>
         </ThemeProvider>
       </html>
