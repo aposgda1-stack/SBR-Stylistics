@@ -127,6 +127,7 @@ export default function LessonsPage() {
         </div>
       </main>
       <Footer />
+    </div>
     </>
   );
 }

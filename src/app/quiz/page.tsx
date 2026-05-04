@@ -151,6 +151,26 @@ function QuizContent() {
     const pct = Math.round((correctAnswersCount / questions.length) * 100);
     const isPassing = pct >= 70;
 
+    const getScoreFeedback = () => {
+      if (pct >= 85) return {
+        title: "AMAZING JOB! 🔥",
+        message: "You are absolutely crushing this. Professor Mick would be proud, but as your brother Ruby, I'm even prouder. Keep that momentum going, you're going to ace the final!",
+        signature: "Your brother Ruby"
+      };
+      if (pct >= 70) return {
+        title: "Great Effort!",
+        message: "You've got the basics down, but there's room for perfection. Review the definitions one more time. You're almost there, hero!",
+        signature: "Your brother Ruby"
+      };
+      return {
+        title: "Don't Give Up!",
+        message: "Stylistics is tough, but you are tougher. Go back to the Study Guide and look at the 'Sha3boli' sections. I believe in you!",
+        signature: "Your brother Ruby"
+      };
+    };
+
+    const feedback = getScoreFeedback();
+
     // Performance Analysis
     const theoryQuestions = userResponses.filter(r => r.type === "theoretical");
     const appliedQuestions = userResponses.filter(r => r.type === "applied");
