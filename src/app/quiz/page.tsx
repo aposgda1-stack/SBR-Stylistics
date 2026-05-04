@@ -133,7 +133,7 @@ function QuizContent() {
             There are currently no questions available for this specific quiz section. Please try another one.
           </p>
           <Link 
-            href="/lessons" 
+            href="/chapters" 
             className="inline-flex px-8 py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition-all active:scale-95 mt-4"
           >
             Back to Curriculum
@@ -182,8 +182,25 @@ function QuizContent() {
                 </span>
               </div>
               <h2 className="font-display-md text-3xl md:text-5xl mb-4 text-slate-900 dark:text-white">
-                {isPassing ? "Well Done!" : "Keep Practicing"}
+                {isPassing ? "عاش يا بطل! استمر" : "محاولة كويسة، شد حيلك"}
               </h2>
+              
+              {/* Prof. Adel's Message */}
+              <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-3xl border-2 border-dashed border-teal-500/20 mb-8 max-w-lg mx-auto">
+                 <p className="text-sm italic text-slate-600 dark:text-slate-300 leading-relaxed">
+                   {isPassing 
+                     ? "الله ينور عليك يا ابني! مستواك في تطور ملحوظ.. يلا بينا على اللي بعده، الطريق للامتحان النهائي محتاج نفس طويل! 🚀"
+                     : "ولا يهمك، الـ Stylistics محتاجة تركيز في التفاصيل.. راجع الجزء ده تاني وتعالى وريني شطارتك. أنا واثق فيك! ✨"
+                   }
+                 </p>
+                 <div className="mt-4 flex items-center justify-center gap-2">
+                    <div className="w-6 h-6 rounded-full bg-teal-500 flex items-center justify-center">
+                       <span className="material-symbols-outlined text-[12px] text-slate-900 font-bold">person</span>
+                    </div>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-teal-600">— بروفيسور عادل</span>
+                 </div>
+              </div>
+
               <div className="flex flex-col items-center gap-2 mb-4">
                 <p className="font-body-lg text-slate-600 dark:text-slate-400">
                   Total Score: <span className="font-bold text-primary text-3xl">{finalScore}</span>
@@ -288,7 +305,7 @@ function QuizContent() {
                 Retry
               </button>
               <Link
-                href={nextLesson && chapterId ? `/lessons/${chapterId}/${nextLesson}` : "/lessons"}
+                href={nextLesson && chapterId ? `/chapters/${chapterId}/${nextLesson}` : "/chapters"}
                 className="flex-1 px-8 py-4 bg-primary text-white rounded-xl font-bold uppercase tracking-widest text-xs text-center flex items-center justify-center gap-2"
               >
                 Continue

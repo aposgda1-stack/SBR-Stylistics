@@ -96,8 +96,8 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
             <div className="space-y-2">
               {results.map((res, i) => (
                 <Link
-                  key={i}
-                  href={res.href}
+                  key={res.id || i}
+                  href={res.type === "Lesson" ? `/chapters/${res.chapterId}/${res.id}` : res.href || "/chapters"}
                   onClick={onClose}
                   className="flex items-start gap-4 p-4 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-2xl transition-all group border border-transparent hover:border-slate-100 dark:hover:border-slate-700"
                 >

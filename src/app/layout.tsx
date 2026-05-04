@@ -7,7 +7,7 @@ import WelcomeModal from "@/components/WelcomeModal";
 import PageWrapper from "@/components/PageWrapper";
 
 export const metadata: Metadata = {
-  title: "Stylestics Platform — Summarized by Ruby",
+  title: "Stylistics Platform — Prof. Adel",
   description:
     "A comprehensive English Stylistics course platform. Covering poetry, novel, and drama analysis with quizzes and exams.",
 };
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 import CommandPalette from "@/components/CommandPalette";
-import RubyChat from "@/components/RubyChat";
+import AdelChat from "@/components/AdelChat";
 import SessionTracker from "@/components/SessionTracker";
 
 export default function RootLayout({
@@ -42,7 +42,7 @@ export default function RootLayout({
         <ThemeProvider>
           <body className="bg-background text-on-background font-sans antialiased">
             <CommandPalette />
-            <RubyChat />
+            <AdelChat />
             <WelcomeModal />
             <SessionTracker />
             <TopBar />

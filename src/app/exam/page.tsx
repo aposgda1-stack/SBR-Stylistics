@@ -103,7 +103,7 @@ export default function ExamPage() {
             The exam content is currently unavailable. Please check back later.
           </p>
           <Link 
-            href="/lessons" 
+            href="/chapters" 
             className="inline-flex px-8 py-3 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition-all active:scale-95 mt-4"
           >
             Back to Dashboard
@@ -188,7 +188,7 @@ export default function ExamPage() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/" className="flex-1 px-8 py-4 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 rounded-xl font-bold text-xs uppercase tracking-widest text-center">Back Home</Link>
-            <Link href="/lessons" className="flex-1 px-8 py-4 bg-primary text-white rounded-xl font-bold text-xs uppercase tracking-widest text-center">Lessons</Link>
+            <Link href="/chapters" className="flex-1 px-8 py-4 bg-primary text-white rounded-xl font-bold text-xs uppercase tracking-widest text-center">Lessons</Link>
           </div>
         </main>
         <Footer />

@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-end gap-6 flex-1 w-full border-t border-slate-200 dark:border-slate-800 md:border-none pt-8 md:pt-0">
           <div className="flex flex-wrap justify-center md:justify-end gap-6">
             <Link href="/" className="text-slate-500 hover:text-primary transition-all font-sans text-sm font-bold">Home</Link>
-            <Link href="/lessons" className="text-slate-500 hover:text-primary transition-all font-sans text-sm font-bold">Curriculum</Link>
+            <Link href="/chapters" className="text-slate-500 hover:text-primary transition-all font-sans text-sm font-bold">Curriculum</Link>
             <Link href="/definitions" className="text-slate-500 hover:text-primary transition-all font-sans text-sm font-bold">Definitions</Link>
             <Link href="/progress" className="text-slate-500 hover:text-primary transition-all font-sans text-sm font-bold">Leaderboard</Link>
           </div>
