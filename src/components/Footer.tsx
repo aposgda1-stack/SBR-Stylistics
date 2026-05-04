@@ -1,33 +1,58 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const navLinks = [
+  { href: "/",         icon: "home",         label: "Home" },
+  { href: "/chapters", icon: "map",           label: "Journey" },
+  { href: "/material", icon: "auto_stories",  label: "Guide" },
+  { href: "/progress", icon: "emoji_events",  label: "Dashboard" },
+  { href: "/exam",     icon: "quiz",          label: "Exam" },
+  { href: "/word-box", icon: "style",         label: "Words" },
+];
 
 export default function Footer() {
-  return (
-    <footer className="bg-white dark:bg-slate-950 py-12 border-t border-slate-100 dark:border-slate-900 transition-colors">
-      <div className="max-w-7xl mx-auto px-6 space-y-12">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-          <Link href="/" className="text-2xl font-black text-slate-900 dark:text-white tracking-tighter">
-            STYLISTICS <span className="text-teal-500">2026</span>
-          </Link>
-          <nav className="flex flex-wrap justify-center gap-6">
-            <Link href="/" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-teal-500">Home</Link>
-            <Link href="/chapters" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-teal-500">Journey</Link>
-            <Link href="/material" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-teal-500">Guide</Link>
-            <Link href="/word-box" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-teal-500">Glossary</Link>
-          </nav>
-        </div>
-        
-        <div className="p-6 bg-slate-50 dark:bg-slate-900 rounded-3xl border border-slate-100 dark:border-slate-800">
-           <p className="text-[10px] md:text-xs text-slate-500 dark:text-slate-400 leading-loose text-center" dir="rtl">
-              <strong className="text-slate-900 dark:text-white block mb-2">تنويه هام:</strong> 
-              هذه المنصة تطوعية بالكامل وغير ربحية. تم تصميمها بجهد شخصي لمساعدة زملائي الطلاب. لا تتبع المنصة أي جهة رسمية.
-           </p>
-        </div>
+  const pathname = usePathname();
 
-        <div className="text-center space-y-2">
-           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Summarized by Ruby ❤️</p>
-           <p className="text-[9px] text-slate-300 dark:text-slate-600 uppercase tracking-widest">© 2026 The Final Chapter</p>
+  return (
+    <>
+      {/* Bottom Nav Bar — fixed to bottom, scrollable */}
+      <nav className="fixed bottom-0 left-0 right-0 z-50 bg-[var(--surface)]/95 backdrop-blur-xl border-t border-[var(--outline-variant)] safe-area-pb">
+        <div className="flex overflow-x-auto no-scrollbar px-2 py-1">
+          {navLinks.map(link => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`flex-shrink-0 flex flex-col items-center gap-0.5 px-4 py-2 rounded-xl transition-all min-w-[64px] ${
+                  isActive
+                    ? "text-teal-500"
+                    : "text-[var(--on-surface-variant)]"
+                }`}
+              >
+                <span className={`material-symbols-outlined text-[22px] transition-all ${isActive ? "filled scale-110" : ""}`}>
+                  {link.icon}
+                </span>
+                <span className={`text-[9px] font-black uppercase tracking-widest leading-none ${isActive ? "text-teal-500" : ""}`}>
+                  {link.label}
+                </span>
+                {isActive && (
+                  <span className="w-1 h-1 rounded-full bg-teal-500 mt-0.5" />
+                )}
+              </Link>
+            );
+          })}
         </div>
+      </nav>
+
+      {/* Tiny copyright — inside page before nav */}
+      <div className="max-w-lg mx-auto px-4 pb-2 pt-4">
+        <p className="text-[8px] text-center font-bold text-[var(--on-surface-variant)] opacity-40 uppercase tracking-widest">
+          © 2026 The Final Chapter · Non-profit · For classmates
+        </p>
       </div>
-    </footer>
+    </>
   );
 }

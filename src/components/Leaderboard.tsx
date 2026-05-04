@@ -8,102 +8,88 @@ interface LeaderboardEntry {
   updatedAt: string;
 }
 
+const rankStyles = [
+  { bg: "bg-amber-400",  text: "text-white", shadow: "shadow-amber-200/50", medal: "🥇" },
+  { bg: "bg-slate-300",  text: "text-white", shadow: "shadow-slate-200/50",  medal: "🥈" },
+  { bg: "bg-orange-300", text: "text-white", shadow: "shadow-orange-200/50", medal: "🥉" },
+];
+
 export default function Leaderboard() {
   const [entries, setEntries] = useState<LeaderboardEntry[]>([]);
   const [loading, setLoading] = useState(true);
 
   const fetchLeaderboard = () => {
     fetch("/api/leaderboard")
-      .then((res) => res.json())
-      .then((data) => {
-        setEntries(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error("Failed to fetch leaderboard:", err);
-        setLoading(false);
-      });
+      .then(res => res.json())
+      .then(data => { setEntries(data); setLoading(false); })
+      .catch(() => setLoading(false));
   };
 
   useEffect(() => {
     fetchLeaderboard();
-    
-    // Listen for progress updates to refresh leaderboard in real-time
-    const handleUpdate = () => fetchLeaderboard();
-    window.addEventListener("progressUpdated", handleUpdate);
-    return () => window.removeEventListener("progressUpdated", handleUpdate);
+    window.addEventListener("progressUpdated", fetchLeaderboard);
+    return () => window.removeEventListener("progressUpdated", fetchLeaderboard);
   }, []);
 
   return (
-    <div className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-[2.5rem] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.06)]">
-      <div className="p-8 border-b border-slate-50 dark:border-slate-800 flex justify-between items-center bg-slate-50/50 dark:bg-slate-900/50">
+    <div className="bg-[var(--surface)] border border-[var(--outline-variant)] rounded-2xl overflow-hidden">
+      {/* Header */}
+      <div className="flex items-center justify-between px-4 py-3 border-b border-[var(--outline-variant)]">
         <div>
-          <h3 className="text-2xl font-black text-slate-900 dark:text-white tracking-tighter uppercase">Student Rankings</h3>
-          <p className="text-xs text-slate-400 font-bold uppercase tracking-widest mt-1">Top 10 High Achievers</p>
+          <p className="text-sm font-black text-[var(--on-surface)] uppercase tracking-tight">Leaderboard</p>
+          <p className="text-[10px] font-bold text-[var(--on-surface-variant)] uppercase tracking-widest">Top Achievers</p>
         </div>
-        <div className="w-12 h-12 rounded-2xl bg-yellow-400 text-white flex items-center justify-center shadow-lg shadow-yellow-200">
-          <span className="material-symbols-outlined filled">emoji_events</span>
-        </div>
+        <div className="w-9 h-9 rounded-xl bg-amber-400 flex items-center justify-center text-lg">🏆</div>
       </div>
 
+      {/* Body */}
       {loading ? (
-        <div className="p-20 text-center text-slate-300">
-          <div className="animate-spin mb-4 inline-block">
-            <span className="material-symbols-outlined text-4xl">autorenew</span>
-          </div>
-          <p className="font-bold uppercase tracking-widest text-[10px]">Updating Hall of Fame...</p>
+        <div className="py-10 flex flex-col items-center gap-2 text-[var(--on-surface-variant)]">
+          <span className="material-symbols-outlined text-3xl animate-spin">autorenew</span>
+          <p className="text-[10px] font-black uppercase tracking-widest">Loading...</p>
         </div>
       ) : entries.length === 0 ? (
-        <div className="p-20 text-center text-slate-400 font-bold uppercase tracking-widest text-[10px]">
-          <p>No rankings yet. Start a quiz to lead!</p>
+        <div className="py-10 text-center">
+          <p className="text-[10px] font-black text-[var(--on-surface-variant)] uppercase tracking-widest">No rankings yet — complete a quiz to lead!</p>
         </div>
       ) : (
-        <div className="overflow-x-auto">
-          <table className="w-full text-left border-collapse">
-            <thead>
-              <tr className="bg-slate-50/30 dark:bg-slate-800/30 border-b border-slate-50 dark:border-slate-800">
-                <th className="px-8 py-4 font-black text-[10px] uppercase tracking-widest text-slate-400">Rank</th>
-                <th className="px-8 py-4 font-black text-[10px] uppercase tracking-widest text-slate-400">Student</th>
-                <th className="px-8 py-4 font-black text-[10px] uppercase tracking-widest text-slate-400 text-right">Points</th>
-              </tr>
-            </thead>
-            <tbody>
-              {entries.map((entry, idx) => (
-                <tr 
-                  key={idx} 
-                  className={`border-b border-slate-50 dark:border-slate-800 hover:bg-slate-50/30 dark:hover:bg-slate-800/30 transition-colors ${idx === 0 ? "bg-yellow-50/10 dark:bg-yellow-900/5" : ""}`}
-                >
-                  <td className="px-8 py-6">
-                    <div className="flex items-center gap-3">
-                      {idx === 0 ? (
-                        <span className="w-8 h-8 rounded-full bg-yellow-400 text-white flex items-center justify-center text-sm font-black shadow-lg shadow-yellow-200">1</span>
-                      ) : idx === 1 ? (
-                        <span className="w-8 h-8 rounded-full bg-slate-300 text-white flex items-center justify-center text-sm font-black shadow-lg shadow-slate-100">2</span>
-                      ) : idx === 2 ? (
-                        <span className="w-8 h-8 rounded-full bg-orange-300 text-white flex items-center justify-center text-sm font-black shadow-lg shadow-orange-100">3</span>
-                      ) : (
-                        <span className="w-8 h-8 text-slate-400 flex items-center justify-center text-sm font-black">{idx + 1}</span>
-                      )}
-                    </div>
-                  </td>
-                  <td className="px-8 py-6">
-                    <div className="flex items-center gap-4">
-                      <div className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 font-black border border-slate-200 dark:border-slate-700">
-                        {entry.name?.[0]?.toUpperCase() || "S"}
-                      </div>
-                      <div>
-                        <p className="font-black text-slate-900 dark:text-white tracking-tight">{entry.name}</p>
-                        <p className="text-[10px] text-slate-400 font-bold uppercase tracking-tighter">Active {new Date(entry.updatedAt).toLocaleDateString()}</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td className="px-8 py-6 text-right">
-                    <span className="text-2xl font-black text-primary dark:text-teal-400 tracking-tighter">{entry.totalScore}</span>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        <div className="divide-y divide-[var(--outline-variant)]">
+          {entries.map((entry, idx) => {
+            const rank = rankStyles[idx];
+            return (
+              <div key={idx} className={`flex items-center gap-3 px-4 py-3 ${idx === 0 ? "bg-amber-400/5" : ""}`}>
+                {/* Rank badge */}
+                {idx < 3 ? (
+                  <div className={`w-8 h-8 rounded-full ${rank.bg} ${rank.text} flex items-center justify-center text-xs font-black shadow ${rank.shadow} flex-shrink-0`}>
+                    {idx + 1}
+                  </div>
+                ) : (
+                  <div className="w-8 h-8 flex items-center justify-center text-xs font-black text-[var(--on-surface-variant)] flex-shrink-0">
+                    {idx + 1}
+                  </div>
+                )}
+
+                {/* Avatar */}
+                <div className="w-8 h-8 rounded-lg bg-[var(--surface-variant)] flex items-center justify-center text-[var(--on-surface-variant)] text-xs font-black flex-shrink-0 border border-[var(--outline-variant)]">
+                  {entry.name?.[0]?.toUpperCase() || "S"}
+                </div>
+
+                {/* Name */}
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm font-black text-[var(--on-surface)] truncate leading-none">{entry.name}</p>
+                  <p className="text-[9px] font-bold text-[var(--on-surface-variant)] uppercase tracking-widest mt-0.5">
+                    {new Date(entry.updatedAt).toLocaleDateString()}
+                  </p>
+                </div>
+
+                {/* Score */}
+                <div className="flex-shrink-0 text-right">
+                  <p className="text-base font-black text-teal-500 leading-none">{entry.totalScore}</p>
+                  <p className="text-[9px] font-bold text-[var(--on-surface-variant)] uppercase tracking-widest">pts</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       )}
     </div>

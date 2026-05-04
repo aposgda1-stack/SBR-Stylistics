@@ -55,7 +55,7 @@ export default function MickChat() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-[100]">
+    <div className="fixed bottom-20 right-4 z-[90]">
       {/* Trigger Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}

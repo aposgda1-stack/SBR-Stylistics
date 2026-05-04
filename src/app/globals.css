@@ -234,3 +234,13 @@ body.focus-mode main {
   padding-top: 5rem !important;
   background-color: var(--background) !important;
 }
+
+/* Safe area for fixed bottom nav */
+.safe-area-pb {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Ensure page content isn't hidden by the fixed bottom nav */
+main {
+  padding-bottom: 5rem;
+}
