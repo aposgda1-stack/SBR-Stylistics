@@ -180,6 +180,51 @@ body.focus-mode .breadcrumb-nav {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 2s infinite;
+}
+
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@media print {
+  header, footer, nav, .print:hidden, #lesson-quiz, .material-symbols-outlined, button, a[href^="#"] {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .bg-surface {
+    background: white !important;
+  }
+  .border-4, .border-2 {
+    border-color: #000 !important;
+  }
+}
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;

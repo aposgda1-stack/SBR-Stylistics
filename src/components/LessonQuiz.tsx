@@ -29,9 +29,23 @@ export default function LessonQuiz({ questions, chapterId, nextLesson }: LessonQ
     }
   };
 
-  const handleNext = () => {
+  const handleNext = async () => {
     if (currentIdx + 1 >= questions.length) {
       setFinished(true);
+      // Save score to database
+      try {
+        await fetch("/api/save-score", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            quizId: questions[0].quizId, // Assuming all questions share same quizId
+            score,
+            totalQuestions: questions.length
+          }),
+        });
+      } catch (error) {
+        console.error("Failed to save score:", error);
+      }
     } else {
       setCurrentIdx((i) => i + 1);
       setSelectedIndex(null);

@@ -17,6 +17,7 @@ const navItems: NavItem[] = [
   { href: "/material", label: "Material" },
   { href: "/word-box", label: "Word Box" },
   { href: "/chapters", label: "Chapters" },
+  { href: "/flashcards", label: "Flashcards" },
   { href: "/exam", label: "Exam" },
 ];
 
@@ -86,10 +87,31 @@ export default function TopBar() {
             </SignUpButton>
           </SignedOut>
           <SignedIn>
+            <div className="flex items-center gap-2 mr-2 px-3 py-1.5 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-900/30 rounded-full">
+              <span className="material-symbols-outlined text-[18px] text-yellow-600 filled">emoji_events</span>
+              <UserScore />
+            </div>
             <UserButton appearance={{ elements: { avatarBox: "w-9 h-9" } }} />
           </SignedIn>
         </div>
       </nav>
     </header>
+  );
+}
+
+function UserScore() {
+  const [score, setScore] = useState<number | null>(null);
+
+  useEffect(() => {
+    fetch("/api/user/progress")
+      .then((res) => res.json())
+      .then((data) => setScore(data.score))
+      .catch(() => setScore(0));
+  }, []);
+
+  return (
+    <span className="text-xs font-black text-yellow-700 dark:text-yellow-500">
+      {score !== null ? `${score} pts` : "..."}
+    </span>
   );
 }

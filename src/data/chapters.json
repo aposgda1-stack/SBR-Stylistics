@@ -61,13 +61,13 @@
         "subtitle": "Diving deep into how language is bent.",
         "quizId": "quiz-ch1-s3",
         "content": [
-          { "type": "definition", "heading": "Theoretical: Deviation", "body": "Extra irregularity. Breaking linguistic norms. **External Deviation** (against rules outside the poem) vs **Internal Deviation** (against patterns set within the poem)." },
+          { "type": "definition", "heading": "Theoretical: Deviation", "body": "Extra irregularity. Deviation works by disrupting or departing either from readers’ expectations or from a pattern established by the text. This is essentially a division between external deviation and internal deviation." },
           { "type": "analysis", "heading": "Applied: Types of Deviation", "body": "Breaking language at every level:", "steps": [
             { "label": "Lexical", "body": "Creating new words (Neologism) via Affixation (foresuffer), Compounding (widow-making), or Functional Conversion (using verb as noun)." },
             { "label": "Syntactic", "body": "Breaking grammar rules like Inversion ('Then spake King Arthur')." },
             { "label": "Phonological", "body": "Breaking sound rules like Elision ('t'assault') or Syncope ('o'er')." },
             { "label": "Graphological", "body": "Visual deviation like splitting words vertically or using odd capitalization." },
-            { "label": "Semantic", "body": "Breaking logic via Metaphor or Paradox." }
+            { "label": "Semantic", "body": "Breaking logic via Metaphor or Paradox (e.g., 'Death feeds on his mute voice')." }
           ]}
         ],
         "appliedSummary": "الانحراف (Deviation) هو إنك تشذ عن القاعدة.. عندنا 5 أنواع أساسية:\n1. Lexical: تألف كلمات جديدة (زي Neologism).\n2. Syntactic: تشقلب ترتيب الجملة (Inversion).\n3. Phonological: تاكل حروف من الكلمة (Elision).\n4. Graphological: تلعب في شكل الكتابة.\n5. Semantic: تستخدم استعارات غير منطقية لغوياً بس فنية (Metaphor).\nركز إن الانحراف الداللي دايماً بيحصل بسب الاستعارة (Metaphor) أو المفارقة (Paradox).",
@@ -123,9 +123,9 @@
         "quizId": "quiz-ch2-s3",
         "content": [
           { "type": "definition", "heading": "Theoretical: Conjunction Cohesion", "body": "Use of words/phrases to clarify the semantic or logical relationship. The 4 types are: Additive, Adversative, Causal, and Temporal." },
-          { "type": "definition", "heading": "Theoretical: Lexical Cohesion", "body": "Integratedness created via content words. Two main types: \n1. Reiteration: Repetition or synonyms.\n2. Collocation: Habitual co-occurrence (e.g., 'Rabbit' and 'Hole')." }
+          { "type": "definition", "heading": "Theoretical: Lexical Cohesion", "body": "Integratedness created via content words. Main types include:\n1. Repetition: Reusing the same word.\n2. Synonymy: Using similar words.\n3. Hyponymy: Using category relationships (e.g., rose is a hyponym of flower).\n4. Collocation: Words that commonly occur together (e.g., strong tea)." }
         ],
-        "appliedSummary": "الجمل بتربط ببعض برضه بأدوات الوصل (Conjunctions).. ودول 4 أنواع: إضافة (and)، تعارض (but)، سبب (so)، أو زمن (then). وفيه تماسك بيحصل بسبب الكلمات نفسها (Lexical).. يا إما تكرر نفس الكلمة (Reiteration) أو تستخدم كلمات بتمشي مع بعض دايماً زي الشاي والسكر (Collocation).",
+        "appliedSummary": "الجمل بتربط ببعض برضه بأدوات الوصل (Conjunctions).. ودول 4 أنواع: إضافة (and)، تعارض (but)، سبب (so)، أو زمن (then). وفيه تماسك بيحصل بسبب الكلمات نفسها (Lexical).. يا إما تكرر نفس الكلمة (Repetition) أو تستخدم كلمات بتمشي مع بعض دايماً زي الشاي والسكر (Collocation).",
         "rubyTip": "الوصل المعجمي (Lexical) أهم نوعين فيه هما التكرار (Reiteration) والتلازم (Collocation)! 📝",
         "prevLesson": "ch2-s2"
       }
@@ -146,7 +146,7 @@
         "subtitle": "Probability, Obligation, Willingness, and Usuality.",
         "quizId": "quiz-ch3-s1",
         "content": [
-          { "type": "definition", "heading": "Theoretical: Modality", "body": "The cover term for the ways available to a speaker for expressing 'opinion or attitude'. It denotes linguistic means for qualifying any claim." },
+          { "type": "definition", "heading": "Theoretical: Modality", "body": "The cover term for the ways available to a speaker within a language for expressing 'opinion or attitude'. It denotes linguistic means for qualifying any claim." },
           { "type": "analysis", "heading": "Applied: Modality Parameters", "body": "How we qualify language:", "steps": [
             { "label": "Probability", "body": "Likelihood (might, may, must, certainly)." },
             { "label": "Obligation", "body": "Necessity (should, ought to, must)." },
@@ -165,7 +165,7 @@
         "quizId": "quiz-ch3-s2",
         "content": [
           { "type": "definition", "heading": "Theoretical: Evaluative Devices", "body": "Means by which a speaker's stance is revealed. Includes Evaluative Verbs (regret), Adjectives (admirable), and Generic Sentences." },
-          { "type": "definition", "heading": "Theoretical: Generic Sentences", "body": "Sentences which assert something to be a general truth, typically timelessly true. Usually in the simple present tense and predicated of an open set of things (e.g., 'Property is theft')." }
+          { "type": "definition", "heading": "Theoretical: Generic Sentences", "body": "Sentences which assert something to be a general truth, typically timelessly true. Usually in the simple present tense (e.g., 'Afghanistan is the land of Pashtuns')." }
         ],
         "appliedSummary": "إزاي بنقيم الكلام؟ يا إما بأفعال زي (أندم أو أرحب) أو بصفات زي (رائع أو سيئ). وفيه حاجة ذكية جداً اسمها \"الجمل العامة\" (Generic).. دي جمل بتقول حقيقة خالدة مفيهاش نقاش (زي: أفغانستان هي أرض البشتون).. الجمل دي بتبين انحياز الكاتب أو وجهة نظره القوية كإنها قانون كوني.",
         "rubyTip": "الجملة العامة دايماً بتبدأ بـ Simple Present وبتتكلم عن حقيقة مطلقة! 🌍",
@@ -188,16 +188,26 @@
         "subtitle": "The skeleton of every narrative.",
         "quizId": "quiz-ch4-s1",
         "content": [
-          { "type": "analysis", "heading": "Applied: The Narrative Framework", "body": "Analyzing a story step-by-step:", "steps": [
-            { "label": "Abstract", "body": "What happened in a nutshell? (Summary)." },
-            { "label": "Orientation", "body": "Who, where, when? (Setting)." },
-            { "label": "Complicating Action", "body": "The core ordered events. (**The only required element**)." },
-            { "label": "Evaluation", "body": "Why is this story worth telling?" },
-            { "label": "Resolution", "body": "What finally happened?" },
-            { "label": "Coda", "body": "Bridge back to the present (Moral)." }
-          ]}
+          {
+            "type": "definition",
+            "heading": "Theoretical: Labov's Model",
+            "body": "1. **Abstract**: Summary of the story.\n2. **Orientation**: Who, when, where.\n3. **Complicating Action**: Main events.\n4. **Evaluation**: Why the story is worth telling.\n5. **Resolution**: How it ends.\n6. **Coda**: Returns the listener to the present.",
+            "arabicExplanation": "ده الهيكل اللي بيمشي عليه أي نص قصصي حسب لابوف. لازم تحفظ الستة بالترتيب."
+          },
+          {
+            "type": "analysis",
+            "heading": "Applied: Evaluation Types",
+            "body": "Evaluation is the soul of the narrative. It includes:",
+            "steps": [
+              { "label": "Intensifying", "body": "Vividness via gestures, repetitions, or dramatic sounds." },
+              { "label": "Comparator", "body": "Alternative narrative developments (negative/modal sentences)." },
+              { "label": "Correlative", "body": "Secondary activities contemporaneous with events." },
+              { "label": "Explicative", "body": "Giving background reasons and causes." }
+            ],
+            "arabicExplanation": "الـ Evaluation هو اللي بيدي طعم للقصة. لابوف قسمه لـ 4 أنواع (مكثف، مقارن، مترابط، تفسيري)."
+          }
         ],
-        "appliedSummary": "لابوف قال إن أي حكاية في الدنيا لازم تمر بـ 6 مراحل.. بتبدأ بملخص سريع (Abstract)، وتعرفنا بالناس والزمان (Orientation)، وبعدين أهم حتة وهي الأحداث اللي بجد (Complicating Action) - ودي الحتة الوحيدة اللي لازم تكون موجودة - وفي الآخر بتقولنا إيه اللي حصل (Resolution) وإيه الحكمة اللي نطلع بيها (Coda).",
+        "appliedSummary": "لابوف قال إن أي حكاية في الدنيا لازم تمر بـ 6 مراحل.. بتبدأ بملخص سريع (Abstract)، وتعرفنا بالناس والزمان (Orientation)، وبعدين أهم حتة وهي الأحداث اللي بجد (Complicating Action) - وفي الآخر بتقولنا إيه اللي حصل (Resolution) وإيه الحكمة اللي نطلع بيها (Coda).",
         "rubyTip": "ركز: الـ Complicating Action هو العنصر الوحيد اللي لازم يكون موجود في أي قصة! 🎭",
         "nextLesson": "ch4-s2"
       }
@@ -214,15 +224,15 @@
     "lessons": [
       {
         "id": "ch5-s1",
-        "title": "The Hierarchical System & Moves",
+        "title": "Hierarchical System & Moves",
         "subtitle": "Opening, Supporting, and Challenging moves.",
         "quizId": "quiz-ch5-s1",
         "content": [
           { "type": "definition", "heading": "Theoretical: Birmingham Model", "body": "Treats conversation as a Rule-governed or Hierarchical system where moves are the key interactive units." },
           { "type": "analysis", "heading": "Applied: Discourse Moves", "body": "How we interact:", "steps": [
-            { "label": "Opening Move", "body": "Introducing a recognizably 'new' topic." },
-            { "label": "Supporting Move", "body": "Concurring with the initiatory move." },
-            { "label": "Challenging Move", "body": "Holding up or obstructing the topic introduction." }
+            { "label": "Opening Move", "body": "Essential topic-carrying items which are recognisably 'new'." },
+            { "label": "Supporting Move", "body": "Occurring after any other type of move and involving items that concur." },
+            { "label": "Challenging Move", "body": "Functioning to hold up the progress of a topic." }
           ]}
         ],
         "appliedSummary": "الحوار مش عشوائي.. ده نظام محكم (Birmingham Model).. بيمشي بقواعد (Rule-governed). عندنا حركات بتفتح كلام جديد (Opening)، وحركات بتوافق وتدعم الكلام (Supporting)، وحركات تانية بتعارض أو توقف الكلام (Challenging).. ده هو جوهر التحليل الخطابي.",
@@ -246,12 +256,12 @@
         "subtitle": "Quality, Quantity, Relation, and Manner.",
         "quizId": "quiz-ch6-s1",
         "content": [
-          { "type": "definition", "heading": "Theoretical: The Cooperative Principle", "body": "Basic assumption that speakers normally intend purposeful and effective communication." },
-          { "type": "analysis", "heading": "Applied: The Maxims", "body": "The 4 rules of talk:", "steps": [
-            { "label": "Quality", "body": "Be truthful (Don't lie)." },
-            { "label": "Quantity", "body": "Be as informative as required (Not too much/little)." },
-            { "label": "Relation", "body": "Be relevant (Stay on topic)." },
-            { "label": "Manner", "body": "Be clear (Avoid ambiguity)." }
+          { "type": "definition", "heading": "Theoretical: The Cooperative Principle", "body": "The CP is a basic assumption that speakers normally intend to accomplish purposeful and effective communication." },
+          { "type": "analysis", "heading": "Applied: The 4 Maxims", "body": "The 4 rules of talk:", "steps": [
+            { "label": "Quality", "body": "Be truthful (Don't say things that are false)." },
+            { "label": "Quantity", "body": "Be as informative as required (Not too much or too little)." },
+            { "label": "Relation", "body": "Be relevant (Say things that are relevant in context)." },
+            { "label": "Manner", "body": "Be clear (Avoid obscurity and ambiguity)." }
           ]}
         ],
         "appliedSummary": "جرايس قالنا إن الحوار الناجح بيمشي بـ 4 قواعد ذهبية: قول الحقيقة (Quality)، قول اللي مطلوب بس (Quantity)، خليك في الموضوع (Relation)، وخليك واضح (Manner).. أي خروج عن دول بيخلق معنى جديد.",
@@ -264,10 +274,11 @@
         "subtitle": "Analyzing hidden meanings in dialogue.",
         "quizId": "quiz-ch6-s2",
         "content": [
-          { "type": "definition", "heading": "Theoretical: Flouting", "body": "Deliberately and obviously violating a maxim to generate an Implicature." },
-          { "type": "analysis", "heading": "Applied: Implicature Analysis", "body": "Example: A asks 'Weather prediction?' B says 'Bring your coat.'", "steps": [
-            { "label": "Maxim Flouted", "body": "Relation (B answers indirectly)." },
-            { "label": "Implicature", "body": "It will be cold or rainy." }
+          { "type": "definition", "heading": "Theoretical: Flouting", "body": "Deliberately and obviously violating a maxim to generate an Implicature (covert meaning)." },
+          { "type": "analysis", "heading": "Applied: Exam Examples", "body": "Analyze these cases:", "steps": [
+            { "label": "Relation", "body": "A: 'What’s the weather prediction?' B: 'Bring your coat.' (B implies it will rain/be cold)." },
+            { "label": "Quantity", "body": "Hamlet: 'Words, words, words.' (Too uninformative, avoids answering)." },
+            { "label": "Quality", "body": "A: 'Tehran’s in Turkey, isn’t it?' B: 'And London’s in Armenia, I suppose.' (Sarcastic untruth)." }
           ]}
         ],
         "appliedSummary": "الـ Flouting هو إنك تكسر قاعدة من القواعد دي \"بمزاجك\" وعن عمد عشان توصل معنى خفي (Implicature).. زي لما حد يسألك عن الجو تقوله \"هات البالطو\"، إنت كدة كسرت قاعدة الـ Relation عشان تقصد إنه تلج من غير ما تقولها صراحة.",
@@ -280,65 +291,43 @@
   {
     "id": "ch7",
     "number": 7,
-    "title": "Politeness Theory (Face)",
+    "title": "Politeness & Face",
     "description": "Understanding social dynamics and face-threatening acts.",
     "icon": "face",
     "status": "not-started",
     "lessons": [
       {
         "id": "ch7-s1",
-        "title": "Positive & Negative Face",
+        "title": "Face & Politeness Strategies",
         "subtitle": "Appreciation vs. Freedom.",
         "quizId": "quiz-ch7-s1",
         "content": [
-          { "type": "definition", "heading": "Theoretical: Face", "body": "Fundamental aspect of human psyche with two dimensions." },
-          { "type": "definition", "heading": "Theoretical: Types of Face", "body": "1. Positive Face: Wish to be liked and approved of by others.\n2. Negative Face: Wish to be free from imposition and not coerced." }
+          {
+            "type": "definition",
+            "heading": "Theoretical: Positive & Negative Face",
+            "body": "1. **Positive Face**: Wish to be liked and approved of by others.\n2. **Negative Face**: Wish not to be coerced or forced; desire for freedom from imposition.",
+            "arabicExplanation": "الـ Positive إنك عايز الناس تحبك، والـ Negative إنك مش عايز حد يضغط عليك."
+          },
+          {
+            "type": "analysis",
+            "heading": "Applied: Politeness Strategies",
+            "body": "Identify the strategy:",
+            "steps": [
+              { "label": "Positive Politeness", "body": "'What a fantastic garden you have.' (Compliment/Solidarity)." },
+              { "label": "Negative Politeness", "body": "'Could you find me a computer so I can check my e-mail?' (Hedged request)." },
+              { "label": "Negative Politeness", "body": "'I don't suppose you could give us a lift.' (Being pessimistic)." },
+              { "label": "Off-record", "body": "Dropping a hint (e.g., 'Our vacuum cleaner just broke down')." },
+              { "label": "Bald on-record", "body": "Direct command without redress (e.g., 'Open the window')." }
+            ],
+            "arabicExplanation": "المجاملات دايماً Positive، والاعتذار أو تقليل الطلب دايماً Negative."
+          }
         ],
-        "appliedSummary": "كل واحد فينا ليه \"وش\" اجتماعي.. الـ Positive Face هو الجزء اللي عايز يتحب ويتقدر من الناس، والـ Negative Face هو الجزء اللي عايز يستقل ويبقى حر ومحدش يطلب منه حاجات تقيلة.. فهمك للاثنين دول هو سر التعامل الذكي مع الناس.",
-        "rubyTip": "الوش الإيجابي = التقدير | الوش السلبي = الحرية والاستقلال! 😊",
-        "nextLesson": "ch7-s2"
+        "appliedSummary": "في الامتحان هيجيبلك جملة ويقولك دي انهي نوع.. لو مجاملة تبقى Positive، ولو بتبين إنك مش عايز تتعب اللي قدامك تبقى Negative، ولو تلميح تبقى Off-record.",
+        "rubyTip": "التشاؤم (Pessimism) والاعتذار (Apology) من أهم استراتيجيات المجاملة السلبية! 🤝",
+        "nextLesson": "ch9-s1"
       }
     ],
     "examId": "exam-ch7"
-  },
-  {
-    "id": "ch8",
-    "number": 8,
-    "title": "Politeness Strategies",
-    "description": "How we use language to mitigate threats to face.",
-    "icon": "handshake",
-    "status": "not-started",
-    "lessons": [
-      {
-        "id": "ch8-s1",
-        "title": "Bald On-Record & Off-Record",
-        "subtitle": "The extremes of directness.",
-        "quizId": "quiz-ch8-s1",
-        "content": [
-          { "type": "definition", "heading": "Theoretical: Bald On-Record", "body": "Most direct, clear, and unambiguous way (e.g., 'Open the window'). No redress offered." },
-          { "type": "definition", "heading": "Theoretical: Off-Record", "body": "Avoiding explicit mention by dropping a hint (e.g., 'It's hot in here' as a request)." }
-        ],
-        "appliedSummary": "عندنا طريقتين عكس بعض تماماً.. يا إما تكون \"دبش\" وتطلب الحاجة بوضوح تام (Bald On-Record) زي \"افتح الشباك\"، أو إنك تلمح من بعيد لبعيد (Off-Record) زي \"الجو حر هنا أوي\" عشان اللي قدامك يفهم ويفتحه من نفسه.",
-        "rubyTip": "الـ Bald On-Record هو أسرع طريقة بس أكتر طريقة ممكن تضايق اللي قدامك! ⚡",
-        "nextLesson": "ch8-s2"
-      },
-      {
-        "id": "ch8-s2",
-        "title": "Positive & Negative Politeness",
-        "subtitle": "Solidarity vs. Restraint.",
-        "quizId": "quiz-ch8-s2",
-        "content": [
-          { "type": "analysis", "heading": "Applied: Politeness Tactics", "body": "Redressing the threat:", "steps": [
-            { "label": "Positive Politeness", "body": "Building solidarity: Compliments, in-group markers (mate, pal), claiming common ground." },
-            { "label": "Negative Politeness", "body": "Avoiding imposition: Indirectness, Hedges, Apologies, Being Pessimistic ('I don't suppose...'), Deference." }
-          ]}
-        ],
-        "appliedSummary": "لو عايز تطلب حاجة بذوق، قدامك طريقين.. يا إما الـ Positive Politeness بإنك تمدح اللي قدامك أو تناديه بلقب ودي (يا صاحبي)، أو الـ Negative Politeness بإنك تبين إنك مش عايز تتقل عليه (أنا آسف للإزعاج) أو تكون متشائم (ماظنش إنك تقدر توصلني).. ركز: التشاؤم استراتيجية سلبية (Negative) مش إيجابية!",
-        "rubyTip": "التشاؤم (Pessimism) والاعتذار (Apology) من أهم استراتيجيات المجاملة السلبية! 🤝",
-        "prevLesson": "ch8-s1"
-      }
-    ],
-    "examId": "exam-ch8"
   },
   {
     "id": "ch9",
@@ -354,16 +343,15 @@
         "subtitle": "The essential list for exam night.",
         "quizId": "quiz-ch9-s1",
         "content": [
-          { "type": "definition", "heading": "Theoretical: Key Exam Triggers", "body": "1. Semantic deviation -> Metaphor or Paradox.\n2. Lexical Cohesion -> Reiteration and Collocation.\n3. Conjunctions -> Additive, Adversative, Causal, Temporal." },
+          { "type": "definition", "heading": "Theoretical: Key Exam Triggers", "body": "1. Semantic deviation -> Metaphor or Paradox.\n2. Lexical Cohesion -> Reiteration, Synonymy, Hyponymy, Collocation.\n3. Conjunctions -> Additive, Adversative, Causal, Temporal." },
           { "type": "analysis", "heading": "Applied: Exam Strategy", "body": "How to tackle the paper:", "steps": [
-            { "label": "Section A", "body": "Memorize definitions from the Word Box list." },
-            { "label": "Section B", "body": "Identify the flouted maxim and state the implicature." },
-            { "label": "Section D", "label": "Correct the False statements (e.g., Correcting the politeness type)." }
+            { "label": "Definitions", "body": "Memorize exact phrasing for 'Generic Sentence', 'Face', and 'Modality'." },
+            { "label": "Maxims", "body": "Always state both the Flouted Maxim and the Implicature." },
+            { "label": "True/False", "body": "Correct the false ones! (e.g., Pessimism is NOT Positive Politeness)." }
           ]}
         ],
         "appliedSummary": "ده ليلة الامتحان يا بطل.. لازم تحفظ إن الانحراف الداللي بسببه الاستعارة والمفارقة. والوصل 4 أنواع. والمجاملات السلبية 9 أنواع. ركز في سؤال صح وغلط عشان لازم \"تصحح\" الغلط.. المنهج دلوقتى بين إيديك كامل ومفصل، ادخل الامتحان وأنت مطمن.",
-        "rubyTip": "راجع المذكرات السريعة في Section 9 من الـ Guide.. هي دي اللي هتلملك المنهج كله في 5 دقايق! 🚀",
-        "prevLesson": "ch8-s2"
+        "rubyTip": "راجع المذكرات السريعة في Section 9 من الـ Guide.. هي دي اللي هتلملك المنهج كله في 5 دقايق! 🚀"
       }
     ],
     "examId": "exam-ch9"

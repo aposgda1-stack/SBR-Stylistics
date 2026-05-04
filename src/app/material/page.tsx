@@ -101,17 +101,22 @@ export default function MaterialPage() {
                   );
                 }
 
-                // Bold Boxes/Definitions
+                // Bold Boxes/Definitions (Word Box Format)
                 if (line.startsWith("**") && line.includes("**:")) {
                    const parts = line.split("**: ");
                    return (
-                     <div key={idx} className="p-8 bg-slate-50 dark:bg-slate-900/50 rounded-[2.5rem] border border-slate-100 dark:border-slate-800 shadow-sm">
-                        <strong className="text-xl font-black text-slate-900 dark:text-white block mb-4 uppercase tracking-tighter">
-                          {parts[0].replace(/\*\*/g, "")}
-                        </strong>
-                        <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed italic">
+                     <div key={idx} className="p-10 bg-white dark:bg-slate-900 rounded-[3rem] border-4 border-slate-900 dark:border-teal-500 shadow-[20px_20px_0px_rgba(0,0,0,0.1)] dark:shadow-[20px_20px_0px_rgba(20,184,166,0.1)] mb-12 transform hover:-translate-y-2 transition-transform">
+                        <div className="flex items-center gap-4 mb-6">
+                           <div className="w-10 h-10 rounded-full bg-slate-900 dark:bg-teal-500 flex items-center justify-center text-white dark:text-slate-900">
+                              <span className="material-symbols-outlined text-xl">menu_book</span>
+                           </div>
+                           <strong className="text-2xl font-black text-slate-900 dark:text-white uppercase tracking-tighter">
+                             {parts[0].replace(/\*\*/g, "")}
+                           </strong>
+                        </div>
+                        <div className="text-slate-700 dark:text-slate-300 text-xl leading-relaxed font-bold border-l-4 border-slate-200 dark:border-slate-700 pl-6 italic">
                            {formatContent(parts[1])}
-                        </p>
+                        </div>
                      </div>
                    );
                 }

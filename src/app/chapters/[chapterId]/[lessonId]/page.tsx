@@ -53,7 +53,7 @@ function renderContent(block: LessonContent & { arabicExplanation?: string; type
                     {block.heading || "Definition"}
                   </h3>
                 </div>
-                <p className="text-3xl md:text-5xl text-slate-900 dark:text-white leading-[1.3] font-black tracking-tighter">
+                <p className="text-2xl md:text-5xl text-slate-900 dark:text-white leading-[1.2] font-black tracking-tighter">
                   {formatContent(block.body || (block as any).content)}
                 </p>
                 {renderArabic(block.arabicExplanation)}
@@ -136,18 +136,21 @@ export default async function LessonPage({ params }: Props) {
   return (
     <>
       <LessonTools title={lesson.title} content={fullText} />
-      <main className="px-6 py-12 md:py-20 bg-surface">
+      <main className="px-4 md:px-12 py-10 md:py-24 bg-surface">
         <ProgressSaver lessonId={lessonId} />
-        <div className="max-w-[800px] mx-auto">
-          {/* Top Quick Link */}
+        <div className="max-w-[850px] mx-auto">
+          {/* Top Quick Link & Notice */}
           {lesson.quizId && (
-            <div className="mb-10 flex justify-end">
+            <div className="mb-10 flex flex-col items-center gap-4 animate-bounce-subtle">
+              <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400">
+                🚀 Want to test your knowledge immediately?
+              </p>
               <a 
                 href="#lesson-quiz" 
-                className="flex items-center gap-2 px-6 py-2 bg-slate-900 dark:bg-teal-500 text-white dark:text-slate-900 rounded-full text-[10px] font-black uppercase tracking-[0.2em] shadow-xl hover:scale-105 transition-all"
+                className="flex items-center gap-3 px-8 py-3 bg-primary dark:bg-teal-500 text-white dark:text-slate-900 rounded-full text-xs font-black uppercase tracking-[0.2em] shadow-2xl hover:scale-110 transition-all active:scale-95"
               >
-                <span className="material-symbols-outlined text-sm">quiz</span>
-                Jump to Test
+                <span className="material-symbols-outlined text-lg">quiz</span>
+                Jump to End-of-Lesson Test
               </a>
             </div>
           )}
@@ -179,13 +182,22 @@ export default async function LessonPage({ params }: Props) {
             <h1 className="text-4xl md:text-7xl font-black text-slate-900 dark:text-white tracking-tighter leading-[0.9] mb-8">
               {lesson.title}
             </h1>
-            <p className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 font-bold italic leading-relaxed">
-              {lesson.subtitle}
-            </p>
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+              <p className="text-xl md:text-2xl text-slate-500 dark:text-slate-400 font-bold italic leading-relaxed max-w-2xl">
+                {lesson.subtitle}
+              </p>
+              <button 
+                onClick={() => window.print()}
+                className="print:hidden flex items-center gap-3 px-6 py-3 bg-white dark:bg-slate-900 border-2 border-slate-900 dark:border-teal-500 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] shadow-lg hover:-translate-y-1 transition-all"
+              >
+                <span className="material-symbols-outlined text-sm">picture_as_pdf</span>
+                Save as Study Guide
+              </button>
+            </div>
           </div>
 
           {/* Content Blocks */}
-          <article className="space-y-2 mb-16">
+          <article className="space-y-12 mb-24">
             {lesson.content.map((block, idx) => renderContent(block, idx))}
           </article>
 

@@ -18,6 +18,8 @@ import CommandPalette from "@/components/CommandPalette";
 import MickChat from "@/components/MickChat";
 import SessionTracker from "@/components/SessionTracker";
 
+import WhatsAppButton from "@/components/WhatsAppButton";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -50,6 +52,7 @@ export default function RootLayout({
               <PageWrapper>{children}</PageWrapper>
             </div>
             <BottomNav />
+            <WhatsAppButton />
           </body>
         </ThemeProvider>
       </html>

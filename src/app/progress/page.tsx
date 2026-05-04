@@ -204,38 +204,94 @@ export default function ProgressPage() {
           </div>
         </section>
 
-        {/* Practice Sections */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
+        {/* Academic Achievements (Badges) */}
+        <section className="mb-20">
+          <h2 className="font-headline-lg text-headline-lg mb-8 text-slate-900">Academic Achievements</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+            {[
+              { id: "ch1", label: "Poetry Master", icon: "auto_stories", color: "bg-purple-50 text-purple-600", border: "border-purple-100" },
+              { id: "ch2", label: "Cohesion King", icon: "link", color: "bg-blue-50 text-blue-600", border: "border-blue-100" },
+              { id: "ch4", label: "Narrative Ace", icon: "history_edu", color: "bg-teal-50 text-teal-600", border: "border-teal-100" },
+              { id: "ch6", label: "Logic Expert", icon: "psychology", color: "bg-orange-50 text-orange-600", border: "border-orange-100" },
+              { id: "final", label: "Final Stylist", icon: "workspace_premium", color: "bg-yellow-50 text-yellow-600", border: "border-yellow-100" },
+            ].map((badge) => {
+              const isUnlocked = badge.id === "final" 
+                ? userData?.quizScores?.some((s: any) => s.quizId === "mock-final-exam")
+                : chapters.find(c => c.id === badge.id) && getChapterStatus(chapters.find(c => c.id === badge.id)) === "completed";
+              
+              return (
+                <div 
+                  key={badge.id} 
+                  className={`flex flex-col items-center p-6 rounded-[2rem] border-2 transition-all ${
+                    isUnlocked 
+                      ? `${badge.color} ${badge.border} shadow-lg scale-105` 
+                      : "bg-slate-50 border-slate-100 grayscale opacity-40"
+                  }`}
+                >
+                  <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center mb-4 shadow-sm">
+                    <span className="material-symbols-outlined text-3xl filled">{badge.icon}</span>
+                  </div>
+                  <span className="text-[10px] font-black uppercase tracking-widest text-center">{badge.label}</span>
+                  {isUnlocked && (
+                    <div className="mt-2 bg-white px-2 py-0.5 rounded-full flex items-center gap-1 shadow-sm">
+                       <span className="material-symbols-outlined text-[10px] filled">verified</span>
+                       <span className="text-[8px] font-black uppercase tracking-tighter">Unlocked</span>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
+        {/* Practice & Mastery Sections */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
           <Link
-            href="/definitions"
-            className="group flex items-center gap-6 p-8 bg-slate-900 rounded-3xl hover:shadow-xl transition-all"
+            href="/flashcards"
+            className="group flex flex-col p-8 bg-slate-900 rounded-[3rem] hover:shadow-2xl transition-all relative overflow-hidden"
           >
-            <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center text-white">
-              <span className="material-symbols-outlined text-4xl">dictionary</span>
+            <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:scale-125 transition-transform">
+               <span className="material-symbols-outlined text-[100px] text-white">style</span>
+            </div>
+            <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-white mb-6">
+              <span className="material-symbols-outlined text-3xl">style</span>
             </div>
             <div>
-              <h3 className="font-headline-md text-white mb-1">Definitions Master</h3>
-              <p className="font-body-md text-slate-400">Match all 40+ terminology terms</p>
+              <h3 className="text-2xl font-black text-white mb-2 uppercase tracking-tighter">Memory Cards</h3>
+              <p className="text-slate-400 font-bold text-sm">Flip through definitions</p>
             </div>
-            <span className="material-symbols-outlined ml-auto text-white opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transition-all">
-              arrow_forward
-            </span>
           </Link>
 
           <Link
-            href="/lessons"
-            className="group flex items-center gap-6 p-8 border border-slate-100 bg-white rounded-3xl hover:shadow-xl transition-all"
+            href="/exam/mock"
+            className="group flex flex-col p-8 bg-primary rounded-[3rem] hover:shadow-2xl transition-all relative overflow-hidden"
           >
-            <div className="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center text-primary">
-              <span className="material-symbols-outlined text-4xl">school</span>
+            <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:scale-125 transition-transform">
+               <span className="material-symbols-outlined text-[100px] text-white">timer</span>
+            </div>
+            <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-white mb-6">
+              <span className="material-symbols-outlined text-3xl">timer</span>
             </div>
             <div>
-              <h3 className="font-headline-md text-slate-900 mb-1">Lesson Index</h3>
-              <p className="font-body-md text-slate-500">Browse all curriculum modules</p>
+              <h3 className="text-2xl font-black text-white mb-2 uppercase tracking-tighter">Mock Exam</h3>
+              <p className="text-white/70 font-bold text-sm">Timed 60-min challenge</p>
             </div>
-            <span className="material-symbols-outlined ml-auto text-slate-300 group-hover:text-primary group-hover:translate-x-1 transition-all">
-              arrow_forward
-            </span>
+          </Link>
+
+          <Link
+            href="/word-box"
+            className="group flex flex-col p-8 border-2 border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 rounded-[3rem] hover:shadow-2xl transition-all relative overflow-hidden"
+          >
+            <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:scale-125 transition-transform">
+               <span className="material-symbols-outlined text-[100px] text-slate-900 dark:text-white">menu_book</span>
+            </div>
+            <div className="w-14 h-14 rounded-2xl bg-slate-50 dark:bg-slate-800 flex items-center justify-center text-slate-900 dark:text-white mb-6">
+              <span className="material-symbols-outlined text-3xl">menu_book</span>
+            </div>
+            <div>
+              <h3 className="text-2xl font-black text-slate-900 dark:text-white mb-2 uppercase tracking-tighter">Word Box</h3>
+              <p className="text-slate-400 font-bold text-sm">Review full dictionary</p>
+            </div>
           </Link>
         </div>
       </main>

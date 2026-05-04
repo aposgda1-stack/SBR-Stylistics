@@ -841,7 +841,7 @@
     },
     {
         "id":  "q-ch3-s1-1",
-        "quizId":  "quiz-ch3-s1",
+        "quizId": "quiz-ch4-s1",
         "question":  "Which Labovian element answers \u0027What was the story about?\u0027",
         "options":  [
                         "Abstract",
@@ -855,7 +855,7 @@
     },
     {
         "id":  "q-ch3-s1-2",
-        "quizId":  "quiz-ch3-s1",
+        "quizId": "quiz-ch4-s1",
         "question":  "The \u0027Orientation\u0027 element provides details about:",
         "options":  [
                         "The moral of the story",
@@ -869,7 +869,7 @@
     },
     {
         "id":  "q-ch3-s1-3",
-        "quizId":  "quiz-ch3-s1",
+        "quizId": "quiz-ch4-s1",
         "question":  "Which element represents the core events (\u0027Then what happened?\u0027)?",
         "options":  [
                         "Evaluation",
@@ -883,7 +883,7 @@
     },
     {
         "id":  "q-ch3-s1-4",
-        "quizId":  "quiz-ch3-s1",
+        "quizId": "quiz-ch4-s1",
         "question":  "According to Labov, the \u0027Evaluation\u0027 answers which question?",
         "options":  [
                         "What happened next?",
@@ -897,7 +897,7 @@
     },
     {
         "id":  "q-ch3-s1-5",
-        "quizId":  "quiz-ch3-s1",
+        "quizId": "quiz-ch4-s1",
         "question":  "The \u0027Resolution\u0027 of a narrative is:",
         "options":  [
                         "The final outcome of the action",
@@ -911,7 +911,7 @@
     },
     {
         "id":  "q-ch3-s1-6",
-        "quizId":  "quiz-ch3-s1",
+        "quizId": "quiz-ch4-s1",
         "question":  "The \u0027Coda\u0027 serves as a bridge between:",
         "options":  [
                         "The hero and the villain",
@@ -925,7 +925,7 @@
     },
     {
         "id":  "q-ch3-s1-7",
-        "quizId":  "quiz-ch3-s1",
+        "quizId": "quiz-ch4-s1",
         "question":  "If a storyteller says \u0027I was walking down the street yesterday...\u0027, they are in the:",
         "options":  [
                         "Abstract",
@@ -939,7 +939,7 @@
     },
     {
         "id":  "q-ch3-s1-8",
-        "quizId":  "quiz-ch3-s1",
+        "quizId": "quiz-ch4-s1",
         "question":  "Which element is often missing in simple or poorly told stories?",
         "options":  [
                         "Complicating Action",
@@ -953,7 +953,7 @@
     },
     {
         "id":  "q-ch3-s1-9",
-        "quizId":  "quiz-ch3-s1",
+        "quizId": "quiz-ch4-s1",
         "question":  "The phrase \u0027And they lived happily ever after\u0027 is typical of a:",
         "options":  [
                         "Resolution",
@@ -967,7 +967,7 @@
     },
     {
         "id":  "q-ch3-s1-10",
-        "quizId":  "quiz-ch3-s1",
+        "quizId": "quiz-ch4-s1",
         "question":  "\u0027Let me tell you about the time I almost died.\u0027 This is a(n):",
         "options":  [
                         "Orientation",
@@ -981,7 +981,7 @@
     },
     {
         "id":  "q-ch3-s2-1",
-        "quizId":  "quiz-ch3-s2",
+        "quizId": "quiz-ch4-s1",
         "question":  "External evaluation occurs when:",
         "options":  [
                         "A character thinks to themselves",
@@ -995,7 +995,7 @@
     },
     {
         "id":  "q-ch3-s2-2",
-        "quizId":  "quiz-ch3-s2",
+        "quizId": "quiz-ch4-s1",
         "question":  "Internal evaluation is \u0027embedded\u0027 within:",
         "options":  [
                         "The narrator\u0027s biography",
@@ -1009,7 +1009,7 @@
     },
     {
         "id":  "q-ch3-s2-3",
-        "quizId":  "quiz-ch3-s2",
+        "quizId": "quiz-ch4-s1",
         "question":  "Which type of internal evaluation uses negatives or modals to show what *might* have happened?",
         "options":  [
                         "Comparator",
@@ -1023,7 +1023,7 @@
     },
     {
         "id":  "q-ch3-s2-4",
-        "quizId":  "quiz-ch3-s2",
+        "quizId": "quiz-ch4-s1",
         "question":  "Correlative evaluation reports secondary activities that are:",
         "options":  [
                         "Finished before the story",
@@ -1037,7 +1037,7 @@
     },
     {
         "id":  "q-ch3-s2-5",
-        "quizId":  "quiz-ch3-s2",
+        "quizId": "quiz-ch4-s1",
         "question":  "Explicative evaluation provides _______ for actions.",
         "options":  [
                         "Names",
@@ -1051,7 +1051,7 @@
     },
     {
         "id":  "q-ch3-s2-6",
-        "quizId":  "quiz-ch3-s2",
+        "quizId": "quiz-ch4-s1",
         "question":  "Gestures, expressive sounds, and repetition are forms of _______ evaluation.",
         "options":  [
                         "Comparator",
@@ -1065,7 +1065,7 @@
     },
     {
         "id":  "q-ch3-s2-7",
-        "quizId":  "quiz-ch3-s2",
+        "quizId": "quiz-ch4-s1",
         "question":  "\u0027He didn\u0027t hit me, but he could have.\u0027 The word \u0027could\u0027 makes this a:",
         "options":  [
                         "Comparator",
@@ -1079,7 +1079,7 @@
     },
     {
         "id":  "q-ch3-s2-8",
-        "quizId":  "quiz-ch3-s2",
+        "quizId": "quiz-ch4-s1",
         "question":  "\u0027While I was running, I noticed a bird.\u0027 The phrase \u0027While I was running\u0027 is a:",
         "options":  [
                         "Intensifying",
@@ -1093,7 +1093,7 @@
     },
     {
         "id":  "q-ch3-s2-9",
-        "quizId":  "quiz-ch3-s2",
+        "quizId": "quiz-ch4-s1",
         "question":  "\u0027I was so, so, so scared.\u0027 The repetition of \u0027so\u0027 is a(n):",
         "options":  [
                         "Lexical deviation",
@@ -1107,7 +1107,7 @@
     },
     {
         "id":  "q-ch3-s2-10",
-        "quizId":  "quiz-ch3-s2",
+        "quizId": "quiz-ch4-s1",
         "question":  "Evaluation is the _______ of the narrative.",
         "options":  [
                         "Skeleton",
@@ -1121,7 +1121,7 @@
     },
     {
         "id":  "q-ch4-s1-1",
-        "quizId":  "quiz-ch4-s1",
+        "quizId": "quiz-ch5-s1",
         "question":  "The Birmingham Model was developed to analyze which type of discourse?",
         "options":  [
                         "Classroom/Conversational interaction",
@@ -1135,7 +1135,7 @@
     },
     {
         "id":  "q-ch4-s1-2",
-        "quizId":  "quiz-ch4-s1",
+        "quizId": "quiz-ch5-s1",
         "question":  "The highest unit in the Birmingham discourse hierarchy is:",
         "options":  [
                         "Act",
@@ -1149,7 +1149,7 @@
     },
     {
         "id":  "q-ch4-s1-3",
-        "quizId":  "quiz-ch4-s1",
+        "quizId": "quiz-ch5-s1",
         "question":  "Which unit is at the bottom-most level of the discourse scale?",
         "options":  [
                         "Exchange",
@@ -1163,7 +1163,7 @@
     },
     {
         "id":  "q-ch4-s1-4",
-        "quizId":  "quiz-ch4-s1",
+        "quizId": "quiz-ch5-s1",
         "question":  "A typical IRF exchange consists of:",
         "options":  [
                         "Input, Radio, Feedback",
@@ -1177,7 +1177,7 @@
     },
     {
         "id":  "q-ch4-s1-5",
-        "quizId":  "quiz-ch4-s1",
+        "quizId": "quiz-ch5-s1",
         "question":  "A \u0027Move\u0027 in conversation is made up of one or more:",
         "options":  [
                         "Acts",
@@ -1191,7 +1191,7 @@
     },
     {
         "id":  "q-ch4-s1-6",
-        "quizId":  "quiz-ch4-s1",
+        "quizId": "quiz-ch5-s1",
         "question":  "The \u0027Follow-up\u0027 (F) in an IRF exchange usually serves to:",
         "options":  [
                         "Start a new topic",
@@ -1205,7 +1205,7 @@
     },
     {
         "id":  "q-ch4-s1-7",
-        "quizId":  "quiz-ch4-s1",
+        "quizId": "quiz-ch5-s1",
         "question":  "A \u0027Turn\u0027 in conversation refers to:",
         "options":  [
                         "The physical rotation of speakers",
@@ -1219,7 +1219,7 @@
     },
     {
         "id":  "q-ch4-s1-8",
-        "quizId":  "quiz-ch4-s1",
+        "quizId": "quiz-ch5-s1",
         "question":  "If a teacher says \u0027What is the capital of France?\u0027, this move is a(n):",
         "options":  [
                         "Response",
@@ -1233,7 +1233,7 @@
     },
     {
         "id":  "q-ch4-s1-9",
-        "quizId":  "quiz-ch4-s1",
+        "quizId": "quiz-ch5-s1",
         "question":  "If a student answers \u0027Paris\u0027, this move is a(n):",
         "options":  [
                         "Response",
@@ -1247,7 +1247,7 @@
     },
     {
         "id":  "q-ch4-s1-10",
-        "quizId":  "quiz-ch4-s1",
+        "quizId": "quiz-ch5-s1",
         "question":  "The Birmingham model treats conversation as a _______ system.",
         "options":  [
                         "Random",
@@ -1261,7 +1261,7 @@
     },
     {
         "id":  "q-ch4-s2-1",
-        "quizId":  "quiz-ch4-s2",
+        "quizId": "quiz-ch6-s1",
         "question":  "Grice\u0027s \u0027Cooperative Principle\u0027 suggests that participants usually:",
         "options":  [
                         "Try to confuse each other",
@@ -1275,7 +1275,7 @@
     },
     {
         "id":  "q-ch4-s2-2",
-        "quizId":  "quiz-ch4-s2",
+        "quizId": "quiz-ch6-s1",
         "question":  "Which maxim requires you to be as informative as necessary, but no more?",
         "options":  [
                         "Quality",
@@ -1289,7 +1289,7 @@
     },
     {
         "id":  "q-ch4-s2-3",
-        "quizId":  "quiz-ch4-s2",
+        "quizId": "quiz-ch6-s1",
         "question":  "Which maxim is violated if someone tells a blatant lie?",
         "options":  [
                         "Quality",
@@ -1303,7 +1303,7 @@
     },
     {
         "id":  "q-ch4-s2-4",
-        "quizId":  "quiz-ch4-s2",
+        "quizId": "quiz-ch6-s1",
         "question":  "The maxim of \u0027Relation\u0027 (or Relevance) requires being:",
         "options":  [
                         "Polite",
@@ -1317,7 +1317,7 @@
     },
     {
         "id":  "q-ch4-s2-5",
-        "quizId":  "quiz-ch4-s2",
+        "quizId": "quiz-ch6-s1",
         "question":  "Which maxim is flouted if someone is intentionally obscure or ambiguous?",
         "options":  [
                         "Quality",
@@ -1331,7 +1331,7 @@
     },
     {
         "id":  "q-ch4-s2-6",
-        "quizId":  "quiz-ch4-s2",
+        "quizId": "quiz-ch6-s1",
         "question":  "What is a \u0027Conversational Implicature\u0027?",
         "options":  [
                         "A grammatical error",
@@ -1345,7 +1345,7 @@
     },
     {
         "id":  "q-ch4-s2-7",
-        "quizId":  "quiz-ch4-s2",
+        "quizId": "quiz-ch6-s1",
         "question":  "If I ask \u0027Where is John?\u0027 and you say \u0027He\u0027s a nice guy\u0027, you are violating:",
         "options":  [
                         "Relation",
@@ -1359,7 +1359,7 @@
     },
     {
         "id":  "q-ch4-s2-8",
-        "quizId":  "quiz-ch4-s2",
+        "quizId": "quiz-ch6-s1",
         "question":  "\u0027Could you tell me the time?\u0027 \u0027Yes.\u0027 (and then walks away). This violates:",
         "options":  [
                         "Quality",
@@ -1373,7 +1373,7 @@
     },
     {
         "id":  "q-ch4-s2-9",
-        "quizId":  "quiz-ch4-s2",
+        "quizId": "quiz-ch6-s1",
         "question":  "Using sarcasm (saying the opposite of what is true) flouts which maxim?",
         "options":  [
                         "Quantity",
@@ -1387,7 +1387,7 @@
     },
     {
         "id":  "q-ch4-s2-10",
-        "quizId":  "quiz-ch4-s2",
+        "quizId": "quiz-ch6-s1",
         "question":  "Gricean maxims are best described as _______, not laws.",
         "options":  [
                         "Strict punishments",
@@ -1401,7 +1401,7 @@
     },
     {
         "id":  "q-ch4-s3-1",
-        "quizId":  "quiz-ch4-s3",
+        "quizId": "quiz-ch7-s1",
         "question":  "In Politeness Theory, \u0027Face\u0027 refers to:",
         "options":  [
                         "The public self-image every person wants to claim",
@@ -1415,7 +1415,7 @@
     },
     {
         "id":  "q-ch4-s3-2",
-        "quizId":  "quiz-ch4-s3",
+        "quizId": "quiz-ch7-s1",
         "question":  "Positive Face is the desire to be:",
         "options":  [
                         "Left alone",
@@ -1429,7 +1429,7 @@
     },
     {
         "id":  "q-ch4-s3-3",
-        "quizId":  "quiz-ch4-s3",
+        "quizId": "quiz-ch7-s1",
         "question":  "Negative Face is the desire to be:",
         "options":  [
                         "Disliked",
@@ -1443,7 +1443,7 @@
     },
     {
         "id":  "q-ch4-s3-4",
-        "quizId":  "quiz-ch4-s3",
+        "quizId": "quiz-ch7-s1",
         "question":  "What does FTA stand for?",
         "options":  [
                         "Formal Text Analysis",
@@ -1457,7 +1457,7 @@
     },
     {
         "id":  "q-ch4-s3-5",
-        "quizId":  "quiz-ch4-s3",
+        "quizId": "quiz-ch7-s1",
         "question":  "Which strategy is most direct and ignores face concerns?",
         "options":  [
                         "Bald on-record",
@@ -1471,7 +1471,7 @@
     },
     {
         "id":  "q-ch4-s3-6",
-        "quizId":  "quiz-ch4-s3",
+        "quizId": "quiz-ch7-s1",
         "question":  "Which strategy involves indirect hints (e.g., \u0027It\u0027s cold in here\u0027)?",
         "options":  [
                         "Positive Politeness",
@@ -1485,7 +1485,7 @@
     },
     {
         "id":  "q-ch4-s3-7",
-        "quizId":  "quiz-ch4-s3",
+        "quizId": "quiz-ch7-s1",
         "question":  "Using honorifics (e.g., \u0027Sir\u0027, \u0027Professor\u0027) is a form of:",
         "options":  [
                         "Positive Politeness",
@@ -1499,7 +1499,7 @@
     },
     {
         "id":  "q-ch4-s3-8",
-        "quizId":  "quiz-ch4-s3",
+        "quizId": "quiz-ch7-s1",
         "question":  "A compliment (\u0027Great job!\u0027) targets the hearer\u0027s:",
         "options":  [
                         "Negative Face",
@@ -1513,7 +1513,7 @@
     },
     {
         "id":  "q-ch4-s3-9",
-        "quizId":  "quiz-ch4-s3",
+        "quizId": "quiz-ch7-s1",
         "question":  "An apology (\u0027I\u0027m sorry to bother you, but...\u0027) is a strategy for:",
         "options":  [
                         "Negative Politeness",
@@ -1527,7 +1527,7 @@
     },
     {
         "id":  "q-ch4-s3-10",
-        "quizId":  "quiz-ch4-s3",
+        "quizId": "quiz-ch7-s1",
         "question":  "Stylistics uses Politeness Theory to analyze _______ between characters.",
         "options":  [
                         "Grammar",
@@ -1541,7 +1541,7 @@
     },
     {
         "id":  "q-ch4-s4-1",
-        "quizId":  "quiz-ch4-s4",
+        "quizId": "quiz-ch6-s2",
         "question":  "The Speech Act theory was popularized by which philosopher?",
         "options":  [
                         "Sinclair",
@@ -1555,7 +1555,7 @@
     },
     {
         "id":  "q-ch4-s4-2",
-        "quizId":  "quiz-ch4-s4",
+        "quizId": "quiz-ch6-s2",
         "question":  "The physical act of producing a meaningful utterance is the _______ act.",
         "options":  [
                         "Illocutionary",
@@ -1569,7 +1569,7 @@
     },
     {
         "id":  "q-ch4-s4-3",
-        "quizId":  "quiz-ch4-s4",
+        "quizId": "quiz-ch6-s2",
         "question":  "The \u0027force\u0027 or intended function of an utterance (e.g. promising) is the _______ act.",
         "options":  [
                         "Illocutionary",
@@ -1583,7 +1583,7 @@
     },
     {
         "id":  "q-ch4-s4-4",
-        "quizId":  "quiz-ch4-s4",
+        "quizId": "quiz-ch6-s2",
         "question":  "The actual effect on the hearer (e.g. making them scared) is the _______ act.",
         "options":  [
                         "Locutionary",
@@ -1597,7 +1597,7 @@
     },
     {
         "id":  "q-ch4-s4-5",
-        "quizId":  "quiz-ch4-s4",
+        "quizId": "quiz-ch6-s2",
         "question":  "Which category of speech acts commits the speaker to a future action?",
         "options":  [
                         "Directives",
@@ -1611,7 +1611,7 @@
     },
     {
         "id":  "q-ch4-s4-6",
-        "quizId":  "quiz-ch4-s4",
+        "quizId": "quiz-ch6-s2",
         "question":  "A request or a command belongs to which category?",
         "options":  [
                         "Commissives",
@@ -1625,7 +1625,7 @@
     },
     {
         "id":  "q-ch4-s4-7",
-        "quizId":  "quiz-ch4-s4",
+        "quizId": "quiz-ch6-s2",
         "question":  "\u0027I hereby pronounce you man and wife\u0027 is a(n):",
         "options":  [
                         "Declaration",
@@ -1639,7 +1639,7 @@
     },
     {
         "id":  "q-ch4-s4-8",
-        "quizId":  "quiz-ch4-s4",
+        "quizId": "quiz-ch6-s2",
         "question":  "\u0027I am very sorry for the mess\u0027 is a(n):",
         "options":  [
                         "Representative",
@@ -1653,7 +1653,7 @@
     },
     {
         "id":  "q-ch4-s4-9",
-        "quizId":  "quiz-ch4-s4",
+        "quizId": "quiz-ch6-s2",
         "question":  "A statement like \u0027The earth is round\u0027 is a(n):",
         "options":  [
                         "Directive",
@@ -1667,7 +1667,7 @@
     },
     {
         "id":  "q-ch4-s4-10",
-        "quizId":  "quiz-ch4-s4",
+        "quizId": "quiz-ch6-s2",
         "question":  "Felicity Conditions are the _______ for a speech act to be successful.",
         "options":  [
                         "Spelling rules",
@@ -1681,7 +1681,7 @@
     },
     {
         "id":  "q-ch5-s1-1",
-        "quizId":  "quiz-ch5-s1",
+        "quizId": "quiz-ch3-s1",
         "question":  "Modality is the linguistic cover term for expressing _______ or attitude.",
         "options":  [
                         "Opinion",
@@ -1695,7 +1695,7 @@
     },
     {
         "id":  "q-ch5-s1-2",
-        "quizId":  "quiz-ch5-s1",
+        "quizId": "quiz-ch3-s1",
         "question":  "Which modality parameter qualifies how likely a claim is to be true?",
         "options":  [
                         "Obligation",
@@ -1709,7 +1709,7 @@
     },
     {
         "id":  "q-ch5-s1-3",
-        "quizId":  "quiz-ch5-s1",
+        "quizId": "quiz-ch3-s1",
         "question":  "The parameter of \u0027Obligation\u0027 deals with:",
         "options":  [
                         "Desire",
@@ -1723,7 +1723,7 @@
     },
     {
         "id":  "q-ch5-s1-4",
-        "quizId":  "quiz-ch5-s1",
+        "quizId": "quiz-ch3-s1",
         "question":  "\u0027Usuality\u0027 qualifies the _______ of an event.",
         "options":  [
                         "Truth",
@@ -1737,7 +1737,7 @@
     },
     {
         "id":  "q-ch5-s1-5",
-        "quizId":  "quiz-ch5-s1",
+        "quizId": "quiz-ch3-s1",
         "question":  "Willingness expresses the _______ of the speaker.",
         "options":  [
                         "Desire/Intention",
@@ -1751,7 +1751,7 @@
     },
     {
         "id":  "q-ch5-s1-6",
-        "quizId":  "quiz-ch5-s1",
+        "quizId": "quiz-ch3-s1",
         "question":  "Sentences with no modality markers are called _______ sentences.",
         "options":  [
                         "Modalized",
@@ -1765,7 +1765,7 @@
     },
     {
         "id":  "q-ch5-s1-7",
-        "quizId":  "quiz-ch5-s1",
+        "quizId": "quiz-ch3-s1",
         "question":  "\u0027You must finish your homework\u0027 expresses which parameter?",
         "options":  [
                         "Probability",
@@ -1779,7 +1779,7 @@
     },
     {
         "id":  "q-ch5-s1-8",
-        "quizId":  "quiz-ch5-s1",
+        "quizId": "quiz-ch3-s1",
         "question":  "\u0027It might rain later\u0027 expresses which parameter?",
         "options":  [
                         "Obligation",
@@ -1793,7 +1793,7 @@
     },
     {
         "id":  "q-ch5-s1-9",
-        "quizId":  "quiz-ch5-s1",
+        "quizId": "quiz-ch3-s1",
         "question":  "\u0027I usually drink coffee\u0027 expresses:",
         "options":  [
                         "Usuality",
@@ -1807,7 +1807,7 @@
     },
     {
         "id":  "q-ch5-s1-10",
-        "quizId":  "quiz-ch5-s1",
+        "quizId": "quiz-ch3-s1",
         "question":  "Modality helps stylistics analyze the _______ of the narrator.",
         "options":  [
                         "Spelling",
@@ -1821,7 +1821,7 @@
     },
     {
         "id":  "q-ch5-s2-1",
-        "quizId":  "quiz-ch5-s2",
+        "quizId": "quiz-ch3-s2",
         "question":  "Which linguistic category includes \u0027can\u0027, \u0027may\u0027, and \u0027should\u0027?",
         "options":  [
                         "Modal Adverbs",
@@ -1835,7 +1835,7 @@
     },
     {
         "id":  "q-ch5-s2-2",
-        "quizId":  "quiz-ch5-s2",
+        "quizId": "quiz-ch3-s2",
         "question":  "\u0027Certainly\u0027 and \u0027Perhaps\u0027 are examples of:",
         "options":  [
                         "Modal Auxiliaries",
@@ -1849,7 +1849,7 @@
     },
     {
         "id":  "q-ch5-s2-3",
-        "quizId":  "quiz-ch5-s2",
+        "quizId": "quiz-ch3-s2",
         "question":  "What is \u0027Metaphorized Modality\u0027?",
         "options":  [
                         "Using clauses like \u0027I think\u0027 or \u0027It is likely\u0027 to show attitude",
@@ -1863,7 +1863,7 @@
     },
     {
         "id":  "q-ch5-s2-4",
-        "quizId":  "quiz-ch5-s2",
+        "quizId": "quiz-ch3-s2",
         "question":  "Modal lexical verbs include words like:",
         "options":  [
                         "Walk, Run",
@@ -1877,7 +1877,7 @@
     },
     {
         "id":  "q-ch5-s2-5",
-        "quizId":  "quiz-ch5-s2",
+        "quizId": "quiz-ch3-s2",
         "question":  "Which of these is an evaluative adjective showing attitude?",
         "options":  [
                         "Blue",
@@ -1891,7 +1891,7 @@
     },
     {
         "id":  "q-ch5-s2-6",
-        "quizId":  "quiz-ch5-s2",
+        "quizId": "quiz-ch3-s2",
         "question":  "The use of \u0027luckily\u0027 or \u0027unfortunately\u0027 qualifies the _______ of the event.",
         "options":  [
                         "Truth",
@@ -1905,7 +1905,7 @@
     },
     {
         "id":  "q-ch5-s2-7",
-        "quizId":  "quiz-ch5-s2",
+        "quizId": "quiz-ch3-s2",
         "question":  "\u0027I believe that he is coming.\u0027 This is an example of:",
         "options":  [
                         "Metaphorized Modality",
@@ -1919,7 +1919,7 @@
     },
     {
         "id":  "q-ch5-s2-8",
-        "quizId":  "quiz-ch5-s2",
+        "quizId": "quiz-ch3-s2",
         "question":  "Which of these expresses the strongest certainty?",
         "options":  [
                         "Maybe",
@@ -1933,7 +1933,7 @@
     },
     {
         "id":  "q-ch5-s2-9",
-        "quizId":  "quiz-ch5-s2",
+        "quizId": "quiz-ch3-s2",
         "question":  "Which of these expresses the weakest obligation?",
         "options":  [
                         "Must",
@@ -1947,7 +1947,7 @@
     },
     {
         "id":  "q-ch5-s2-10",
-        "quizId":  "quiz-ch5-s2",
+        "quizId": "quiz-ch3-s2",
         "question":  "Authors use modality to create a specific _______ in a text.",
         "options":  [
                         "Font",
@@ -2003,7 +2003,7 @@
     },
     {
         "id":  "q-ch3-app-1",
-        "quizId":  "quiz-ch3-s2",
+        "quizId": "quiz-ch4-s1",
         "question":  "In the \u0027Drowning\u0027 story, the sentence \u0027Since that day, I never swim without a life jacket\u0027 represents which Labovian element?",
         "options":  [
                         "Orientation",
@@ -2017,7 +2017,7 @@
     },
     {
         "id":  "q-ch3-app-2",
-        "quizId":  "quiz-ch3-s2",
+        "quizId": "quiz-ch4-s1",
         "question":  "In the \u0027Drowning\u0027 story analysis, \u0027I thought I would never see my family again\u0027 is identified as:",
         "options":  [
                         "Evaluation",
@@ -2031,7 +2031,7 @@
     },
     {
         "id":  "q-ch4-app-1",
-        "quizId":  "quiz-ch4-s4",
+        "quizId": "quiz-ch6-s2",
         "question":  "In the window dialogue, why is \u0027would you mind terribly\u0027 considered Negative Politeness?",
         "options":  [
                         "Because it is rude to the listener",
@@ -2042,5 +2042,50 @@
         "correctIndex":  1,
         "explanation":  "Negative politeness strategies respect the listener\u0027s desire not to be imposed upon.",
         "type":  "applied"
+    },
+    {
+        "id": "q-exam-spec-1",
+        "quizId": "quiz-ch6-s2",
+        "question": "Hamlet: 'Words, words, words.' Which maxim is flouted here?",
+        "options": ["Quality", "Quantity", "Relation", "Manner"],
+        "correctIndex": 1,
+        "explanation": "Hamlet provides too little information, flouting the Maxim of Quantity.",
+        "type": "applied"
+    },
+    {
+        "id": "q-exam-spec-2",
+        "quizId": "quiz-ch6-s2",
+        "question": "A: 'What's the weather prediction?' B: 'Bring your coat.' What is the implicature?",
+        "options": ["It will be sunny", "It will be cold or rainy", "B doesn't know the weather", "B wants to sell a coat"],
+        "correctIndex": 1,
+        "explanation": "B's indirect answer implies the weather will necessitate a coat (rain/cold).",
+        "type": "applied"
+    },
+    {
+        "id": "q-exam-spec-3",
+        "quizId": "quiz-ch7-s1",
+        "question": "'What a fantastic garden you have!' Which politeness strategy is this?",
+        "options": ["Positive Politeness", "Negative Politeness", "Off-record", "Bald on-record"],
+        "correctIndex": 0,
+        "explanation": "Compliments target the hearer's Positive Face (desire to be liked).",
+        "type": "applied"
+    },
+    {
+        "id": "q-exam-spec-4",
+        "quizId": "quiz-ch7-s1",
+        "question": "'I don't suppose you could give us a lift.' Which negative politeness strategy is used?",
+        "options": ["Apologizing", "Hedges", "Being Pessimistic", "Deference"],
+        "correctIndex": 2,
+        "explanation": "'I don't suppose...' is a classic example of being pessimistic to reduce imposition.",
+        "type": "applied"
+    },
+    {
+        "id": "q-exam-spec-5",
+        "quizId": "quiz-ch2-s3",
+        "question": "The relationship between 'Rose' and 'Flower' is an example of:",
+        "options": ["Synonymy", "Hyponymy", "Collocation", "Reference"],
+        "correctIndex": 1,
+        "explanation": "Hyponymy is the relationship where one word is a sub-category of another.",
+        "type": "applied"
     }
 ]
