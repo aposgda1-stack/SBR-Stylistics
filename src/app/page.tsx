@@ -96,14 +96,27 @@ export default function Dashboard() {
               </div>
            </Link>
 
-           {/* Word Box */}
-           <Link href="/word-box" className="md:col-span-4 group relative overflow-hidden rounded-[4rem] bg-white dark:bg-slate-900 p-12 border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-2xl transition-all">
-              <div className="w-14 h-14 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-900 dark:text-white mb-8 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-teal-500 dark:group-hover:text-slate-900 transition-all">
-                 <span className="material-symbols-outlined text-2xl">style</span>
-              </div>
-              <h3 className="text-2xl font-black text-slate-900 dark:text-white mb-2 tracking-tighter">The Word Box</h3>
-              <p className="text-slate-500 dark:text-slate-400 font-medium">Flashcards & Training mode.</p>
-           </Link>
+            {/* Word Box & Progress */}
+            <div className="md:col-span-4 flex flex-col gap-8">
+              <Link href="/word-box" className="flex-1 group relative overflow-hidden rounded-[4rem] bg-white dark:bg-slate-900 p-12 border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-2xl transition-all">
+                <div className="w-14 h-14 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-900 dark:text-white mb-8 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-teal-500 dark:group-hover:text-slate-900 transition-all">
+                    <span className="material-symbols-outlined text-2xl">style</span>
+                </div>
+                <h3 className="text-2xl font-black text-slate-900 dark:text-white mb-2 tracking-tighter">The Word Box</h3>
+                <p className="text-slate-500 dark:text-slate-400 font-medium">Flashcards & Training.</p>
+              </Link>
+
+              <Link href="/progress" className="flex-1 group relative overflow-hidden rounded-[4rem] bg-yellow-50 dark:bg-yellow-900/20 p-12 border border-yellow-100 dark:border-yellow-900/30 shadow-sm hover:shadow-2xl transition-all">
+                <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-[80px] text-yellow-600">emoji_events</span>
+                </div>
+                <div className="w-14 h-14 rounded-2xl bg-yellow-400 text-white flex items-center justify-center mb-8 shadow-lg shadow-yellow-200">
+                    <span className="material-symbols-outlined text-2xl filled">emoji_events</span>
+                </div>
+                <h3 className="text-2xl font-black text-yellow-700 dark:text-yellow-500 mb-2 tracking-tighter uppercase">My Dashboard</h3>
+                <p className="text-yellow-600/70 font-bold text-xs uppercase tracking-widest">Rankings & Progress</p>
+              </Link>
+            </div>
 
            {/* Exam Practice */}
            <Link href="/exam" className="md:col-span-8 group relative overflow-hidden rounded-[4rem] bg-slate-100 dark:bg-slate-900 p-12 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-2xl transition-all">

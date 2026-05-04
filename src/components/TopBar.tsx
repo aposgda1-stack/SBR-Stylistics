@@ -24,6 +24,7 @@ const navItems: NavItem[] = [
 export default function TopBar() {
   const pathname = usePathname();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -74,6 +75,12 @@ export default function TopBar() {
         </div>
 
         <div className="flex items-center gap-3">
+          <button 
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden w-10 h-10 flex items-center justify-center text-slate-600 dark:text-slate-400"
+          >
+            <span className="material-symbols-outlined">{isMobileMenuOpen ? 'close' : 'menu'}</span>
+          </button>
           <SignedOut>
             <SignInButton mode="modal">
               <button className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors px-3 py-1.5 rounded-lg hover:bg-slate-100">
@@ -95,6 +102,31 @@ export default function TopBar() {
           </SignedIn>
         </div>
       </nav>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800 p-6 space-y-4 animate-in slide-in-from-top duration-300">
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`block text-xl font-black tracking-tight ${
+                isActive(item.href) ? "text-primary dark:text-teal-500" : "text-slate-500"
+              }`}
+            >
+              {item.label}
+            </Link>
+          ))}
+          <button 
+            onClick={() => { setIsSearchOpen(true); setIsMobileMenuOpen(false); }}
+            className="w-full py-4 bg-slate-100 dark:bg-slate-800 rounded-2xl flex items-center justify-center gap-2 font-black uppercase text-xs tracking-widest"
+          >
+            <span className="material-symbols-outlined">search</span>
+            Search Syllabus
+          </button>
+        </div>
+      )}
     </header>
   );
 }
