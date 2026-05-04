@@ -31,7 +31,7 @@ export default function HomePage() {
             <div className="flex flex-wrap gap-4 pt-4">
               {currentLesson && (
                 <Link
-                  href={`/lessons/${currentChapter?.id}/${currentLesson.id}`}
+                  href={`/chapters/${currentChapter?.id}/${currentLesson.id}`}
                   className="bg-primary text-on-primary font-body-md px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-2 group"
                 >
                   <span>Continue Final Review</span>
@@ -41,7 +41,7 @@ export default function HomePage() {
                 </Link>
               )}
               <Link
-                href="/lessons"
+                href="/chapters"
                 className="bg-white border border-outline-variant text-primary font-body-md px-8 py-4 rounded-xl hover:bg-surface-container-low transition-all"
               >
                 View Exam Curriculum
@@ -133,7 +133,7 @@ export default function HomePage() {
             ))}
             {/* Explore More Card */}
             <Link
-              href="/lessons"
+              href="/chapters"
               className="group bg-white p-6 rounded-2xl border border-dashed border-slate-200 hover:border-on-primary-fixed-variant transition-all cursor-pointer flex flex-col items-center justify-center text-slate-400 hover:text-slate-600"
             >
               <span className="material-symbols-outlined text-4xl mb-2">explore</span>
@@ -161,14 +161,14 @@ export default function HomePage() {
             <div className="relative z-10">
               {currentLesson ? (
                 <Link
-                  href={`/lessons/${currentChapter?.id}/${currentLesson.id}`}
+                  href={`/chapters/${currentChapter?.id}/${currentLesson.id}`}
                   className="bg-white dark:bg-teal-50 text-primary-container dark:text-teal-900 font-bold px-10 py-5 rounded-2xl shadow-2xl hover:scale-105 transition-transform inline-block"
                 >
                   Resume Final Review
                 </Link>
               ) : (
                 <Link
-                  href="/lessons"
+                  href="/chapters"
                   className="bg-white dark:bg-teal-50 text-primary-container dark:text-teal-900 font-bold px-10 py-5 rounded-2xl shadow-2xl hover:scale-105 transition-transform inline-block"
                 >
                   Start Reviewing

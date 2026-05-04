@@ -13,7 +13,7 @@ export default function ChapterCard({ chapter }: ChapterCardProps) {
   const firstLesson = chapter.lessons[0];
   const lessonHref =
     firstLesson
-      ? `/lessons/${chapter.id}/${firstLesson.id}`
+      ? `/chapters/${chapter.id}/${firstLesson.id}`
       : "#";
 
   if (isInProgress) {

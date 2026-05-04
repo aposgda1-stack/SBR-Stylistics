@@ -16,6 +16,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 
 import CommandPalette from "@/components/CommandPalette";
 import RubyChat from "@/components/RubyChat";
+import SessionTracker from "@/components/SessionTracker";
 
 export default function RootLayout({
   children,
@@ -43,6 +44,7 @@ export default function RootLayout({
             <CommandPalette />
             <RubyChat />
             <WelcomeModal />
+            <SessionTracker />
             <TopBar />
             <div className="min-h-dvh">
               <PageWrapper>{children}</PageWrapper>

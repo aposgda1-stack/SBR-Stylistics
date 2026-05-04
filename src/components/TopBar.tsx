@@ -14,9 +14,10 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { href: "/", label: "Home" },
-  { href: "/definitions", label: "Definitions" },
-  { href: "/lessons", label: "Lessons" },
-  { href: "/progress", label: "Progress" },
+  { href: "/material", label: "Material" },
+  { href: "/word-box", label: "Word Box" },
+  { href: "/chapters", label: "Chapters" },
+  { href: "/exam", label: "Exam" },
 ];
 
 export default function TopBar() {

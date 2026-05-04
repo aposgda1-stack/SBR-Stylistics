@@ -6,9 +6,10 @@ import { usePathname } from "next/navigation";
 
 const navItems = [
   { href: "/", label: "Home", icon: "home" },
-  { href: "/definitions", label: "Definitions", icon: "dictionary" },
-  { href: "/lessons", label: "Lessons", icon: "school" },
-  { href: "/progress", label: "Progress", icon: "analytics" },
+  { href: "/material", label: "Material", icon: "menu_book" },
+  { href: "/word-box", label: "Word Box", icon: "dictionary" },
+  { href: "/chapters", label: "Chapters", icon: "school" },
+  { href: "/exam", label: "Exam", icon: "workspace_premium" },
 ];
 
 export default function BottomNav() {

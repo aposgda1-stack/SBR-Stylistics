@@ -153,7 +153,7 @@ export default async function LessonPage({ params }: Props) {
           
           {/* Breadcrumbs */}
           <nav className="breadcrumb-nav mb-8 flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant flex-wrap">
-            <Link href="/lessons" className="hover:text-primary transition-colors">
+            <Link href="/chapters" className="hover:text-primary transition-colors">
               Curriculum
             </Link>
             <span className="material-symbols-outlined text-[14px]">chevron_right</span>
@@ -208,7 +208,7 @@ export default async function LessonPage({ params }: Props) {
           <div className="flex flex-col sm:flex-row justify-between items-center gap-6 pt-12 border-t border-slate-100">
             {lesson.prevLesson ? (
               <Link
-                href={`/lessons/${chapterId}/${lesson.prevLesson}`}
+                href={`/chapters/${chapterId}/${lesson.prevLesson}`}
                 className="w-full sm:w-auto px-8 py-3 rounded-lg border border-slate-200 text-on-secondary-fixed-variant font-label-sm hover:bg-slate-50 transition-all flex items-center justify-center gap-2 group active:scale-95"
               >
                 <span className="material-symbols-outlined text-sm group-hover:-translate-x-1 transition-transform">
@@ -218,7 +218,7 @@ export default async function LessonPage({ params }: Props) {
               </Link>
             ) : (
               <Link
-                href="/lessons"
+                href="/chapters"
                 className="w-full sm:w-auto px-8 py-3 rounded-lg border border-slate-200 text-on-secondary-fixed-variant font-label-sm hover:bg-slate-50 transition-all flex items-center justify-center gap-2 group active:scale-95"
               >
                 <span className="material-symbols-outlined text-sm group-hover:-translate-x-1 transition-transform">
@@ -240,7 +240,7 @@ export default async function LessonPage({ params }: Props) {
               </Link>
             ) : lesson.nextLesson ? (
               <Link
-                href={`/lessons/${chapterId}/${lesson.nextLesson}`}
+                href={`/chapters/${chapterId}/${lesson.nextLesson}`}
                 className="w-full sm:w-auto px-8 py-3 rounded-lg bg-primary-container text-on-primary-fixed font-label-sm hover:opacity-90 transition-all flex items-center justify-center gap-2 group active:scale-95"
               >
                 Next Lesson

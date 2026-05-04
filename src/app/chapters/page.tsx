@@ -38,7 +38,7 @@ export default function LessonsPage() {
             const isCompleted = completed.includes(l.id);
             if (isCompleted) lessonCompletedCount++;
             else if (!foundNext && (chIdx === 0 || staticChapters[chIdx-1].lessons.every(prevL => completed.includes(prevL.id)))) {
-              nextUrl = `/lessons/${ch.id}/${l.id}`;
+              nextUrl = `/chapters/${ch.id}/${l.id}`;
               nextTitle = l.title;
               foundNext = true;
             }
@@ -65,14 +65,14 @@ export default function LessonsPage() {
         });
 
         setChapters(mergedChapters);
-        setNextLessonUrl(nextUrl || `/lessons/${staticChapters[0].id}/${staticChapters[0].lessons[0]?.id}`);
+        setNextLessonUrl(nextUrl || `/chapters/${staticChapters[0].id}/${staticChapters[0].lessons[0]?.id}`);
         setNextLessonTitle(nextTitle || staticChapters[0].lessons[0]?.title);
         setLoading(false);
       })
       .catch((err) => {
         console.error("Failed to load progress:", err);
         setChapters(staticChapters);
-        setNextLessonUrl(`/lessons/${staticChapters[0].id}/${staticChapters[0].lessons[0]?.id}`);
+        setNextLessonUrl(`/chapters/${staticChapters[0].id}/${staticChapters[0].lessons[0]?.id}`);
         setLoading(false);
       });
   }, []);
@@ -142,10 +142,10 @@ export default function LessonsPage() {
               <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl border border-slate-100 dark:border-slate-800 shadow-sm flex-1">
                 <h3 className="font-bold text-slate-900 dark:text-white mb-4">Quick Links</h3>
                 <div className="space-y-3">
-                  <Link href="/definitions" className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors border border-transparent hover:border-slate-100 dark:hover:border-slate-700">
+                  <Link href="/word-box" className="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors border border-transparent hover:border-slate-100 dark:hover:border-slate-700">
                     <span className="flex items-center gap-3 text-sm font-bold text-slate-700 dark:text-slate-300">
                       <span className="material-symbols-outlined text-primary dark:text-teal-400">dictionary</span>
-                      Glossary Game
+                      Word Box
                     </span>
                     <span className="material-symbols-outlined text-slate-300 text-sm">chevron_right</span>
                   </Link>
@@ -220,7 +220,7 @@ export default function LessonsPage() {
                       return (
                         <Link
                           key={lesson.id}
-                          href={!isLocked ? `/lessons/${chapter.id}/${lesson.id}` : "#"}
+                          href={!isLocked ? `/chapters/${chapter.id}/${lesson.id}` : "#"}
                           className={`flex items-center gap-4 md:gap-6 p-5 md:p-6 rounded-[1.5rem] border transition-all duration-300 group ${
                             isLocked
                               ? "border-transparent bg-slate-50 dark:bg-slate-800/30 opacity-60 cursor-not-allowed"
