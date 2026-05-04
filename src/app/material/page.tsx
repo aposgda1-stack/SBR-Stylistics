@@ -45,20 +45,20 @@ export default function MaterialPage() {
       </header>
 
       {/* Sticky Top Navigation (Mobile Friendly) */}
-      <div className="sticky top-0 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-100 dark:border-slate-800">
+      <div className="sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl border-b border-slate-100 dark:border-slate-800">
         <div 
           ref={scrollRef}
-          className="max-w-7xl mx-auto flex overflow-x-auto no-scrollbar gap-2 px-4 py-4 md:justify-center"
+          className="max-w-7xl mx-auto flex overflow-x-auto no-scrollbar gap-3 px-6 py-4"
         >
           {materialData.map((item) => (
             <button
               id={`tab-${item.id}`}
               key={item.id}
               onClick={() => setActiveSection(item.id)}
-              className={`flex-shrink-0 px-6 py-3 rounded-2xl font-black text-xs uppercase tracking-widest transition-all ${
+              className={`flex-shrink-0 px-6 py-3 rounded-2xl font-black text-[10px] uppercase tracking-[0.2em] transition-all duration-300 ${
                 activeSection === item.id
-                  ? "bg-slate-900 text-white shadow-lg shadow-slate-900/20"
-                  : "text-slate-400 dark:text-slate-500 bg-slate-50 dark:bg-slate-900"
+                  ? "bg-slate-900 text-white shadow-xl shadow-slate-900/20 scale-105"
+                  : "text-slate-400 dark:text-slate-500 bg-slate-50 dark:bg-slate-900/50 hover:bg-slate-100 dark:hover:bg-slate-800"
               }`}
             >
               {item.section}

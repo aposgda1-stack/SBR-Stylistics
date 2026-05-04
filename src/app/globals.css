@@ -176,6 +176,15 @@ body.focus-mode .breadcrumb-nav {
   display: none !important;
 }
 
+/* Utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 body.focus-mode main {
   padding-top: 5rem !important;
   background-color: var(--background) !important;

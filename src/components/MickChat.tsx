@@ -31,9 +31,13 @@ export default function MickChat() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           messages: [...messages, userMessage],
-          persona: "You are Professor Mick Short, a world-renowned Stylistics expert. You are friendly, academic, and encouraging. You speak in a mix of English and Egyptian Arabic to help the student feel comfortable. Focus on explaining technical terms simply."
+          persona: "You are Professor Mick Short, the world-renowned academic authority on Stylistics. Provide deep linguistic analysis."
         }),
       });
+
+      if (!response.ok) {
+        throw new Error("API_ERROR");
+      }
 
       const data = await response.json();
       if (data.content) {
@@ -41,7 +45,10 @@ export default function MickChat() {
       }
     } catch (error) {
       console.error("Chat error:", error);
-      setMessages((prev) => [...prev, { role: "assistant", content: "عذراً يا بطل، يبدو أن هناك مشكلة تقنية بسيطة في الاتصال بالبروفيسور. تأكد من إعداد مفتاح الـ API بشكل صحيح في بيئة التشغيل. (Technical Error: Connection Failed)" }]);
+      setMessages((prev) => [
+        ...prev, 
+        { role: "assistant", content: "Professor Mick is currently busy with an academic conference. Your brother Ruby is here: I can help you with the summaries, but for deep analysis, make sure your NEXT_PUBLIC_GEMINI_API_KEY is set correctly! (Technical Error 500)" }
+      ]);
     } finally {
       setIsLoading(false);
     }
