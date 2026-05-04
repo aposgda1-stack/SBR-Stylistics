@@ -34,11 +34,14 @@ export default function LessonQuiz({ questions, chapterId, nextLesson }: LessonQ
       setFinished(true);
       // Save score to database
       try {
+        const qId = questions[0]?.quizId;
+        if (!qId) return;
+
         await fetch("/api/save-score", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            quizId: questions[0].quizId, // Assuming all questions share same quizId
+            quizId: qId,
             score,
             totalQuestions: questions.length
           }),

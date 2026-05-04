@@ -5,10 +5,10 @@ import materialData from "@/data/material.json";
 import Footer from "@/components/Footer";
 
 export default function MaterialPage() {
-  const [activeSection, setActiveSection] = useState(materialData[0].id);
+  const [activeSection, setActiveSection] = useState(materialData[0]?.id || "sec1");
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const currentSection = materialData.find((m) => m.id === activeSection);
+  const currentSection = materialData.find((m) => m.id === activeSection) || materialData[0];
 
   // Auto-scroll the tabs to the active one
   useEffect(() => {

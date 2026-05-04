@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getLessonById, getChapterById, getQuizQuestionsById } from "@/lib/contentService";
+import { getAllChapters, getLessonById, getChapterById, getQuizQuestionsById } from "@/lib/contentService";
 import { LessonContent } from "@/types";
 import Footer from "@/components/Footer";
 import ProgressSaver from "@/components/ProgressSaver";
@@ -9,6 +9,22 @@ import LessonTools from "@/components/LessonTools";
 
 interface Props {
   params: Promise<{ chapterId: string; lessonId: string }>;
+}
+
+export async function generateStaticParams() {
+  const chapters = getAllChapters();
+  const paths: { chapterId: string; lessonId: string }[] = [];
+  
+  chapters.forEach(chapter => {
+    chapter.lessons.forEach(lesson => {
+      paths.push({
+        chapterId: chapter.id,
+        lessonId: lesson.id
+      });
+    });
+  });
+  
+  return paths;
 }
 
 const formatContent = (text: string) => {
@@ -73,7 +89,7 @@ function renderContent(block: LessonContent & { arabicExplanation?: string; type
             </div>
             {block.body && <p className="text-xl text-slate-500 dark:text-slate-400 mb-12 leading-relaxed font-bold italic">{formatContent(block.body)}</p>}
             
-            {block.steps && (
+            {block.steps && Array.isArray(block.steps) && (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {block.steps.map((step, si) => (
                   <div 
