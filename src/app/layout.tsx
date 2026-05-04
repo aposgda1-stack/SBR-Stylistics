@@ -7,9 +7,13 @@ import WelcomeModal from "@/components/WelcomeModal";
 import PageWrapper from "@/components/PageWrapper";
 
 export const metadata: Metadata = {
-  title: "Stylistics Platform — Prof. Adel",
-  description:
-    "A comprehensive English Stylistics course platform. Covering poetry, novel, and drama analysis with quizzes and exams.",
+  title: "Stylistics Hub · Our Final Journey",
+  description: "A community platform for our final Stylistics semester. Let's finish this journey together, friends.",
+  openGraph: {
+    title: "Stylistics Hub · Our Final Journey",
+    description: "Personal study platform for our final Stylistics semester. By us, for us.",
+    images: ["/images/chapters/ch9.png"],
+  },
 };
 
 import { ThemeProvider } from "@/components/ThemeProvider";
