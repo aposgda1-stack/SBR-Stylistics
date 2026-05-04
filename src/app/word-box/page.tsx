@@ -48,23 +48,38 @@ export default function WordBoxPage() {
     }
   }, [isQuizMode]);
 
-  const handleOptionSelect = (option: string) => {
+  const handleOptionSelect = async (option: string) => {
     if (showResult) return;
     setSelectedOption(option);
     setShowResult(true);
     if (option === currentQuestion?.correct) {
-      setScore(s => s + 10);
+      const newScore = score + 10;
+      setScore(newScore);
       setShowConfetti(true);
       setTimeout(() => setShowConfetti(false), 3000);
+      // Save score to DB
+      try {
+        const res = await fetch("/api/save-score", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ quizId: "word-box-training", score: 10, totalQuestions: 1 }),
+        });
+        if (res.ok) {
+          const data = await res.json();
+          window.dispatchEvent(new CustomEvent("progressUpdated", { detail: { totalScore: data.totalScore } }));
+        }
+      } catch (e) {
+        console.error("Score save failed:", e);
+      }
     }
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
+    <div className="min-h-screen bg-[var(--background)]">
       {showConfetti && <Confetti />}
       
       {/* Header */}
-      <header className="bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800 py-12 px-6 relative overflow-hidden">
+      <header className="bg-[var(--surface)] border-b border-[var(--outline-variant)] py-8 px-4 relative overflow-hidden">
         <div className="absolute top-0 right-0 p-8 opacity-5">
            <span className="material-symbols-outlined text-[120px]">school</span>
         </div>
@@ -72,10 +87,10 @@ export default function WordBoxPage() {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-[1.5rem] bg-teal-500/10 text-teal-600 mb-6">
             <span className="material-symbols-outlined text-3xl font-bold">dictionary</span>
           </div>
-          <h1 className="font-display-lg text-4xl md:text-5xl mb-4 text-slate-900 dark:text-white font-bold tracking-tight">
+          <h1 className="font-display-lg text-3xl md:text-4xl mb-3 text-[var(--on-surface)] font-bold tracking-tight">
             The Word Box
           </h1>
-          <p className="font-body-lg text-slate-500 max-w-2xl mx-auto mb-8">
+          <p className="text-sm text-[var(--on-surface-variant)] max-w-sm mx-auto mb-6">
             Master the terminology of Stylistics. Study or test yourself.
           </p>
           
@@ -92,7 +107,7 @@ export default function WordBoxPage() {
                {isQuizMode ? "Back to List" : "Start Training Mode"}
              </button>
              {isQuizMode && (
-                <div className="px-6 py-3 bg-white dark:bg-slate-800 rounded-2xl border border-slate-100 dark:border-slate-700 font-bold text-teal-600">
+                <div className="px-5 py-2.5 bg-[var(--surface-variant)] rounded-xl border border-[var(--outline-variant)] font-black text-teal-500 text-sm">
                    Score: {score}
                 </div>
              )}
@@ -104,32 +119,32 @@ export default function WordBoxPage() {
         {isQuizMode ? (
           <div className="max-w-2xl mx-auto animate-fade-in-up">
              {currentQuestion && (
-               <div className="space-y-8">
-                  <div className="text-center p-12 bg-white dark:bg-slate-900 rounded-[2.5rem] border-2 border-dashed border-teal-500/30">
-                     <p className="text-xs font-bold text-teal-500 uppercase tracking-widest mb-2">Identify the definition for:</p>
-                     <h2 className="text-4xl font-serif italic text-slate-900 dark:text-white">{currentQuestion.term}</h2>
+               <div className="space-y-5">
+                  <div className="text-center p-8 bg-[var(--surface)] rounded-2xl border border-[var(--outline-variant)]">
+                     <p className="text-[10px] font-black text-teal-500 uppercase tracking-widest mb-2">What is the definition of:</p>
+                     <h2 className="text-3xl font-serif italic text-[var(--on-surface)]">{currentQuestion.term}</h2>
                   </div>
                   
-                  <div className="grid grid-cols-1 gap-4">
+                  <div className="grid grid-cols-1 gap-3">
                      {currentQuestion.options.map((option, i) => (
                        <button
                          key={i}
                          onClick={() => handleOptionSelect(option)}
                          disabled={showResult}
-                         className={`w-full p-6 text-left rounded-2xl border-2 transition-all duration-300 flex items-center gap-4 ${
+                         className={`w-full p-4 text-left rounded-xl border-2 transition-all flex items-center gap-3 text-sm ${
                            showResult
                            ? option === currentQuestion.correct
-                             ? "bg-teal-50 border-teal-500 text-teal-900 dark:bg-teal-900/20 dark:text-teal-200"
+                             ? "bg-teal-500/10 border-teal-500 text-teal-700 dark:text-teal-300"
                              : option === selectedOption
-                             ? "bg-red-50 border-red-500 text-red-900 dark:bg-red-900/20 dark:text-red-200"
-                             : "bg-slate-50 border-slate-100 opacity-50 dark:bg-slate-800 dark:border-slate-700"
-                           : "bg-white dark:bg-slate-900 border-slate-100 dark:border-slate-800 hover:border-teal-500 hover:shadow-xl dark:hover:bg-slate-800"
+                             ? "bg-red-500/10 border-red-500 text-red-700 dark:text-red-300"
+                             : "bg-[var(--surface-variant)] border-[var(--outline-variant)] opacity-40"
+                           : "bg-[var(--surface)] border-[var(--outline-variant)] text-[var(--on-surface)] hover:border-teal-500 active:scale-[0.98]"
                          }`}
                        >
-                         <span className="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-xs font-bold shrink-0">
+                         <span className="w-7 h-7 rounded-lg bg-[var(--surface-variant)] flex items-center justify-center text-[10px] font-black text-[var(--on-surface-variant)] shrink-0">
                            {String.fromCharCode(65 + i)}
                          </span>
-                         <span className="text-sm md:text-base leading-relaxed">{option}</span>
+                         <span className="leading-relaxed">{option}</span>
                        </button>
                      ))}
                   </div>
@@ -150,42 +165,38 @@ export default function WordBoxPage() {
           </div>
         ) : (
           <>
-            <div className="max-w-md mx-auto mb-12 relative">
-              <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+            {/* Search */}
+            <div className="mb-6 relative">
+              <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[var(--on-surface-variant)] text-xl">search</span>
               <input 
                 type="text" 
-                placeholder="Search definitions..." 
+                placeholder="Search terms..." 
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-12 pr-4 py-4 rounded-2xl border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-900 dark:text-white focus:ring-2 focus:ring-teal-500 outline-none transition-all shadow-sm"
+                className="w-full pl-10 pr-4 py-3 rounded-xl border border-[var(--outline-variant)] bg-[var(--surface)] text-[var(--on-surface)] placeholder:text-[var(--on-surface-variant)] focus:ring-2 focus:ring-teal-500 outline-none transition-all"
               />
             </div>
 
             {filteredDefinitions.length === 0 ? (
-              <div className="text-center py-20">
-                <span className="material-symbols-outlined text-6xl text-slate-300 mb-4">search_off</span>
-                <p className="text-slate-500 font-body-lg">No terms found matching "{searchTerm}"</p>
+              <div className="text-center py-16">
+                <span className="material-symbols-outlined text-5xl text-[var(--on-surface-variant)] mb-3 block">search_off</span>
+                <p className="text-[var(--on-surface-variant)] font-bold text-sm">No terms found for "{searchTerm}"</p>
               </div>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-3">
                 {filteredDefinitions.map((item, index) => (
                   <div 
                     key={index}
-                    className="bg-white dark:bg-slate-900 rounded-[2rem] p-8 shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-xl transition-all group"
+                    className="bg-[var(--surface)] rounded-2xl p-5 border border-[var(--outline-variant)] hover:border-teal-500/50 transition-all"
                   >
-                    <div className="flex flex-col gap-4">
-                      <div className="flex items-center gap-3">
-                         <div className="w-8 h-8 rounded-lg bg-teal-500/10 text-teal-600 flex items-center justify-center font-bold text-xs">
-                            {item.term.charAt(0).toUpperCase()}
-                         </div>
-                         <h3 className="text-xl font-bold text-slate-900 dark:text-white font-serif italic">
-                           {item.term}
-                         </h3>
-                      </div>
-                      <div className="w-full h-px bg-slate-50 dark:bg-slate-800" />
-                      <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                        {item.definition}
-                      </p>
+                    <div className="flex items-start gap-3">
+                       <div className="w-8 h-8 rounded-lg bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center font-black text-xs flex-shrink-0 mt-0.5">
+                          {item.term.charAt(0).toUpperCase()}
+                       </div>
+                       <div className="flex-1">
+                         <h3 className="text-sm font-black text-[var(--on-surface)] mb-1 italic">{item.term}</h3>
+                         <p className="text-xs text-[var(--on-surface-variant)] leading-relaxed">{item.definition}</p>
+                       </div>
                     </div>
                   </div>
                 ))}
