@@ -48,19 +48,11 @@ export default function Dashboard() {
                 </div>
               </div>
               
-              {/* Classmate's Motivation Box */}
-              <div className="w-full md:w-80 p-8 rounded-[3rem] bg-white/5 border border-white/10 backdrop-blur-xl group hover:border-teal-500/50 transition-all">
-                 <div className="w-14 h-14 rounded-2xl bg-teal-500 flex items-center justify-center text-slate-900 mb-6 shadow-lg shadow-teal-500/20">
-                    <span className="material-symbols-outlined text-3xl font-bold">favorite</span>
-                 </div>
-                 <h4 className="text-white font-black text-lg mb-4 uppercase tracking-tighter">من زميلك 💙</h4>
-                 <p className="text-slate-400 text-sm leading-loose italic">
-                   "النجاح في المادة دي مش في الحفظ.. هو في إنك تشوف الـ patterns اللي Mick وصفها، بس بعينيك أنت."
+              {/* Final Semester Message */}
+              <div className="w-full md:w-80 p-8 rounded-[3rem] bg-white/5 border border-white/10 backdrop-blur-xl">
+                 <p className="text-slate-300 text-base leading-relaxed font-medium italic">
+                   &ldquo;This is our final semester. I am genuinely proud of every single one of you. Let&apos;s finish this strong — together.&rdquo;
                  </p>
-                 <div className="mt-6 pt-6 border-t border-white/10 flex items-center justify-between text-[10px] font-black text-teal-500 uppercase tracking-widest">
-                    <span>من زميلك بكل محبة</span>
-                    <span className="material-symbols-outlined text-sm">verified</span>
-                 </div>
               </div>
             </div>
           </div>

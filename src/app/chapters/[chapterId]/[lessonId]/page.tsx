@@ -7,7 +7,6 @@ import ProgressSaver from "@/components/ProgressSaver";
 import LessonQuiz from "@/components/LessonQuiz";
 import LessonTools from "@/components/LessonTools";
 import PrintButton from "@/components/PrintButton";
-import RubyBanner from "@/components/RubyBanner";
 
 interface Props {
   params: Promise<{ chapterId: string; lessonId: string }>;
@@ -282,9 +281,6 @@ export default async function LessonPage({ params }: Props) {
                </div>
             </div>
           )}
-
-          {/* Ruby's Motivational Banner — before quiz */}
-          <RubyBanner />
 
           {/* Embedded Quiz Section */}
           {lesson.quizId && (
