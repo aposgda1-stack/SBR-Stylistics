@@ -7,11 +7,11 @@ import Link from "next/link";
 
 interface LessonQuizProps {
   questions: QuizQuestion[];
-  chapterId: string;
-  nextLesson?: string;
+  nextHref?: string;      // Full URL for next destination (lesson or chapter)
+  nextLabel?: string;     // Button label
 }
 
-export default function LessonQuiz({ questions, chapterId, nextLesson }: LessonQuizProps) {
+export default function LessonQuiz({ questions, nextHref, nextLabel = "Next Lesson" }: LessonQuizProps) {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [showFeedback, setShowFeedback] = useState(false);
@@ -98,12 +98,19 @@ export default function LessonQuiz({ questions, chapterId, nextLesson }: LessonQ
           >
             Retry Quiz
           </button>
-          {nextLesson && (
+          {nextHref ? (
             <Link 
-              href={`/chapters/${chapterId}/${nextLesson}`}
+              href={nextHref}
               className="px-8 py-4 bg-teal-500 text-slate-900 rounded-2xl font-bold uppercase tracking-widest text-xs hover:scale-105 transition-all"
             >
-              Next Lesson
+              {nextLabel}
+            </Link>
+          ) : (
+            <Link 
+              href="/chapters"
+              className="px-8 py-4 bg-white/10 text-white rounded-2xl font-bold uppercase tracking-widest text-xs hover:bg-white/20 transition-all"
+            >
+              Back to Journey Map
             </Link>
           )}
         </div>

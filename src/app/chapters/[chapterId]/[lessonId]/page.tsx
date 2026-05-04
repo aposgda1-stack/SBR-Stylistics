@@ -151,6 +151,25 @@ export default async function LessonPage({ params }: Props) {
   const wordCount = fullText.split(/\s+/).length;
   const readingTime = Math.ceil(wordCount / 200);
 
+  // Compute smart next navigation (within chapter OR cross-chapter)
+  const allChapters = getAllChapters();
+  const chapterIndex = allChapters.findIndex(c => c.id === chapterId);
+  let nextHref: string | undefined;
+  let nextLabel = "Next Lesson";
+
+  if (lesson.nextLesson) {
+    // Next lesson in same chapter
+    nextHref = `/chapters/${chapterId}/${lesson.nextLesson}`;
+  } else {
+    // Last lesson of chapter → find next chapter's first lesson
+    const nextChapter = allChapters[chapterIndex + 1];
+    if (nextChapter && nextChapter.lessons.length > 0) {
+      nextHref = `/chapters/${nextChapter.id}/${nextChapter.lessons[0].id}`;
+      nextLabel = `Next Chapter: ${nextChapter.title}`;
+    }
+    // else undefined → quiz will show "Back to Journey Map"
+  }
+
   return (
     <>
       <LessonTools title={lesson.title} content={fullText} />
@@ -270,9 +289,9 @@ export default async function LessonPage({ params }: Props) {
           {/* Embedded Quiz Section */}
           {lesson.quizId && (
             <LessonQuiz 
-              questions={quizQuestions} 
-              chapterId={chapterId} 
-              nextLesson={lesson.nextLesson} 
+              questions={quizQuestions}
+              nextHref={nextHref}
+              nextLabel={nextLabel}
             />
           )}
 
@@ -287,17 +306,17 @@ export default async function LessonPage({ params }: Props) {
               ) : (
                 <Link href="/chapters" className="text-sm font-black uppercase tracking-widest text-slate-400 hover:text-primary transition-colors flex items-center gap-2">
                   <span className="material-symbols-outlined text-sm">arrow_back</span>
-                  Curriculum
+                  Journey Map
                 </Link>
               )}
 
-              {lesson.nextLesson ? (
-                <Link href={`/chapters/${chapterId}/${lesson.nextLesson}`} className="px-10 py-4 bg-slate-900 dark:bg-teal-500 text-white dark:text-slate-900 rounded-2xl font-black uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-xl">
-                  Next Lesson
+              {nextHref ? (
+                <Link href={nextHref} className="px-10 py-4 bg-slate-900 dark:bg-teal-500 text-white dark:text-slate-900 rounded-2xl font-black uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-xl">
+                  {nextLabel}
                 </Link>
               ) : (
-                <Link href={`/exam?examId=${chapter.examId}`} className="px-10 py-4 bg-primary text-white rounded-2xl font-black uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-xl">
-                  Take Chapter Exam
+                <Link href="/chapters" className="px-10 py-4 bg-primary text-white rounded-2xl font-black uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-xl">
+                  Journey Map
                 </Link>
               )}
             </div>
