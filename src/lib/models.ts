@@ -17,11 +17,7 @@ const UserProgressSchema = new Schema({
   updatedAt:        { type: Date, default: Date.now },
 });
 
-// Ensure totalScore never goes negative
-UserProgressSchema.pre('save', function (next) {
-  if (this.totalScore < 0) this.totalScore = 0;
-  next();
-});
+
 
 export const UserProgress =
   models.UserProgress || model('UserProgress', UserProgressSchema);
