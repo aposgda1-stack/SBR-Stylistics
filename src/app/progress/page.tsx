@@ -82,13 +82,13 @@ export default function ProgressPage() {
             <h1 className="font-display-lg text-display-lg text-primary mb-2">Progress Overview</h1>
             <p className="font-body-lg text-on-surface-variant">Track your journey through stylistics mastery.</p>
           </div>
-          <Link 
-            href="/progress/leaderboard"
+          <a 
+            href="#leaderboard-section"
             className="flex items-center gap-2 bg-yellow-50 text-yellow-700 px-6 py-3 rounded-xl border border-yellow-100 hover:bg-yellow-100 transition-all font-bold shadow-sm"
           >
             <span className="material-symbols-outlined filled">emoji_events</span>
             Leaderboard
-          </Link>
+          </a>
         </div>
 
         {!isSignedIn && (
@@ -199,7 +199,7 @@ export default function ProgressPage() {
                   </div>
 
                   <Link
-                    href={`/lessons/${chapter.id}/${chapter.lessons[0]?.id || ""}`}
+                    href={`/chapters/${chapter.id}/${chapter.lessons[0]?.id || ""}`}
                     className={`w-full md:w-auto px-6 py-3 rounded-xl font-bold text-sm transition-all text-center ${
                       status === "locked" 
                         ? "bg-slate-100 text-slate-400 cursor-not-allowed"
@@ -255,7 +255,7 @@ export default function ProgressPage() {
         </section>
 
         {/* Real-time Leaderboard Section */}
-        <section className="mb-20">
+        <section id="leaderboard-section" className="mb-20 scroll-mt-24">
           <Leaderboard />
         </section>
 
