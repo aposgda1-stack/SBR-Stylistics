@@ -17,6 +17,7 @@ const navItems: NavItem[] = [
   { href: "/material", label: "Material" },
   { href: "/word-box", label: "Word Box" },
   { href: "/chapters", label: "Chapters" },
+  { href: "/progress", label: "Progress" },
   { href: "/exam", label: "Exam" },
 ];
 
