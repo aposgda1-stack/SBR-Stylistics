@@ -207,7 +207,7 @@ body.focus-mode .breadcrumb-nav {
 }
 
 @media print {
-  header, footer, nav, .print:hidden, #lesson-quiz, .material-symbols-outlined, button, a[href^="#"] {
+  header, footer, nav, #lesson-quiz, .material-symbols-outlined, button, a[href^="#"] {
     display: none !important;
   }
   body {
