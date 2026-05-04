@@ -182,22 +182,19 @@ function QuizContent() {
                 </span>
               </div>
               <h2 className="font-display-md text-3xl md:text-5xl mb-4 text-slate-900 dark:text-white">
-                {isPassing ? "عاش يا بطل! استمر" : "محاولة كويسة، شد حيلك"}
+                {feedback.title}
               </h2>
               
               {/* Prof. Adel's Message */}
               <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-3xl border-2 border-dashed border-teal-500/20 mb-8 max-w-lg mx-auto">
                  <p className="text-sm italic text-slate-600 dark:text-slate-300 leading-relaxed">
-                   {isPassing 
-                     ? "الله ينور عليك يا ابني! مستواك في تطور ملحوظ.. يلا بينا على اللي بعده، الطريق للامتحان النهائي محتاج نفس طويل! 🚀"
-                     : "ولا يهمك، الـ Stylistics محتاجة تركيز في التفاصيل.. راجع الجزء ده تاني وتعالى وريني شطارتك. أنا واثق فيك! ✨"
-                   }
+                   {feedback.message}
                  </p>
                  <div className="mt-4 flex items-center justify-center gap-2">
                     <div className="w-6 h-6 rounded-full bg-teal-500 flex items-center justify-center">
                        <span className="material-symbols-outlined text-[12px] text-slate-900 font-bold">person</span>
                     </div>
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-teal-600">— بروفيسور عادل</span>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-teal-600">{feedback.signature}</span>
                  </div>
               </div>
 

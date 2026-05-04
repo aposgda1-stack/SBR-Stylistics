@@ -113,8 +113,10 @@ export default function LessonsPage() {
                       {/* Info Tooltip/Bubble */}
                       <div className={`absolute top-1/2 -translate-y-1/2 w-48 md:w-64 p-6 bg-white dark:bg-slate-900 rounded-3xl shadow-xl border border-slate-100 dark:border-slate-800 transition-all opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 pointer-events-none z-20 ${isEven ? "left-full ml-8" : "right-full mr-8 text-right"}`}>
                          <h3 className="font-bold text-lg mb-2">{chapter.title}</h3>
-                         <p className="text-xs text-slate-500 line-clamp-2 mb-4">{chapter.description}</p>
-                         <div className="w-full bg-slate-100 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                         <p className="text-slate-500 dark:text-slate-400 text-xs mt-2 font-medium line-clamp-2">
+                        {chapter.description.replace(/\*\*/g, "")}
+                      </p>
+                        <div className="w-full bg-slate-100 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden mt-4">
                             <div className="bg-teal-500 h-full" style={{ width: `${chapter.progress}%` }} />
                          </div>
                       </div>

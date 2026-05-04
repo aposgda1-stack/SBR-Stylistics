@@ -2,64 +2,29 @@
   {
     "id": "sec1",
     "section": "SECTION 1",
-    "title": "How to Use This Guide & Exam Overview",
-    "arabicTitle": "كيفية استخدام الدليل ونظرة عامة على الامتحان",
-    "content": "This document covers the complete Stylistics syllabus for fourth-year English Language students. Every topic has been extracted from the original study material and reorganised for maximum clarity before the exam.\n\n### 📝 نظرة عامة\nتغطي هذه المذكرة كل محتوى مادة الأسلوبيات للسنة الرابعة. تم استخراجه من المواد الأصلية وإعادة تنظيمه بشكل منهجي للمراجعة.\n\n### ⭐ Exam Format (شكل الامتحان):\n✦ Theoretical Section (Definitions & Concepts)\n✦ Practical Section (Exercises & Analysis)\n\n### 📝 أقسام الامتحان التفصيلية:\n*   **Section A**: Fill in the blanks with key terms from a word bank.\n*   **Section B**: Identify which of Grice's maxims is flouted.\n*   **Section C**: Identify instances of parallelism or deviation.\n*   **Section D**: True / False (Correct false statements).\n*   **Section E**: Modality & Evaluative Devices commentary.\n*   **Section F**: Write clear, accurate definitions in a box format."
+    "title": "Introduction to Stylistics & Exam Analysis",
+    "arabicTitle": "مقدمة الأسلوبيات وتحليل الامتحان",
+    "content": "Stylistics is the bridge between linguistics and literary criticism. It uses the tools of linguistic analysis to explain why we feel certain emotions or perceive certain meanings in a text. The exam is not just about memorizing; it is about proving you can apply these theories to real extracts from poems and stories.\n\n### Exam Sections Analysis:\n1. **Section A**: Tests your memory of definitions. You must use the word-box format.\n2. **Section B**: Tests your understanding of conversation rules (Grice).\n3. **Section C**: Tests your ability to find rules being added or broken in poetry.\n\n### شعبولي الموضوع كدا\nالأسلوبيات دي هي اللي بتخليك تفهم ليه لما بتقرأ بيت شعر بتحس بالوجع أو الفرحة.. هي العلم اللي بيشرح \"سر الخلطة\" بتاعة الكاتب. الامتحان 6 أقسام، وكل قسم محتاج تركيز في التفاصيل اللي هنشرحها هنا بالمللي."
   },
   {
     "id": "sec2",
     "section": "SECTION 2",
-    "title": "Complete Definitions Reference",
-    "arabicTitle": "المرجع الكامل للتعريفات",
-    "content": "All definitions are presented in the exam-ready box format. Study them carefully.\n\n### ⭐ Poetry-Related Definitions:\n**Poetic Licence**: The poet's right to ignore rules and conventions generally observed by users of the language.\n📝 حق الشاعر في تجاوز القواعد اللغوية المعتادة لأغراض فنية وإبداعية.\n\n**Foregrounding**: Refers to the ways in which certain aspects of a text are made to stand out or appear prominent.\n📝 إبراز جوانب معينة في النص لتبدو بارزة ومميّزة للقارئ.\n\n**Parallelism**: Extra regular use of a linguistic feature. Identity + Contrast.\n📝 الاستخدام المنتظم الزائد لسمة لغوية معينة، مما يساعد على إيجاد روابط دلالية.\n\n**Deviation**: Extra irregularity in language use. Departing from expectations.\n📝 الخروج عن القاعدة اللغوية المتوقعة — إما خارجياً (بمعايير اللغة العامة) أو داخلياً (بنمط النص نفسه)."
+    "title": "The Master Bank of Definitions (Poetry)",
+    "arabicTitle": "بنك التعريفات الشامل (الشعر)",
+    "content": "### Poetic Licence\nThe poet's right to ignore rules and conventions generally observed by users of the language. It allows poets to bend grammatical, phonological, or lexical norms for artistic effect.\n\n### شعبولي الموضوع كدا\nالشاعر ليه \"تصريح\" يكسر أي قاعدة.. لو القافية محتاجة يغير نطق كلمة أو يخترع كلمة جديدة، من حقه، وده اللي بنسميه الرخصة الشاعرية.\n\n### Foregrounding\nRefers to the ways in which certain aspects of a text are made to stand out or appear prominent through forms of textual patterning. It is the psychological effect of certain textual devices that controls readers' attention and generates literary interpretations.\n\n### شعبولي الموضوع كدا\nإزاي تخلي كلمة أو جملة \"تزغلل\" في عين القارئ وسط باقي الكلام؟ ده هو الـ Foregrounding.. إنك تبرز حاجة معينة عشان القارئ يفهم إنها أهم جزئية في النص.\n\n### Parallelism\nExtra regular use of a linguistic feature. It involves holding some features constant while varying others. It pushes readers towards perceiving semantic relations.\n\n### شعبولي الموضوع كدا\nالتوازي.. إنك تجيب جملتين ليهم نفس الوزن والتقسيمة بالظبط بس الكلمات مختلفة.. ده بيخلي القارئ غصب عنه يربط بين معاني الجملتين دول."
   },
   {
     "id": "sec3",
     "section": "SECTION 3",
-    "title": "Foregrounding, Parallelism & Deviation",
-    "arabicTitle": "الإبراز، التوازي، والانحراف",
-    "content": "### 3.1 Foregrounding Overview\nIt controls readers' attention and generates literary interpretations.\n\n### 3.2 Parallelism (Identity + Contrast)\nExample: 'But he was wounded for our transgressions, he was bruised for our iniquities.'\n\n### 3.3 Types of Deviation:\n1.  **Lexical**: Neologism (new words), Affixation (foresuffer), Compounding (widow-making).\n2.  **Syntactic**: Adjective after noun ('word compassionate').\n3.  **Phonological**: Elision (t'assault), Syncope (o'er).\n4.  **Graphological**: Typography and layout.\n5.  **Semantic**: Metaphor or Paradox (⭐ Frequent Exam Answer)."
+    "title": "Deviation: The 8 Types in Deep Detail",
+    "arabicTitle": "الانحراف: الأنواع الثمانية بالتفصيل الممل",
+    "content": "### 1. Lexical Deviation\nDeviation achieved through **Neologism** (the invention of new words).\n*   **Affixation**: e.g., 'foresuffer' (adding a prefix).\n*   **Compounding**: e.g., 'widow-making' (joining two words).\n*   **Functional Conversion**: e.g., using 'achieve' as a noun.\n\n### شعبولي الموضوع كدا\nهنا الشاعر بيلعب في الكلمات نفسها.. يا يركب كلمتين في بعض (Compound)، يا يزود حروف في الأول أو الآخر (Affix)، يا يستخدم كلمة في وظيفة غير وظيفتها.. زي ما يستخدم فعل كإنه اسم.\n\n### 2. Syntactic Deviation\nDeparting from normal word order (Subject-Verb-Object). \n*   **Example**: Placing adjectives after nouns ('word compassionate') or inverting subject-verb order ('Then spake King Arthur').\n\n### شعبولي الموضوع كدا\nهنا اللعب في ترتيب الجملة.. بدل ما الجملة تمشي عادي، الشاعر بيشقلبها عشان القافية أو عشان يحسسك إن الكلام تقيل وله هيبة.\n\n### 3. Phonological Deviation\nWords pronounced or stressed unusually.\n*   **Elision**: dropping a sound ('t'assault').\n*   **Aphesis**: loss of initial sound (''gainst').\n*   **Syncope**: loss of middle sound ('o'er').\n*   **Apocope**: loss of final sound ('chil'').\n\n### شعبولي الموضوع كدا\nده انحراف في الصوت.. يعني الشاعر ياكل حرف من أول الكلمة أو نصها أو آخرها عشان يظبط الوزن الموسيقي للبيت."
   },
   {
     "id": "sec4",
     "section": "SECTION 4",
-    "title": "Cohesion: Making Texts",
-    "arabicTitle": "التماسك النصي: صناعة النصوص",
-    "content": "Cohesion refers to the linguistic means by which sentences are woven together to make texts.\n\n### 📝 الأنوع الأربعة للتماسك (The 4 Types):\n1.  **Reference**: Pronouns (he, she) or Demonstratives (this, that).\n2.  **Ellipsis**: Omission of unnecessary material (Partial or Full).\n3.  **Conjunction**: Logical connectors (Additive, Adversative, Causal, Temporal).\n4.  **Lexical**: Reiteration (Repetition) or Collocation (habitual co-occurrence)."
-  },
-  {
-    "id": "sec5",
-    "section": "SECTION 5",
-    "title": "Modality and Evaluative Devices",
-    "arabicTitle": "التلقائي الإطاري والوسائل التقييمية",
-    "content": "Modality allows a speaker to qualify any claim or commitment in language.\n\n### ⭐ The 4 Modality Parameters:\n1.  **Probability**: how likely (might, may, must).\n2.  **Obligation**: how necessary (should, ought to).\n3.  **Willingness**: subject's readiness (will, would).\n4.  **Usuality**: how often (always, usually).\n\n### 📝 Generic Sentences:\nSentences that assert general, timeless truths. revealing the speaker's ideology.\nExample: 'Afghanistan is the land of Pashtuns.'"
-  },
-  {
-    "id": "sec6",
-    "section": "SECTION 6",
-    "title": "Narrative Structure (Labov's Model)",
-    "arabicTitle": "هيكل السرد (نموذج لابوف)",
-    "content": "### 📝 Labov's 6 Elements:\n1.  **Abstract**: One-sentence summary.\n2.  **Orientation**: Who, when, where.\n3.  **Complicating Action**: ⭐ Essential events (Required).\n4.  **Evaluation**: Why is it interesting? (Internal/External).\n5.  **Resolution**: What finally happened?\n6.  **Coda**: Bridge to the present."
-  },
-  {
-    "id": "sec7",
-    "section": "SECTION 7",
-    "title": "Dialogue, Drama & Discourse Strategy",
-    "arabicTitle": "الحوار، الدراما، واستراتيجيات الخطاب",
-    "content": "### 📝 Grice's Maxims (CP):\n1.  **Quality**: Be truthful.\n2.  **Quantity**: Be informative enough.\n3.  **Relation**: Be relevant.\n4.  **Manner**: Be clear.\n\n### ⭐ Politeness Theory (Face):\n*   **Positive Face**: Wish to be liked.\n*   **Negative Face**: Wish to be free from imposition.\n\n### 📝 Strategies:\n1.  Bald On-record: Direct command.\n2.  Positive Politeness: Complimenting.\n3.  Negative Politeness: Hedges, Apologies, Deference.\n4.  Off-record: Hinting."
-  },
-  {
-    "id": "sec8",
-    "section": "SECTION 8",
-    "title": "Past Exam Papers with Model Answers",
-    "arabicTitle": "أوراق امتحانات سابقة مع الإجابات النموذجية",
-    "content": "### 📝 Basic 2020/2021/2024 Exam Reviews\nThis section includes identified flouted maxims, politeness strategies, and foregrounding examples from previous years."
-  },
-  {
-    "id": "sec9",
-    "section": "SECTION 9",
-    "title": "Quick Reference Cheat Sheets",
-    "arabicTitle": "أوراق المراجعة السريعة",
-    "content": "### 📝 Quick ID Guide:\n*   **Deviation**: Check neologism or word order.\n*   **Cohesion**: Check pronouns or connectors.\n*   **Maxims**: Check if speaker is lying (Quality) or being vague (Manner).\n*   **Politeness**: Check for 'Sorry' (Apology) or 'Sir' (Deference)."
+    "title": "Cohesion & Textual Integrity",
+    "arabicTitle": "التماسك النصي وترابط النص",
+    "content": "### Cohesion\nThe linguistic means by which sentences are woven together to make texts. It is the glue of the text.\n\n### 1. Reference Cohesion\nUsing grammatical words in one sentence to link to words in another sentence. \n*   **Personal**: he, she, it.\n*   **Demonstrative**: this, that, here, there.\n*   **Comparative**: same, different, other.\n\n### شعبولي الموضوع كدا\nالتماسك هو اللي بيخلي الجمل \"ماسكين في بعض\".. وأهم طريقة هي الإحالة (Reference).. يعني تستخدم كلمة بتشاور على حاجة اتقالت قبل كدة أو هتتقال بعدين.\n\n### 2. Lexical Cohesion\nRecurrent use of related content words. \n*   **Reiteration**: repeating the same word.\n*   **Collocation**: words that usually go together (e.g., 'rabbit' and 'hole').\n\n### شعبولي الموضوع كدا\nالتماسك المعجمي.. يعني تكرر كلمات ليها علاقة ببعض في النص.. لو بتتكلم عن البحر هتلاقي كلمات زي (موج، رمل، سمك) دي بنسميها Collocation وبتحسس القارئ إن النص كله وحدة واحدة."
   }
 ]
