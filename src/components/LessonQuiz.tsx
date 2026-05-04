@@ -46,6 +46,9 @@ export default function LessonQuiz({ questions, chapterId, nextLesson }: LessonQ
             totalQuestions: questions.length
           }),
         });
+        
+        // Dispatch event for real-time UI updates
+        window.dispatchEvent(new Event("progressUpdated"));
       } catch (error) {
         console.error("Failed to save score:", error);
       }

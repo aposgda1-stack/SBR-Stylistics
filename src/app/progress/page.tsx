@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getAllChapters } from "@/lib/contentService";
 import Footer from "@/components/Footer";
 import { useAuth } from "@clerk/nextjs";
+import Leaderboard from "@/components/Leaderboard";
 
 export default function ProgressPage() {
   const { isSignedIn, isLoaded } = useAuth();
@@ -12,7 +13,7 @@ export default function ProgressPage() {
   const [loading, setLoading] = useState(true);
   const chapters = getAllChapters();
 
-  useEffect(() => {
+  const fetchProgress = () => {
     if (isLoaded && isSignedIn) {
       fetch("/api/user-progress")
         .then(r => r.json())
@@ -27,6 +28,15 @@ export default function ProgressPage() {
     } else if (isLoaded) {
       setLoading(false);
     }
+  };
+
+  useEffect(() => {
+    fetchProgress();
+
+    // Listen for progress updates to refresh page in real-time
+    const handleUpdate = () => fetchProgress();
+    window.addEventListener("progressUpdated", handleUpdate);
+    return () => window.removeEventListener("progressUpdated", handleUpdate);
   }, [isLoaded, isSignedIn]);
 
   const completedLessons = userData?.completedLessons || [];
@@ -244,24 +254,13 @@ export default function ProgressPage() {
           </div>
         </section>
 
-        {/* Practice & Mastery Sections */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
-          <Link
-            href="/flashcards"
-            className="group flex flex-col p-8 bg-slate-900 rounded-[3rem] hover:shadow-2xl transition-all relative overflow-hidden"
-          >
-            <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:scale-125 transition-transform">
-               <span className="material-symbols-outlined text-[100px] text-white">style</span>
-            </div>
-            <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center text-white mb-6">
-              <span className="material-symbols-outlined text-3xl">style</span>
-            </div>
-            <div>
-              <h3 className="text-2xl font-black text-white mb-2 uppercase tracking-tighter">Memory Cards</h3>
-              <p className="text-slate-400 font-bold text-sm">Flip through definitions</p>
-            </div>
-          </Link>
+        {/* Real-time Leaderboard Section */}
+        <section className="mb-20">
+          <Leaderboard />
+        </section>
 
+        {/* Practice & Mastery Sections */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
           <Link
             href="/exam/mock"
             className="group flex flex-col p-8 bg-primary rounded-[3rem] hover:shadow-2xl transition-all relative overflow-hidden"

@@ -17,7 +17,6 @@ const navItems: NavItem[] = [
   { href: "/material", label: "Material" },
   { href: "/word-box", label: "Word Box" },
   { href: "/chapters", label: "Chapters" },
-  { href: "/flashcards", label: "Flashcards" },
   { href: "/exam", label: "Exam" },
 ];
 
@@ -102,11 +101,20 @@ export default function TopBar() {
 function UserScore() {
   const [score, setScore] = useState<number | null>(null);
 
-  useEffect(() => {
+  const fetchScore = () => {
     fetch("/api/user/progress")
       .then((res) => res.json())
       .then((data) => setScore(data.score))
       .catch(() => setScore(0));
+  };
+
+  useEffect(() => {
+    fetchScore();
+    
+    // Refresh score in real-time when progress changes
+    const handleUpdate = () => fetchScore();
+    window.addEventListener("progressUpdated", handleUpdate);
+    return () => window.removeEventListener("progressUpdated", handleUpdate);
   }, []);
 
   return (
