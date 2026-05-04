@@ -2,29 +2,43 @@
   {
     "id": "sec1",
     "section": "SECTION 1",
-    "title": "Introduction to Stylistics & Exam Analysis",
-    "arabicTitle": "مقدمة الأسلوبيات وتحليل الامتحان",
-    "content": "Stylistics is the bridge between linguistics and literary criticism. It uses the tools of linguistic analysis to explain why we feel certain emotions or perceive certain meanings in a text. The exam is not just about memorizing; it is about proving you can apply these theories to real extracts from poems and stories.\n\n### Exam Sections Analysis:\n1. **Section A**: Tests your memory of definitions. You must use the word-box format.\n2. **Section B**: Tests your understanding of conversation rules (Grice).\n3. **Section C**: Tests your ability to find rules being added or broken in poetry.\n\n### شعبولي الموضوع كدا\nالأسلوبيات دي هي اللي بتخليك تفهم ليه لما بتقرأ بيت شعر بتحس بالوجع أو الفرحة.. هي العلم اللي بيشرح \"سر الخلطة\" بتاعة الكاتب. الامتحان 6 أقسام، وكل قسم محتاج تركيز في التفاصيل اللي هنشرحها هنا بالمللي."
+    "title": "Exam Overview & Study Guide",
+    "arabicTitle": "نظرة عامة على الامتحان ودليل المذاكرة",
+    "content": "This guide covers the complete Stylistics syllabus for fourth-year students. It has been reorganized for maximum clarity. The exam tests both theoretical definitions and practical analysis.\n\n### 📝 Exam Sections:\n*   **Section A**: Complete Statements (Word Bank).\n*   **Section B**: Flouted Maxims (Grice).\n*   **Section C**: Foregrounding (Parallelism & Deviation).\n*   **Section D**: True / False.\n*   **Section E**: Modality & Evaluative Devices.\n*   **Section F**: Theoretical Definitions.\n\n### شعبولي الموضوع كدا\nبص يا بطل، الامتحان ده 6 أجزاء. فيه جزء حفظ (تعريفات)، وجزء فهم (زي تطلع الغلطات في الكلام)، وجزء تحليل للشعر. المذكرة دي هتخليك برنس فيهم كلهم لأننا هنشرح كل حاجة بالتفصيل."
   },
   {
     "id": "sec2",
     "section": "SECTION 2",
-    "title": "The Master Bank of Definitions (Poetry)",
-    "arabicTitle": "بنك التعريفات الشامل (الشعر)",
-    "content": "### Poetic Licence\nThe poet's right to ignore rules and conventions generally observed by users of the language. It allows poets to bend grammatical, phonological, or lexical norms for artistic effect.\n\n### شعبولي الموضوع كدا\nالشاعر ليه \"تصريح\" يكسر أي قاعدة.. لو القافية محتاجة يغير نطق كلمة أو يخترع كلمة جديدة، من حقه، وده اللي بنسميه الرخصة الشاعرية.\n\n### Foregrounding\nRefers to the ways in which certain aspects of a text are made to stand out or appear prominent through forms of textual patterning. It is the psychological effect of certain textual devices that controls readers' attention and generates literary interpretations.\n\n### شعبولي الموضوع كدا\nإزاي تخلي كلمة أو جملة \"تزغلل\" في عين القارئ وسط باقي الكلام؟ ده هو الـ Foregrounding.. إنك تبرز حاجة معينة عشان القارئ يفهم إنها أهم جزئية في النص.\n\n### Parallelism\nExtra regular use of a linguistic feature. It involves holding some features constant while varying others. It pushes readers towards perceiving semantic relations.\n\n### شعبولي الموضوع كدا\nالتوازي.. إنك تجيب جملتين ليهم نفس الوزن والتقسيمة بالظبط بس الكلمات مختلفة.. ده بيخلي القارئ غصب عنه يربط بين معاني الجملتين دول."
+    "title": "Complete Definitions Reference",
+    "arabicTitle": "المرجع الكامل للتعريفات الأكاديمية",
+    "content": "### Poetic Licence\nThe poet's right to ignore rules and conventions generally observed by users of the language. It allows poets to bend grammatical, phonological, or lexical norms for artistic effect.\n\n### شعبولي الموضوع كدا\nالشاعر ليه \"رخصة\".. يعني من حقه يكسر قواعد النحو أو النطق براحته عشان يظبط القافية أو يطلع معنى فني جديد.. ومحدش يقدر يقوله إنت بتعمل إيه!\n\n### Foregrounding\nRefers to the ways in which certain aspects of a text are made to stand out or appear prominent through forms of textual patterning. It is the psychological effect of certain textual devices that controls readers' attention.\n\n### شعبولي الموضوع كدا\nالـ Foregrounding هو إنك تخلي حتة في الكلام \"تزغلل\" في عين اللي بيقرأ.. زي ما تكون راسم لوحة وفيها حاجة واضحة جداً في الوش والباقي في الخلفية.. هنا بنستخدم كلمات غريبة أو تكرار عشان نشد انتباهك.\n\n### Parallelism\nExtra regular use of a linguistic feature. It involves holding some features constant while varying others. It pushes readers towards perceiving semantic relations.\n\n### شعبولي الموضوع كدا\nالتوازي.. يعني تجيب جملتين ليهم نفس التقسيمة بالظبط بس الكلمات مختلفة.. ده بيخليك غصب عنك تربط بين معاني الجملتين وتحس بجمال النص.\n\n### Deviation\nExtra irregularity in language use. It works by disrupting or departing from readers' expectations. It is divided into external and internal deviation.\n\n### شعبولي الموضوع كدا\nالـ Deviation هو الانحراف.. يعني إنك تعمل حاجة \"شاذة\" عن اللغة العادية.. يا إما تكسر قواعد اللغة كلها (External) أو تكسر القاعدة اللي إنت نفسك مشيت عليها في القصيدة (Internal)."
   },
   {
     "id": "sec3",
     "section": "SECTION 3",
-    "title": "Deviation: The 8 Types in Deep Detail",
-    "arabicTitle": "الانحراف: الأنواع الثمانية بالتفصيل الممل",
-    "content": "### 1. Lexical Deviation\nDeviation achieved through **Neologism** (the invention of new words).\n*   **Affixation**: e.g., 'foresuffer' (adding a prefix).\n*   **Compounding**: e.g., 'widow-making' (joining two words).\n*   **Functional Conversion**: e.g., using 'achieve' as a noun.\n\n### شعبولي الموضوع كدا\nهنا الشاعر بيلعب في الكلمات نفسها.. يا يركب كلمتين في بعض (Compound)، يا يزود حروف في الأول أو الآخر (Affix)، يا يستخدم كلمة في وظيفة غير وظيفتها.. زي ما يستخدم فعل كإنه اسم.\n\n### 2. Syntactic Deviation\nDeparting from normal word order (Subject-Verb-Object). \n*   **Example**: Placing adjectives after nouns ('word compassionate') or inverting subject-verb order ('Then spake King Arthur').\n\n### شعبولي الموضوع كدا\nهنا اللعب في ترتيب الجملة.. بدل ما الجملة تمشي عادي، الشاعر بيشقلبها عشان القافية أو عشان يحسسك إن الكلام تقيل وله هيبة.\n\n### 3. Phonological Deviation\nWords pronounced or stressed unusually.\n*   **Elision**: dropping a sound ('t'assault').\n*   **Aphesis**: loss of initial sound (''gainst').\n*   **Syncope**: loss of middle sound ('o'er').\n*   **Apocope**: loss of final sound ('chil'').\n\n### شعبولي الموضوع كدا\nده انحراف في الصوت.. يعني الشاعر ياكل حرف من أول الكلمة أو نصها أو آخرها عشان يظبط الوزن الموسيقي للبيت."
+    "title": "Foregrounding, Parallelism & Deviation In Detail",
+    "arabicTitle": "الإبراز، التوازي، والانحراف بالتفصيل",
+    "content": "### 3.1 Lexical Deviation\nAchieved through **Neologism** (inventing new words). \n*   **Affixation**: adding prefixes/suffixes like 'foresuffer'.\n*   **Compounding**: joining words like 'widow-making'.\n*   **Functional Conversion**: using a word in a new class (verb as noun).\n\n### شعبولي الموضوع كدا\nهنا الشاعر بيلعب في الكلمات.. يألف كلمات جديدة، يلزق كلمتين في بعض، أو يستخدم فعل كإنه اسم.. كل ده عشان يبهرك بقوة لغته.\n\n### 3.2 Syntactic Deviation\nDeparting from normal word order (Subject-Verb-Object). \n*   **Example**: 'a word compassionate' (adjective after noun).\n\n### شعبولي الموضوع كدا\nبدل ما الجملة تمشي عادي، الشاعر بيشقلبها.. يحط الصفة بعد الموصوف مثلاً.. وده عشان يشد انتباهك إن فيه حاجة مش عادية بتحصل هنا."
   },
   {
     "id": "sec4",
     "section": "SECTION 4",
-    "title": "Cohesion & Textual Integrity",
-    "arabicTitle": "التماسك النصي وترابط النص",
-    "content": "### Cohesion\nThe linguistic means by which sentences are woven together to make texts. It is the glue of the text.\n\n### 1. Reference Cohesion\nUsing grammatical words in one sentence to link to words in another sentence. \n*   **Personal**: he, she, it.\n*   **Demonstrative**: this, that, here, there.\n*   **Comparative**: same, different, other.\n\n### شعبولي الموضوع كدا\nالتماسك هو اللي بيخلي الجمل \"ماسكين في بعض\".. وأهم طريقة هي الإحالة (Reference).. يعني تستخدم كلمة بتشاور على حاجة اتقالت قبل كدة أو هتتقال بعدين.\n\n### 2. Lexical Cohesion\nRecurrent use of related content words. \n*   **Reiteration**: repeating the same word.\n*   **Collocation**: words that usually go together (e.g., 'rabbit' and 'hole').\n\n### شعبولي الموضوع كدا\nالتماسك المعجمي.. يعني تكرر كلمات ليها علاقة ببعض في النص.. لو بتتكلم عن البحر هتلاقي كلمات زي (موج، رمل، سمك) دي بنسميها Collocation وبتحسس القارئ إن النص كله وحدة واحدة."
+    "title": "Cohesion: Making Texts",
+    "arabicTitle": "التماسك النصي: كيف نصنع نصاً مترابطاً",
+    "content": "### 4.1 What is Cohesion?\nThe linguistic means by which sentences are woven together to make texts. It refers to all the linguistic ways words link up across sentences.\n\n### 4.2 Reference Cohesion\nUsing grammatical words to refer back or forward. \n*   **Personal**: pronouns (he, she, it).\n*   **Demonstrative**: this, that, here, there.\n*   **Comparative**: same, different.\n\n### شعبولي الموضوع كدا\nالـ Cohesion هو \"الصمغ\" اللي بيربط الجمل ببعض.. أهم نوع هو الـ Reference، يعني تستخدم ضمير (زي هو أو هي) عشان تشاور على حد اتكلمت عنه قبل كدة."
+  },
+  {
+    "id": "sec5",
+    "section": "SECTION 5",
+    "title": "Modality and Evaluative Devices",
+    "arabicTitle": "التلقائي الإطاري والوسائل التقييمية",
+    "content": "### 5.1 Modality Parameters\n1. **Probability**: might, may, must.\n2. **Obligation**: must, should, ought to.\n3. **Willingness**: will, would.\n4. **Usuality**: always, usually, rarely.\n\n### 5.2 Generic Sentences\nSentences that assert a general truth (timelessly true). Often in simple present.\nExample: 'Property is theft.'\n\n### شعبولي الموضوع كدا\nالـ Modality هي الطريقة اللي بتبين رأيك في الكلام.. هل إنت متأكد؟ (Must) ولا شاكك؟ (Might).. أما الـ Generic Sentences دي جمل بتقول حقائق عامة مبيختلفش عليها اتنين، زي \"الصدق منجاة\"."
+  },
+  {
+    "id": "sec6",
+    "section": "SECTION 6",
+    "title": "Narrative Structure (Labov's Model)",
+    "arabicTitle": "هيكل السرد (نموذج لابوف بالتفصيل)",
+    "content": "### Labov's 6 Elements:\n1. **Abstract**: nutshell summary.\n2. **Orientation**: who, when, where (background).\n3. **Complicating Action**: ⭐ THE MOST ESSENTIAL. The events.\n4. **Evaluation**: why is it interesting?\n5. **Resolution**: what finally happened?\n6. **Coda**: bridge back to the present.\n\n### شعبولي الموضوع كدا\nلابوف قال إن أي حكاية في الدنيا ليها 6 أجزاء.. أهمهم الـ Complicating Action اللي هي الأحداث نفسها.. والـ Coda دي اللي بترجعنا للواقع وبنقول منها الحكمة من القصة."
   }
 ]

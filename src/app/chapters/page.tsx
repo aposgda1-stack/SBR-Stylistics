@@ -52,8 +52,8 @@ export default function LessonsPage() {
 
   return (
     <>
-      <main className="min-h-screen bg-slate-50 dark:bg-slate-950 py-20 px-4 relative overflow-hidden">
-        {/* Background Decorative Elements */}
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 font-sans pb-32 overflow-x-hidden">
+      <main className="max-w-4xl mx-auto px-4 py-20 relative">
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-20">
            <div className="absolute top-40 left-10 w-64 h-64 bg-teal-500 rounded-full blur-[100px]" />
            <div className="absolute bottom-40 right-10 w-64 h-64 bg-primary rounded-full blur-[100px]" />

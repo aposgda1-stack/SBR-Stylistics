@@ -1,148 +1,171 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import materialData from "@/data/material.json";
 import Footer from "@/components/Footer";
 
 export default function MaterialPage() {
   const [activeSection, setActiveSection] = useState(materialData[0].id);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const currentSection = materialData.find((m) => m.id === activeSection);
 
-  // Helper to parse simple markdown bolding and clean up text
+  // Auto-scroll the tabs to the active one
+  useEffect(() => {
+    const activeTab = document.getElementById(`tab-${activeSection}`);
+    if (activeTab && scrollRef.current) {
+      const scrollLeft = activeTab.offsetLeft - (scrollRef.current.offsetWidth / 2) + (activeTab.offsetWidth / 2);
+      scrollRef.current.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+    }
+  }, [activeSection]);
+
+  // Better regex for bolding and removing **
   const formatContent = (text: string) => {
-    return text.split("**").map((part, i) => 
+    if (!text) return "";
+    const parts = text.split("**");
+    return parts.map((part, i) => 
       i % 2 === 1 ? <strong key={i} className="text-slate-900 dark:text-white font-black">{part}</strong> : part
     );
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 font-serif">
-      {/* Header */}
-      <header className="bg-white dark:bg-slate-900 border-b border-slate-100 dark:border-slate-800 py-24 px-6 relative overflow-hidden">
-        <div className="absolute top-0 right-0 p-10 opacity-5">
-           <span className="material-symbols-outlined text-[200px]">history_edu</span>
-        </div>
-        <div className="max-w-5xl mx-auto text-center relative z-10 font-sans">
-          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-teal-500/10 text-teal-600 text-xs font-black uppercase tracking-[0.3em] mb-10 border border-teal-500/20">
-            <span className="material-symbols-outlined text-sm">verified_user</span>
-            FULL CURRICULUM 2026
-          </div>
-          <h1 className="text-6xl md:text-8xl mb-8 text-slate-900 dark:text-white font-black tracking-tighter">
-            STYLISTICS
-          </h1>
-          <p className="text-slate-400 dark:text-slate-500 max-w-2xl mx-auto text-2xl leading-relaxed font-bold italic">
-            "Detailed content with Egyptian breakdowns."
-          </p>
-        </div>
+    <div className="min-h-screen bg-white dark:bg-slate-950 font-sans pb-20">
+      {/* Mobile-Friendly Header */}
+      <header className="bg-slate-900 pt-16 pb-12 px-6 relative overflow-hidden text-center md:text-left">
+         <div className="max-w-5xl mx-auto relative z-10">
+            <h1 className="text-4xl md:text-6xl font-black text-white mb-4 tracking-tighter">
+              Study Hub
+            </h1>
+            <p className="text-teal-400 text-sm font-bold uppercase tracking-[0.2em]">
+              The Ultimate Curriculum Guide
+            </p>
+         </div>
+         {/* Decorative circle */}
+         <div className="absolute -top-20 -right-20 w-64 h-64 bg-teal-500/20 rounded-full blur-3xl" />
       </header>
 
-      <main className="max-w-7xl mx-auto px-6 py-20 pb-32 flex flex-col lg:flex-row gap-16">
-        {/* Sidebar */}
-        <aside className="w-full lg:w-96 flex-shrink-0 font-sans">
-          <div className="sticky top-24 space-y-10">
-            <div className="bg-white dark:bg-slate-900 p-10 rounded-[3.5rem] border border-slate-100 dark:border-slate-800 shadow-[0_20px_50px_rgba(0,0,0,0.02)]">
-               <h3 className="font-black text-slate-900 dark:text-white uppercase tracking-[0.2em] text-[11px] mb-10 px-2 flex items-center justify-between">
-                 CONTENTS
-                 <span className="w-10 h-10 rounded-xl bg-slate-50 dark:bg-slate-800 flex items-center justify-center text-[11px]">{materialData.length}</span>
-               </h3>
-               <div className="flex flex-col gap-4">
-                 {materialData.map((item) => (
-                   <button
-                     key={item.id}
-                     onClick={() => setActiveSection(item.id)}
-                     className={`text-left px-8 py-6 rounded-[2rem] font-black text-sm transition-all flex items-start gap-4 ${
-                       activeSection === item.id
-                         ? "bg-slate-900 text-white shadow-2xl shadow-slate-900/20 scale-[1.03]"
-                         : "text-slate-500 dark:text-slate-400 hover:bg-slate-50 dark:hover:bg-slate-800 border border-transparent"
-                     }`}
-                   >
-                     <span className={`mt-1 text-[10px] opacity-40 ${activeSection === item.id ? "text-teal-400 opacity-100" : ""}`}>{item.section}</span>
-                     <span className="flex-1 leading-tight">{item.title}</span>
-                   </button>
-                 ))}
-               </div>
+      {/* Sticky Top Navigation (Mobile Friendly) */}
+      <div className="sticky top-0 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-b border-slate-100 dark:border-slate-800">
+        <div 
+          ref={scrollRef}
+          className="max-w-7xl mx-auto flex overflow-x-auto no-scrollbar gap-2 px-4 py-4 md:justify-center"
+        >
+          {materialData.map((item) => (
+            <button
+              id={`tab-${item.id}`}
+              key={item.id}
+              onClick={() => setActiveSection(item.id)}
+              className={`flex-shrink-0 px-6 py-3 rounded-2xl font-black text-xs uppercase tracking-widest transition-all ${
+                activeSection === item.id
+                  ? "bg-slate-900 text-white shadow-lg shadow-slate-900/20"
+                  : "text-slate-400 dark:text-slate-500 bg-slate-50 dark:bg-slate-900"
+              }`}
+            >
+              {item.section}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <main className="max-w-4xl mx-auto px-4 py-8">
+        {currentSection ? (
+          <div className="space-y-10 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            {/* Section Heading */}
+            <div className="text-center md:text-left">
+               <h2 className="text-3xl md:text-5xl font-black text-slate-900 dark:text-white mb-2 tracking-tighter leading-tight">
+                  {currentSection.title}
+               </h2>
+               <p className="text-slate-400 dark:text-slate-500 font-bold italic" dir="rtl">
+                  {currentSection.arabicTitle}
+               </p>
+            </div>
+
+            {/* Content Blocks */}
+            <div className="space-y-12">
+              {currentSection.content.split("\n").map((line, idx) => {
+                if (!line.trim()) return <div key={idx} className="h-4" />;
+
+                // Titles
+                if (line.startsWith("### ")) {
+                  const isSha3boli = line.includes("شعبولي الموضوع كدا");
+                  return (
+                    <h3 
+                      key={idx} 
+                      className={`text-2xl font-black mt-12 mb-6 flex items-center gap-4 ${
+                        isSha3boli ? "text-teal-600 dir-rtl border-r-4 border-teal-500 pr-4" : "text-slate-900 dark:text-white"
+                      }`}
+                    >
+                       {!isSha3boli && <div className="w-2 h-8 bg-slate-900 dark:bg-teal-500 rounded-full" />}
+                       {line.replace("### ", "").replace(/\*\*/g, "")}
+                    </h3>
+                  );
+                }
+
+                // Bold Boxes/Definitions
+                if (line.startsWith("**") && line.includes("**:")) {
+                   const parts = line.split("**: ");
+                   return (
+                     <div key={idx} className="p-8 bg-slate-50 dark:bg-slate-900/50 rounded-[2.5rem] border border-slate-100 dark:border-slate-800 shadow-sm">
+                        <strong className="text-xl font-black text-slate-900 dark:text-white block mb-4 uppercase tracking-tighter">
+                          {parts[0].replace(/\*\*/g, "")}
+                        </strong>
+                        <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed italic">
+                           {formatContent(parts[1])}
+                        </p>
+                     </div>
+                   );
+                }
+
+                // Normal Paragraphs
+                const isArabic = /[\u0600-\u06FF]/.test(line);
+                return (
+                  <p 
+                    key={idx} 
+                    dir={isArabic ? "rtl" : "ltr"}
+                    className={`text-lg md:text-xl leading-relaxed ${
+                      isArabic 
+                        ? "font-bold text-slate-600 dark:text-slate-300 bg-teal-50/30 dark:bg-teal-900/10 p-8 rounded-[2.5rem] border-l-4 border-teal-500" 
+                        : "text-slate-500 dark:text-slate-400 font-medium"
+                    }`}
+                  >
+                    {formatContent(line)}
+                  </p>
+                );
+              })}
             </div>
           </div>
-        </aside>
-
-        {/* Content Area */}
-        <article className="flex-1 bg-white dark:bg-slate-900 rounded-[5rem] p-12 md:p-24 shadow-[0_40px_100px_rgba(0,0,0,0.04)] border border-slate-100 dark:border-slate-800 min-h-[900px] animate-fade-in-up">
-          {currentSection ? (
-            <div className="max-w-none">
-              <div className="mb-24 border-b border-slate-50 dark:border-slate-800 pb-20">
-                 <div className="flex items-center gap-4 text-teal-600 font-black text-xs uppercase tracking-[0.4em] mb-8 font-sans">
-                    <span className="w-16 h-[2px] bg-teal-500" />
-                    {currentSection.section}
-                 </div>
-                 <h1 className="text-5xl md:text-7xl font-black text-slate-900 dark:text-white leading-[1.1] mb-8 tracking-tighter">
-                   {currentSection.title}
-                 </h1>
-                 <h2 className="text-3xl font-bold text-slate-300 dark:text-slate-600 dir-rtl">
-                   {currentSection.arabicTitle}
-                 </h2>
-              </div>
-
-              <div className="space-y-16 text-slate-700 dark:text-slate-300 leading-[2.3] text-2xl">
-                {currentSection.content.split("\n").map((line, idx) => {
-                  // Title Rendering
-                  if (line.startsWith("### ")) {
-                    const isEgyptian = line.includes("شعبولي الموضوع كدا");
-                    return (
-                      <h3 key={idx} className={`text-3xl font-black mt-24 mb-12 flex items-center gap-6 font-sans ${isEgyptian ? "text-teal-600 dir-rtl" : "text-slate-900 dark:text-white"}`}>
-                         {!isEgyptian && <span className="w-3 h-10 bg-teal-500 rounded-full" />}
-                         {line.replace("### ", "")}
-                         {isEgyptian && <span className="material-symbols-outlined text-4xl">emoji_objects</span>}
-                      </h3>
-                    );
-                  }
-
-                  // Definitions/Bold Blocks Rendering
-                  if (line.startsWith("**") && line.includes("**:")) {
-                     const parts = line.split("**: ");
-                     return (
-                       <div key={idx} className="p-12 bg-slate-50 dark:bg-slate-800/50 rounded-[3.5rem] border-2 border-slate-100 dark:border-slate-800 my-16 relative overflow-hidden group hover:border-teal-500/30 transition-all">
-                          <div className="absolute top-0 right-0 w-32 h-32 bg-teal-500/5 rounded-bl-full -mr-16 -mt-16 group-hover:scale-150 transition-transform" />
-                          <strong className="text-slate-900 dark:text-white font-black block mb-6 text-3xl font-sans tracking-tight">{parts[0].replace("**", "")}</strong>
-                          <span className="text-slate-600 dark:text-slate-400 italic block leading-relaxed">{formatContent(parts[1])}</span>
-                       </div>
-                     );
-                  }
-
-                  // List Item Rendering
-                  if (line.startsWith("*   ") || line.startsWith("- ") || line.startsWith("1. ") || line.startsWith("2. ")) {
-                    return (
-                      <div key={idx} className="flex items-start gap-8 ml-8 my-6 bg-slate-50/50 dark:bg-slate-800/20 p-10 rounded-[2.5rem] border border-slate-100 dark:border-slate-800">
-                         <div className="w-4 h-4 bg-teal-500 rounded-full mt-5 flex-shrink-0 shadow-lg shadow-teal-500/40" />
-                         <p className="font-bold text-slate-800 dark:text-slate-200">{formatContent(line.replace(/^[*\d.-]+\s+/, ""))}</p>
-                      </div>
-                    );
-                  }
-
-                  if (line.trim() === "") return <div key={idx} className="h-8" />;
-                  
-                  // Egyptian Section Content
-                  const isArabic = /[\u0600-\u06FF]/.test(line);
-                  return (
-                    <p 
-                      key={idx} 
-                      className={`font-bold ${isArabic ? "text-slate-600 dark:text-slate-400 text-3xl leading-[2.6] bg-teal-50/20 dark:bg-teal-900/10 p-12 rounded-[3rem] border-r-8 border-teal-500 shadow-inner" : "font-medium"}`}
-                      dir={isArabic ? "rtl" : "ltr"}
-                    >
-                      {formatContent(line)}
-                    </p>
-                  );
-                })}
-              </div>
-            </div>
-          ) : (
-            <div className="h-full flex flex-col items-center justify-center text-slate-300 py-40">
-              <span className="material-symbols-outlined text-8xl mb-8 opacity-20">history_edu</span>
-              <p className="font-black text-3xl uppercase tracking-widest opacity-30">Full Material Hub</p>
-            </div>
-          )}
-        </article>
+        ) : (
+          <div className="py-40 text-center text-slate-300">
+             <span className="material-symbols-outlined text-6xl opacity-20">article</span>
+             <p className="font-bold mt-4">Select a section to start</p>
+          </div>
+        )}
       </main>
+
+      {/* Quick Navigation Footer (Mobile Only) */}
+      <div className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2 p-2 bg-slate-900/90 backdrop-blur-md rounded-full shadow-2xl z-[60]">
+         <button 
+           onClick={() => {
+              const idx = materialData.findIndex(m => m.id === activeSection);
+              if (idx > 0) setActiveSection(materialData[idx-1].id);
+           }}
+           className="w-12 h-12 rounded-full flex items-center justify-center text-white hover:bg-white/10"
+         >
+            <span className="material-symbols-outlined">arrow_back_ios_new</span>
+         </button>
+         <div className="px-4 text-[10px] font-black text-white uppercase tracking-widest border-x border-white/10">
+            {materialData.findIndex(m => m.id === activeSection) + 1} / {materialData.length}
+         </div>
+         <button 
+           onClick={() => {
+              const idx = materialData.findIndex(m => m.id === activeSection);
+              if (idx < materialData.length - 1) setActiveSection(materialData[idx+1].id);
+           }}
+           className="w-12 h-12 rounded-full flex items-center justify-center text-white hover:bg-white/10"
+         >
+            <span className="material-symbols-outlined">arrow_forward_ios</span>
+         </button>
+      </div>
 
       <Footer />
     </div>
