@@ -4,131 +4,77 @@ import Link from "next/link";
 import { useUser } from "@clerk/nextjs";
 import Footer from "@/components/Footer";
 
+const navItems = [
+  { href: "/chapters",  icon: "map",          label: "Journey Map",   sub: "All chapters",       color: "bg-teal-500 text-white" },
+  { href: "/material",  icon: "auto_stories", label: "Study Guide",   sub: "Notes & Arabic",     color: "bg-slate-800 dark:bg-slate-700 text-white" },
+  { href: "/progress",  icon: "emoji_events", label: "My Dashboard",  sub: "Scores & Rankings",  color: "bg-amber-400 text-slate-900" },
+  { href: "/exam",      icon: "quiz",         label: "Mock Exam",     sub: "Past papers",         color: "bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-white" },
+  { href: "/word-box",  icon: "style",        label: "Word Box",      sub: "Terms & training",    color: "bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-white" },
+];
+
 export default function Dashboard() {
   const { user } = useUser();
   const displayName = user?.firstName || null;
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
-      <main className="max-w-7xl mx-auto px-6 py-20 pb-32">
-        {/* Welcome Section */}
-        <section className="mb-20 animate-in fade-in slide-in-from-bottom-8 duration-700">
-          <div className="relative p-12 md:p-20 rounded-[4rem] bg-slate-900 overflow-hidden shadow-2xl">
-            {/* Abstract Background Shapes */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/10 rounded-full -mr-48 -mt-48 blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-teal-500/5 rounded-full -ml-32 -mb-32 blur-3xl" />
-            
-            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
-              <div className="text-center md:text-left flex-1">
-                <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-teal-500/10 text-teal-400 text-xs font-black uppercase tracking-[0.3em] mb-8 border border-teal-500/20">
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
-                  </span>
-                  System Active • Ruby Edition
-                </div>
-                <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-[1.1] tracking-tighter">
-                  {displayName ? (
-                    <>Stay strong, <br /><span className="text-teal-500">{displayName}.</span></>
-                  ) : (
-                    <>The Final <br /><span className="text-teal-500">Chapter.</span></>
-                  )}
-                </h1>
-                <p className="text-slate-400 text-lg md:text-xl max-w-xl leading-relaxed font-medium">
-                  "Your brother Ruby is here to tell you that you've got this. We've mapped out every single definition and analysis you need to dominate the exam. Let's get to work."
-                </p>
-                
-                <div className="mt-12 flex flex-wrap gap-4 justify-center md:justify-start">
-                   <Link href="/chapters" className="px-10 py-5 bg-teal-500 text-slate-900 rounded-[2rem] font-black uppercase tracking-widest text-sm hover:scale-105 active:scale-95 transition-all shadow-xl shadow-teal-500/20">
-                      Continue Journey
-                   </Link>
-                   <Link href="/material" className="px-10 py-5 bg-white/10 text-white rounded-[2rem] font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all backdrop-blur-md">
-                      Full Syllabus
-                   </Link>
-                </div>
-              </div>
-              
-              {/* Final Semester Message */}
-              <div className="w-full md:w-80 p-8 rounded-[3rem] bg-white/5 border border-white/10 backdrop-blur-xl">
-                 <p className="text-slate-300 text-base leading-relaxed font-medium italic">
-                   &ldquo;This is our final semester. I am genuinely proud of every single one of you. Let&apos;s finish this strong — together.&rdquo;
-                 </p>
-              </div>
+    <div className="min-h-screen bg-[var(--background)]">
+      <main className="max-w-lg mx-auto px-4 pt-6 pb-28">
+
+        {/* Compact Hero */}
+        <div className="rounded-3xl bg-slate-900 p-6 mb-5 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-40 h-40 bg-teal-500/10 rounded-full -mr-16 -mt-16 blur-2xl pointer-events-none" />
+          <div className="relative z-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-[10px] font-black uppercase tracking-widest mb-3">
+              <span className="w-1.5 h-1.5 bg-teal-400 rounded-full animate-pulse inline-block" />
+              Final Semester · 2026
+            </div>
+            <h1 className="text-2xl font-black text-white tracking-tight leading-tight mb-1">
+              {displayName ? <>Stay strong, <span className="text-teal-400">{displayName}.</span></> : <><span className="text-teal-400">The Final</span> Chapter.</>}
+            </h1>
+            <p className="text-slate-400 text-xs font-medium leading-relaxed mb-4">
+              &ldquo;This is our final semester. I am genuinely proud of every single one of you. Let&apos;s finish this strong — together.&rdquo;
+            </p>
+            <div className="flex gap-3">
+              <Link href="/chapters" className="flex-1 py-3 bg-teal-500 text-slate-900 rounded-xl font-black text-xs uppercase tracking-widest text-center hover:bg-teal-400 transition-colors active:scale-95">
+                Continue
+              </Link>
+              <Link href="/material" className="flex-1 py-3 bg-white/10 text-white rounded-xl font-black text-xs uppercase tracking-widest text-center hover:bg-white/20 transition-colors active:scale-95">
+                Syllabus
+              </Link>
             </div>
           </div>
-        </section>
-
-        {/* Quick Access Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-           {/* Primary Hub */}
-           <Link href="/chapters" className="md:col-span-8 group relative overflow-hidden rounded-[4rem] bg-white dark:bg-slate-900 p-12 border border-slate-100 dark:border-slate-800 shadow-[0_20px_50px_rgba(0,0,0,0.03)] hover:shadow-2xl transition-all">
-              <div className="absolute top-0 right-0 p-12 opacity-5 group-hover:scale-110 transition-transform">
-                 <span className="material-symbols-outlined text-[120px]">explore</span>
-              </div>
-              <div className="relative z-10 h-full flex flex-col justify-between">
-                 <div>
-                    <span className="text-teal-500 font-black text-xs uppercase tracking-[0.3em] mb-4 block">Interactive Learning</span>
-                    <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-4 tracking-tighter">Visual Journey Map</h2>
-                    <p className="text-slate-500 dark:text-slate-400 text-lg font-medium max-w-md">Navigate the 9 comprehensive chapters of stylistics via our island-based curriculum map.</p>
-                 </div>
-                 <div className="mt-12 flex items-center gap-4 text-slate-900 dark:text-white font-black uppercase text-xs tracking-widest">
-                    Explore Now
-                    <span className="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
-                 </div>
-              </div>
-           </Link>
-
-           {/* Material Hub */}
-           <Link href="/material" className="md:col-span-4 group relative overflow-hidden rounded-[4rem] bg-teal-500 p-12 shadow-2xl shadow-teal-500/10 hover:shadow-teal-500/20 transition-all">
-              <div className="relative z-10 flex flex-col justify-between h-full">
-                 <div className="w-16 h-16 rounded-2xl bg-slate-900 flex items-center justify-center text-white mb-8">
-                    <span className="material-symbols-outlined text-3xl">auto_stories</span>
-                 </div>
-                 <div>
-                    <h2 className="text-3xl font-black text-slate-900 mb-4 tracking-tighter">Study Guide</h2>
-                    <p className="text-slate-900/70 font-bold leading-relaxed">Summarized notes with Arabic explanations.</p>
-                 </div>
-              </div>
-           </Link>
-
-            {/* Word Box & Progress */}
-            <div className="md:col-span-4 flex flex-col gap-8">
-              <Link href="/word-box" className="flex-1 group relative overflow-hidden rounded-[4rem] bg-white dark:bg-slate-900 p-12 border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-2xl transition-all">
-                <div className="w-14 h-14 rounded-2xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-900 dark:text-white mb-8 group-hover:bg-slate-900 group-hover:text-white dark:group-hover:bg-teal-500 dark:group-hover:text-slate-900 transition-all">
-                    <span className="material-symbols-outlined text-2xl">style</span>
-                </div>
-                <h3 className="text-2xl font-black text-slate-900 dark:text-white mb-2 tracking-tighter">The Word Box</h3>
-                <p className="text-slate-500 dark:text-slate-400 font-medium">Flashcards & Training.</p>
-              </Link>
-
-              <Link href="/progress" className="flex-1 group relative overflow-hidden rounded-[4rem] bg-yellow-50 dark:bg-yellow-900/20 p-12 border border-yellow-100 dark:border-yellow-900/30 shadow-sm hover:shadow-2xl transition-all">
-                <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-[80px] text-yellow-600">emoji_events</span>
-                </div>
-                <div className="w-14 h-14 rounded-2xl bg-yellow-400 text-white flex items-center justify-center mb-8 shadow-lg shadow-yellow-200">
-                    <span className="material-symbols-outlined text-2xl filled">emoji_events</span>
-                </div>
-                <h3 className="text-2xl font-black text-yellow-700 dark:text-yellow-500 mb-2 tracking-tighter uppercase">My Dashboard</h3>
-                <p className="text-yellow-600/70 font-bold text-xs uppercase tracking-widest">Rankings & Progress</p>
-              </Link>
-            </div>
-
-           {/* Exam Practice */}
-           <Link href="/exam" className="md:col-span-8 group relative overflow-hidden rounded-[4rem] bg-slate-100 dark:bg-slate-900 p-12 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-2xl transition-all">
-              <div className="flex flex-col md:flex-row gap-12 items-center h-full">
-                 <div className="flex-1">
-                    <span className="px-3 py-1 rounded-md bg-slate-200 dark:bg-slate-800 text-[10px] font-black uppercase tracking-widest text-slate-500 mb-4 inline-block">High Stakes</span>
-                    <h3 className="text-3xl font-black text-slate-900 dark:text-white mb-4 tracking-tighter">Simulated Final Exam</h3>
-                    <p className="text-slate-500 dark:text-slate-400 font-medium">Test your knowledge with real past paper questions from 2020-2024.</p>
-                 </div>
-                 <div className="w-32 h-32 rounded-full border-[10px] border-teal-500/20 border-t-teal-500 flex items-center justify-center text-teal-500 font-black text-2xl">
-                    0%
-                 </div>
-              </div>
-           </Link>
         </div>
-      </main>
 
+        {/* Compact Nav Grid */}
+        <div className="grid grid-cols-2 gap-3 mb-3">
+          {navItems.slice(0, 4).map((item) => (
+            <Link key={item.href} href={item.href}
+              className={`${item.color} rounded-2xl p-4 flex flex-col gap-3 active:scale-95 transition-transform shadow-sm`}
+            >
+              <span className="material-symbols-outlined text-2xl filled">{item.icon}</span>
+              <div>
+                <p className="font-black text-sm leading-none mb-0.5">{item.label}</p>
+                <p className="text-[10px] font-bold opacity-60 uppercase tracking-widest">{item.sub}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        {/* Word Box - full width */}
+        <Link href="/word-box"
+          className="w-full flex items-center gap-4 p-4 rounded-2xl bg-[var(--surface)] border border-[var(--outline-variant)] active:scale-95 transition-transform shadow-sm"
+        >
+          <div className="w-10 h-10 rounded-xl bg-[var(--surface-variant)] flex items-center justify-center flex-shrink-0">
+            <span className="material-symbols-outlined text-xl text-[var(--on-surface-variant)]">style</span>
+          </div>
+          <div className="flex-1">
+            <p className="font-black text-sm text-[var(--on-surface)]">Word Box</p>
+            <p className="text-[10px] font-bold text-[var(--on-surface-variant)] uppercase tracking-widest">Flashcards & Term Training</p>
+          </div>
+          <span className="material-symbols-outlined text-[var(--outline)] text-lg">chevron_right</span>
+        </Link>
+
+      </main>
       <Footer />
     </div>
   );
