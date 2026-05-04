@@ -25,38 +25,38 @@ export default function Dashboard() {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
                   </span>
-                  System Active
+                  System Active • Ruby Edition
                 </div>
                 <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-[1.1] tracking-tighter">
-                  Welcome back, <br />
+                  Stay strong, <br />
                   <span className="text-teal-500">{firstName}</span>.
                 </h1>
                 <p className="text-slate-400 text-lg md:text-xl max-w-xl leading-relaxed font-medium">
-                  Professor Mick is ready to dive into today's Stylistics challenge. What are we mastering today?
+                  "Your brother Ruby is here to tell you that you've got this. We've mapped out every single definition and analysis you need to dominate the exam. Let's get to work."
                 </p>
                 
                 <div className="mt-12 flex flex-wrap gap-4 justify-center md:justify-start">
                    <Link href="/chapters" className="px-10 py-5 bg-teal-500 text-slate-900 rounded-[2rem] font-black uppercase tracking-widest text-sm hover:scale-105 active:scale-95 transition-all shadow-xl shadow-teal-500/20">
                       Continue Journey
                    </Link>
-                   <Link href="/word-box" className="px-10 py-5 bg-white/10 text-white rounded-[2rem] font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all backdrop-blur-md">
-                      Flashcards
+                   <Link href="/material" className="px-10 py-5 bg-white/10 text-white rounded-[2rem] font-black uppercase tracking-widest text-sm hover:bg-white/20 transition-all backdrop-blur-md">
+                      Full Syllabus
                    </Link>
                 </div>
               </div>
               
-              {/* Mick's Tip Box */}
+              {/* Ruby's Motivation Box */}
               <div className="w-full md:w-80 p-8 rounded-[3rem] bg-white/5 border border-white/10 backdrop-blur-xl group hover:border-teal-500/50 transition-all">
                  <div className="w-14 h-14 rounded-2xl bg-teal-500 flex items-center justify-center text-slate-900 mb-6 shadow-lg shadow-teal-500/20">
-                    <span className="material-symbols-outlined text-3xl font-bold">lightbulb</span>
+                    <span className="material-symbols-outlined text-3xl font-bold">favorite</span>
                  </div>
-                 <h4 className="text-white font-black text-lg mb-4 uppercase tracking-tighter">Mick's Daily Insight</h4>
-                 <p className="text-slate-400 text-sm leading-loose">
-                   "Remember, parallelism isn't just about repetition; it's about the **contrast** within that identity."
+                 <h4 className="text-white font-black text-lg mb-4 uppercase tracking-tighter">Ruby's Motivation</h4>
+                 <p className="text-slate-400 text-sm leading-loose italic">
+                   "Success in Stylistics isn't about memorizing; it's about seeing the patterns Mick described, but through our eyes."
                  </p>
                  <div className="mt-6 pt-6 border-t border-white/10 flex items-center justify-between text-[10px] font-black text-teal-500 uppercase tracking-widest">
-                    <span>Source: Gibbons & Whiteley</span>
-                    <span className="material-symbols-outlined text-sm">trending_up</span>
+                    <span>From Ruby with Love</span>
+                    <span className="material-symbols-outlined text-sm">verified</span>
                  </div>
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function Dashboard() {
                  <div>
                     <span className="text-teal-500 font-black text-xs uppercase tracking-[0.3em] mb-4 block">Interactive Learning</span>
                     <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-4 tracking-tighter">Visual Journey Map</h2>
-                    <p className="text-slate-500 dark:text-slate-400 text-lg font-medium max-w-md">Navigate the 5 chapters of stylistics via our island-based curriculum map.</p>
+                    <p className="text-slate-500 dark:text-slate-400 text-lg font-medium max-w-md">Navigate the 9 comprehensive chapters of stylistics via our island-based curriculum map.</p>
                  </div>
                  <div className="mt-12 flex items-center gap-4 text-slate-900 dark:text-white font-black uppercase text-xs tracking-widest">
                     Explore Now

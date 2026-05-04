@@ -3,73 +3,58 @@
     "id": "ch1",
     "number": 1,
     "title": "Poetry: The Art of Foregrounding",
-    "description": "Master the concepts of Poetic Licence, Parallelism, and linguistic Deviation in poetic texts.",
+    "description": "Master Poetic Licence, Parallelism, and the 5 levels of linguistic Deviation.",
     "icon": "auto_stories",
     "status": "not-started",
     "lessons": [
       {
         "id": "ch1-s1",
-        "title": "Poetic Licence & Basic Levels",
-        "subtitle": "Understanding why poets break the rules.",
+        "title": "Poetic Licence & Language Levels",
+        "subtitle": "How poets break the rules and the structure of language.",
         "quizId": "quiz-ch1-s1",
         "content": [
-          { "type": "definition", "heading": "Theory: Poetic Licence (الرخصة الشعرية)", "body": "Poetic Licence is the poet's right to ignore rules and conventions generally observed by users of the language to achieve artistic effects. It is a 'licence' because society accepts these breaks as part of literary creativity." },
-          { 
-            "type": "analysis", 
-            "heading": "Applied: Functional Conversion", 
-            "body": "Analyzing Hopkins' line: 'The just man justices.'",
-            "steps": [
-              { "label": "Observation", "body": "Standard English uses 'justice' as a noun. Here, Hopkins converts it into a verb ('justices')." },
-              { "label": "Analysis", "body": "This is a form of Syntactic Deviation. By making justice an action (a verb), the poet suggests that being 'just' is not a static quality but a continuous, living action." }
-            ]
-          }
+          { "type": "definition", "heading": "Theoretical: Poetic Licence", "body": "Poetic Licence is the poet's right to ignore rules and conventions generally observed by users of the language. This allows for artistic creativity and the bending of grammatical, phonological, or lexical norms." },
+          { "type": "definition", "heading": "Theoretical: Levels of Language", "body": "Language is structured in 3 levels: \n1. Realization: Sounds (Phonology) and Marks (Graphology).\n2. Form: Words (Lexicon) and Grammar (Syntax).\n3. Meaning: Semantics (Literal) and Pragmatics (Contextual)." }
         ],
-        "appliedSummary": "بص يا بطل، الدرس الأول ده بيفهمك إن الشاعر مش زينا.. هو معاه \"تصريح\" (Poetic Licence) يخليه يغير في اللغة براحته عشان يوصلك شعور معين. \n\nفي المثال بتاع 'The just man justices'، الشاعر خد كلمة 'justice' اللي هي أصلاً اسم (عدل) وحولها لفعل (يعدل).. الحركة دي اسمها Functional Conversion. \n\nالغرض منها إيه؟ إنه يوصلك إن العدل مش مجرد كلمة، ده \"فعل\" مستمر لازم الإنسان يعمله. ده أول درس في إزاي الشاعر بيلعب باللغة عشان يبهرنا.",
-        "rubyTip": "الرخصة الشعرية هي سر جمال القصائد.. لو الشاعر مشي على القواعد بالظبط، القصيدة هتكون زي الجرنال! ✨",
+        "appliedSummary": "بص يا بطل، الدرس الأول ده بيفهمك إن الشاعر مش شخص عادي.. هو معاه \"رخصة\" (Poetic Licence) تخليه يكسر القواعد براحته عشان يظبط القافية أو يوصل معنى فني. ولازم تعرف إن اللغة متقسمة لـ 3 ليفلات: صوت وكتابة (Realization)، كلمة وقواعد (Form)، ومعنى وسياق (Meaning). لو حفظت التقسيمة دي، إنت كدة ضمنت أول جزء في الامتحان.",
+        "rubyTip": "الرخصة الشعرية هي السبب في إن القصائد مش زي لغة الجرايد.. هي اللي بتدي للقصيدة روح! ✨",
         "nextLesson": "ch1-s2"
       },
       {
         "id": "ch1-s2",
         "title": "Foregrounding & Parallelism",
-        "subtitle": "How poets control your attention.",
+        "subtitle": "Controlling the reader's attention through patterns.",
         "quizId": "quiz-ch1-s2",
         "content": [
-          { "type": "definition", "heading": "Theory: Foregrounding (البروز الأسلوبي)", "body": "Foregrounding is a psychological effect where certain parts of a text are made prominent. Like a bright color on a dark background, these parts demand the reader's attention." },
-          { 
-            "type": "analysis", 
-            "heading": "Applied: Semantic Parallelism", 
-            "body": "Analyzing: 'Where wealth accumulates and men decay.' (Goldsmith)",
-            "steps": [
-              { "label": "The Identity", "body": "Noun + Verb structure is repeated in both halves." },
-              { "label": "The Contrast", "body": "'Wealth' vs 'Men' and 'Accumulates' vs 'Decay'." },
-              { "label": "The Effect", "body": "The poet links the growth of money directly to the destruction of humans." }
-            ]
-          }
+          { "type": "definition", "heading": "Theoretical: Foregrounding", "body": "Refers to the ways in which certain aspects of a text are made to stand out or appear prominent (Prominence). It is a psychological effect that controls readers' attention and generates literary interpretations." },
+          { "type": "analysis", "heading": "Applied: Parallelism (Identity + Contrast)", "body": "Analyzing: 'Where wealth accumulates and men decay.' (Goldsmith).", "steps": [
+            { "label": "Structure", "body": "Both halves have the same [Subject + Verb] identity." },
+            { "label": "Contrast", "body": "Wealth/Men and Accumulates/Decay are contrasted." },
+            { "label": "Effect", "body": "This forces the reader to link the growth of money to the destruction of humans." }
+          ]}
         ],
-        "appliedSummary": "الـ Foregrounding هو إنك تبرز حاجة في الكلام عشان اللي بيقرأ يركز فيها غصب عنه. \n\nأهم وسيلة لده هي الـ Parallelism (التوازي).. يعني أجيب جملتين ليهم نفس الوزن والتقسيمة بالظبط (Identity) بس بغير الكلمات (Contrast). \n\nزي في مثال 'Wealth accumulates and men decay'.. الشاعر هنا عمل توازي عشان يوصلك فكرة إن كل ما الفلوس بتكتر (Accumulates)، الإنسان نفسه بيدمر (Decay). هو ربط المعنيين دول ببعض من غير ما يقول 'عشان'.. مجرد التوازي خلى عقلك يربطهم فوراً.",
-        "rubyTip": "لما تلاقي جملتين ماشيين على نفس الوزن، أعرف إن الشاعر عايزك تعمل مقارنة في عقلك! 📚",
+        "appliedSummary": "الـ Foregrounding هو إنك تعمل \"بروز\" في الكلام عشان تشد عين اللي بيقرأ.. وأهم طريقة لده هي الـ Parallelism (التوازي). يعني أجيب جملتين ليهم نفس الوزن والتقسيمة بالظبط (Identity) بس أغير الكلمات (Contrast).. ده بيخلي عقلك يربط بين المعنيين غصب عنك، زي ما شفنا في مثال الثروة ودمار الإنسان.",
+        "rubyTip": "لما تلاقي تكرار في شكل الجملة، أعرف إن الكاتب عايزك تقارن بين المعاني اللي فيها! 📚",
         "prevLesson": "ch1-s1",
         "nextLesson": "ch1-s3"
       },
       {
         "id": "ch1-s3",
         "title": "The 5 Levels of Deviation",
-        "subtitle": "Syntactic, Lexical, Phonological, Graphological, Semantic.",
+        "subtitle": "Diving deep into how language is bent.",
         "quizId": "quiz-ch1-s3",
         "content": [
-          { 
-            "type": "analysis", 
-            "heading": "Applied: Deviation in Practice", 
-            "body": "Analyzing specific exam examples:",
-            "steps": [
-              { "label": "Syntactic (Inversion)", "body": "'Then spake King Arthur' (Instead of 'Then King Arthur spoke')." },
-              { "label": "Lexical (Neologism)", "body": "Creating words like 'foresuffer' or 'widow-making'." },
-              { "label": "Phonological (Omission)", "body": "Using 'o'er' for 'over' to keep the rhythm." }
-            ]
-          }
+          { "type": "definition", "heading": "Theoretical: Deviation", "body": "Extra irregularity. Breaking linguistic norms. **External Deviation** (against rules outside the poem) vs **Internal Deviation** (against patterns set within the poem)." },
+          { "type": "analysis", "heading": "Applied: Types of Deviation", "body": "Breaking language at every level:", "steps": [
+            { "label": "Lexical", "body": "Creating new words (Neologism) via Affixation (foresuffer), Compounding (widow-making), or Functional Conversion (using verb as noun)." },
+            { "label": "Syntactic", "body": "Breaking grammar rules like Inversion ('Then spake King Arthur')." },
+            { "label": "Phonological", "body": "Breaking sound rules like Elision ('t'assault') or Syncope ('o'er')." },
+            { "label": "Graphological", "body": "Visual deviation like splitting words vertically or using odd capitalization." },
+            { "label": "Semantic", "body": "Breaking logic via Metaphor or Paradox." }
+          ]}
         ],
-        "appliedSummary": "الانحراف (Deviation) هو إنك تشذ عن القاعدة.. عندنا 5 أنواع أساسية:\n\n1. Syntactic: بيلعب في ترتيب الجملة (يغير مكان الفعل والفاعل).\n2. Lexical: يألف كلمات جديدة خالص (Neologism).\n3. Phonological: ياكل حرف من الكلمة عشان الموسيقى تظبط (زي o'er).\n4. Graphological: يغير في شكل الكتابة.\n5. Semantic: يستخدم تشبيهات واستعارات غير منطقية لغوياً بس جميلة فنياً.\n\nالهدف من كل ده؟ إنه يخليك تقف وتسأل 'ليه الكاتب عمل كدة؟' وده هو جوهر الأسلوبيات.",
-        "rubyTip": "كل نوع انحراف له وظيفة.. ركز هو كسر القاعدة فين بالظبط! ✨",
+        "appliedSummary": "الانحراف (Deviation) هو إنك تشذ عن القاعدة.. عندنا 5 أنواع أساسية:\n1. Lexical: تألف كلمات جديدة (زي Neologism).\n2. Syntactic: تشقلب ترتيب الجملة (Inversion).\n3. Phonological: تاكل حروف من الكلمة (Elision).\n4. Graphological: تلعب في شكل الكتابة.\n5. Semantic: تستخدم استعارات غير منطقية لغوياً بس فنية (Metaphor).\nركز إن الانحراف الداللي دايماً بيحصل بسب الاستعارة (Metaphor) أو المفارقة (Paradox).",
+        "rubyTip": "كل نوع انحراف له وظيفة.. ركز هو كسر القاعدة فين بالظبط عشان تعرف تحلل صح! ✨",
         "prevLesson": "ch1-s2"
       }
     ],
@@ -78,31 +63,54 @@
   {
     "id": "ch2",
     "number": 2,
-    "title": "The Novel: Building Cohesion",
-    "description": "How sentences are tied together to form a meaningful story through reference and ellipsis.",
+    "title": "Cohesion: The Glue of Texts",
+    "description": "Learn how reference, ellipsis, conjunctions, and lexical choices tie sentences together.",
     "icon": "menu_book",
     "status": "not-started",
     "lessons": [
       {
         "id": "ch2-s1",
-        "title": "Reference & Ellipsis",
-        "subtitle": "The glue of the narrative.",
+        "title": "Reference Cohesion",
+        "subtitle": "Anaphoric and Cataphoric pointers.",
         "quizId": "quiz-ch2-s1",
         "content": [
-          { "type": "definition", "heading": "Theory: Cohesion (السبك)", "body": "Cohesion is the linguistic bridge between sentences. Without it, a text is just a collection of random lines." },
-          { 
-            "type": "analysis", 
-            "heading": "Applied: Reference Types", 
-            "body": "Analyzing how pronouns point:",
-            "steps": [
-              { "label": "Anaphoric", "body": "'John left. He was tired.' (Pointing back to John)." },
-              { "label": "Cataphoric", "body": "'When he arrived, John slept.' (Pointing forward to John)." }
-            ]
-          }
+          { "type": "definition", "heading": "Theoretical: Cohesion", "body": "The linguistic means by which sentences are woven together to make texts. It refers to all the linguistic ways in which words across sentences link up." },
+          { "type": "definition", "heading": "Theoretical: Reference Types", "body": "1. Anaphoric: Referring BACK to something already mentioned (e.g., 'Mary arrived. **She** was tired').\n2. Cataphoric: Referring FORWARD to something yet to be mentioned (e.g., 'When **he** arrived, John slept')." }
         ],
-        "appliedSummary": "الـ Cohesion هو الصمغ اللي بيربط الجمل ببعض عشان نعرف نقرأها كقصة واحدة. \n\nأهم نوع هو الـ Reference (الإحالة).. \n- لو الضمير بيشاور على حد ذكرناه قبل كدة (زي He راجعة لـ John) يبقى اسمه Anaphoric.\n- لو الضمير جه الأول وبعدين الاسم (زي He وبعدين John) يبقى اسمه Cataphoric.\n\nمن غير الروابط دي، القارئ هيتوه ومش هيعرف مين بيعمل إيه.",
-        "rubyTip": "الـ Anaphoric هو الأشهر، بس الـ Cataphoric بيستخدم للتشويق في الروايات! 🔗",
+        "appliedSummary": "الـ Cohesion هو \"الصمغ\" اللي بيربط الجمل ببعض.. وأهم نوع هو الـ Reference (الإحالة).. لو الضمير بيشاور على حد اتذكر قبل كدة يبقى Anaphoric، ولو بيشاور على حد لسه هيتذكر يبقى Cataphoric.. دي سهلة وبسيطة وموجودة في كل حتة.",
+        "rubyTip": "الـ Anaphoric هو الأشهر، بس الـ Cataphoric بيستخدم للتشويق في القصص! 🔗",
         "nextLesson": "ch2-s2"
+      },
+      {
+        "id": "ch2-s2",
+        "title": "Ellipsis (Nominal, Verbal, Clausal)",
+        "subtitle": "The art of omitting unnecessary repetition.",
+        "quizId": "quiz-ch2-s2",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Ellipsis", "body": "Material is left out since its repetition or near-repetition is felt to be unnecessary." },
+          { "type": "analysis", "heading": "Applied: The 3 Types of Ellipsis", "body": "Identifying what was deleted:", "steps": [
+            { "label": "Nominal Ellipsis", "body": "The **Noun** is omitted. Example: 'I saw two pens. I bought **both** [pens].'" },
+            { "label": "Verbal Ellipsis", "body": "The **Verb** is omitted. Example: 'Have you been swimming?' 'Yes, I **have** [been swimming].'" },
+            { "label": "Clausal Ellipsis", "body": "An entire **Clause** is omitted. Example: 'Why didn't you go?' 'I don't **know** [why I didn't go].'" }
+          ]}
+        ],
+        "appliedSummary": "الـ Ellipsis هو الحذف.. ليه نكرر الكلام لو اللي قدامنا فاهمه؟ ركز بقى في الأنواع دي عشان بتيجي في الامتحان دايماً: لو حذفت الاسم وسبت الضمير مثلاً يبقى Nominal، لو حذفت الفعل وسبت الفعل المساعد يبقى Verbal، ولو حذفت جملة كاملة بعد أفعال زي know أو tell يبقى Clausal.",
+        "rubyTip": "سؤال الامتحان بيسألك: 'Nominal ellipsis occurs when the ____ is omitted'.. الإجابة دايماً Noun! ✍️",
+        "prevLesson": "ch2-s1",
+        "nextLesson": "ch2-s3"
+      },
+      {
+        "id": "ch2-s3",
+        "title": "Conjunctions & Lexical Cohesion",
+        "subtitle": "Signposting and word patterns.",
+        "quizId": "quiz-ch2-s3",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Conjunction Cohesion", "body": "Use of words/phrases to clarify the semantic or logical relationship. The 4 types are: Additive, Adversative, Causal, and Temporal." },
+          { "type": "definition", "heading": "Theoretical: Lexical Cohesion", "body": "Integratedness created via content words. Two main types: \n1. Reiteration: Repetition or synonyms.\n2. Collocation: Habitual co-occurrence (e.g., 'Rabbit' and 'Hole')." }
+        ],
+        "appliedSummary": "الجمل بتربط ببعض برضه بأدوات الوصل (Conjunctions).. ودول 4 أنواع: إضافة (and)، تعارض (but)، سبب (so)، أو زمن (then). وفيه تماسك بيحصل بسبب الكلمات نفسها (Lexical).. يا إما تكرر نفس الكلمة (Reiteration) أو تستخدم كلمات بتمشي مع بعض دايماً زي الشاي والسكر (Collocation).",
+        "rubyTip": "الوصل المعجمي (Lexical) أهم نوعين فيه هما التكرار (Reiteration) والتلازم (Collocation)! 📝",
+        "prevLesson": "ch2-s2"
       }
     ],
     "examId": "exam-ch2"
@@ -110,33 +118,237 @@
   {
     "id": "ch3",
     "number": 3,
-    "title": "Narrative Structure: Labov's Model",
+    "title": "Modality: Opinion & Attitude",
+    "description": "Understanding how speakers qualify their claims and use evaluative devices.",
+    "icon": "psychology",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch3-s1",
+        "title": "The 4 Modality Parameters",
+        "subtitle": "Probability, Obligation, Willingness, and Usuality.",
+        "quizId": "quiz-ch3-s1",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Modality", "body": "The cover term for the ways available to a speaker for expressing 'opinion or attitude'. It denotes linguistic means for qualifying any claim." },
+          { "type": "analysis", "heading": "Applied: Modality Parameters", "body": "How we qualify language:", "steps": [
+            { "label": "Probability", "body": "Likelihood (might, may, must, certainly)." },
+            { "label": "Obligation", "body": "Necessity (should, ought to, must)." },
+            { "label": "Willingness", "body": "Readiness/Desire (will, would, willing)." },
+            { "label": "Usuality", "body": "Frequency (always, usually, rarely)." }
+          ]}
+        ],
+        "appliedSummary": "كلامك بيبين رأيك (Modality).. هل الحاجة دي أكيدة (Probability)؟ هل لازم تتعمل (Obligation)؟ هل إنت عايز تعملها (Willingness)؟ ولا هل دي عادتك (Usuality)؟ الأربعة دول هما \"أركان\" التلقائية في الكلام ولازم تحفظ أساميهم بالإنجليزي كويس جداً.",
+        "rubyTip": "في الامتحان، لما تشوف 'must' أو 'always'، فكر علطول في الـ Modality! 🧠",
+        "nextLesson": "ch3-s2"
+      },
+      {
+        "id": "ch3-s2",
+        "title": "Evaluative Devices & Generic Sentences",
+        "subtitle": "How stance is revealed through timeless truths.",
+        "quizId": "quiz-ch3-s2",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Evaluative Devices", "body": "Means by which a speaker's stance is revealed. Includes Evaluative Verbs (regret), Adjectives (admirable), and Generic Sentences." },
+          { "type": "definition", "heading": "Theoretical: Generic Sentences", "body": "Sentences which assert something to be a general truth, typically timelessly true. Usually in the simple present tense and predicated of an open set of things (e.g., 'Property is theft')." }
+        ],
+        "appliedSummary": "إزاي بنقيم الكلام؟ يا إما بأفعال زي (أندم أو أرحب) أو بصفات زي (رائع أو سيئ). وفيه حاجة ذكية جداً اسمها \"الجمل العامة\" (Generic).. دي جمل بتقول حقيقة خالدة مفيهاش نقاش (زي: أفغانستان هي أرض البشتون).. الجمل دي بتبين انحياز الكاتب أو وجهة نظره القوية كإنها قانون كوني.",
+        "rubyTip": "الجملة العامة دايماً بتبدأ بـ Simple Present وبتتكلم عن حقيقة مطلقة! 🌍",
+        "prevLesson": "ch3-s1"
+      }
+    ],
+    "examId": "exam-ch3"
+  },
+  {
+    "id": "ch4",
+    "number": 4,
+    "title": "Narrative Structure (Labov)",
     "description": "Analyzing the 6 essential parts of any well-formed story.",
     "icon": "account_tree",
     "status": "not-started",
     "lessons": [
       {
-        "id": "ch3-s1",
-        "title": "Labov's 6 Elements",
-        "subtitle": "Analyzing the skeleton of a story.",
-        "quizId": "quiz-ch3-s1",
+        "id": "ch4-s1",
+        "title": "Labov's 6-Part Schema",
+        "subtitle": "The skeleton of every narrative.",
+        "quizId": "quiz-ch4-s1",
         "content": [
-          { 
-            "type": "analysis", 
-            "heading": "Applied: Analyzing a Story", 
-            "body": "Applying Labov to a sample narrative:",
-            "steps": [
-              { "label": "Orientation", "body": "Setting the scene: Who, Where, When." },
-              { "label": "Complicating Action", "body": "The events: What happened next?" },
-              { "label": "Evaluation", "body": "The significance: Why is this story being told?" }
-            ]
-          }
+          { "type": "analysis", "heading": "Applied: The Narrative Framework", "body": "Analyzing a story step-by-step:", "steps": [
+            { "label": "Abstract", "body": "What happened in a nutshell? (Summary)." },
+            { "label": "Orientation", "body": "Who, where, when? (Setting)." },
+            { "label": "Complicating Action", "body": "The core ordered events. (**The only required element**)." },
+            { "label": "Evaluation", "body": "Why is this story worth telling?" },
+            { "label": "Resolution", "body": "What finally happened?" },
+            { "label": "Coda", "body": "Bridge back to the present (Moral)." }
+          ]}
         ],
-        "appliedSummary": "لابوف قال إن أي حكاية في الدنيا بتمشي على 6 خطوات:\n\n1. Abstract (ملخص).\n2. Orientation (مين وفين وإمتى).\n3. Complicating Action (الأحداث اللي حصلت بجد).\n4. Evaluation (ليه الحكاية دي مهمة؟).\n5. Resolution (النهاية).\n6. Coda (الرجوع للواقع).\n\nأهم جزء هو الـ Complicating Action لأن ده هو لب القصة، والـ Evaluation هو اللي بيدي للقصة طعم وقيمة.",
-        "rubyTip": "أي قصة مفيهاش Evaluation بتبقى قصة مملة ومفيش منها فايدة! 🎭",
-        "nextLesson": "ch3-s2"
+        "appliedSummary": "لابوف قال إن أي حكاية في الدنيا لازم تمر بـ 6 مراحل.. بتبدأ بملخص سريع (Abstract)، وتعرفنا بالناس والزمان (Orientation)، وبعدين أهم حتة وهي الأحداث اللي بجد (Complicating Action) - ودي الحتة الوحيدة اللي لازم تكون موجودة - وفي الآخر بتقولنا إيه اللي حصل (Resolution) وإيه الحكمة اللي نطلع بيها (Coda).",
+        "rubyTip": "ركز: الـ Complicating Action هو العنصر الوحيد اللي لازم يكون موجود في أي قصة! 🎭",
+        "nextLesson": "ch4-s2"
       }
     ],
-    "examId": "exam-ch3"
+    "examId": "exam-ch4"
+  },
+  {
+    "id": "ch5",
+    "number": 5,
+    "title": "Discourse Structure (Birmingham)",
+    "description": "Treating conversation as a rule-governed system.",
+    "icon": "forum",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch5-s1",
+        "title": "The Hierarchical System & Moves",
+        "subtitle": "Opening, Supporting, and Challenging moves.",
+        "quizId": "quiz-ch5-s1",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Birmingham Model", "body": "Treats conversation as a Rule-governed or Hierarchical system where moves are the key interactive units." },
+          { "type": "analysis", "heading": "Applied: Discourse Moves", "body": "How we interact:", "steps": [
+            { "label": "Opening Move", "body": "Introducing a recognizably 'new' topic." },
+            { "label": "Supporting Move", "body": "Concurring with the initiatory move." },
+            { "label": "Challenging Move", "body": "Holding up or obstructing the topic introduction." }
+          ]}
+        ],
+        "appliedSummary": "الحوار مش عشوائي.. ده نظام محكم (Birmingham Model).. بيمشي بقواعد (Rule-governed). عندنا حركات بتفتح كلام جديد (Opening)، وحركات بتوافق وتدعم الكلام (Supporting)، وحركات تانية بتعارض أو توقف الكلام (Challenging).. ده هو جوهر التحليل الخطابي.",
+        "rubyTip": "الموديل ده بيشوف إن الـ Move هو أهم وحدة تفاعلية في الحوار! 🗣️",
+        "nextLesson": "ch6-s1"
+      }
+    ],
+    "examId": "exam-ch5"
+  },
+  {
+    "id": "ch6",
+    "number": 6,
+    "title": "Grice's Maxims & Implicature",
+    "description": "Conversational cooperation and the art of hidden meaning.",
+    "icon": "record_voice_over",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch6-s1",
+        "title": "The 4 Conversational Maxims",
+        "subtitle": "Quality, Quantity, Relation, and Manner.",
+        "quizId": "quiz-ch6-s1",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: The Cooperative Principle", "body": "Basic assumption that speakers normally intend purposeful and effective communication." },
+          { "type": "analysis", "heading": "Applied: The Maxims", "body": "The 4 rules of talk:", "steps": [
+            { "label": "Quality", "body": "Be truthful (Don't lie)." },
+            { "label": "Quantity", "body": "Be as informative as required (Not too much/little)." },
+            { "label": "Relation", "body": "Be relevant (Stay on topic)." },
+            { "label": "Manner", "body": "Be clear (Avoid ambiguity)." }
+          ]}
+        ],
+        "appliedSummary": "جرايس قالنا إن الحوار الناجح بيمشي بـ 4 قواعد ذهبية: قول الحقيقة (Quality)، قول اللي مطلوب بس (Quantity)، خليك في الموضوع (Relation)، وخليك واضح (Manner).. أي خروج عن دول بيخلق معنى جديد.",
+        "rubyTip": "القواعد دي هي اللي بتخلينا نفهم بعض من غير ما نكون صريحين 100%! 🤐",
+        "nextLesson": "ch6-s2"
+      },
+      {
+        "id": "ch6-s2",
+        "title": "Flouting & Implicature",
+        "subtitle": "Analyzing hidden meanings in dialogue.",
+        "quizId": "quiz-ch6-s2",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Flouting", "body": "Deliberately and obviously violating a maxim to generate an Implicature." },
+          { "type": "analysis", "heading": "Applied: Implicature Analysis", "body": "Example: A asks 'Weather prediction?' B says 'Bring your coat.'", "steps": [
+            { "label": "Maxim Flouted", "body": "Relation (B answers indirectly)." },
+            { "label": "Implicature", "body": "It will be cold or rainy." }
+          ]}
+        ],
+        "appliedSummary": "الـ Flouting هو إنك تكسر قاعدة من القواعد دي \"بمزاجك\" وعن عمد عشان توصل معنى خفي (Implicature).. زي لما حد يسألك عن الجو تقوله \"هات البالطو\"، إنت كدة كسرت قاعدة الـ Relation عشان تقصد إنه تلج من غير ما تقولها صراحة.",
+        "rubyTip": "الـ Implicature هو المعنى اللي بيفهمه السامع بين السطور! 🕵️‍♂️",
+        "prevLesson": "ch6-s1"
+      }
+    ],
+    "examId": "exam-ch6"
+  },
+  {
+    "id": "ch7",
+    "number": 7,
+    "title": "Politeness Theory (Face)",
+    "description": "Understanding social dynamics and face-threatening acts.",
+    "icon": "face",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch7-s1",
+        "title": "Positive & Negative Face",
+        "subtitle": "Appreciation vs. Freedom.",
+        "quizId": "quiz-ch7-s1",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Face", "body": "Fundamental aspect of human psyche with two dimensions." },
+          { "type": "definition", "heading": "Theoretical: Types of Face", "body": "1. Positive Face: Wish to be liked and approved of by others.\n2. Negative Face: Wish to be free from imposition and not coerced." }
+        ],
+        "appliedSummary": "كل واحد فينا ليه \"وش\" اجتماعي.. الـ Positive Face هو الجزء اللي عايز يتحب ويتقدر من الناس، والـ Negative Face هو الجزء اللي عايز يستقل ويبقى حر ومحدش يطلب منه حاجات تقيلة.. فهمك للاثنين دول هو سر التعامل الذكي مع الناس.",
+        "rubyTip": "الوش الإيجابي = التقدير | الوش السلبي = الحرية والاستقلال! 😊",
+        "nextLesson": "ch7-s2"
+      }
+    ],
+    "examId": "exam-ch7"
+  },
+  {
+    "id": "ch8",
+    "number": 8,
+    "title": "Politeness Strategies",
+    "description": "How we use language to mitigate threats to face.",
+    "icon": "handshake",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch8-s1",
+        "title": "Bald On-Record & Off-Record",
+        "subtitle": "The extremes of directness.",
+        "quizId": "quiz-ch8-s1",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Bald On-Record", "body": "Most direct, clear, and unambiguous way (e.g., 'Open the window'). No redress offered." },
+          { "type": "definition", "heading": "Theoretical: Off-Record", "body": "Avoiding explicit mention by dropping a hint (e.g., 'It's hot in here' as a request)." }
+        ],
+        "appliedSummary": "عندنا طريقتين عكس بعض تماماً.. يا إما تكون \"دبش\" وتطلب الحاجة بوضوح تام (Bald On-Record) زي \"افتح الشباك\"، أو إنك تلمح من بعيد لبعيد (Off-Record) زي \"الجو حر هنا أوي\" عشان اللي قدامك يفهم ويفتحه من نفسه.",
+        "rubyTip": "الـ Bald On-Record هو أسرع طريقة بس أكتر طريقة ممكن تضايق اللي قدامك! ⚡",
+        "nextLesson": "ch8-s2"
+      },
+      {
+        "id": "ch8-s2",
+        "title": "Positive & Negative Politeness",
+        "subtitle": "Solidarity vs. Restraint.",
+        "quizId": "quiz-ch8-s2",
+        "content": [
+          { "type": "analysis", "heading": "Applied: Politeness Tactics", "body": "Redressing the threat:", "steps": [
+            { "label": "Positive Politeness", "body": "Building solidarity: Compliments, in-group markers (mate, pal), claiming common ground." },
+            { "label": "Negative Politeness", "body": "Avoiding imposition: Indirectness, Hedges, Apologies, Being Pessimistic ('I don't suppose...'), Deference." }
+          ]}
+        ],
+        "appliedSummary": "لو عايز تطلب حاجة بذوق، قدامك طريقين.. يا إما الـ Positive Politeness بإنك تمدح اللي قدامك أو تناديه بلقب ودي (يا صاحبي)، أو الـ Negative Politeness بإنك تبين إنك مش عايز تتقل عليه (أنا آسف للإزعاج) أو تكون متشائم (ماظنش إنك تقدر توصلني).. ركز: التشاؤم استراتيجية سلبية (Negative) مش إيجابية!",
+        "rubyTip": "التشاؤم (Pessimism) والاعتذار (Apology) من أهم استراتيجيات المجاملة السلبية! 🤝",
+        "prevLesson": "ch8-s1"
+      }
+    ],
+    "examId": "exam-ch8"
+  },
+  {
+    "id": "ch9",
+    "number": 9,
+    "title": "Practical Exam Prep",
+    "description": "Model answers and cheat sheets for the final exam.",
+    "icon": "assignment_turned_in",
+    "status": "not-started",
+    "lessons": [
+      {
+        "id": "ch9-s1",
+        "title": "Final Review & Cheat Sheets",
+        "subtitle": "The essential list for exam night.",
+        "quizId": "quiz-ch9-s1",
+        "content": [
+          { "type": "definition", "heading": "Theoretical: Key Exam Triggers", "body": "1. Semantic deviation -> Metaphor or Paradox.\n2. Lexical Cohesion -> Reiteration and Collocation.\n3. Conjunctions -> Additive, Adversative, Causal, Temporal." },
+          { "type": "analysis", "heading": "Applied: Exam Strategy", "body": "How to tackle the paper:", "steps": [
+            { "label": "Section A", "body": "Memorize definitions from the Word Box list." },
+            { "label": "Section B", "body": "Identify the flouted maxim and state the implicature." },
+            { "label": "Section D", "label": "Correct the False statements (e.g., Correcting the politeness type)." }
+          ]}
+        ],
+        "appliedSummary": "ده ليلة الامتحان يا بطل.. لازم تحفظ إن الانحراف الداللي بسببه الاستعارة والمفارقة. والوصل 4 أنواع. والمجاملات السلبية 9 أنواع. ركز في سؤال صح وغلط عشان لازم \"تصحح\" الغلط.. المنهج دلوقتى بين إيديك كامل ومفصل، ادخل الامتحان وأنت مطمن.",
+        "rubyTip": "راجع المذكرات السريعة في Section 9 من الـ Guide.. هي دي اللي هتلملك المنهج كله في 5 دقايق! 🚀",
+        "prevLesson": "ch8-s2"
+      }
+    ],
+    "examId": "exam-ch9"
   }
 ]
