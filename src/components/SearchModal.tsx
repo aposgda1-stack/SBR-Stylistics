@@ -7,7 +7,7 @@ import definitions from "@/data/definitions-bank.json";
 
 export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   const [query, setQuery] = useState("");
-  const [results, setResults] = useState<{ type: string; title: string; href: string; excerpt: string }[]>([]);
+  const [results, setResults] = useState<{ type: string; title: string; href: string; excerpt: string; id?: string; chapterId?: string }[]>([]);
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -35,8 +35,9 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
         searchResults.push({
           type: "Chapter",
           title: ch.title,
-          href: "/lessons",
+          href: "/chapters",
           excerpt: ch.description,
+          id: ch.id
         });
       }
       ch.lessons.forEach((ls) => {
@@ -44,21 +45,24 @@ export default function SearchModal({ isOpen, onClose }: { isOpen: boolean; onCl
           searchResults.push({
             type: "Lesson",
             title: ls.title,
-            href: `/lessons/${ch.id}/${ls.id}`,
+            href: `/chapters/${ch.id}/${ls.id}`,
             excerpt: ls.subtitle,
+            id: ls.id,
+            chapterId: ch.id
           });
         }
       });
     });
 
     // Search Definitions
-    definitions.forEach((def) => {
+    definitions.forEach((def, idx) => {
       if (def.term.toLowerCase().includes(lowerQuery) || def.definition.toLowerCase().includes(lowerQuery)) {
         searchResults.push({
           type: "Definition",
           title: def.term,
-          href: "/definitions",
+          href: "/word-box",
           excerpt: def.definition,
+          id: `def-${idx}`
         });
       }
     });
